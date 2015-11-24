@@ -206,9 +206,35 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2015-01-18-pre-elasticon.mp3" length="56415855" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/2015-01-18-pre-elasticon.mp3</guid>
-		<pubDate>Mon, 14 October 2013 23:25:00 +0100</pubDate>
+		<pubDate>Sun, 18 January 2015 23:25:00 +0100</pubDate>
 		<itunes:duration>0:58:46</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Mix, Home</itunes:keywords>
+	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2015/11/21 - Fred Birthday Live Mix - Part 1</title>
+		<itunes:order>15</itunes:order>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Fred Birthday Live Mix - Part 1</itunes:subtitle>
+		<itunes:summary>Recorded live at "Le Crystal"</itunes:summary>
+		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3" length="21004740" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3</guid>
+		<pubDate>Tue, 24 November 2015 21:30:00 +0100</pubDate>
+		<itunes:duration>0:21:53</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Mix, Live, Mix, Birthday</itunes:keywords>
+	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2015/11/21 - Fred Birthday Live Mix - Part 2</title>
+		<itunes:order>16</itunes:order>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Fred Birthday Live Mix - Part 2</itunes:subtitle>
+		<itunes:summary>Recorded live at "Le Crystal"</itunes:summary>
+		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part2.mp3" length="32517426" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3</guid>
+		<pubDate>Tue, 24 November 2015 21:30:00 +0100</pubDate>
+		<itunes:duration>0:33:52</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Mix, Live, Mix, Birthday</itunes:keywords>
 	</item>
 	
 	</channel>
