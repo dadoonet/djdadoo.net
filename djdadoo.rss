@@ -3,8 +3,8 @@
 <channel>
 	<title>DJ Dadoo.net mixes</title>
 	<link>http://djdadoo.pilato.fr/</link>
-	<language>fr-FR</language>
-	<copyright>&#x2117; &amp; &#xA9; 2012-2015 DJ Dadoo.net</copyright>
+	<language>en</language>
+	<copyright>&#x2117; &amp; &#xA9; 2012-2016 DJ Dadoo.net</copyright>
 	<itunes:subtitle>Just playing with my DDJ-T1</itunes:subtitle>
 	<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 	<itunes:summary>If you love funk and DJ groove sound, you will like theses mixes ! Enjoy !</itunes:summary>
@@ -24,7 +24,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/01_DJ_Dadoo_Funk_Mix.mp3" length="41742220" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/01_DJ_Dadoo_Funk_Mix.mp3</guid>
-		<pubDate>Thu, 29 Sep 2011 21:10:00 +0100</pubDate>
+		<pubDate>29 Sep 2011 21:10:00 +0100</pubDate>
 		<itunes:duration>28:59</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Funk, Groove, Club, Mix</itunes:keywords>
 	</item>
@@ -37,7 +37,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/02_DJ_Dadoo_First-Mix-DDJT1.mp3" length="97455772" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/02_DJ_Dadoo_First-Mix-DDJT1.mp3</guid>
-		<pubDate>Sat, 28 Jan 2012 22:50:00 +0100</pubDate>
+		<pubDate>28 Jan 2012 22:50:00 +0100</pubDate>
 		<itunes:duration>1:07:27</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Funk, Groove, Club, Mix</itunes:keywords>
 	</item>
@@ -50,7 +50,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/03_DJ_Dadoo_Club-Mix-DDJT1.mp3" length="91088046" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/03_DJ_Dadoo_Club-Mix-DDJT1.mp3</guid>
-		<pubDate>Sun, 19 Feb 2012 21:15:00 +0100</pubDate>
+		<pubDate>19 Feb 2012 21:15:00 +0100</pubDate>
 		<itunes:duration>1:03:15</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Funk, Groove, Club, Mix</itunes:keywords>
 	</item>
@@ -63,7 +63,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/04_DJ_Dadoo_March-Mix-DDJT1.mp3" length="91088046" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/04_DJ_Dadoo_March-Mix-DDJT1.mp3</guid>
-		<pubDate>Sun, 04 Mar 2012 00:39:00 +0100</pubDate>
+		<pubDate>04 Mar 2012 00:39:00 +0100</pubDate>
 		<itunes:duration>1:17:59</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Funk, Groove, Club, Mix</itunes:keywords>
 	</item>
@@ -76,7 +76,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/05_DJ_Dadoo_April-Mix-DDJT1.mp3" length="102217281" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/05_DJ_Dadoo_April-Mix-DDJT1.mp3</guid>
-		<pubDate>Sun, 01 Apr 2012 23:59:00 +0100</pubDate>
+		<pubDate>01 Apr 2012 23:59:00 +0100</pubDate>
 		<itunes:duration>1:10:58</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Funk, Groove, Club, Mix</itunes:keywords>
 	</item>
@@ -89,7 +89,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/06_DJ_Dadoo_May-Mix-DDJT1.mp3" length="80753610" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/06_DJ_Dadoo_May-Mix-DDJT1.mp3</guid>
-		<pubDate>Sun, 13 May 2012 22:39:00 +0100</pubDate>
+		<pubDate>13 May 2012 22:39:00 +0100</pubDate>
 		<itunes:duration>0:56:04</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Club, House, Mix</itunes:keywords>
 	</item>
@@ -102,7 +102,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/07_DJ_Dadoo_July-Mix-DDJT1-Part1.mp3" length="99296618" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/07_DJ_Dadoo_July-Mix-DDJT1-Part1.mp3</guid>
-		<pubDate>Sat, 07 July 2012 23:16:00 +0100</pubDate>
+		<pubDate>07 July 2012 23:16:00 +0100</pubDate>
 		<itunes:duration>1:08:57</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix, Wedding</itunes:keywords>
 	</item>
@@ -115,7 +115,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/07_DJ_Dadoo_July-Mix-DDJT1-Part2.mp3" length="63205634" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/07_DJ_Dadoo_July-Mix-DDJT1-Part2.mp3</guid>
-		<pubDate>Sat, 07 July 2012 23:16:00 +0100</pubDate>
+		<pubDate>07 July 2012 23:16:00 +0100</pubDate>
 		<itunes:duration>0:43:53</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix, Wedding</itunes:keywords>
 	</item>
@@ -128,7 +128,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/08_DJ_Dadoo_Summer_Mix.mp3" length="78899761" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/08_DJ_Dadoo_Summer_Mix.mp3</guid>
-		<pubDate>Wed, 02 January 2013 23:21:00 +0100</pubDate>
+		<pubDate>02 January 2013 23:21:00 +0100</pubDate>
 		<itunes:duration>0:54:47</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Summer, Mix</itunes:keywords>
 	</item>
@@ -141,7 +141,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3" length="32128646" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3</guid>
-		<pubDate>Wed, 02 January 2013 23:24:00 +0100</pubDate>
+		<pubDate>02 January 2013 23:24:00 +0100</pubDate>
 		<itunes:duration>0:22:18</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix, Birthday, Anne</itunes:keywords>
 	</item>
@@ -154,7 +154,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/09_DJ_Dadoo_Anne_Birthday-December-Part2.mp3" length="51223321" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/09_DJ_Dadoo_Anne_Birthday-December-Part2.mp3</guid>
-		<pubDate>Wed, 02 January 2013 23:25:00 +0100</pubDate>
+		<pubDate>02 January 2013 23:25:00 +0100</pubDate>
 		<itunes:duration>0:35:34</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix, Birthday, Anne</itunes:keywords>
 	</item>
@@ -167,7 +167,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2013-10-05-Peniche-Diner.mp3" length="115790723" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/2013-10-05-Peniche-Diner.mp3</guid>
-		<pubDate>Mon, 14 October 2013 23:25:00 +0100</pubDate>
+		<pubDate>14 October 2013 23:25:00 +0100</pubDate>
 		<itunes:duration>2:00:37</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix, Birthday, Christine, Diner, Lounge</itunes:keywords>
 	</item>
@@ -180,7 +180,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2013-10-05-Peniche-80.mp3" length="37207331" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/2013-10-05-Peniche-80.mp3</guid>
-		<pubDate>Mon, 14 October 2013 23:25:00 +0100</pubDate>
+		<pubDate>14 October 2013 23:25:00 +0100</pubDate>
 		<itunes:duration>0:38:45</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix, Birthday, Christine, Diner, 80</itunes:keywords>
 	</item>
@@ -193,7 +193,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2013-10-05-Peniche-Dance.mp3" length="94369483" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/2013-10-05-Peniche-Dance.mp3</guid>
-		<pubDate>Mon, 14 October 2013 23:25:00 +0100</pubDate>
+		<pubDate>14 October 2013 23:25:00 +0100</pubDate>
 		<itunes:duration>1:38:18</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix, Birthday, Christine, Diner, Lounge</itunes:keywords>
 	</item>
@@ -206,7 +206,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2015-01-18-pre-elasticon.mp3" length="56415855" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/2015-01-18-pre-elasticon.mp3</guid>
-		<pubDate>Sun, 18 January 2015 23:25:00 +0100</pubDate>
+		<pubDate>18 January 2015 23:25:00 +0100</pubDate>
 		<itunes:duration>0:58:46</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Mix, Home</itunes:keywords>
 	</item>
@@ -219,7 +219,7 @@
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3" length="21004740" type="audio/mpeg" />
 		<guid>http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3</guid>
-		<pubDate>Tue, 24 November 2015 21:30:00 +0100</pubDate>
+		<pubDate>24 November 2015 21:30:00 +0100</pubDate>
 		<itunes:duration>0:21:53</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Mix, Live, Mix, Birthday</itunes:keywords>
 	</item>
@@ -231,8 +231,8 @@
 		<itunes:summary>Recorded live at "Le Crystal"</itunes:summary>
 		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part2.mp3" length="32517426" type="audio/mpeg" />
-		<guid>http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3</guid>
-		<pubDate>Tue, 24 November 2015 21:30:00 +0100</pubDate>
+		<guid>http://dj.david.pilato.fr/mixes/2015-11-21-Fred-Birthday-Live-Mix-Part2.mp3</guid>
+		<pubDate>24 November 2015 21:35:00 +0100</pubDate>
 		<itunes:duration>0:33:52</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Mix, Live, Mix, Birthday</itunes:keywords>
 	</item>
