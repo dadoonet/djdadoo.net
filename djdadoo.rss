@@ -236,6 +236,19 @@
 		<itunes:duration>0:33:52</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Mix, Live, Mix, Birthday</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2016/02/12 - Pre elastic{ON}'16 Mix</title>
+		<itunes:order>17</itunes:order>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Pre elastic{ON}'16 Mix</itunes:subtitle>
+		<itunes:summary>Home session - Pre elastic{ON}'16 Mix</itunes:summary>
+		<itunes:image href="http://djdadoo.pilato.fr/djdadoo.jpg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2016-02-12-Pre-ElasticON16-Mix.mp3" length="50278526" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2016-02-12-Pre-ElasticON16-Mix.mp3</guid>
+		<pubDate>12 February 2016 17:03:00 +0100</pubDate>
+		<itunes:duration>0:52:22</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Home, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>
