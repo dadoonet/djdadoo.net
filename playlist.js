@@ -1,5 +1,15 @@
 var dadoonetPlayList = [
   {
+    title: 'Summer 2016 Garden Mix',
+    file: 'http://dj.david.pilato.fr/mixes/2016-08-28-Summer-2016-Garden-Mix.mp3',
+    howl: null
+  },
+  {
+    title: 'Live - Fred Birthday',
+    file: 'http://dj.david.pilato.fr/mixes/2016-07-02-Fred-Birthday-Cergy.mp3',
+    howl: null
+  },
+  {
     title: 'Pre elastic{ON} 16 Mix',
     file: 'http://dj.david.pilato.fr/mixes/2016-02-12-Pre-ElasticON16-Mix.mp3',
     howl: null
