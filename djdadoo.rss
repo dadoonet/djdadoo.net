@@ -262,6 +262,19 @@
 		<itunes:duration>0:42:59</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Mix, Live</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2016/08/28 - Summer 2016 Garden Mix</title>
+		<itunes:order>19</itunes:order>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Summer 2016 Garden Mix</itunes:subtitle>
+		<itunes:summary>Home session - Summer 2016 Garden Mix</itunes:summary>
+		<itunes:image href="http://djdadoo.pilato.fr/img/20160828-garden-mix.jpg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2016-08-28-Summer-2016-Garden-Mix.mp3" length="98529268" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2016-08-28-Summer-2016-Garden-Mix.mp3</guid>
+		<pubDate>28 August 2016 15:30:00 +0100</pubDate>
+		<itunes:duration>01:08:25</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Home, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>
