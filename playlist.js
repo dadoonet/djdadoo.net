@@ -1,5 +1,10 @@
 var dadoonetPlayList = [
   {
+    title: 'Winter 2017 Pre Elastic{ON} 17 Mix',
+    file: 'http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3',
+    howl: null
+  },
+  {
     title: 'Summer 2016 Garden Mix',
     file: 'http://dj.david.pilato.fr/mixes/2016-08-28-Summer-2016-Garden-Mix.mp3',
     howl: null

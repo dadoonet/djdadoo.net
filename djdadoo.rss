@@ -275,6 +275,19 @@
 		<itunes:duration>01:08:25</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Home, Mix</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2017/03/05 - Winter 2017 Pre elastic{ON}'17 Mix</title>
+		<itunes:order>20</itunes:order>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Winter 2017 Pre elastic{ON}'17 Mix</itunes:subtitle>
+		<itunes:summary>Home session - Winter 2017 Pre elastic{ON}'17 Mix</itunes:summary>
+		<itunes:image href="http://djdadoo.pilato.fr/img/20160828-garden-mix.jpg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3.mp3" length="99180044" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3.mp3</guid>
+		<pubDate>5 March 2017 11:30:00 +0100</pubDate>
+		<itunes:duration>01:08:52</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Home, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>
