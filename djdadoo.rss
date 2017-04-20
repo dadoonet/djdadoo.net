@@ -288,6 +288,19 @@
 		<itunes:duration>01:08:52</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Home, Mix</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2017/04/20 - BreizhCamp 2017 Keynote Mix</title>
+		<itunes:order>21</itunes:order>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>BreizhCamp 2017 Keynote Mix</itunes:subtitle>
+		<itunes:summary>Live session recorded at BreizhCamp 2017 during the Keynote</itunes:summary>
+		<itunes:image href="http://dj.david.pilato.fr/djdadoo.jpg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2017-04-20-breizhcamp-keynote.mp3" length="25240750" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3.mp3</guid>
+		<pubDate>20 March 2017 09:00:00 +0100</pubDate>
+		<itunes:duration>00:17:32</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>

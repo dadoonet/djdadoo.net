@@ -1,5 +1,10 @@
 var dadoonetPlayList = [
   {
+    title: 'BreizhCamp 2017 - Keynote Mix',
+    file: 'http://dj.david.pilato.fr/mixes/2017-04-20-breizhcamp-keynote.mp3',
+    howl: null
+  },
+  {
     title: 'Winter 2017 Pre Elastic{ON} 17 Mix',
     file: 'http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3',
     howl: null
