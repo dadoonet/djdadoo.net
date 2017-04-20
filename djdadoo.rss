@@ -281,9 +281,9 @@
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Winter 2017 Pre elastic{ON}'17 Mix</itunes:subtitle>
 		<itunes:summary>Home session - Winter 2017 Pre elastic{ON}'17 Mix</itunes:summary>
-		<itunes:image href="http://djdadoo.pilato.fr/img/20160828-garden-mix.jpg" />
+		<itunes:image href="http://dj.david.pilato.fr/djdadoo.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3" length="99180044" type="audio/mpeg" />
-		<guid>http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3.mp3</guid>
+		<guid>http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3</guid>
 		<pubDate>5 March 2017 11:30:00 +0100</pubDate>
 		<itunes:duration>01:08:52</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Home, Mix</itunes:keywords>
@@ -294,11 +294,24 @@
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>BreizhCamp 2017 Keynote Mix</itunes:subtitle>
 		<itunes:summary>Live session recorded at BreizhCamp 2017 during the Keynote</itunes:summary>
-		<itunes:image href="http://dj.david.pilato.fr/djdadoo.jpg" />
+		<itunes:image href="http://dj.david.pilato.fr/img/20170420-breizhcamp-keynote.jpg" />
 		<enclosure url="http://dj.david.pilato.fr/mixes/2017-04-20-breizhcamp-keynote.mp3" length="25240750" type="audio/mpeg" />
-		<guid>http://dj.david.pilato.fr/mixes/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3.mp3</guid>
+		<guid>http://dj.david.pilato.fr/mixes/2017-04-20-breizhcamp-keynote.mp3</guid>
 		<pubDate>20 March 2017 09:00:00 +0100</pubDate>
 		<itunes:duration>00:17:32</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2017/04/20 - BreizhCamp 2017 Meet And Greet Party Mix</title>
+		<itunes:order>22</itunes:order>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>BreizhCamp 2017 Meet And Greet Party Mix</itunes:subtitle>
+		<itunes:summary>Live session recorded at BreizhCamp 2017 during the Meet And Greet Party</itunes:summary>
+		<itunes:image href="http://dj.david.pilato.fr/img/20170420-breizhcamp-meet-and-greet.jpg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2017-04-20-breizhcamp-meet-and-greet.mp3" length="173147532" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2017-04-20-breizhcamp-meet-and-greet.mp3</guid>
+		<pubDate>20 March 2017 18:45:00 +0100</pubDate>
+		<itunes:duration>02:00:14</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 	</item>
 	
