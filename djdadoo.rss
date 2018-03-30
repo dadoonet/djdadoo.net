@@ -314,6 +314,19 @@
 		<itunes:duration>02:00:14</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2018/03/29 - BreizhCamp 2018 Meet And Greet Party Mix</title>
+		<itunes:order>23</itunes:order>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>BreizhCamp 2018 Meet And Greet Party Mix (with Julien Ponge and David Pilato)</itunes:subtitle>
+		<itunes:summary>Live session recorded at BreizhCamp 2018 during the Meet And Greet Party</itunes:summary>
+		<itunes:image href="http://dj.david.pilato.fr/img/20180329-breizhcamp-meet-and-greet.jpg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2018-03-29-breizhcamp-meet-and-greet.mp3" length="173147532" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2018-03-29-breizhcamp-meet-and-greet.mp3</guid>
+		<pubDate>29 March 2018 19:15:00 +0200</pubDate>
+		<itunes:duration>01:56:01</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>
