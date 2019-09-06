@@ -1,5 +1,10 @@
 var dadoonetPlayList = [
   {
+    title: 'Wedding Natacha - Warm Up',
+    file: 'http://dj.david.pilato.fr/mixes/2019-08-31-Wedding-Natacha-Warmup.mp3',
+    howl: null
+  },
+  {
     title: 'BreizhCamp 2018 - Meet And Greet Party Mix (with Julien Ponge and David Pilato)',
     file: 'http://dj.david.pilato.fr/mixes/2018-03-29-breizhcamp-meet-and-greet.mp3',
     howl: null
