@@ -17,7 +17,6 @@
 	<itunes:category text="Music" />
 	<item>
 		<title>DJ Dadoo.net Mix #2011/09/29</title>
-		<itunes:order>1</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Funk mix</itunes:subtitle>
 		<itunes:summary>My first recorded mix with my old Hercules DJ Console</itunes:summary>
@@ -30,7 +29,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/01/22</title>
-		<itunes:order>2</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Funk groove mix</itunes:subtitle>
 		<itunes:summary>First recorded mix with my new Pioneer DDJ-T1</itunes:summary>
@@ -43,7 +41,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/02/19</title>
-		<itunes:order>3</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Club mix</itunes:subtitle>
 		<itunes:summary>2nd recorded mix with my Pioneer DDJ-T1</itunes:summary>
@@ -56,7 +53,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/03/04</title>
-		<itunes:order>4</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>March mix</itunes:subtitle>
 		<itunes:summary>3rd recorded mix with my Pioneer DDJ-T1</itunes:summary>
@@ -69,7 +65,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/04/01</title>
-		<itunes:order>5</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>April mix</itunes:subtitle>
 		<itunes:summary>4th recorded mix with my Pioneer DDJ-T1</itunes:summary>
@@ -82,7 +77,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/05/13</title>
-		<itunes:order>6</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>May mix</itunes:subtitle>
 		<itunes:summary>5th recorded mix with my Pioneer DDJ-T1</itunes:summary>
@@ -95,7 +89,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/07/07 - Part 1</title>
-		<itunes:order>7</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>July Live mix</itunes:subtitle>
 		<itunes:summary>Recorded Live for Sebastien and Elvira Wedding</itunes:summary>
@@ -108,7 +101,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/07/07 - Part 2</title>
-		<itunes:order>8</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>July Live mix</itunes:subtitle>
 		<itunes:summary>Recorded Live for Sebastien and Elvira Wedding</itunes:summary>
@@ -121,7 +113,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/08/18</title>
-		<itunes:order>9</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Summer mix</itunes:subtitle>
 		<itunes:summary>Summer mix</itunes:summary>
@@ -134,7 +125,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/12/02 - Part 1</title>
-		<itunes:order>10</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Anne's Birthday December Live Mix</itunes:subtitle>
 		<itunes:summary>Recorded Live for Anne's Birthday</itunes:summary>
@@ -147,7 +137,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2012/12/02 - Part 2</title>
-		<itunes:order>11</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Anne's Birthday December Live Mix</itunes:subtitle>
 		<itunes:summary>Recorded Live for Anne's Birthday</itunes:summary>
@@ -160,7 +149,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2013/10/05 - Diner Mix</title>
-		<itunes:order>12</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Diner</itunes:subtitle>
 		<itunes:summary>Recorded Live for Christine's Birthday</itunes:summary>
@@ -173,7 +161,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2013/10/05 - Dance Part 1 (80's)</title>
-		<itunes:order>13</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Dance Part 1 (80's)</itunes:subtitle>
 		<itunes:summary>Recorded Live for Christine's Birthday</itunes:summary>
@@ -186,7 +173,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2013/10/05 - Dance Part 2 (Club)</title>
-		<itunes:order>13</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Dance Part 2 (Club)</itunes:subtitle>
 		<itunes:summary>Recorded Live for Christine's Birthday</itunes:summary>
@@ -199,7 +185,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2015/01/18 - Pre elastic{ON} Mix</title>
-		<itunes:order>14</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>2015 Home session - pre elastic{ON} Mix</itunes:subtitle>
 		<itunes:summary>2015 Home session - pre elastic{ON} Mix</itunes:summary>
@@ -212,7 +197,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2015/11/21 - Fred Birthday Live Mix - Part 1</title>
-		<itunes:order>15</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Fred Birthday Live Mix - Part 1</itunes:subtitle>
 		<itunes:summary>Recorded live at "Le Crystal"</itunes:summary>
@@ -225,7 +209,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2015/11/21 - Fred Birthday Live Mix - Part 2</title>
-		<itunes:order>16</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Fred Birthday Live Mix - Part 2</itunes:subtitle>
 		<itunes:summary>Recorded live at "Le Crystal"</itunes:summary>
@@ -238,7 +221,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2016/02/12 - Pre elastic{ON}'16 Mix</title>
-		<itunes:order>17</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Pre elastic{ON}'16 Mix</itunes:subtitle>
 		<itunes:summary>Home session - Pre elastic{ON}'16 Mix</itunes:summary>
@@ -251,7 +233,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2016/07/02 - Fred Birthday</title>
-		<itunes:order>18</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Live - Fred Birthday</itunes:subtitle>
 		<itunes:summary>Live - Fred Birthday</itunes:summary>
@@ -264,7 +245,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2016/08/28 - Summer 2016 Garden Mix</title>
-		<itunes:order>19</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Summer 2016 Garden Mix</itunes:subtitle>
 		<itunes:summary>Home session - Summer 2016 Garden Mix</itunes:summary>
@@ -277,7 +257,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2017/03/05 - Winter 2017 Pre elastic{ON}'17 Mix</title>
-		<itunes:order>20</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Winter 2017 Pre elastic{ON}'17 Mix</itunes:subtitle>
 		<itunes:summary>Home session - Winter 2017 Pre elastic{ON}'17 Mix</itunes:summary>
@@ -290,7 +269,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2017/04/20 - BreizhCamp 2017 Keynote Mix</title>
-		<itunes:order>21</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>BreizhCamp 2017 Keynote Mix</itunes:subtitle>
 		<itunes:summary>Live session recorded at BreizhCamp 2017 during the Keynote</itunes:summary>
@@ -303,7 +281,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2017/04/20 - BreizhCamp 2017 Meet And Greet Party Mix</title>
-		<itunes:order>22</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>BreizhCamp 2017 Meet And Greet Party Mix</itunes:subtitle>
 		<itunes:summary>Live session recorded at BreizhCamp 2017 during the Meet And Greet Party</itunes:summary>
@@ -316,7 +293,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2018/03/29 - BreizhCamp 2018 Meet And Greet Party Mix</title>
-		<itunes:order>23</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>BreizhCamp 2018 Meet And Greet Party Mix (with Julien Ponge and David Pilato)</itunes:subtitle>
 		<itunes:summary>Live session recorded at BreizhCamp 2018 during the Meet And Greet Party</itunes:summary>
@@ -329,7 +305,6 @@
 	</item>
 	<item>
 		<title>DJ Dadoo.net Mix #2019/08/31 - Wedding Natacha - Warmup</title>
-		<itunes:order>24</itunes:order>
 		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 		<itunes:subtitle>Wedding Natacha - Warmup</itunes:subtitle>
 		<itunes:summary>Live session recorded in Zudausques</itunes:summary>
