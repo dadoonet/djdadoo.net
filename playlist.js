@@ -1,5 +1,10 @@
 var dadoonetPlayList = [
   {
+    title: '1er An - Lolo et Mika',
+    file: 'http://dj.david.pilato.fr/mixes/2020-01-01-LoloEtMika-1An-fullmix.mp3',
+    howl: null
+  },
+  {
     title: 'Wedding Natacha - Warm Up',
     file: 'http://dj.david.pilato.fr/mixes/2019-08-31-Wedding-Natacha-Warmup.mp3',
     howl: null

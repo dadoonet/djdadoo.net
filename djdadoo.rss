@@ -4,7 +4,7 @@
 	<title>DJ Dadoo.net mixes</title>
 	<link>http://djdadoo.pilato.fr/</link>
 	<language>en</language>
-	<copyright>&#x2117; &amp; &#xA9; 2012-2016 DJ Dadoo.net</copyright>
+	<copyright>&#x2117; &amp; &#xA9; 2012-2020 DJ Dadoo.net</copyright>
 	<itunes:subtitle>Just playing with my DDJ-T1</itunes:subtitle>
 	<itunes:author>DJ Dadoo.net ;-)</itunes:author>
 	<itunes:summary>If you love funk and DJ groove sound, you will like theses mixes ! Enjoy !</itunes:summary>
@@ -313,6 +313,18 @@
 		<guid>http://dj.david.pilato.fr/mixes/2019-08-31-Wedding-Natacha-Warmup.mp3</guid>
 		<pubDate>31 August 2019 22:15:00 +0200</pubDate>
 		<itunes:duration>00:22:25</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2019/12/31 - 1er An - Lolo et Mika</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>1er An - Lolo et Mika</itunes:subtitle>
+		<itunes:summary>Live session recorded in Osny</itunes:summary>
+		<itunes:image href="http://dj.david.pilato.fr/img/20191231-1erAnLoloEtMika.jpeg" />
+		<enclosure url="http://dj.david.pilato.fr/mixes/2020-01-01-LoloEtMika-1An-fullmix.mp3" length="341528811" type="audio/mpeg" />
+		<guid>http://dj.david.pilato.fr/mixes/2020-01-01-LoloEtMika-1An-fullmix.mp3</guid>
+		<pubDate>31 December 2019 23:59:00 +0200</pubDate>
+		<itunes:duration>03:57:10</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 	</item>
 	
