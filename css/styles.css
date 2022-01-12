@@ -160,7 +160,7 @@ body {
     left: 0;
     top: 50%;
     margin: -15% auto;
-    display: none;
+    display: block;
     cursor: pointer;
     opacity: 0.8;
     -webkit-user-select: none;
