@@ -22,6 +22,7 @@ elms.forEach(function(elm) {
 var Player = function(playlist) {
     this.playlist = playlist;
     this.index = 0;
+    this.howl = null;
 
     // Display the title of the first track.
     track.innerHTML = '1. ' + playlist[0].title;
@@ -51,10 +52,10 @@ Player.prototype = {
 
         // If we already loaded this track, use the current one.
         // Otherwise, setup and load a new Howl.
-        if (data.howl) {
-            sound = data.howl;
+        if (this.howl) {
+            sound = this.howl;
         } else {
-            sound = data.howl = new Howl({
+            sound = this.howl = new Howl({
                 src: data.file,
                 html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
                 onplay: function() {
@@ -128,7 +129,7 @@ Player.prototype = {
         var self = this;
 
         // Get the Howl we want to manipulate.
-        var sound = self.playlist[self.index].howl;
+        var sound = self.howl;
 
         // Puase the sound.
         sound.pause();
@@ -170,8 +171,10 @@ Player.prototype = {
         var self = this;
 
         // Stop the current track.
-        if (self.playlist[self.index].howl) {
-            self.playlist[self.index].howl.stop();
+        if (self.howl) {
+            self.howl.stop();
+            self.howl.unload();
+            self.howl = null;
         }
 
         // Reset progress.
@@ -205,7 +208,7 @@ Player.prototype = {
         var self = this;
 
         // Get the Howl we want to manipulate.
-        var sound = self.playlist[self.index].howl;
+        var sound = self.howl;
 
         // Convert the percent into a seek position.
         if (sound.playing()) {
@@ -220,7 +223,7 @@ Player.prototype = {
         var self = this;
 
         // Get the Howl we want to manipulate.
-        var sound = self.playlist[self.index].howl;
+        var sound = self.howl;
 
         // Determine our current seek position.
         var seek = sound.seek() || 0;
