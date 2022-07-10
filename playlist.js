@@ -1,4 +1,7 @@
 var dadoonetPlayList = [{
+        title: 'Cocktail Mix - Wedding - Sucy en Brie',
+        file: 'https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3'
+    }, {
         title: '1er An - Lolo et Mika',
         file: 'https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3'
     },

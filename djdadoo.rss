@@ -327,6 +327,18 @@
 		<itunes:duration>03:57:10</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2022/07/10 - Cocktail Mix - Wedding Sucy en Brie</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Cocktail Mix - Wedding Sucy en Brie</itunes:subtitle>
+		<itunes:summary>Live session recorded in Sucy en Brie</itunes:summary>
+		<itunes:image href="https://dj.david.pilato.fr/img/20220709-cocktail-mix.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3" length="321574815" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3</guid>
+		<pubDate>09 July 2022 18:00:00 +0200</pubDate>
+		<itunes:duration>02:13:59</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>
