@@ -339,6 +339,54 @@
 		<itunes:duration>02:13:59</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2022/10/29 - Cocktail Mix - Anniversaire Gérard, Cergy</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Cocktail Mix - Anniversaire Gérard, Cergy</itunes:subtitle>
+		<itunes:summary>Live session recorded in Cergy</itunes:summary>
+		<itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3" length="239847196" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3</guid>
+		<pubDate>29 October 2022 20:00:00 +0200</pubDate>
+		<itunes:duration>01:39:56</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2022/10/29 - Danse Part 1 - Anniversaire Gérard, Cergy</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Danse Part 1 - Anniversaire Gérard, Cergy</itunes:subtitle>
+		<itunes:summary>Live session recorded in Cergy</itunes:summary>
+		<itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3" length="363647648" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3</guid>
+		<pubDate>29 October 2022 23:00:00 +0200</pubDate>
+		<itunes:duration>02:31:22</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2022/10/29 - Danse Part 2 - Anniversaire Gérard, Cergy</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Danse Part 2 - Anniversaire Gérard, Cergy</itunes:subtitle>
+		<itunes:summary>Live session recorded in Cergy</itunes:summary>
+		<itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3" length="85174775" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3</guid>
+		<pubDate>30 October 2022 01:00:00 +0200</pubDate>
+		<itunes:duration>00:35:27</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2022/10/29 - Closing Mix - Anniversaire Gérard, Cergy</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Closing Mix - Anniversaire Gérard, Cergy</itunes:subtitle>
+		<itunes:summary>Live session recorded in Cergy</itunes:summary>
+		<itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3" length="55884546" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3</guid>
+		<pubDate>30 October 2022 03:00:00 +0100</pubDate>
+		<itunes:duration>00:23:17</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>

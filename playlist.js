@@ -1,4 +1,16 @@
 var dadoonetPlayList = [{
+        title: 'Cocktail Mix - Anniversaire Gérard - Cergy',
+        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3'
+    },{
+        title: 'Danse Part 1 - Anniversaire Gérard - Cergy',
+        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3'
+    },{
+        title: 'Danse Part 2 - Anniversaire Gérard - Cergy',
+        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3'
+    },{
+        title: 'Closing Mix - Anniversaire Gérard - Cergy',
+        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3'
+    },{
         title: 'Cocktail Mix - Wedding - Sucy en Brie',
         file: 'https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3'
     }, {
