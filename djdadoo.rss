@@ -399,6 +399,30 @@
 		<itunes:duration>01:06:23</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2022/12/17 - Meet Your Soulmate - Danse part 1, Paris</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Meet Your Soulmate - Danse part 1, Paris</itunes:subtitle>
+		<itunes:summary>Live session recorded at Les Spectacles, Paris</itunes:summary>
+		<itunes:image href="https://dj.david.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3" length="79650741" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3</guid>
+		<pubDate>17 December 2022 20:00:00 +0100</pubDate>
+		<itunes:duration>00:33:11</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2022/12/17 - Meet Your Soulmate - Danse part 2, Paris</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Meet Your Soulmate - Danse part 2, Paris</itunes:subtitle>
+		<itunes:summary>Live session recorded at Les Spectacles, Paris</itunes:summary>
+		<itunes:image href="https://dj.david.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part2.mp3" length="96781843" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part2.mp3</guid>
+		<pubDate>17 December 2022 20:00:00 +0100</pubDate>
+		<itunes:duration>00:40:20</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>
