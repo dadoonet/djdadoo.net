@@ -1,4 +1,7 @@
 var dadoonetPlayList = [{
+        title: 'Warmup - Meet Your Soul Mate - Paris',
+        file: 'https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3'
+    },{
         title: 'Cocktail Mix - Anniversaire Gérard - Cergy',
         file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3'
     },{
