@@ -1,4 +1,7 @@
 var dadoonetPlayList = [{
+        title: 'Studio Mix - Snowcamp - Cergy',
+        file: 'https://storage.googleapis.com/djdadoo/2023-01-23-Snowcamp.mp3'
+    },{
         title: 'Warmup - Meet Your Soul Mate - Paris',
         file: 'https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3'
     },{
