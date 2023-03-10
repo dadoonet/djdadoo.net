@@ -9,7 +9,7 @@
  */
 
 // Cache references to DOM elements.
-var elms = ['track', 'timer', 'duration', 'playBtn', 'pauseBtn', 'prevBtn', 'nextBtn', 'playlistBtn', 'volumeBtn', 'progress', 'bar', 'wave', 'loading', 'playlist', 'list', 'volume', 'barEmpty', 'barFull', 'sliderBtn'];
+var elms = ['track', 'timer', 'duration', 'playBtn', 'pauseBtn', 'prevBtn', 'nextBtn', 'playlistBtn', 'volumeBtn', 'progress', 'bar', 'wave', 'loading', 'playlist', 'list', 'volume', 'barEmpty', 'barFull', 'sliderBtn', 'image'];
 elms.forEach(function(elm) {
     window[elm] = document.getElementById(elm);
 });
@@ -26,6 +26,11 @@ var Player = function(playlist) {
 
     // Display the title of the first track.
     track.innerHTML = '1. ' + playlist[0].title;
+    if (playlist[0].image != null) {
+        image.src = playlist[0].image;
+    } else {
+        image.src = "djdadoo-new.jpg";
+    }
 
     // Setup the playlist display.
     playlist.forEach(function(song) {
@@ -75,6 +80,11 @@ Player.prototype = {
                     waveform.style.display = 'block';
                     bar.style.display = 'none';
                     loading.style.display = 'none';
+                    if (data.image != null) {
+                        image.src = data.image;
+                    } else {
+                        image.src = "djdadoo-new.jpg";
+                    }
                 },
                 onend: function() {
                     // Stop the wave animation.

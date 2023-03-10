@@ -1,55 +1,71 @@
 var dadoonetPlayList = [{
         title: 'Elastic France Private Event',
-        file: 'https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3',
+        image: 'img/20230309-ElasticPrivateEvent.jpg'
     },{
         title: 'Studio Mix - Les Envahisseurs - Take 2',
-        file: 'https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3',
+        image: 'img/20230221-studio.jpg'
     },{
         title: 'Studio Mix - Snowcamp - Cergy',
-        file: 'https://storage.googleapis.com/djdadoo/2023-01-23-Snowcamp.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2023-01-23-Snowcamp.mp3',
+        image: 'img/20230123-studio.jpg'
     },{
         title: 'Warmup - Meet Your Soul Mate - Paris',
-        file: 'https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3',
+        image: 'img/20221217-meetyoursoulmate.jpg'
     },{
         title: 'Danse Part 1 - Meet Your Soul Mate - Paris',
-        file: 'https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3',
+        image: 'img/20221217-meetyoursoulmate.jpg'
     },{
         title: 'Danse Part 2 - Meet Your Soul Mate - Paris',
-        file: 'https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part2.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part2.mp3',
+        image: 'img/20221217-meetyoursoulmate.jpg'
     },{
         title: 'Cocktail Mix - Anniversaire Gérard - Cergy',
-        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3',
+        image: 'img/20221029-Anniversaire-Gerard.jpg'
     },{
         title: 'Danse Part 1 - Anniversaire Gérard - Cergy',
-        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3',
+        image: 'img/20221029-Anniversaire-Gerard.jpg'
     },{
         title: 'Danse Part 2 - Anniversaire Gérard - Cergy',
-        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3',
+        image: 'img/20221029-Anniversaire-Gerard.jpg'
     },{
         title: 'Closing Mix - Anniversaire Gérard - Cergy',
-        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3',
+        image: 'img/20221029-Anniversaire-Gerard.jpg'
     },{
         title: 'Cocktail Mix - Wedding - Sucy en Brie',
-        file: 'https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3',
+        image: 'img/20220709-cocktail-mix.jpg'
     }, {
         title: '1er An - Lolo et Mika',
-        file: 'https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3',
+        image: 'img/20191231-1erAnLoloEtMika.jpg'
     },
     {
         title: 'Wedding Natacha - Warm Up',
-        file: 'https://storage.googleapis.com/djdadoo/2019-08-31-Wedding-Natacha-Warmup.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2019-08-31-Wedding-Natacha-Warmup.mp3',
+        image: 'img/20190831-WeddingNatacha.jpg'
     },
     {
         title: 'BreizhCamp 2018 - Meet And Greet Party Mix (with Julien Ponge and David Pilato)',
-        file: 'https://storage.googleapis.com/djdadoo/2018-03-29-breizhcamp-meet-and-greet.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2018-03-29-breizhcamp-meet-and-greet.mp3',
+        image: 'img/20180329-breizhcamp-meet-and-greet.jpg'
     },
     {
         title: 'BreizhCamp 2017 - Meet And Greet Party Mix',
-        file: 'https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-meet-and-greet.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-meet-and-greet.mp3',
+        image: 'img/20170420-breizhcamp-meet-and-greet.jpg'
     },
     {
         title: 'BreizhCamp 2017 - Keynote Mix',
-        file: 'https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3',
+        image: 'img/20170420-breizhcamp-keynote.jpg'
     },
     {
         title: 'Winter 2017 Pre Elastic{ON} 17 Mix',
@@ -57,7 +73,8 @@ var dadoonetPlayList = [{
     },
     {
         title: 'Summer 2016 Garden Mix',
-        file: 'https://storage.googleapis.com/djdadoo/2016-08-28-Summer-2016-Garden-Mix.mp3'
+        file: 'https://storage.googleapis.com/djdadoo/2016-08-28-Summer-2016-Garden-Mix.mp3',
+        image: 'img/20160828-garden-mix.jpg'
     },
     {
         title: 'Live - Fred Birthday',
