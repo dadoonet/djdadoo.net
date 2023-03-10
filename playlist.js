@@ -1,4 +1,7 @@
 var dadoonetPlayList = [{
+        title: 'Elastic France Private Event',
+        file: 'https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3'
+    },{
         title: 'Studio Mix - Les Envahisseurs - Take 2',
         file: 'https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3'
     },{

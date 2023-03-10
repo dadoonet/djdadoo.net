@@ -451,6 +451,20 @@
 		<itunes:duration>01:07:47</itunes:duration>
 		<itunes:keywords>DJ Dadoo, Studio, Mix</itunes:keywords>
 	</item>
+	<item>
+		<title>DJ Dadoo.net Mix #2023/03/09 - Elastic France Private Event</title>
+		<itunes:author>DJ Dadoo.net ;-)</itunes:author>
+		<itunes:subtitle>Elastic France Private Event</itunes:subtitle>
+		<itunes:summary>Recorded from Elastic France office, Paris.
+			First time for a live event on my DJM-V10-LF. Please bear with me!
+		</itunes:summary>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230309-ElasticPrivateEvent.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3" length="162691470" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3</guid>
+		<pubDate>09 March 2023 19:00:00 +0100</pubDate>
+		<itunes:duration>03:37:24</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+	</item>
 	
 	</channel>
 </rss>
