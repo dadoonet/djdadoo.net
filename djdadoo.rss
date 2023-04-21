@@ -502,6 +502,21 @@
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2023/04/15 - Heera's Birthday party</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session recorded at Golf de Saint-Ouen l'Aumône</itunes:subtitle>
+		<description>Recorded at Golf de Saint-Ouen l'Aumône.
+			Second time for a live event on my DJM-V10-LF. For Heera's birthday.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230415-Heera.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-04-15-AnniversaireHeera.mp3" length="114173178" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-04-15-AnniversaireHeera.mp3</guid>
+		<pubDate>15 April 2023 23:30:00 +0100</pubDate>
+		<itunes:duration>00:47:34</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>

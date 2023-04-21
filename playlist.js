@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+        title: 'Heera\'s Birthday party',
+        file: 'https://storage.googleapis.com/djdadoo/2023-04-15-AnniversaireHeera.mp3',
+        image: 'img/20230415-Heera.jpg'
+    },{
         title: 'Elastic France Private Event',
         file: 'https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3',
         image: 'img/20230309-ElasticPrivateEvent.jpg'
