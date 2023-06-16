@@ -517,6 +517,21 @@
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2023/06/13 - Le Camping des Speakers</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session recorded for le Camping des Speakers</itunes:subtitle>
+		<description>Recorded in Baden, Golf du Morbihan at Camping Mané Guernehué.
+			Was recorded during the Camping des Speakers dinner.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230613-CampingDesSpeakers.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3" length="440484341" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3</guid>
+		<pubDate>13 June 2023 19:30:00 +0200</pubDate>
+		<itunes:duration>03:03:32</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>

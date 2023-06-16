@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+        title: 'Le Camping des Speakers',
+        file: 'https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3',
+        image: 'img/20230613-CampingDesSpeakers.jpg'
+    },{
         title: 'Heera\'s Birthday party',
         file: 'https://storage.googleapis.com/djdadoo/2023-04-15-AnniversaireHeera.mp3',
         image: 'img/20230415-Heera.jpg'
