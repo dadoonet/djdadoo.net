@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+        title: 'Funk / House Summer Mix 2023',
+        file: 'https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3',
+        image: 'img/20230825-HouseFunkSummerMix.jpg'
+    },{
         title: 'Le Camping des Speakers',
         file: 'https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3',
         image: 'img/20230613-CampingDesSpeakers.jpg'

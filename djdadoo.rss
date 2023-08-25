@@ -532,6 +532,20 @@
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2023/08/25 - Funk / House Summer Mix 2023</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Home session recorded for my brother</itunes:subtitle>
+		<description>Recorded in Cergy, France.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230825-HouseFunkSummerMix.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3" length="155693976" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3</guid>
+		<pubDate>25 August 2023 19:30:00 +0200</pubDate>
+		<itunes:duration>01:04:52</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Home, Mix, Funk, House</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>
