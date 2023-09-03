@@ -546,6 +546,34 @@
 		<itunes:keywords>DJ Dadoo, Home, Mix, Funk, House</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2023/09/02 - Anniversaire Caroline et Nicolas 50 ans - Part 1</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded in Cergy, France, for Caro and Nico's birthdays.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230902-anniv-caronico.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-02-AnnivCaroNicoPart1.mp3" length="216909566" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-09-02-AnnivCaroNicoPart1.mp3</guid>
+		<pubDate>02 September 2023 23:30:00 +0200</pubDate>
+		<itunes:duration>01:30:23</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
+	<item>
+		<title>David's Mix #2023/09/02 - Anniversaire Caroline et Nicolas 50 ans - Part 2</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded in Cergy, France, for Caro and Nico's birthdays.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230902-anniv-caronico.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-03-AnnivCaroNicoPart2.mp3" length="220092325" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-09-03-AnnivCaroNicoPart2.mp3</guid>
+		<pubDate>03 September 2023 02:00:00 +0200</pubDate>
+		<itunes:duration>01:31:42</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>
