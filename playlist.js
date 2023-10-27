@@ -1,4 +1,16 @@
 var dadoonetPlayList = [{
+    title: 'Anniversaire Lucas 25 ans - Dance Part 2',
+    file: 'https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3',
+    image: 'img/20230916-anniversaire-lucas.jpg'
+},{
+    title: 'Anniversaire Lucas 25 ans - Dance Part 1',
+    file: 'https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3',
+    image: 'img/20230916-anniversaire-lucas.jpg'
+},{
+    title: 'Anniversaire Lucas 25 ans - Warmup',
+    file: 'https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3',
+    image: 'img/20230916-anniversaire-lucas.jpg'
+},{
     title: 'Anniversaire Caroline et Nicolas 50 ans - Part 2',
     file: 'https://storage.googleapis.com/djdadoo/2023-09-03-AnnivCaroNicoPart2.mp3',
     image: 'img/20230902-anniv-caronico.jpg'

@@ -574,6 +574,48 @@
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Warmup</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded live in Le Mans, France, for Lucas's birthday.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3" length="68211173" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3</guid>
+		<pubDate>16 September 2023 23:30:00 +0200</pubDate>
+		<itunes:duration>00:28:25</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
+	<item>
+		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Part 1</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded live in Le Mans, France, for Lucas's birthday.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3" length="86436290" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3</guid>
+		<pubDate>17 September 2023 00:25:00 +0200</pubDate>
+		<itunes:duration>00:36:01</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
+	<item>
+		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Part 2</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded live in Le Mans, France, for Lucas's birthday.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3" length="269534637" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3</guid>
+		<pubDate>17 September 2023 01:00:00 +0200</pubDate>
+		<itunes:duration>01:52:18</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>
