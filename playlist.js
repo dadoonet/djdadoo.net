@@ -1,4 +1,12 @@
 var dadoonetPlayList = [{
+    title: 'Anniversaire Gisèle 50 ans - Part 2',
+    file: 'https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3',
+    image: 'img/20240120-anniv-gisele.jpg'
+},{
+    title: 'Anniversaire Gisèle 50 ans - Part 1',
+    file: 'https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part1.mp3',
+    image: 'img/20240120-anniv-gisele.jpg'
+},{
     title: 'Anniversaire Lucas 25 ans - Dance Part 2',
     file: 'https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3',
     image: 'img/20230916-anniversaire-lucas.jpg'

@@ -616,6 +616,34 @@
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2024/01/20 - Anniversaire Gisèle 50 ans - Part 1</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20240120-anniv-gisele.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part1.mp3" length="383190500" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part1.mp3</guid>
+		<pubDate>20 January 2023 20:30:00 +0100</pubDate>
+		<itunes:duration>02:39:40</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
+	<item>
+		<title>David's Mix #2024/01/20 - Anniversaire Gisèle 50 ans - Part 2</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20240120-anniv-gisele.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3" length="254624165" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3</guid>
+		<pubDate>20 January 2023 23:30:00 +0100</pubDate>
+		<itunes:duration>01:46:06</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>
