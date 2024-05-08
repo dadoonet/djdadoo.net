@@ -658,6 +658,20 @@
 		<itunes:keywords>DJ Dadoo, Live, Mix, Funk, Disco, House</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>Ò
+	<item>
+		<title>David's Mix #2024/05/04 - Mariage Delphine et Laurent - Part 1</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded live at Le Domaine de Brunel, Aincourt, France, for Delphine and Laurent wedding.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20240504-mariage-DelphineLaurent.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3" length="42919324" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3</guid>
+		<pubDate>04 May 2024 17:00:00 +0200</pubDate>
+		<itunes:duration>00:37:37</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>Ò
 	
 	</channel>
 </rss>

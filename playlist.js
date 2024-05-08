@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Mariage Delphine et Laurent - Part 1',
+    file: 'https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3',
+    image: 'img/20240504-mariage-DelphineLaurent.jpg'
+},{
     title: 'Anniversaire Eric 60 ans - The Funk/Disco/House mix',
     file: 'https://storage.googleapis.com/djdadoo/2024-04-13-60ansEric.mp3',
     image: 'img/20240413-60ansEric.jpg'
