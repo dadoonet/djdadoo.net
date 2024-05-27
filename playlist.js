@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Mariage Delphine et Laurent - Part 2',
+    file: 'https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part2.mp3',
+    image: 'img/20240504-mariage-DelphineLaurent.jpg'
+},{
     title: 'Mariage Delphine et Laurent - Part 1',
     file: 'https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3',
     image: 'img/20240504-mariage-DelphineLaurent.jpg'
