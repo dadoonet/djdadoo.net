@@ -686,6 +686,20 @@
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2024/05/26 - Lisa Forever 2024</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>Recorded live at Taverny, France, for Lisa Forever 2024 event.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20240526-LisaForever.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3" length="70793165" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3</guid>
+		<pubDate>16 May 2024 17:15:00 +0200</pubDate>
+		<itunes:duration>00:29:30</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>
