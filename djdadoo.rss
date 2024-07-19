@@ -700,6 +700,20 @@
 		<itunes:keywords>DJ Dadoo, Live, Mix</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2024/07/19 - Riviera Dev Reborn</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live session</itunes:subtitle>
+		<description>I tried to redo a small part of the live mix I did in Nice, France, for the Riviera Dev event.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20240719-rivieradev.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a" length="147699389" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a</guid>
+		<pubDate>19 July 2024 15:30:00 +0200</pubDate>
+		<itunes:duration>01:03:06</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>

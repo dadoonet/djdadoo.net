@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Riviera Dev Reborn',
+    file: 'https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a',
+    image: 'img/20240719-rivieradev.jpg'
+},{
     title: 'Lisa Forever 2024',
     file: 'https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3',
     image: 'img/20240526-LisaForever.jpg'
