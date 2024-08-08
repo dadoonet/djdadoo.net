@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Summer Holidays Mix',
+    file: 'https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3',
+    image: 'img/20240808-SummerHolidaysMix.jpg'
+},{
     title: 'Riviera Dev Reborn',
     file: 'https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a',
     image: 'img/20240719-rivieradev.jpg'

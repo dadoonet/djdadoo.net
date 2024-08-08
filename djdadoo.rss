@@ -714,6 +714,22 @@
 		<itunes:keywords>DJ Dadoo, Mix</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2024/08/08 - Summer Holidays Mix</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Studio session</itunes:subtitle>
+		<description>
+			Recorded in Cergy, France, for the summer holidays so I have some music to listen while driving.
+			Tribal, deep house, house and funky vibes.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20240808-SummerHolidaysMix.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3" length="291978390" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3</guid>
+		<pubDate>08 August 2024 17:30:00 +0200</pubDate>
+		<itunes:duration>02:01:39</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Mix</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 	
 	</channel>
 </rss>
