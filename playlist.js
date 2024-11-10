@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'DevFest Toulouse 2024',
+    file: 'https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3',
+    image: 'img/20241107-DevFestToulouse.jpg'
+},{
     title: 'Summer Holidays Mix',
     file: 'https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3',
     image: 'img/20240808-SummerHolidaysMix.jpg'
