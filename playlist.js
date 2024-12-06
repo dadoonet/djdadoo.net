@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Elastic DecemberFest 2024',
+    file: 'https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3',
+    image: 'img/20241205-ElasticDecemberFest.jpg'
+},{
     title: 'DevFest Toulouse 2024',
     file: 'https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3',
     image: 'img/20241107-DevFestToulouse.jpg'

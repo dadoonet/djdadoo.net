@@ -747,6 +747,22 @@
 		<itunes:keywords>DJ Dadoo, Mix, Live, 4 hands</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
-	
+		<item>
+		<title>David's Mix #2024/12/05 - Elastic DecemberFest 2024</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Live from Elastic Office Paris, FR</itunes:subtitle>
+		<description>
+			Live from Elastic Office, Paris, France, for the DecemberFest private party.
+			Using 2 CDJ3000 and 1 DJM-V10-LF.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20241205-ElasticDecemberFest.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3" length="196081703" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3</guid>
+		<pubDate>05 December 2024 19:30:00 +0100</pubDate>
+		<itunes:duration>01:22:42</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Mix, Live</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
+
 	</channel>
 </rss>
