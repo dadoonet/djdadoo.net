@@ -763,6 +763,23 @@
 		<itunes:keywords>DJ Dadoo, Mix, Live</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	</item>
+		<item>
+		<title>David's Mix #2025/02/06 - Touraine Tech 2025</title>
+		<itunes:author>David Pilato and Julien Briault</itunes:author>
+		<itunes:subtitle>Live from Hôtel Goüin in Tours, FR</itunes:subtitle>
+		<description>
+			Live set for Touraine Tech 2025, recorded at Hôtel Goüin in Tours, FR.
+			Using 2 CDJ3000 and 1 DJM-V10-LF.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20250206-TouraineTech.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3" length="264659489" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3</guid>
+		<pubDate>06 February 2025 19:30:00 +0100</pubDate>
+		<itunes:duration>01:50:16</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Mix, Live</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 
 	</channel>
 </rss>
