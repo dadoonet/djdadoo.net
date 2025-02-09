@@ -747,7 +747,7 @@
 		<itunes:keywords>DJ Dadoo, Mix, Live, 4 hands</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
-		<item>
+	<item>
 		<title>David's Mix #2024/12/05 - Elastic DecemberFest 2024</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live from Elastic Office Paris, FR</itunes:subtitle>
@@ -763,8 +763,7 @@
 		<itunes:keywords>DJ Dadoo, Mix, Live</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
-	</item>
-		<item>
+	<item>
 		<title>David's Mix #2025/02/06 - Touraine Tech 2025</title>
 		<itunes:author>David Pilato and Julien Briault</itunes:author>
 		<itunes:subtitle>Live from Hotel Gouin in Tours, FR</itunes:subtitle>
