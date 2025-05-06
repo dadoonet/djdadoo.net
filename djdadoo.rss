@@ -779,6 +779,21 @@
 		<itunes:keywords>DJ Dadoo, Mix, Live</itunes:keywords>
 		<itunes:explicit>false</itunes:explicit>
 	</item>
+	<item>
+		<title>David's Mix #2025/05/06 - EAH 2025</title>
+		<itunes:author>David Pilato</itunes:author>
+		<itunes:subtitle>Recorded from my studio in Cergy, FR</itunes:subtitle>
+		<description>
+			Using 2 CDJ3000 and 1 DJM-V10-LF.
+		</description>
+		<itunes:image href="https://dj.david.pilato.fr/img/20250506-EAH.jpg" />
+		<enclosure url="https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3" length="136903843" type="audio/mpeg" />
+		<guid>https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3</guid>
+		<pubDate>06 May 2025 17:00:00 +0100</pubDate>
+		<itunes:duration>00:57:03</itunes:duration>
+		<itunes:keywords>DJ Dadoo, Mix, Studio</itunes:keywords>
+		<itunes:explicit>false</itunes:explicit>
+	</item>
 
 	</channel>
 </rss>

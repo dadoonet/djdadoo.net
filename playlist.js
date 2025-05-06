@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'EAH 2025',
+    file: 'https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3',
+    image: 'img/20250506-EAH.jpg'
+},{
     title: 'Touraine Tech 2025',
     file: 'https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3',
     image: 'img/20250206-TouraineTech.jpg'
