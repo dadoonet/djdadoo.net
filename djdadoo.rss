@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
-	<title>David Pilato mixes</title>
+	<title>DJ Elky mixes</title>
 	<link>https://djdadoo.pilato.fr/</link>
 	<language>en</language>
+	<copyright>&#169; 2011-2025 David Pilato</copyright>
 	<itunes:subtitle>Just playing with my DJ gears, from DDJ-T1 to CDJ3000</itunes:subtitle>
 	<itunes:author>David Pilato</itunes:author>
 	<itunes:summary>If you love funk and DJ groove sound, you will like theses mixes ! Enjoy !</itunes:summary>
@@ -16,6 +17,8 @@
 	<itunes:category text="Music" />
 	<itunes:explicit>false</itunes:explicit>
 	<item>
+		<itunes:season>1</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2011/09/29</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Funk mix</itunes:subtitle>
@@ -29,6 +32,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2012/01/22</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Funk groove mix</itunes:subtitle>
@@ -42,6 +47,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2012/02/19</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Club mix</itunes:subtitle>
@@ -55,6 +62,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2012/03/04</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>March mix</itunes:subtitle>
@@ -68,6 +77,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>4</itunes:episode>
 		<title>David's Mix #2012/04/01</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>April mix</itunes:subtitle>
@@ -81,6 +92,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>5</itunes:episode>
 		<title>David's Mix #2012/05/13</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>May mix</itunes:subtitle>
@@ -94,6 +107,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>6</itunes:episode>
 		<title>David's Mix #2012/07/07 - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>July Live mix</itunes:subtitle>
@@ -107,6 +122,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>7</itunes:episode>
 		<title>David's Mix #2012/07/07 - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>July Live mix</itunes:subtitle>
@@ -120,6 +137,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>8</itunes:episode>
 		<title>David's Mix #2012/08/18</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Summer mix</itunes:subtitle>
@@ -133,6 +152,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>9</itunes:episode>
 		<title>David's Mix #2012/12/02 - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Anne's Birthday December Live Mix</itunes:subtitle>
@@ -146,6 +167,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>2</itunes:season>
+		<itunes:episode>10</itunes:episode>
 		<title>David's Mix #2012/12/02 - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Anne's Birthday December Live Mix</itunes:subtitle>
@@ -159,6 +182,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>3</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2013/10/05 - Diner Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Diner</itunes:subtitle>
@@ -172,6 +197,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>3</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2013/10/05 - Dance Part 1 (80's)</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Dance Part 1 (80's)</itunes:subtitle>
@@ -185,6 +212,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>3</itunes:season>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2013/10/05 - Dance Part 2 (Club)</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Dance Part 2 (Club)</itunes:subtitle>
@@ -198,6 +227,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>4</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2015/01/18 - Pre elastic{ON} Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>2015 Home session - pre elastic{ON} Mix</itunes:subtitle>
@@ -211,6 +242,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>4</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2015/11/21 - Fred Birthday Live Mix - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Fred Birthday Live Mix - Part 1</itunes:subtitle>
@@ -224,6 +257,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>4</itunes:season>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2015/11/21 - Fred Birthday Live Mix - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Fred Birthday Live Mix - Part 2</itunes:subtitle>
@@ -237,6 +272,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>5</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2016/02/12 - Pre elastic{ON}'16 Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Pre elastic{ON}'16 Mix</itunes:subtitle>
@@ -250,6 +287,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>5</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2016/07/02 - Fred Birthday</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live - Fred Birthday</itunes:subtitle>
@@ -263,6 +302,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>5</itunes:season>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2016/08/28 - Summer 2016 Garden Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Summer 2016 Garden Mix</itunes:subtitle>
@@ -276,6 +317,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>6</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2017/03/05 - Winter 2017 Pre elastic{ON}'17 Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Winter 2017 Pre elastic{ON}'17 Mix</itunes:subtitle>
@@ -289,6 +332,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>6</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2017/04/20 - BreizhCamp 2017 Keynote Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>BreizhCamp 2017 Keynote Mix</itunes:subtitle>
@@ -302,6 +347,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>6</itunes:season>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2017/04/20 - BreizhCamp 2017 Meet And Greet Party Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>BreizhCamp 2017 Meet And Greet Party Mix</itunes:subtitle>
@@ -315,6 +362,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>7</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2018/03/29 - BreizhCamp 2018 Meet And Greet Party Mix</title>
 		<itunes:author>David Pilato / Julien Ponge</itunes:author>
 		<itunes:subtitle>BreizhCamp 2018 Meet And Greet Party Mix (with Julien Ponge and David Pilato)</itunes:subtitle>
@@ -328,6 +377,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>8</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2019/08/31 - Wedding Natacha - Warmup</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Wedding Natacha - Warmup</itunes:subtitle>
@@ -341,6 +392,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>8</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2019/12/31 - 1er An - Lolo et Mika</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>1er An - Lolo et Mika</itunes:subtitle>
@@ -354,6 +407,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>9</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2022/07/10 - Cocktail Mix - Wedding Sucy en Brie</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Cocktail Mix - Wedding Sucy en Brie</itunes:subtitle>
@@ -367,6 +422,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>9</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2022/10/29 - Cocktail Mix - Anniversaire Gérard, Cergy</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Cocktail Mix - Anniversaire Gérard, Cergy</itunes:subtitle>
@@ -380,6 +437,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>9</itunes:season>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2022/10/29 - Danse Part 1 - Anniversaire Gérard, Cergy</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Danse Part 1 - Anniversaire Gérard, Cergy</itunes:subtitle>
@@ -393,6 +452,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>9</itunes:season>
+		<itunes:episode>4</itunes:episode>
 		<title>David's Mix #2022/10/29 - Danse Part 2 - Anniversaire Gérard, Cergy</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Danse Part 2 - Anniversaire Gérard, Cergy</itunes:subtitle>
@@ -406,6 +467,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>9</itunes:season>
+		<itunes:episode>5</itunes:episode>
 		<title>David's Mix #2022/10/29 - Closing Mix - Anniversaire Gérard, Cergy</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Closing Mix - Anniversaire Gérard, Cergy</itunes:subtitle>
@@ -419,6 +482,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>9</itunes:season>
+		<itunes:episode>6</itunes:episode>
 		<title>David's Mix #2022/12/17 - Meet Your Soulmate - Warmup, Paris</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Meet Your Soulmate - Warmup, Paris</itunes:subtitle>
@@ -432,6 +497,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>9</itunes:season>
+		<itunes:episode>7</itunes:episode>
 		<title>David's Mix #2022/12/17 - Meet Your Soulmate - Danse part 1, Paris</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Meet Your Soulmate - Danse part 1, Paris</itunes:subtitle>
@@ -445,6 +512,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>9</itunes:season>
+		<itunes:episode>8</itunes:episode>
 		<title>David's Mix #2022/12/17 - Meet Your Soulmate - Danse part 2, Paris</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Meet Your Soulmate - Danse part 2, Paris</itunes:subtitle>
@@ -458,6 +527,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2023/01/23 - Snowcamp Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Snowcamp Mix</itunes:subtitle>
@@ -471,6 +542,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2023/02/21 - Les Envahisseurs - Take 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Les Envahisseurs - Take 2</itunes:subtitle>
@@ -488,6 +561,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2023/03/09 - Elastic France Private Event</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Elastic France Private Event</itunes:subtitle>
@@ -503,6 +578,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>4</itunes:episode>
 		<title>David's Mix #2023/04/15 - Heera's Birthday party</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session recorded at Golf de Saint-Ouen l'Aumône</itunes:subtitle>
@@ -518,6 +595,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>5</itunes:episode>
 		<title>David's Mix #2023/06/13 - Le Camping des Speakers</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session recorded for le Camping des Speakers</itunes:subtitle>
@@ -533,6 +612,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>6</itunes:episode>
 		<title>David's Mix #2023/08/25 - Funk / House Summer Mix 2023</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Home session recorded for my brother</itunes:subtitle>
@@ -547,6 +628,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>7</itunes:episode>
 		<title>David's Mix #2023/09/02 - Anniversaire Caroline et Nicolas 50 ans - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -561,6 +644,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>8</itunes:episode>
 		<title>David's Mix #2023/09/02 - Anniversaire Caroline et Nicolas 50 ans - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -575,6 +660,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>9</itunes:episode>
 		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Warmup</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -589,6 +676,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>10</itunes:episode>
 		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -603,6 +692,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>10</itunes:season>
+		<itunes:episode>11</itunes:episode>
 		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -617,6 +708,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2024/01/20 - Anniversaire Gisèle 50 ans - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -631,6 +724,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2024/01/20 - Anniversaire Gisèle 50 ans - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -645,6 +740,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2024/04/13 - Anniversaire Eric 60 ans - The Funk/Disco/House mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -659,6 +756,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>4</itunes:episode>
 		<title>David's Mix #2024/05/04 - Mariage Delphine et Laurent - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -673,6 +772,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>5</itunes:episode>
 		<title>David's Mix #2024/05/04 - Mariage Delphine et Laurent - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -687,6 +788,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>6</itunes:episode>
 		<title>David's Mix #2024/05/26 - Lisa Forever 2024</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -701,6 +804,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>7</itunes:episode>
 		<title>David's Mix #2024/07/19 - Riviera Dev Reborn</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
@@ -715,6 +820,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>8</itunes:episode>
 		<title>David's Mix #2024/08/08 - Summer Holidays Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Studio session</itunes:subtitle>
@@ -731,6 +838,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>9</itunes:episode>
 		<title>David's Mix #2024/11/07 - DevFest Toulouse 2024</title>
 		<itunes:author>David Pilato and Julien Briault</itunes:author>
 		<itunes:subtitle>Live from Labege Diagora, FR</itunes:subtitle>
@@ -748,6 +857,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>11</itunes:season>
+		<itunes:episode>10</itunes:episode>
 		<title>David's Mix #2024/12/05 - Elastic DecemberFest 2024</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live from Elastic Office Paris, FR</itunes:subtitle>
@@ -764,6 +875,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>12</itunes:season>
+		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2025/02/06 - Touraine Tech 2025</title>
 		<itunes:author>David Pilato and Julien Briault</itunes:author>
 		<itunes:subtitle>Live from Hotel Gouin in Tours, FR</itunes:subtitle>
@@ -780,6 +893,8 @@
 		<itunes:explicit>false</itunes:explicit>
 	</item>
 	<item>
+		<itunes:season>12</itunes:season>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2025/05/06 - EAH 2025</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Recorded from my studio in Cergy, FR</itunes:subtitle>
