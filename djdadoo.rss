@@ -947,6 +947,24 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:explicit>false</itunes:explicit>
     <link>https://djdadoo.pilato.fr/</link>
   </item>
+  <item>
+    <itunes:season>2025</itunes:season>
+    <itunes:episode>58</itunes:episode>
+    <title>David's Mix #2025/06/05 - DevQuest Niort 2025</title>
+    <itunes:author>David Pilato</itunes:author>
+    <itunes:subtitle>Recorded live from Niort, FR</itunes:subtitle>
+    <description><![CDATA[<p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>
+      <p>Sadly the recording failed so you can just listen to one part of it.</p>
+      ]]></description>
+    <itunes:image href="https://dj.david.pilato.fr/img/20250605-DevQuest.jpg" />
+    <enclosure url="https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3" length="154976458 " type="audio/mpeg" />
+    <guid>https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3</guid>
+    <pubDate>05 June 2025 18:30:00 +0100</pubDate>
+    <itunes:duration>01:04:34</itunes:duration>
+    <itunes:keywords>DJ Elky, Mix, Live</itunes:keywords>
+    <itunes:explicit>false</itunes:explicit>
+    <link>https://djdadoo.pilato.fr/</link>
+  </item>
 
   </channel>
 </rss>
