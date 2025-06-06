@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="https://www.itunes.com/dtds/podcast-1.0.dtd" 
-  xmlns:content="https://purl.org/rss/1.0/modules/content/"
-  xmlns:podcast="https://podcastindex.org/namespace/1.0"
-  xmlns:atom="https://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+xmlns:podcast="https://podcastindex.org/namespace/1.0"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
   <title>DJ Elky mixes</title>
   <link>https://djdadoo.pilato.fr/</link>
