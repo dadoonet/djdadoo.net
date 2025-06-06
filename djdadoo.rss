@@ -25,7 +25,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <podcast:guid>5e560267-5f32-55d3-b370-8f66f80ddb8f</podcast:guid>
   <podcast:locked>no</podcast:locked>
   <item>
-    <itunes:season>1</itunes:season>
+    <itunes:season>2011</itunes:season>
     <itunes:episode>1</itunes:episode>
     <title>David's Mix #2011/09/29</title>
     <itunes:author>David Pilato</itunes:author>
@@ -41,7 +41,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>2</itunes:episode>
     <title>David's Mix #2012/01/22</title>
     <itunes:author>David Pilato</itunes:author>
@@ -57,7 +57,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>3</itunes:episode>
     <title>David's Mix #2012/02/19</title>
     <itunes:author>David Pilato</itunes:author>
@@ -73,7 +73,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>4</itunes:episode>
     <title>David's Mix #2012/03/04</title>
     <itunes:author>David Pilato</itunes:author>
@@ -89,7 +89,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>5</itunes:episode>
     <title>David's Mix #2012/04/01</title>
     <itunes:author>David Pilato</itunes:author>
@@ -105,7 +105,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>6</itunes:episode>
     <title>David's Mix #2012/05/13</title>
     <itunes:author>David Pilato</itunes:author>
@@ -121,7 +121,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>7</itunes:episode>
     <title>David's Mix #2012/07/07 - Part 1</title>
     <itunes:author>David Pilato</itunes:author>
@@ -137,7 +137,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>8</itunes:episode>
     <title>David's Mix #2012/07/07 - Part 2</title>
     <itunes:author>David Pilato</itunes:author>
@@ -153,7 +153,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>9</itunes:episode>
     <title>David's Mix #2012/08/18</title>
     <itunes:author>David Pilato</itunes:author>
@@ -169,7 +169,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>10</itunes:episode>
     <title>David's Mix #2012/12/02 - Part 1</title>
     <itunes:author>David Pilato</itunes:author>
@@ -185,7 +185,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>2</itunes:season>
+    <itunes:season>2012</itunes:season>
     <itunes:episode>11</itunes:episode>
     <title>David's Mix #2012/12/02 - Part 2</title>
     <itunes:author>David Pilato</itunes:author>
@@ -201,7 +201,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>3</itunes:season>
+    <itunes:season>2013</itunes:season>
     <itunes:episode>12</itunes:episode>
     <title>David's Mix #2013/10/05 - Diner Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -217,7 +217,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>3</itunes:season>
+    <itunes:season>2013</itunes:season>
     <itunes:episode>13</itunes:episode>
     <title>David's Mix #2013/10/05 - Dance Part 1 (80's)</title>
     <itunes:author>David Pilato</itunes:author>
@@ -233,7 +233,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>3</itunes:season>
+    <itunes:season>2013</itunes:season>
     <itunes:episode>14</itunes:episode>
     <title>David's Mix #2013/10/05 - Dance Part 2 (Club)</title>
     <itunes:author>David Pilato</itunes:author>
@@ -249,7 +249,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>4</itunes:season>
+    <itunes:season>2015</itunes:season>
     <itunes:episode>15</itunes:episode>
     <title>David's Mix #2015/01/18 - Pre elastic{ON} Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -265,7 +265,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>4</itunes:season>
+    <itunes:season>2015</itunes:season>
     <itunes:episode>16</itunes:episode>
     <title>David's Mix #2015/11/21 - Fred Birthday Live Mix - Part 1</title>
     <itunes:author>David Pilato</itunes:author>
@@ -281,7 +281,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>4</itunes:season>
+    <itunes:season>2015</itunes:season>
     <itunes:episode>17</itunes:episode>
     <title>David's Mix #2015/11/21 - Fred Birthday Live Mix - Part 2</title>
     <itunes:author>David Pilato</itunes:author>
@@ -297,7 +297,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>5</itunes:season>
+    <itunes:season>2016</itunes:season>
     <itunes:episode>18</itunes:episode>
     <title>David's Mix #2016/02/12 - Pre elastic{ON}'16 Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -313,7 +313,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>5</itunes:season>
+    <itunes:season>2016</itunes:season>
     <itunes:episode>19</itunes:episode>
     <title>David's Mix #2016/07/02 - Fred Birthday</title>
     <itunes:author>David Pilato</itunes:author>
@@ -329,7 +329,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>5</itunes:season>
+    <itunes:season>2016</itunes:season>
     <itunes:episode>20</itunes:episode>
     <title>David's Mix #2016/08/28 - Summer 2016 Garden Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -345,7 +345,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>6</itunes:season>
+    <itunes:season>2017</itunes:season>
     <itunes:episode>21</itunes:episode>
     <title>David's Mix #2017/03/05 - Winter 2017 Pre elastic{ON}'17 Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -361,7 +361,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>6</itunes:season>
+    <itunes:season>2017</itunes:season>
     <itunes:episode>22</itunes:episode>
     <title>David's Mix #2017/04/20 - BreizhCamp 2017 Keynote Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -377,7 +377,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://2017.breizhcamp.org/</link>
   </item>
   <item>
-    <itunes:season>6</itunes:season>
+    <itunes:season>2017</itunes:season>
     <itunes:episode>23</itunes:episode>
     <title>David's Mix #2017/04/20 - BreizhCamp 2017 Meet And Greet Party Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -393,7 +393,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://2017.breizhcamp.org/</link>
   </item>
   <item>
-    <itunes:season>7</itunes:season>
+    <itunes:season>2018</itunes:season>
     <itunes:episode>24</itunes:episode>
     <title>David's Mix #2018/03/29 - BreizhCamp 2018 Meet And Greet Party Mix</title>
     <itunes:author>David Pilato / Julien Ponge</itunes:author>
@@ -409,7 +409,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://2018.breizhcamp.org/</link>
   </item>
   <item>
-    <itunes:season>8</itunes:season>
+    <itunes:season>2019</itunes:season>
     <itunes:episode>25</itunes:episode>
     <title>David's Mix #2019/08/31 - Wedding Natacha - Warmup</title>
     <itunes:author>David Pilato</itunes:author>
@@ -425,7 +425,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>8</itunes:season>
+    <itunes:season>2019</itunes:season>
     <itunes:episode>26</itunes:episode>
     <title>David's Mix #2019/12/31 - 1er An - Lolo et Mika</title>
     <itunes:author>David Pilato</itunes:author>
@@ -441,7 +441,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>9</itunes:season>
+    <itunes:season>2022</itunes:season>
     <itunes:episode>27</itunes:episode>
     <title>David's Mix #2022/07/10 - Cocktail Mix - Wedding Sucy en Brie</title>
     <itunes:author>David Pilato</itunes:author>
@@ -457,7 +457,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>9</itunes:season>
+    <itunes:season>2022</itunes:season>
     <itunes:episode>28</itunes:episode>
     <title>David's Mix #2022/10/29 - Cocktail Mix - Anniversaire Gérard, Cergy</title>
     <itunes:author>David Pilato</itunes:author>
@@ -473,7 +473,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>9</itunes:season>
+    <itunes:season>2022</itunes:season>
     <itunes:episode>29</itunes:episode>
     <title>David's Mix #2022/10/29 - Danse Part 1 - Anniversaire Gérard, Cergy</title>
     <itunes:author>David Pilato</itunes:author>
@@ -489,7 +489,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>9</itunes:season>
+    <itunes:season>2022</itunes:season>
     <itunes:episode>30</itunes:episode>
     <title>David's Mix #2022/10/29 - Danse Part 2 - Anniversaire Gérard, Cergy</title>
     <itunes:author>David Pilato</itunes:author>
@@ -505,7 +505,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>9</itunes:season>
+    <itunes:season>2022</itunes:season>
     <itunes:episode>31</itunes:episode>
     <title>David's Mix #2022/10/29 - Closing Mix - Anniversaire Gérard, Cergy</title>
     <itunes:author>David Pilato</itunes:author>
@@ -521,7 +521,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>9</itunes:season>
+    <itunes:season>2022</itunes:season>
     <itunes:episode>32</itunes:episode>
     <title>David's Mix #2022/12/17 - Meet Your Soulmate - Warmup, Paris</title>
     <itunes:author>David Pilato</itunes:author>
@@ -537,7 +537,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>9</itunes:season>
+    <itunes:season>2022</itunes:season>
     <itunes:episode>33</itunes:episode>
     <title>David's Mix #2022/12/17 - Meet Your Soulmate - Danse part 1, Paris</title>
     <itunes:author>David Pilato</itunes:author>
@@ -553,7 +553,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>9</itunes:season>
+    <itunes:season>2022</itunes:season>
     <itunes:episode>34</itunes:episode>
     <title>David's Mix #2022/12/17 - Meet Your Soulmate - Danse part 2, Paris</title>
     <itunes:author>David Pilato</itunes:author>
@@ -569,7 +569,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>35</itunes:episode>
     <title>David's Mix #2023/01/23 - Snowcamp Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -585,7 +585,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>36</itunes:episode>
     <title>David's Mix #2023/02/21 - Les Envahisseurs - Take 2</title>
     <itunes:author>David Pilato</itunes:author>
@@ -605,7 +605,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>37</itunes:episode>
     <title>David's Mix #2023/03/09 - Elastic France Private Event</title>
     <itunes:author>David Pilato</itunes:author>
@@ -622,7 +622,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>38</itunes:episode>
     <title>David's Mix #2023/04/15 - Heera's Birthday party</title>
     <itunes:author>David Pilato</itunes:author>
@@ -639,7 +639,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>39</itunes:episode>
     <title>David's Mix #2023/06/13 - Le Camping des Speakers</title>
     <itunes:author>David Pilato</itunes:author>
@@ -656,7 +656,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
      <link>https://camping-speakers.fr/sessions/l_art_du_DeeJaying_par_la_pratique/</link>
  </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>40</itunes:episode>
     <title>David's Mix #2023/08/25 - Funk / House Summer Mix 2023</title>
     <itunes:author>David Pilato</itunes:author>
@@ -672,7 +672,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>41</itunes:episode>
     <title>David's Mix #2023/09/02 - Anniversaire Caroline et Nicolas 50 ans - Part 1</title>
     <itunes:author>David Pilato</itunes:author>
@@ -688,7 +688,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>42</itunes:episode>
     <title>David's Mix #2023/09/02 - Anniversaire Caroline et Nicolas 50 ans - Part 2</title>
     <itunes:author>David Pilato</itunes:author>
@@ -704,7 +704,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>43</itunes:episode>
     <title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Warmup</title>
     <itunes:author>David Pilato</itunes:author>
@@ -720,7 +720,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>44</itunes:episode>
     <title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Part 1</title>
     <itunes:author>David Pilato</itunes:author>
@@ -736,7 +736,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>10</itunes:season>
+    <itunes:season>2023</itunes:season>
     <itunes:episode>45</itunes:episode>
     <title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Part 2</title>
     <itunes:author>David Pilato</itunes:author>
@@ -752,7 +752,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>46</itunes:episode>
     <title>David's Mix #2024/01/20 - Anniversaire Gisèle 50 ans - Part 1</title>
     <itunes:author>David Pilato</itunes:author>
@@ -768,7 +768,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>47</itunes:episode>
     <title>David's Mix #2024/01/20 - Anniversaire Gisèle 50 ans - Part 2</title>
     <itunes:author>David Pilato</itunes:author>
@@ -784,7 +784,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>48</itunes:episode>
     <title>David's Mix #2024/04/13 - Anniversaire Eric 60 ans - The Funk/Disco/House mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -800,7 +800,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>49</itunes:episode>
     <title>David's Mix #2024/05/04 - Mariage Delphine et Laurent - Part 1</title>
     <itunes:author>David Pilato</itunes:author>
@@ -816,7 +816,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>50</itunes:episode>
     <title>David's Mix #2024/05/04 - Mariage Delphine et Laurent - Part 2</title>
     <itunes:author>David Pilato</itunes:author>
@@ -832,7 +832,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>51</itunes:episode>
     <title>David's Mix #2024/05/26 - Lisa Forever 2024</title>
     <itunes:author>David Pilato</itunes:author>
@@ -848,7 +848,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://www.lisaforever.org/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>52</itunes:episode>
     <title>David's Mix #2024/07/19 - Riviera Dev Reborn</title>
     <itunes:author>David Pilato</itunes:author>
@@ -864,7 +864,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://2024.rivieradev.fr/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>53</itunes:episode>
     <title>David's Mix #2024/08/08 - Summer Holidays Mix</title>
     <itunes:author>David Pilato</itunes:author>
@@ -881,7 +881,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>54</itunes:episode>
     <title>David's Mix #2024/11/07 - DevFest Toulouse 2024</title>
     <itunes:author>David Pilato and Julien Briault</itunes:author>
@@ -898,7 +898,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://devfesttoulouse.fr/about/devfest-toulouse-2024/</link>
   </item>
   <item>
-    <itunes:season>11</itunes:season>
+    <itunes:season>2024</itunes:season>
     <itunes:episode>55</itunes:episode>
     <title>David's Mix #2024/12/05 - Elastic DecemberFest 2024</title>
     <itunes:author>David Pilato</itunes:author>
@@ -915,7 +915,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://djdadoo.pilato.fr/</link>
   </item>
   <item>
-    <itunes:season>12</itunes:season>
+    <itunes:season>2025</itunes:season>
     <itunes:episode>56</itunes:episode>
     <title>David's Mix #2025/02/06 - Touraine Tech 2025</title>
     <itunes:author>David Pilato and Julien Briault</itunes:author>
@@ -932,7 +932,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <link>https://touraine.tech/</link>
   </item>
   <item>
-    <itunes:season>12</itunes:season>
+    <itunes:season>2025</itunes:season>
     <itunes:episode>57</itunes:episode>
     <title>David's Mix #2025/05/06 - EAH 2025</title>
     <itunes:author>David Pilato</itunes:author>
