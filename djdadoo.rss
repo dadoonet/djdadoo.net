@@ -6,7 +6,8 @@
 <channel>
 	<title>DJ Elky mixes</title>
 	<link>https://djdadoo.pilato.fr/</link>
-	<language>en</language>
+  <atom:link href="https://djdadoo.pilato.fr/djdadoo.rss" rel="self" type="application/rss+xml" />
+  <language>en</language>
 	<copyright>David Pilato</copyright>
 	<itunes:subtitle>Just playing with my DJ gears, from DDJ-T1 to CDJ3000</itunes:subtitle>
 	<itunes:author>David Pilato</itunes:author>
@@ -21,6 +22,7 @@
 	<itunes:explicit>false</itunes:explicit>
 	<!-- Unique id: do not change. It's computed from dj.pilato.fr using https://www.uuidtools.com/v5 -->
 	<podcast:guid>5e560267-5f32-55d3-b370-8f66f80ddb8f</podcast:guid>
+  <podcast:locked>no</podcast:locked>
 	<item>
 		<itunes:season>1</itunes:season>
 		<itunes:episode>1</itunes:episode>
