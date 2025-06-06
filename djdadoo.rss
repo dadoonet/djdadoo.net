@@ -319,7 +319,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live - Fred Birthday</itunes:subtitle>
     <description><![CDATA[<p>Live - Fred Birthday</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/djdadoo-new.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2016-07-02-Fred-Birthday-Cergy.mp3" length="61897842" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2016-07-02-Fred-Birthday-Cergy.mp3</guid>
     <pubDate>02 July 2016 23:25:00 +0100</pubDate>
@@ -351,7 +351,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Winter 2017 Pre elastic{ON}'17 Mix</itunes:subtitle>
     <description><![CDATA[<p>Home session - Winter 2017 Pre elastic{ON}'17 Mix</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/djdadoo-new.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3" length="99180044" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3</guid>
     <pubDate>5 March 2017 11:30:00 +0100</pubDate>
@@ -367,7 +367,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>BreizhCamp 2017 Keynote Mix</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded at BreizhCamp 2017 during the Keynote</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20170420-breizhcamp-keynote.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20170420-breizhcamp-keynote.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3" length="25240750" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3</guid>
     <pubDate>20 April 2017 09:00:00 +0100</pubDate>
@@ -383,7 +383,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>BreizhCamp 2017 Meet And Greet Party Mix</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded at BreizhCamp 2017 during the Meet And Greet Party</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20170420-breizhcamp-meet-and-greet.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20170420-breizhcamp-meet-and-greet.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-meet-and-greet.mp3" length="173147532" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-meet-and-greet.mp3</guid>
     <pubDate>20 April 2017 18:45:00 +0100</pubDate>
@@ -399,7 +399,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato / Julien Ponge</itunes:author>
     <itunes:subtitle>BreizhCamp 2018 Meet And Greet Party Mix (with Julien Ponge and David Pilato)</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded at BreizhCamp 2018 during the Meet And Greet Party</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20180329-breizhcamp-meet-and-greet.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20180329-breizhcamp-meet-and-greet.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2018-03-29-breizhcamp-meet-and-greet.mp3" length="173147532" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2018-03-29-breizhcamp-meet-and-greet.mp3</guid>
     <pubDate>29 March 2018 19:15:00 +0200</pubDate>
@@ -415,7 +415,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Wedding Natacha - Warmup</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded in Zudausques</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20190831-WeddingNatacha.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20190831-WeddingNatacha.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2019-08-31-Wedding-Natacha-Warmup.mp3" length="32274381" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2019-08-31-Wedding-Natacha-Warmup.mp3</guid>
     <pubDate>31 August 2019 22:15:00 +0200</pubDate>
@@ -431,7 +431,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>1er An - Lolo et Mika</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded in Osny</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20191231-1erAnLoloEtMika.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20191231-1erAnLoloEtMika.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3" length="341528811" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3</guid>
     <pubDate>31 December 2019 23:59:00 +0200</pubDate>
@@ -447,7 +447,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Cocktail Mix - Wedding Sucy en Brie</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded in Sucy en Brie</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20220709-cocktail-mix.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20220709-cocktail-mix.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3" length="321574815" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3</guid>
     <pubDate>09 July 2022 18:00:00 +0200</pubDate>
@@ -463,7 +463,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Cocktail Mix - Anniversaire Gérard, Cergy</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded in Cergy</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3" length="239847196" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3</guid>
     <pubDate>29 October 2022 20:00:00 +0200</pubDate>
@@ -479,7 +479,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Danse Part 1 - Anniversaire Gérard, Cergy</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded in Cergy</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3" length="363647648" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3</guid>
     <pubDate>29 October 2022 23:00:00 +0200</pubDate>
@@ -495,7 +495,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Danse Part 2 - Anniversaire Gérard, Cergy</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded in Cergy</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3" length="85174775" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3</guid>
     <pubDate>30 October 2022 01:00:00 +0200</pubDate>
@@ -511,7 +511,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Closing Mix - Anniversaire Gérard, Cergy</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded in Cergy</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3" length="55884546" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3</guid>
     <pubDate>30 October 2022 03:00:00 +0100</pubDate>
@@ -527,7 +527,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Meet Your Soulmate - Warmup, Paris</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded at Les Spectacles, Paris</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3" length="159303307" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3</guid>
     <pubDate>17 December 2022 20:00:00 +0100</pubDate>
@@ -543,7 +543,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Meet Your Soulmate - Danse part 1, Paris</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded at Les Spectacles, Paris</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3" length="79650741" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3</guid>
     <pubDate>17 December 2022 20:00:00 +0100</pubDate>
@@ -559,7 +559,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Meet Your Soulmate - Danse part 2, Paris</itunes:subtitle>
     <description><![CDATA[<p>Live session recorded at Les Spectacles, Paris</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part2.mp3" length="96781843" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part2.mp3</guid>
     <pubDate>17 December 2022 20:00:00 +0100</pubDate>
@@ -575,7 +575,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Snowcamp Mix</itunes:subtitle>
     <description><![CDATA[<p>Recorded from home studio, Cergy</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230123-studio.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230123-studio.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-01-23-Snowcamp.mp3" length="158362644" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-01-23-Snowcamp.mp3</guid>
     <pubDate>23 January 2023 22:30:00 +0100</pubDate>
@@ -595,7 +595,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
       <p>Sadly this 4 hands mix was not recorded. So I tried my best to redo a part of it.
       I must admit that it was much better when we were both playing the set!</p>
       <p>First time on my DJM-V10-LF I just received.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230221-studio.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230221-studio.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3" length="162691470" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3</guid>
     <pubDate>21 February 2023 18:30:00 +0100</pubDate>
@@ -612,7 +612,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:subtitle>Elastic France Private Event</itunes:subtitle>
     <description><![CDATA[<p>Recorded from Elastic France office, Paris.</p>
       <p>First time for a live event on my DJM-V10-LF. Please bear with me!</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230309-ElasticPrivateEvent.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230309-ElasticPrivateEvent.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3" length="162691470" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3</guid>
     <pubDate>09 March 2023 19:00:00 +0100</pubDate>
@@ -629,7 +629,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:subtitle>Live session recorded at Golf de Saint-Ouen l'Aumône</itunes:subtitle>
     <description><![CDATA[<p>Recorded at Golf de Saint-Ouen l'Aumône.</p>
       <p>Second time for a live event on my DJM-V10-LF. For Heera's birthday.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230415-Heera.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230415-Heera.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-04-15-AnniversaireHeera.mp3" length="114173178" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-04-15-AnniversaireHeera.mp3</guid>
     <pubDate>15 April 2023 23:30:00 +0100</pubDate>
@@ -646,7 +646,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:subtitle>Live session recorded for le Camping des Speakers</itunes:subtitle>
     <description><![CDATA[<p>Recorded in Baden, Golf du Morbihan at Camping Mané Guernehué.</p>
       <p>Was recorded during the Camping des Speakers dinner.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230613-CampingDesSpeakers.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230613-CampingDesSpeakers.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3" length="440484341" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3</guid>
     <pubDate>13 June 2023 19:30:00 +0200</pubDate>
@@ -662,7 +662,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Home session recorded for my brother</itunes:subtitle>
     <description><![CDATA[<p>Recorded in Cergy, France.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230825-HouseFunkSummerMix.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230825-HouseFunkSummerMix.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3" length="155693976" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3</guid>
     <pubDate>25 August 2023 19:30:00 +0200</pubDate>
@@ -678,7 +678,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded in Cergy, France, for Caro and Nico's birthdays.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230902-anniv-caronico.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230902-anniv-caronico.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-09-02-AnnivCaroNicoPart1.mp3" length="216909566" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-09-02-AnnivCaroNicoPart1.mp3</guid>
     <pubDate>02 September 2023 23:30:00 +0200</pubDate>
@@ -694,7 +694,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded in Cergy, France, for Caro and Nico's birthdays.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230902-anniv-caronico.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230902-anniv-caronico.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-09-03-AnnivCaroNicoPart2.mp3" length="220092325" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-09-03-AnnivCaroNicoPart2.mp3</guid>
     <pubDate>03 September 2023 02:00:00 +0200</pubDate>
@@ -710,7 +710,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live in Le Mans, France, for Lucas's birthday.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3" length="68211173" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3</guid>
     <pubDate>16 September 2023 23:30:00 +0200</pubDate>
@@ -726,7 +726,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live in Le Mans, France, for Lucas's birthday.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3" length="86436290" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3</guid>
     <pubDate>17 September 2023 00:25:00 +0200</pubDate>
@@ -742,7 +742,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live in Le Mans, France, for Lucas's birthday.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3" length="269534637" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3</guid>
     <pubDate>17 September 2023 01:00:00 +0200</pubDate>
@@ -758,7 +758,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20240120-anniv-gisele.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20240120-anniv-gisele.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part1.mp3" length="383190500" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part1.mp3</guid>
     <pubDate>20 January 2024 20:30:00 +0100</pubDate>
@@ -774,7 +774,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20240120-anniv-gisele.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20240120-anniv-gisele.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3" length="254624165" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3</guid>
     <pubDate>20 January 2024 23:30:00 +0100</pubDate>
@@ -790,7 +790,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live in Saint-Georges-Du-Bois, France, for Eric's birthday.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20240413-60ansEric.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20240413-60ansEric.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-04-13-60ansEric.mp3" length="265221390" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-04-13-60ansEric.mp3</guid>
     <pubDate>13 April 2024 16:00:00 +0200</pubDate>
@@ -806,7 +806,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live at Le Domaine de Brunel, Aincourt, France, for Delphine and Laurent wedding.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20240504-mariage-DelphineLaurent.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20240504-mariage-DelphineLaurent.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3" length="42919324" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3</guid>
     <pubDate>04 May 2024 17:00:00 +0200</pubDate>
@@ -822,7 +822,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live at Le Domaine de Brunel, Aincourt, France, for Delphine and Laurent wedding.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20240504-mariage-DelphineLaurent.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20240504-mariage-DelphineLaurent.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part2.mp3" length="117273438" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part2.mp3</guid>
     <pubDate>04 May 2024 18:00:00 +0200</pubDate>
@@ -838,7 +838,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>Recorded live at Taverny, France, for Lisa Forever 2024 event.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20240526-LisaForever.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20240526-LisaForever.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3" length="70793165" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3</guid>
     <pubDate>16 May 2024 17:15:00 +0200</pubDate>
@@ -854,7 +854,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Live session</itunes:subtitle>
     <description><![CDATA[<p>I tried to redo a small part of the live mix I did in Nice, France, for the Riviera Dev event.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20240719-rivieradev.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20240719-rivieradev.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a" length="147699389" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a</guid>
     <pubDate>19 July 2024 15:30:00 +0200</pubDate>
@@ -871,7 +871,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:subtitle>Studio session</itunes:subtitle>
     <description><![CDATA[<p>Recorded in Cergy, France, for the summer holidays so I have some music to listen while driving.</p>
     <p>Tribal, deep house, house and funky vibes.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20240808-SummerHolidaysMix.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20240808-SummerHolidaysMix.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3" length="291978390" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3</guid>
     <pubDate>08 August 2024 17:30:00 +0200</pubDate>
@@ -888,7 +888,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:subtitle>Live from Labege Diagora, FR</itunes:subtitle>
     <description><![CDATA[<p>Live from Labege Diagora, France, for the DevFest Toulouse 2024.</p>
       <p>4 hands on decks by David Pilato and Julien Briault. Using 4 CDJ3000 and 1 DJM-V10-LF.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20241107-DevFestToulouse.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20241107-DevFestToulouse.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3" length="258208378" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3</guid>
     <pubDate>07 November 2024 22:00:00 +0100</pubDate>
@@ -905,7 +905,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:subtitle>Live from Elastic Office Paris, FR</itunes:subtitle>
     <description><![CDATA[<p>Live from Elastic Office, Paris, France, for the DecemberFest private party.</p>
       <p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20241205-ElasticDecemberFest.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20241205-ElasticDecemberFest.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3" length="196081703" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3</guid>
     <pubDate>05 December 2024 19:30:00 +0100</pubDate>
@@ -922,7 +922,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:subtitle>Live from Hotel Gouin in Tours, FR</itunes:subtitle>
     <description><![CDATA[<p>Live set for Touraine Tech 2025, recorded at Hotel Gouin in Tours, FR.</p>
       <p>Using 2 CDJ3000 and 1 DJM-V10-LF by David Pilato and Julien Briault.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20250206-TouraineTech.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20250206-TouraineTech.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3" length="264659489" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3</guid>
     <pubDate>06 February 2025 19:30:00 +0100</pubDate>
@@ -938,7 +938,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Recorded from my studio in Cergy, FR</itunes:subtitle>
     <description><![CDATA[<p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20250506-EAH.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20250506-EAH.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3" length="136903843" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3</guid>
     <pubDate>06 May 2025 17:00:00 +0100</pubDate>
@@ -956,7 +956,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <description><![CDATA[<p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>
       <p>Sadly the recording failed so you can just listen to one part of it.</p>
       ]]></description>
-    <itunes:image href="https://dj.david.pilato.fr/img/20250605-DevQuest.jpg" />
+    <itunes:image href="https://djdadoo.pilato.fr/img/20250605-DevQuest.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3" length="154976458 " type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3</guid>
     <pubDate>05 June 2025 18:30:00 +0100</pubDate>
