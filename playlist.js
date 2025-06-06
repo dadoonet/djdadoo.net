@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'DevQuest Niort 2025',
+    file: 'https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3',
+    image: 'img/20250605-DevQuest.jpg'
+},{
     title: 'EAH 2025',
     file: 'https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3',
     image: 'img/20250506-EAH.jpg'
