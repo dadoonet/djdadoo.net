@@ -3,6 +3,7 @@
 xmlns:podcast="https://podcastindex.org/namespace/1.0"
 xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<!-- To test the RSS, please use https://podba.se/?url=https://djdadoo.pilato.fr/djdadoo.rss -->
 <channel>
   <title>DJ Elky mixes</title>
   <link>https://djdadoo.pilato.fr/</link>
