@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:podcast="https://podcastindex.org/namespace/1.0"
+	xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 	<title>DJ Elky mixes</title>
 	<link>https://djdadoo.pilato.fr/</link>
 	<language>en</language>
-	<copyright>&#169; 2011-2025 David Pilato</copyright>
+	<copyright>David Pilato</copyright>
 	<itunes:subtitle>Just playing with my DJ gears, from DDJ-T1 to CDJ3000</itunes:subtitle>
 	<itunes:author>David Pilato</itunes:author>
-	<itunes:summary>If you love funk and DJ groove sound, you will like theses mixes ! Enjoy !</itunes:summary>
-	<description>If you love funk and DJ groove sound, you will like theses mixes ! Enjoy !</description>
+	<itunes:summary><![CDATA[<p>If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!</p>]]></itunes:summary>
+	<description><![CDATA[<p>If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!</p>]]></description>
 	<itunes:owner>
 		<itunes:name>David Pilato</itunes:name>
 		<itunes:email>david@pilato.fr</itunes:email>
@@ -16,13 +19,15 @@
 	<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 	<itunes:category text="Music" />
 	<itunes:explicit>false</itunes:explicit>
+	<!-- Unique id: do not change. It's computed from dj.pilato.fr using https://www.uuidtools.com/v5 -->
+	<podcast:guid>5e560267-5f32-55d3-b370-8f66f80ddb8f</podcast:guid>
 	<item>
 		<itunes:season>1</itunes:season>
 		<itunes:episode>1</itunes:episode>
 		<title>David's Mix #2011/09/29</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Funk mix</itunes:subtitle>
-		<description>My first recorded mix with my old Hercules DJ Console</description>
+		<description><![CDATA[<p>My first recorded mix with my old Hercules DJ Console</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/01_DJ_Dadoo_Funk_Mix.mp3" length="41742220" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/01_DJ_Dadoo_Funk_Mix.mp3</guid>
@@ -33,11 +38,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>2</itunes:episode>
 		<title>David's Mix #2012/01/22</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Funk groove mix</itunes:subtitle>
-		<description>First recorded mix with my new Pioneer DDJ-T1</description>
+		<description><![CDATA[<p>First recorded mix with my new Pioneer DDJ-T1</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/02_DJ_Dadoo_First-Mix-DDJT1.mp3" length="97455772" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/02_DJ_Dadoo_First-Mix-DDJT1.mp3</guid>
@@ -48,11 +53,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>3</itunes:episode>
 		<title>David's Mix #2012/02/19</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Club mix</itunes:subtitle>
-		<description>2nd recorded mix with my Pioneer DDJ-T1</description>
+		<description><![CDATA[<p>2nd recorded mix with my Pioneer DDJ-T1</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/03_DJ_Dadoo_Club-Mix-DDJT1.mp3" length="91088046" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/03_DJ_Dadoo_Club-Mix-DDJT1.mp3</guid>
@@ -63,11 +68,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>3</itunes:episode>
+		<itunes:episode>4</itunes:episode>
 		<title>David's Mix #2012/03/04</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>March mix</itunes:subtitle>
-		<description>3rd recorded mix with my Pioneer DDJ-T1</description>
+		<description><![CDATA[<p>3rd recorded mix with my Pioneer DDJ-T1</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/04_DJ_Dadoo_March-Mix-DDJT1.mp3" length="91088046" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/04_DJ_Dadoo_March-Mix-DDJT1.mp3</guid>
@@ -78,11 +83,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>4</itunes:episode>
+		<itunes:episode>5</itunes:episode>
 		<title>David's Mix #2012/04/01</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>April mix</itunes:subtitle>
-		<description>4th recorded mix with my Pioneer DDJ-T1</description>
+		<description><![CDATA[<p>4th recorded mix with my Pioneer DDJ-T1</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/05_DJ_Dadoo_April-Mix-DDJT1.mp3" length="102217281" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/05_DJ_Dadoo_April-Mix-DDJT1.mp3</guid>
@@ -93,11 +98,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>5</itunes:episode>
+		<itunes:episode>6</itunes:episode>
 		<title>David's Mix #2012/05/13</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>May mix</itunes:subtitle>
-		<description>5th recorded mix with my Pioneer DDJ-T1</description>
+		<description><![CDATA[<p>5th recorded mix with my Pioneer DDJ-T1</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/06_DJ_Dadoo_May-Mix-DDJT1.mp3" length="80753610" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/06_DJ_Dadoo_May-Mix-DDJT1.mp3</guid>
@@ -108,11 +113,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>6</itunes:episode>
+		<itunes:episode>7</itunes:episode>
 		<title>David's Mix #2012/07/07 - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>July Live mix</itunes:subtitle>
-		<description>Recorded Live for Sebastien and Elvira Wedding</description>
+		<description><![CDATA[<p>Recorded Live for Sebastien and Elvira Wedding</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/07_DJ_Dadoo_July-Mix-DDJT1-Part1.mp3" length="99296618" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/07_DJ_Dadoo_July-Mix-DDJT1-Part1.mp3</guid>
@@ -123,11 +128,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>7</itunes:episode>
+		<itunes:episode>8</itunes:episode>
 		<title>David's Mix #2012/07/07 - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>July Live mix</itunes:subtitle>
-		<description>Recorded Live for Sebastien and Elvira Wedding</description>
+		<description><![CDATA[<p>Recorded Live for Sebastien and Elvira Wedding</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/07_DJ_Dadoo_July-Mix-DDJT1-Part2.mp3" length="63205634" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/07_DJ_Dadoo_July-Mix-DDJT1-Part2.mp3</guid>
@@ -138,11 +143,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>8</itunes:episode>
+		<itunes:episode>9</itunes:episode>
 		<title>David's Mix #2012/08/18</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Summer mix</itunes:subtitle>
-		<description>Summer mix</description>
+		<description><![CDATA[<p>Summer mix</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/08_DJ_Dadoo_Summer_Mix.mp3" length="78899761" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/08_DJ_Dadoo_Summer_Mix.mp3</guid>
@@ -153,11 +158,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>9</itunes:episode>
+		<itunes:episode>10</itunes:episode>
 		<title>David's Mix #2012/12/02 - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Anne's Birthday December Live Mix</itunes:subtitle>
-		<description>Recorded Live for Anne's Birthday</description>
+		<description><![CDATA[<p>Recorded Live for Anne's Birthday</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3" length="32128646" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3</guid>
@@ -168,11 +173,11 @@
 	</item>
 	<item>
 		<itunes:season>2</itunes:season>
-		<itunes:episode>10</itunes:episode>
+		<itunes:episode>11</itunes:episode>
 		<title>David's Mix #2012/12/02 - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Anne's Birthday December Live Mix</itunes:subtitle>
-		<description>Recorded Live for Anne's Birthday</description>
+		<description><![CDATA[<p>Recorded Live for Anne's Birthday</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part2.mp3" length="51223321" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part2.mp3</guid>
@@ -183,11 +188,11 @@
 	</item>
 	<item>
 		<itunes:season>3</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>12</itunes:episode>
 		<title>David's Mix #2013/10/05 - Diner Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Diner</itunes:subtitle>
-		<description>Recorded Live for Christine's Birthday</description>
+		<description><![CDATA[<p>Recorded Live for Christine's Birthday</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Diner.mp3" length="115790723" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Diner.mp3</guid>
@@ -198,11 +203,11 @@
 	</item>
 	<item>
 		<itunes:season>3</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>13</itunes:episode>
 		<title>David's Mix #2013/10/05 - Dance Part 1 (80's)</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Dance Part 1 (80's)</itunes:subtitle>
-		<description>Recorded Live for Christine's Birthday</description>
+		<description><![CDATA[<p>Recorded Live for Christine's Birthday</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-80.mp3" length="37207331" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-80.mp3</guid>
@@ -213,11 +218,11 @@
 	</item>
 	<item>
 		<itunes:season>3</itunes:season>
-		<itunes:episode>3</itunes:episode>
+		<itunes:episode>14</itunes:episode>
 		<title>David's Mix #2013/10/05 - Dance Part 2 (Club)</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>October Peniche Mix - Dance Part 2 (Club)</itunes:subtitle>
-		<description>Recorded Live for Christine's Birthday</description>
+		<description><![CDATA[<p>Recorded Live for Christine's Birthday</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Dance.mp3" length="94369483" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Dance.mp3</guid>
@@ -228,11 +233,11 @@
 	</item>
 	<item>
 		<itunes:season>4</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>15</itunes:episode>
 		<title>David's Mix #2015/01/18 - Pre elastic{ON} Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>2015 Home session - pre elastic{ON} Mix</itunes:subtitle>
-		<description>2015 Home session - pre elastic{ON} Mix</description>
+		<description><![CDATA[<p>2015 Home session - pre elastic{ON} Mix</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2015-01-18-pre-elasticon.mp3" length="56415855" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2015-01-18-pre-elasticon.mp3</guid>
@@ -243,11 +248,11 @@
 	</item>
 	<item>
 		<itunes:season>4</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>16</itunes:episode>
 		<title>David's Mix #2015/11/21 - Fred Birthday Live Mix - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Fred Birthday Live Mix - Part 1</itunes:subtitle>
-		<description>Recorded live at "Le Crystal"</description>
+		<description><![CDATA[<p>Recorded live at "Le Crystal"</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3" length="21004740" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3</guid>
@@ -258,11 +263,11 @@
 	</item>
 	<item>
 		<itunes:season>4</itunes:season>
-		<itunes:episode>3</itunes:episode>
+		<itunes:episode>17</itunes:episode>
 		<title>David's Mix #2015/11/21 - Fred Birthday Live Mix - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Fred Birthday Live Mix - Part 2</itunes:subtitle>
-		<description>Recorded live at "Le Crystal"</description>
+		<description><![CDATA[<p>Recorded live at "Le Crystal"</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2015-11-21-Fred-Birthday-Live-Mix-Part2.mp3" length="32517426" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2015-11-21-Fred-Birthday-Live-Mix-Part2.mp3</guid>
@@ -273,11 +278,11 @@
 	</item>
 	<item>
 		<itunes:season>5</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>18</itunes:episode>
 		<title>David's Mix #2016/02/12 - Pre elastic{ON}'16 Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Pre elastic{ON}'16 Mix</itunes:subtitle>
-		<description>Home session - Pre elastic{ON}'16 Mix</description>
+		<description><![CDATA[<p>Home session - Pre elastic{ON}'16 Mix</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2016-02-12-Pre-ElasticON16-Mix.mp3" length="50278526" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2016-02-12-Pre-ElasticON16-Mix.mp3</guid>
@@ -288,11 +293,11 @@
 	</item>
 	<item>
 		<itunes:season>5</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>19</itunes:episode>
 		<title>David's Mix #2016/07/02 - Fred Birthday</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live - Fred Birthday</itunes:subtitle>
-		<description>Live - Fred Birthday</description>
+		<description><![CDATA[<p>Live - Fred Birthday</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2016-07-02-Fred-Birthday-Cergy.mp3" length="61897842" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2016-07-02-Fred-Birthday-Cergy.mp3</guid>
@@ -303,11 +308,11 @@
 	</item>
 	<item>
 		<itunes:season>5</itunes:season>
-		<itunes:episode>3</itunes:episode>
+		<itunes:episode>20</itunes:episode>
 		<title>David's Mix #2016/08/28 - Summer 2016 Garden Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Summer 2016 Garden Mix</itunes:subtitle>
-		<description>Home session - Summer 2016 Garden Mix</description>
+		<description><![CDATA[<p>Home session - Summer 2016 Garden Mix</p>]]></description>
 		<itunes:image href="https://djdadoo.pilato.fr/img/20160828-garden-mix.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2016-08-28-Summer-2016-Garden-Mix.mp3" length="98529268" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2016-08-28-Summer-2016-Garden-Mix.mp3</guid>
@@ -318,11 +323,11 @@
 	</item>
 	<item>
 		<itunes:season>6</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>21</itunes:episode>
 		<title>David's Mix #2017/03/05 - Winter 2017 Pre elastic{ON}'17 Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Winter 2017 Pre elastic{ON}'17 Mix</itunes:subtitle>
-		<description>Home session - Winter 2017 Pre elastic{ON}'17 Mix</description>
+		<description><![CDATA[<p>Home session - Winter 2017 Pre elastic{ON}'17 Mix</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/djdadoo-new.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3" length="99180044" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3</guid>
@@ -333,11 +338,11 @@
 	</item>
 	<item>
 		<itunes:season>6</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>22</itunes:episode>
 		<title>David's Mix #2017/04/20 - BreizhCamp 2017 Keynote Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>BreizhCamp 2017 Keynote Mix</itunes:subtitle>
-		<description>Live session recorded at BreizhCamp 2017 during the Keynote</description>
+		<description><![CDATA[<p>Live session recorded at BreizhCamp 2017 during the Keynote</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20170420-breizhcamp-keynote.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3" length="25240750" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3</guid>
@@ -348,11 +353,11 @@
 	</item>
 	<item>
 		<itunes:season>6</itunes:season>
-		<itunes:episode>3</itunes:episode>
+		<itunes:episode>23</itunes:episode>
 		<title>David's Mix #2017/04/20 - BreizhCamp 2017 Meet And Greet Party Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>BreizhCamp 2017 Meet And Greet Party Mix</itunes:subtitle>
-		<description>Live session recorded at BreizhCamp 2017 during the Meet And Greet Party</description>
+		<description><![CDATA[<p>Live session recorded at BreizhCamp 2017 during the Meet And Greet Party</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20170420-breizhcamp-meet-and-greet.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-meet-and-greet.mp3" length="173147532" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-meet-and-greet.mp3</guid>
@@ -363,11 +368,11 @@
 	</item>
 	<item>
 		<itunes:season>7</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>24</itunes:episode>
 		<title>David's Mix #2018/03/29 - BreizhCamp 2018 Meet And Greet Party Mix</title>
 		<itunes:author>David Pilato / Julien Ponge</itunes:author>
 		<itunes:subtitle>BreizhCamp 2018 Meet And Greet Party Mix (with Julien Ponge and David Pilato)</itunes:subtitle>
-		<description>Live session recorded at BreizhCamp 2018 during the Meet And Greet Party</description>
+		<description><![CDATA[<p>Live session recorded at BreizhCamp 2018 during the Meet And Greet Party</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20180329-breizhcamp-meet-and-greet.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2018-03-29-breizhcamp-meet-and-greet.mp3" length="173147532" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2018-03-29-breizhcamp-meet-and-greet.mp3</guid>
@@ -378,11 +383,11 @@
 	</item>
 	<item>
 		<itunes:season>8</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>25</itunes:episode>
 		<title>David's Mix #2019/08/31 - Wedding Natacha - Warmup</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Wedding Natacha - Warmup</itunes:subtitle>
-		<description>Live session recorded in Zudausques</description>
+		<description><![CDATA[<p>Live session recorded in Zudausques</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20190831-WeddingNatacha.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2019-08-31-Wedding-Natacha-Warmup.mp3" length="32274381" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2019-08-31-Wedding-Natacha-Warmup.mp3</guid>
@@ -393,11 +398,11 @@
 	</item>
 	<item>
 		<itunes:season>8</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>26</itunes:episode>
 		<title>David's Mix #2019/12/31 - 1er An - Lolo et Mika</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>1er An - Lolo et Mika</itunes:subtitle>
-		<description>Live session recorded in Osny</description>
+		<description><![CDATA[<p>Live session recorded in Osny</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20191231-1erAnLoloEtMika.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3" length="341528811" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3</guid>
@@ -408,11 +413,11 @@
 	</item>
 	<item>
 		<itunes:season>9</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>27</itunes:episode>
 		<title>David's Mix #2022/07/10 - Cocktail Mix - Wedding Sucy en Brie</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Cocktail Mix - Wedding Sucy en Brie</itunes:subtitle>
-		<description>Live session recorded in Sucy en Brie</description>
+		<description><![CDATA[<p>Live session recorded in Sucy en Brie</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20220709-cocktail-mix.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3" length="321574815" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3</guid>
@@ -423,11 +428,11 @@
 	</item>
 	<item>
 		<itunes:season>9</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>28</itunes:episode>
 		<title>David's Mix #2022/10/29 - Cocktail Mix - Anniversaire Gérard, Cergy</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Cocktail Mix - Anniversaire Gérard, Cergy</itunes:subtitle>
-		<description>Live session recorded in Cergy</description>
+		<description><![CDATA[<p>Live session recorded in Cergy</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3" length="239847196" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3</guid>
@@ -438,11 +443,11 @@
 	</item>
 	<item>
 		<itunes:season>9</itunes:season>
-		<itunes:episode>3</itunes:episode>
+		<itunes:episode>29</itunes:episode>
 		<title>David's Mix #2022/10/29 - Danse Part 1 - Anniversaire Gérard, Cergy</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Danse Part 1 - Anniversaire Gérard, Cergy</itunes:subtitle>
-		<description>Live session recorded in Cergy</description>
+		<description><![CDATA[<p>Live session recorded in Cergy</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3" length="363647648" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3</guid>
@@ -453,11 +458,11 @@
 	</item>
 	<item>
 		<itunes:season>9</itunes:season>
-		<itunes:episode>4</itunes:episode>
+		<itunes:episode>30</itunes:episode>
 		<title>David's Mix #2022/10/29 - Danse Part 2 - Anniversaire Gérard, Cergy</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Danse Part 2 - Anniversaire Gérard, Cergy</itunes:subtitle>
-		<description>Live session recorded in Cergy</description>
+		<description><![CDATA[<p>Live session recorded in Cergy</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3" length="85174775" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3</guid>
@@ -468,11 +473,11 @@
 	</item>
 	<item>
 		<itunes:season>9</itunes:season>
-		<itunes:episode>5</itunes:episode>
+		<itunes:episode>31</itunes:episode>
 		<title>David's Mix #2022/10/29 - Closing Mix - Anniversaire Gérard, Cergy</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Closing Mix - Anniversaire Gérard, Cergy</itunes:subtitle>
-		<description>Live session recorded in Cergy</description>
+		<description><![CDATA[<p>Live session recorded in Cergy</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20221029-Anniversaire-Gerard.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3" length="55884546" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3</guid>
@@ -483,11 +488,11 @@
 	</item>
 	<item>
 		<itunes:season>9</itunes:season>
-		<itunes:episode>6</itunes:episode>
+		<itunes:episode>32</itunes:episode>
 		<title>David's Mix #2022/12/17 - Meet Your Soulmate - Warmup, Paris</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Meet Your Soulmate - Warmup, Paris</itunes:subtitle>
-		<description>Live session recorded at Les Spectacles, Paris</description>
+		<description><![CDATA[<p>Live session recorded at Les Spectacles, Paris</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3" length="159303307" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3</guid>
@@ -498,11 +503,11 @@
 	</item>
 	<item>
 		<itunes:season>9</itunes:season>
-		<itunes:episode>7</itunes:episode>
+		<itunes:episode>33</itunes:episode>
 		<title>David's Mix #2022/12/17 - Meet Your Soulmate - Danse part 1, Paris</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Meet Your Soulmate - Danse part 1, Paris</itunes:subtitle>
-		<description>Live session recorded at Les Spectacles, Paris</description>
+		<description><![CDATA[<p>Live session recorded at Les Spectacles, Paris</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3" length="79650741" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3</guid>
@@ -513,11 +518,11 @@
 	</item>
 	<item>
 		<itunes:season>9</itunes:season>
-		<itunes:episode>8</itunes:episode>
+		<itunes:episode>34</itunes:episode>
 		<title>David's Mix #2022/12/17 - Meet Your Soulmate - Danse part 2, Paris</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Meet Your Soulmate - Danse part 2, Paris</itunes:subtitle>
-		<description>Live session recorded at Les Spectacles, Paris</description>
+		<description><![CDATA[<p>Live session recorded at Les Spectacles, Paris</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20221217-meetyoursoulmate.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part2.mp3" length="96781843" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part2.mp3</guid>
@@ -528,11 +533,11 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>35</itunes:episode>
 		<title>David's Mix #2023/01/23 - Snowcamp Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Snowcamp Mix</itunes:subtitle>
-		<description>Recorded from home studio, Cergy</description>
+		<description><![CDATA[<p>Recorded from home studio, Cergy</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230123-studio.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-01-23-Snowcamp.mp3" length="158362644" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-01-23-Snowcamp.mp3</guid>
@@ -543,15 +548,15 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>36</itunes:episode>
 		<title>David's Mix #2023/02/21 - Les Envahisseurs - Take 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Les Envahisseurs - Take 2</itunes:subtitle>
-		<description>Recorded from home studio, Cergy. Initially with Vincent during a night.
-			Sadly this 4 hands mix was not recorded. So I tried my best to redo a part of it.
-			I must admit that it was much better when we were both playing the set!
-			First time on my DJM-V10-LF I just received.
-		</description>
+		<description><![CDATA[<p>Recorded from home studio, Cergy. Initially with 
+			<a href="https://www.facebook.com/profile.php?id=100064333472057">Vincent</a> during a night.</p>
+			<p>Sadly this 4 hands mix was not recorded. So I tried my best to redo a part of it.
+			I must admit that it was much better when we were both playing the set!</p>
+			<p>First time on my DJM-V10-LF I just received.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230221-studio.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3" length="162691470" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3</guid>
@@ -562,13 +567,12 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>3</itunes:episode>
+		<itunes:episode>37</itunes:episode>
 		<title>David's Mix #2023/03/09 - Elastic France Private Event</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Elastic France Private Event</itunes:subtitle>
-		<description>Recorded from Elastic France office, Paris.
-			First time for a live event on my DJM-V10-LF. Please bear with me!
-		</description>
+		<description><![CDATA[<p>Recorded from Elastic France office, Paris.</p>
+			<p>First time for a live event on my DJM-V10-LF. Please bear with me!</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230309-ElasticPrivateEvent.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3" length="162691470" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3</guid>
@@ -579,13 +583,12 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>4</itunes:episode>
+		<itunes:episode>38</itunes:episode>
 		<title>David's Mix #2023/04/15 - Heera's Birthday party</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session recorded at Golf de Saint-Ouen l'Aumône</itunes:subtitle>
-		<description>Recorded at Golf de Saint-Ouen l'Aumône.
-			Second time for a live event on my DJM-V10-LF. For Heera's birthday.
-		</description>
+		<description><![CDATA[<p>Recorded at Golf de Saint-Ouen l'Aumône.</p>
+			<p>Second time for a live event on my DJM-V10-LF. For Heera's birthday.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230415-Heera.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-04-15-AnniversaireHeera.mp3" length="114173178" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-04-15-AnniversaireHeera.mp3</guid>
@@ -596,13 +599,12 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>5</itunes:episode>
+		<itunes:episode>39</itunes:episode>
 		<title>David's Mix #2023/06/13 - Le Camping des Speakers</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session recorded for le Camping des Speakers</itunes:subtitle>
-		<description>Recorded in Baden, Golf du Morbihan at Camping Mané Guernehué.
-			Was recorded during the Camping des Speakers dinner.
-		</description>
+		<description><![CDATA[<p>Recorded in Baden, Golf du Morbihan at Camping Mané Guernehué.</p>
+			<p>Was recorded during the Camping des Speakers dinner.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230613-CampingDesSpeakers.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3" length="440484341" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3</guid>
@@ -613,12 +615,11 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>6</itunes:episode>
+		<itunes:episode>40</itunes:episode>
 		<title>David's Mix #2023/08/25 - Funk / House Summer Mix 2023</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Home session recorded for my brother</itunes:subtitle>
-		<description>Recorded in Cergy, France.
-		</description>
+		<description><![CDATA[<p>Recorded in Cergy, France.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230825-HouseFunkSummerMix.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3" length="155693976" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3</guid>
@@ -629,12 +630,11 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>7</itunes:episode>
+		<itunes:episode>41</itunes:episode>
 		<title>David's Mix #2023/09/02 - Anniversaire Caroline et Nicolas 50 ans - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded in Cergy, France, for Caro and Nico's birthdays.
-		</description>
+		<description><![CDATA[<p>Recorded in Cergy, France, for Caro and Nico's birthdays.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230902-anniv-caronico.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-02-AnnivCaroNicoPart1.mp3" length="216909566" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-09-02-AnnivCaroNicoPart1.mp3</guid>
@@ -645,12 +645,11 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>8</itunes:episode>
+		<itunes:episode>42</itunes:episode>
 		<title>David's Mix #2023/09/02 - Anniversaire Caroline et Nicolas 50 ans - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded in Cergy, France, for Caro and Nico's birthdays.
-		</description>
+		<description><![CDATA[<p>Recorded in Cergy, France, for Caro and Nico's birthdays.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230902-anniv-caronico.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-03-AnnivCaroNicoPart2.mp3" length="220092325" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-09-03-AnnivCaroNicoPart2.mp3</guid>
@@ -661,12 +660,11 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>9</itunes:episode>
+		<itunes:episode>43</itunes:episode>
 		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Warmup</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live in Le Mans, France, for Lucas's birthday.
-		</description>
+		<description><![CDATA[<p>Recorded live in Le Mans, France, for Lucas's birthday.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3" length="68211173" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3</guid>
@@ -677,12 +675,11 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>10</itunes:episode>
+		<itunes:episode>44</itunes:episode>
 		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live in Le Mans, France, for Lucas's birthday.
-		</description>
+		<description><![CDATA[<p>Recorded live in Le Mans, France, for Lucas's birthday.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3" length="86436290" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3</guid>
@@ -693,12 +690,11 @@
 	</item>
 	<item>
 		<itunes:season>10</itunes:season>
-		<itunes:episode>11</itunes:episode>
+		<itunes:episode>45</itunes:episode>
 		<title>David's Mix #2023/09/16 - Anniversaire Lucas 25 ans - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live in Le Mans, France, for Lucas's birthday.
-		</description>
+		<description><![CDATA[<p>Recorded live in Le Mans, France, for Lucas's birthday.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20230916-anniversaire-lucas.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3" length="269534637" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3</guid>
@@ -709,12 +705,11 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>46</itunes:episode>
 		<title>David's Mix #2024/01/20 - Anniversaire Gisèle 50 ans - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.
-		</description>
+		<description><![CDATA[<p>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20240120-anniv-gisele.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part1.mp3" length="383190500" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part1.mp3</guid>
@@ -725,12 +720,11 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>47</itunes:episode>
 		<title>David's Mix #2024/01/20 - Anniversaire Gisèle 50 ans - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.
-		</description>
+		<description><![CDATA[<p>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20240120-anniv-gisele.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3" length="254624165" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3</guid>
@@ -741,12 +735,11 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>3</itunes:episode>
+		<itunes:episode>48</itunes:episode>
 		<title>David's Mix #2024/04/13 - Anniversaire Eric 60 ans - The Funk/Disco/House mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live in Saint-Georges-Du-Bois, France, for Eric's birthday.
-		</description>
+		<description><![CDATA[<p>Recorded live in Saint-Georges-Du-Bois, France, for Eric's birthday.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20240413-60ansEric.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-04-13-60ansEric.mp3" length="265221390" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-04-13-60ansEric.mp3</guid>
@@ -757,12 +750,11 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>4</itunes:episode>
+		<itunes:episode>49</itunes:episode>
 		<title>David's Mix #2024/05/04 - Mariage Delphine et Laurent - Part 1</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live at Le Domaine de Brunel, Aincourt, France, for Delphine and Laurent wedding.
-		</description>
+		<description><![CDATA[<p>Recorded live at Le Domaine de Brunel, Aincourt, France, for Delphine and Laurent wedding.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20240504-mariage-DelphineLaurent.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3" length="42919324" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3</guid>
@@ -773,12 +765,11 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>5</itunes:episode>
+		<itunes:episode>50</itunes:episode>
 		<title>David's Mix #2024/05/04 - Mariage Delphine et Laurent - Part 2</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live at Le Domaine de Brunel, Aincourt, France, for Delphine and Laurent wedding.
-		</description>
+		<description><![CDATA[<p>Recorded live at Le Domaine de Brunel, Aincourt, France, for Delphine and Laurent wedding.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20240504-mariage-DelphineLaurent.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part2.mp3" length="117273438" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part2.mp3</guid>
@@ -789,12 +780,11 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>6</itunes:episode>
+		<itunes:episode>51</itunes:episode>
 		<title>David's Mix #2024/05/26 - Lisa Forever 2024</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>Recorded live at Taverny, France, for Lisa Forever 2024 event.
-		</description>
+		<description><![CDATA[<p>Recorded live at Taverny, France, for Lisa Forever 2024 event.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20240526-LisaForever.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3" length="70793165" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3</guid>
@@ -805,12 +795,11 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>7</itunes:episode>
+		<itunes:episode>52</itunes:episode>
 		<title>David's Mix #2024/07/19 - Riviera Dev Reborn</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live session</itunes:subtitle>
-		<description>I tried to redo a small part of the live mix I did in Nice, France, for the Riviera Dev event.
-		</description>
+		<description><![CDATA[<p>I tried to redo a small part of the live mix I did in Nice, France, for the Riviera Dev event.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20240719-rivieradev.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a" length="147699389" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a</guid>
@@ -821,14 +810,12 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>8</itunes:episode>
+		<itunes:episode>53</itunes:episode>
 		<title>David's Mix #2024/08/08 - Summer Holidays Mix</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Studio session</itunes:subtitle>
-		<description>
-			Recorded in Cergy, France, for the summer holidays so I have some music to listen while driving.
-			Tribal, deep house, house and funky vibes.
-		</description>
+		<description><![CDATA[<p>Recorded in Cergy, France, for the summer holidays so I have some music to listen while driving.</p>
+		<p>Tribal, deep house, house and funky vibes.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20240808-SummerHolidaysMix.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3" length="291978390" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3</guid>
@@ -839,15 +826,12 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>9</itunes:episode>
+		<itunes:episode>54</itunes:episode>
 		<title>David's Mix #2024/11/07 - DevFest Toulouse 2024</title>
 		<itunes:author>David Pilato and Julien Briault</itunes:author>
 		<itunes:subtitle>Live from Labege Diagora, FR</itunes:subtitle>
-		<description>
-			Live from Labege Diagora, France, for the DevFest Toulouse 2024.
-			4 hands on decks by David Pilato and Julien Briault. Using 
-			4 CDJ3000 and 1 DJM-V10-LF.
-		</description>
+		<description><![CDATA[<p>Live from Labege Diagora, France, for the DevFest Toulouse 2024.</p>
+      <p>4 hands on decks by David Pilato and Julien Briault. Using 4 CDJ3000 and 1 DJM-V10-LF.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20241107-DevFestToulouse.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3" length="258208378" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3</guid>
@@ -858,14 +842,12 @@
 	</item>
 	<item>
 		<itunes:season>11</itunes:season>
-		<itunes:episode>10</itunes:episode>
+		<itunes:episode>55</itunes:episode>
 		<title>David's Mix #2024/12/05 - Elastic DecemberFest 2024</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Live from Elastic Office Paris, FR</itunes:subtitle>
-		<description>
-			Live from Elastic Office, Paris, France, for the DecemberFest private party.
-			Using 2 CDJ3000 and 1 DJM-V10-LF.
-		</description>
+		<description><![CDATA[<p>Live from Elastic Office, Paris, France, for the DecemberFest private party.</p>
+			<p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20241205-ElasticDecemberFest.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3" length="196081703" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3</guid>
@@ -876,14 +858,12 @@
 	</item>
 	<item>
 		<itunes:season>12</itunes:season>
-		<itunes:episode>1</itunes:episode>
+		<itunes:episode>56</itunes:episode>
 		<title>David's Mix #2025/02/06 - Touraine Tech 2025</title>
 		<itunes:author>David Pilato and Julien Briault</itunes:author>
 		<itunes:subtitle>Live from Hotel Gouin in Tours, FR</itunes:subtitle>
-		<description>
-			Live set for Touraine Tech 2025, recorded at Hotel Gouin in Tours, FR.
-			Using 2 CDJ3000 and 1 DJM-V10-LF.
-		</description>
+		<description><![CDATA[<p>Live set for Touraine Tech 2025, recorded at Hotel Gouin in Tours, FR.</p>
+			<p>Using 2 CDJ3000 and 1 DJM-V10-LF by David Pilato and Julien Briault.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20250206-TouraineTech.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3" length="264659489" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3</guid>
@@ -894,13 +874,11 @@
 	</item>
 	<item>
 		<itunes:season>12</itunes:season>
-		<itunes:episode>2</itunes:episode>
+		<itunes:episode>57</itunes:episode>
 		<title>David's Mix #2025/05/06 - EAH 2025</title>
 		<itunes:author>David Pilato</itunes:author>
 		<itunes:subtitle>Recorded from my studio in Cergy, FR</itunes:subtitle>
-		<description>
-			Using 2 CDJ3000 and 1 DJM-V10-LF.
-		</description>
+		<description><![CDATA[<p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>]]></description>
 		<itunes:image href="https://dj.david.pilato.fr/img/20250506-EAH.jpg" />
 		<enclosure url="https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3" length="136903843" type="audio/mpeg" />
 		<guid>https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3</guid>
