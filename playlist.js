@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Fête de la musique (and 3*40 anniversaries)',
+    file: 'https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3',
+    image: 'img/20250621-AnniversaireArnaud.jpg'
+},{
     title: 'DevQuest Niort 2025',
     file: 'https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3',
     image: 'img/20250605-DevQuest.jpg'
