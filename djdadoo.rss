@@ -941,7 +941,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:image href="https://djdadoo.pilato.fr/img/20250506-EAH.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3" length="136903843" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2025-05-06-EAH.mp3</guid>
-    <pubDate>06 May 2025 17:00:00 +0100</pubDate>
+    <pubDate>06 May 2025 17:00:00 +0200</pubDate>
     <itunes:duration>00:57:03</itunes:duration>
     <itunes:keywords>DJ Elky, Mix, Studio</itunes:keywords>
     <itunes:explicit>false</itunes:explicit>
@@ -959,7 +959,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:image href="https://djdadoo.pilato.fr/img/20250605-DevQuest.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3" length="154976458 " type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3</guid>
-    <pubDate>05 June 2025 18:30:00 +0100</pubDate>
+    <pubDate>05 June 2025 18:30:00 +0200</pubDate>
     <itunes:duration>01:04:34</itunes:duration>
     <itunes:keywords>DJ Elky, Mix, Live</itunes:keywords>
     <itunes:explicit>false</itunes:explicit>
@@ -1039,9 +1039,25 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:image href="https://djdadoo.pilato.fr/img/20250621-AnniversaireArnaud.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3" length="450915648 " type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3</guid>
-    <pubDate>21 June 2025 21:00:00 +0100</pubDate>
+    <pubDate>21 June 2025 21:00:00 +0200</pubDate>
     <itunes:duration>03:07:53</itunes:duration>
     <itunes:keywords>DJ Elky, Mix, Live, Anniversary, Lounge, House, Electro</itunes:keywords>
+    <itunes:explicit>false</itunes:explicit>
+    <link>https://djdadoo.pilato.fr/</link>
+  </item>
+  <item>
+    <itunes:season>2025</itunes:season>
+    <itunes:episode>60</itunes:episode>
+    <title>David's Mix #2025/07/12 - Palala Paris, House Music, Part 1</title>
+    <itunes:author>David Pilato</itunes:author>
+    <itunes:subtitle>Recorded live from Palala Paris 6, FR</itunes:subtitle>
+    <description><![CDATA[<p>Invited by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>]]></description>
+    <itunes:image href="https://djdadoo.pilato.fr/img/20250712-palala.jpg" />
+    <enclosure url="https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3" length="152643187" type="audio/mpeg" />
+    <guid>https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3</guid>
+    <pubDate>12 July 2025 20:00:00 +0200</pubDate>
+    <itunes:duration>01:03:36</itunes:duration>
+    <itunes:keywords>DJ Elky, Mix, Live, Palala, House</itunes:keywords>
     <itunes:explicit>false</itunes:explicit>
     <link>https://djdadoo.pilato.fr/</link>
   </item>

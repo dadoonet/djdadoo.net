@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Palala Paris, House Music, Part 1',
+    file: 'https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3',
+    image: 'img/20250712-palala.jpg'
+},{
     title: 'Fête de la musique (and 3*40 anniversaries)',
     file: 'https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3',
     image: 'img/20250621-AnniversaireArnaud.jpg'
