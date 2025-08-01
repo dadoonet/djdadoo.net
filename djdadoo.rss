@@ -1050,7 +1050,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:episode>60</itunes:episode>
     <title>David's Mix #2025/07/12 - Palala Paris, House Music, Part 1</title>
     <itunes:author>David Pilato</itunes:author>
-    <itunes:subtitle>Recorded live from Palala Paris 6, FR</itunes:subtitle>
+    <itunes:subtitle>Recorded live from Palala Paris 6, FR, with dj4loops</itunes:subtitle>
     <description><![CDATA[<p>Invited by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>]]></description>
     <itunes:image href="https://djdadoo.pilato.fr/img/20250712-palala.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3" length="152643187" type="audio/mpeg" />
