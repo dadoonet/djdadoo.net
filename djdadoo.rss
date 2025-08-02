@@ -1061,5 +1061,21 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:explicit>false</itunes:explicit>
     <link>https://djdadoo.pilato.fr/</link>
   </item>
+  <item>
+    <itunes:season>2025</itunes:season>
+    <itunes:episode>61</itunes:episode>
+    <title>David's Mix #2025/07/12 - Palala Paris, House Music, Part 3</title>
+    <itunes:author>David Pilato</itunes:author>
+    <itunes:subtitle>Recorded live from Palala Paris 6, FR, with dj4loops</itunes:subtitle>
+    <description><![CDATA[<p>Invited by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>]]></description>
+    <itunes:image href="https://djdadoo.pilato.fr/img/20250712-palala.jpg" />
+    <enclosure url="https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part3.mp3" length="148748695" type="audio/mpeg" />
+    <guid>https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part3.mp3</guid>
+    <pubDate>12 July 2025 22:00:00 +0200</pubDate>
+    <itunes:duration>01:01:55</itunes:duration>
+    <itunes:keywords>DJ Elky, Mix, Live, Palala, House</itunes:keywords>
+    <itunes:explicit>false</itunes:explicit>
+    <link>https://djdadoo.pilato.fr/</link>
+  </item>
   </channel>
 </rss>
