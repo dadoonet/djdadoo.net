@@ -1051,7 +1051,28 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <title>David's Mix #2025/07/12 - Palala Paris, House Music, Part 1</title>
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Recorded live from Palala Paris 6, FR, with dj4loops</itunes:subtitle>
-    <description><![CDATA[<p>Invited by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>]]></description>
+    <description><![CDATA[<p>Live set at Palala, Paris</p>
+      <p>Invited by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>
+      <p>Here is the playlist of this part:</p>
+      <ol>
+        <li>Feelin' Love - Dr Packer Extended Remix	- Soulsearcher</li>
+        <li>Instant Replay (Sgt Slick's Discotizer ReCut) - Dan Hartman</li>
+        <li>Cola (Extended) - Like Mike, RUSH AVENUE & Milius - Deep House</li>
+        <li>Forever (Michael Gray Extended Remix) - Key To Life, Sabrina Johnston, Michael Gray</li>
+        <li>Caught Up - Marlo Cozart</li>
+        <li>Openning - Cédric Hannotte</li>
+        <li>I'm Gonna Shine (Classic House Mix) - Julien Scalzo & Max C</li>
+        <li>Missing You (Michael Gray Remix) - Artful, Ridney, Terri Walker, Michael Gray</li>
+        <li>Split Personality - Oscar P</li>
+        <li>Hot Mess (Mike Dunn 'Deep Messy' Remix) - Hilit Kolet, Mike Dunn</li>
+        <li>Love X Love - Michael Gray Remix - DJ Fudge & Chinua Hawk</li>
+        <li>I Thank You (Michael Gray Extended Mix) - Sgt Slick, Karina Chavez, Michael Gray</li>
+        <li>From the Ghetto - Jo Paciello</li>
+        <li>Last Night A Dj Saved My life (Cali Kula Dub Edit as played at Habibi) - Indeep</li>
+        <li>When we party (Michael Gray DJ only Remix) - JW McGee</li>
+        <li>The Back (Extended Mix) - KingCrowney, Jimpster, LEGZDINA</li>
+      </ol>
+    ]]></description>
     <itunes:image href="https://djdadoo.pilato.fr/img/20250712-palala.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3" length="152643187" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3</guid>
@@ -1067,12 +1088,88 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <title>David's Mix #2025/07/12 - Palala Paris, House Music, Part 3</title>
     <itunes:author>David Pilato</itunes:author>
     <itunes:subtitle>Recorded live from Palala Paris 6, FR, with dj4loops</itunes:subtitle>
-    <description><![CDATA[<p>Invited by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>]]></description>
+    <description><![CDATA[<p>Live set at Palala, Paris</p>
+      <p>Invited by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>
+      <p>Here is the playlist of this part:</p>
+      <ol>
+        <li>L'Histoire De La Vie - Debbie Davis</li>
+        <li>I Go (Extended) - Bob Sinclar, Shine TTW</li>
+        <li>Ode Ireti - Nitefreak Remix - &friends</li>
+        <li>Bamboleo ( Yas Cepeda Afro Remix ) - Gypsy King</li>
+        <li>Yeke Yeke (K3) - Mory Kanté</li>
+        <li>Liberian Girl (Alex Kosh & Kid Bamboo Edit) - Michael Jackson</li>
+        <li>My Feeling (Eden Prince Remix) - Junior Jack</li>
+        <li>Never Let You Down (Extended Mix) - Michael Gray, Anthony Poteat, LaMay</li>
+        <li>It's Over Now (Extended Vocal Mix) - Waterstone/Amanda Wilson</li>
+        <li>Song for Shelter - August Five Remix - Fatboy Slim</li>
+        <li>Groovejet [If This Ain't Love] (Nate Brice 2023 Soulful Mix) - Spiller</li>
+        <li>Just Can't Get Enough ( Les Bisous Remix ) - Depeche Mode</li>
+        <li>Let There Be House - Original Mix - The Collective/Gianpiero XP</li>
+        <li>You got to remember (Michael Gray Reprise Mix) - Tatiana Owens</li>
+        <li>I Want You (I'm loosing control) - Sam Divine/Kormak</li>
+        <li>Show Me Love (Jolyon Petch's Elektrik Disko Extended Mix) - Robin S.</li>
+        <li>Many Times - Mike Newman</li>
+      </ol>
+    ]]></description>
     <itunes:image href="https://djdadoo.pilato.fr/img/20250712-palala.jpg" />
     <enclosure url="https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part3.mp3" length="148748695" type="audio/mpeg" />
     <guid>https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part3.mp3</guid>
     <pubDate>12 July 2025 22:00:00 +0200</pubDate>
     <itunes:duration>01:01:55</itunes:duration>
+    <itunes:keywords>DJ Elky, Mix, Live, Palala, House</itunes:keywords>
+    <itunes:explicit>false</itunes:explicit>
+    <link>https://djdadoo.pilato.fr/</link>
+  </item>
+  <item>
+    <itunes:season>2025</itunes:season>
+    <itunes:episode>62</itunes:episode>
+    <title>David's Mix #2025/07/12 - Palala Paris, House Music, Part 4</title>
+    <itunes:author>DJ4Loops</itunes:author>
+    <itunes:subtitle>Recorded live from Palala Paris 6, FR, with DJ Elky</itunes:subtitle>
+    <description><![CDATA[<p>Played by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>]]></description>
+    <itunes:image href="https://djdadoo.pilato.fr/img/20250712-palala.jpg" />
+    <enclosure url="https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part4.mp3" length="114660973" type="audio/mpeg" />
+    <guid>https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part4.mp3</guid>
+    <pubDate>12 July 2025 23:00:00 +0200</pubDate>
+    <itunes:duration>00:47:43</itunes:duration>
+    <itunes:keywords>DJ4Loops, Mix, Live, Palala, House</itunes:keywords>
+    <itunes:explicit>false</itunes:explicit>
+    <link>https://djdadoo.pilato.fr/</link>
+  </item>
+  <item>
+    <itunes:season>2025</itunes:season>
+    <itunes:episode>63</itunes:episode>
+    <title>David's Mix #2025/07/12 - Palala Paris, House Music, Part 5</title>
+    <itunes:author>David Pilato</itunes:author>
+    <itunes:subtitle>Recorded live from Palala Paris 6, FR, with dj4loops</itunes:subtitle>
+    <description><![CDATA[<p>Live set at Palala, Paris</p>
+      <p>Invited by <a href="https://www.instagram.com/dj4loops/">dj4loops</a>, Using XDJ-RX3.</p>
+      <p>Here is the playlist of this part:</p>
+      <ol>
+        <li>Get Lucky (Sgt Slick ReCut) - Daft Punk</li>
+        <li>Think - Club Version - Revival/Phebe Edwards/GeO Gospel Choir</li>
+        <li>I Will Survive - Aaron Sevilla</li>
+        <li>Africa (Superfunk extended remix) - Rose Laurens & Superfunk</li>
+        <li>Hélène - Yann Muller</li>
+        <li>L'Envie d'aimer (Extended Mix) - Yann Muller</li>
+        <li>Voyage Voyage - Roberto Tropea</li>
+        <li>Promised Land (Floorplan Extended Paradise Remix) - Joe Smooth</li>
+        <li>You're Gonna Make Me Love Somebody Else (Michael Gray Extended Remix) - Michael Gray, Kelli Sae</li>
+        <li>World, Hold On (FISHER Rework_Remix) [feat. Steve Edwards] - Bob Sinclar</li>
+        <li>Volaré ( Afro Remix) - Yas Cepeda</li>
+        <li>Ya Rayah - Flo Dosh/Adam Trigger</li>
+        <li>Macao (Manuel Voltolinas Remix) - Pato's Groove</li>
+        <li>Kaneba (Original Mix) - Notre Dame</li>
+        <li>Je ne bois pas beaucoup - Moojo/Demayä</li>
+        <li>Body Funk X September (TAMAGO Mashup) - Purple Disco Machine X Earth Wind & Fire</li>
+        <li>Holiday (Remix) - Madonna</li>
+      </ol>
+    ]]></description>
+    <itunes:image href="https://djdadoo.pilato.fr/img/20250712-palala.jpg" />
+    <enclosure url="https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part5.mp3" length="138035356" type="audio/mpeg" />
+    <guid>https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part5.mp3</guid>
+    <pubDate>13 July 2025 00:00:00 +0200</pubDate>
+    <itunes:duration>00:57:27</itunes:duration>
     <itunes:keywords>DJ Elky, Mix, Live, Palala, House</itunes:keywords>
     <itunes:explicit>false</itunes:explicit>
     <link>https://djdadoo.pilato.fr/</link>
