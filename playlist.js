@@ -1,4 +1,12 @@
 var dadoonetPlayList = [{
+    title: 'Anniversaire Mika, 50 ans, Part 2',
+    file: 'https://storage.googleapis.com/djdadoo/2025-09-20-50ansMika-part2.mp3',
+    image: 'img/20250920-50ans-mika.jpg'
+},{
+    title: 'Anniversaire Mika, 50 ans, Part 1',
+    file: 'https://storage.googleapis.com/djdadoo/2025-09-20-50ansMika-part1.mp3',
+    image: 'img/20250920-50ans-mika.jpg'
+},{
     title: 'Palala Paris, House Music, Part 5',
     file: 'https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part5.mp3',
     image: 'img/20250712-palala.jpg'
