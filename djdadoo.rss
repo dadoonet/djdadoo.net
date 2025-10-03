@@ -1246,5 +1246,23 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:explicit>false</itunes:explicit>
     <link>https://djdadoo.pilato.fr/</link>
   </item>
+    <item>
+    <itunes:season>2025</itunes:season>
+    <itunes:episode>66</itunes:episode>
+    <title>David's Mix #2025/10/02 - Volcamp 2025 - full set raw</title>
+    <itunes:author>David Pilato and Julien Ponge</itunes:author>
+    <itunes:subtitle>Live set, private event, recorded live from Osny, FR. First time on OmnisDuo.</itunes:subtitle>
+    <description><![CDATA[<p>Live set from L'oval at Clermont-Ferrand, FR, with Julien Ponge</p>
+      <p>Playlist under construction...</p>
+      ]]></description>
+    <itunes:image href="https://djdadoo.pilato.fr/img/20251002-volcamp.jpg" />
+    <enclosure url="https://storage.googleapis.com/djdadoo/2025-10-02-volcamp.mp3" length="626656991" type="audio/mpeg" />
+    <guid>https://storage.googleapis.com/djdadoo/2025-10-02-volcamp.mp3</guid>
+    <pubDate>02 October 2025 18:30:00 +0200</pubDate>
+    <itunes:duration>04:21:06</itunes:duration>
+    <itunes:keywords>DJ Elky, Mix, Live, House, French Touch</itunes:keywords>
+    <itunes:explicit>false</itunes:explicit>
+    <link>https://djdadoo.pilato.fr/</link>
+  </item>
   </channel>
 </rss>

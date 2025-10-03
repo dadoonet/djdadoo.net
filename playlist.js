@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Volcamp 2025',
+    file: 'https://storage.googleapis.com/djdadoo/2025-10-02-volcamp.mp3',
+    image: 'img/20251002-volcamp.jpg'
+},{
     title: 'Anniversaire Mika, 50 ans, Part 2',
     file: 'https://storage.googleapis.com/djdadoo/2025-09-20-50ansMika-part2.mp3',
     image: 'img/20250920-50ans-mika.jpg'
