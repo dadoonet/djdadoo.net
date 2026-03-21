@@ -1,4 +1,8 @@
 var dadoonetPlayList = [{
+    title: 'Les 3 Grâces',
+    file: 'https://storage.googleapis.com/djdadoo/2026-03-21-Les_3_graces.mp3',
+    image: 'img/20260321-les3graces.jpg'
+},{
     title: 'Volcamp 2025',
     file: 'https://storage.googleapis.com/djdadoo/2025-10-02-volcamp.mp3',
     image: 'img/20251002-volcamp.jpg'

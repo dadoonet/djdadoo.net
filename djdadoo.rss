@@ -1251,7 +1251,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
       <itunes:episode>66</itunes:episode>
       <title>David's Mix #2025/10/02 - Volcamp 2025 - full set raw</title>
       <itunes:author>David Pilato and Julien Ponge</itunes:author>
-      <itunes:subtitle>Live set, private event, recorded live from Osny, FR. First time on OmnisDuo.</itunes:subtitle>
+      <itunes:subtitle>Live set, private event, recorded live from Clermont-Ferrand, FR.</itunes:subtitle>
       <description><![CDATA[<p>Live set from L'oval at Clermont-Ferrand, FR, with Julien Ponge</p>
         <p>Playlist under construction...</p>
         ]]></description>
@@ -1261,6 +1261,43 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
       <pubDate>02 October 2025 18:30:00 +0200</pubDate>
       <itunes:duration>04:21:06</itunes:duration>
       <itunes:keywords>DJ Elky, Mix, Live, House, French Touch</itunes:keywords>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://djdadoo.pilato.fr/</link>
+    </item>
+    <item>
+      <itunes:season>2026</itunes:season>
+      <itunes:episode>67</itunes:episode>
+      <title>David's Mix #2026/03/21 - Les 3 Grâces</title>
+      <itunes:author>David Pilato</itunes:author>
+      <itunes:subtitle>First time on DJ Studio. 80's hits</itunes:subtitle>
+      <description><![CDATA[<p>MAde with <a href="https://dj.studio/">DJ Studio</a>. 80's hits.</p>
+        <ul>
+          <li>00:00 - U2 - With Or Without You</li> 
+          <li>03:33 - Tears For Fears - Everybody Wants To Rule The World</li> 
+          <li>05:26 - Depeche Mode - Enjoy the Silence</li> 
+          <li>06:11 - Michael Jackson - Billie Jean</li> 
+          <li>09:26 - Larusso - Tu m'oublieras</li> 
+          <li>11:50 - Ophélie Winter - Dieu m'a donné la foi</li> 
+          <li>14:07 - Guesch Patti - Etienne</li> 
+          <li>15:21 - Alliance Ethnik - Simple et Funky</li> 
+          <li>16:42 - Kajagoogoo - Too Shy (Midnight mix)</li> 
+          <li>18:48 - Imagination - Just An Illusion (Long Version)</li> 
+          <li>23:35 - Simple Minds - Don't you</li> 
+          <li>26:55 - Talk Talk - Such a Shame (Original Long Ve</li> 
+          <li>28:56 - Kylie Minogue - I Should Be so Lucky (Extended version)</li> 
+          <li>31:05 - Rick Astley - Never Gonna Give You Up</li> 
+          <li>34:10 - Sabrina - Boys</li> 
+          <li>35:43 - Samantha Fox - Nothing's Gonna Stop Me Now</li> 
+          <li>37:02 - Lipps Inc - Funky Town</li> 
+          <li>39:47 - Oliver Cheatham - Get Down Saturday Night</li>
+        </ul>
+        ]]></description>
+      <itunes:image href="https://djdadoo.pilato.fr/img/20260321-les3graces.jpg" />
+      <enclosure url="https://storage.googleapis.com/djdadoo/2026-03-21-Les_3_graces" length="111978772" type="audio/mpeg" />
+      <guid>https://storage.googleapis.com/djdadoo/2026-03-21-Les_3_graces</guid>
+      <pubDate>21 March 2026 12:30:00 +0200</pubDate>
+      <itunes:duration>00:46:39</itunes:duration>
+      <itunes:keywords>DJ Elky, Mix, Studio, 80's</itunes:keywords>
       <itunes:explicit>false</itunes:explicit>
       <link>https://djdadoo.pilato.fr/</link>
     </item>
