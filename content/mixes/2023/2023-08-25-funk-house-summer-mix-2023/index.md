@@ -6,11 +6,9 @@ episode: 40
 subtitle: Home session recorded for my brother
 author: David Pilato
 keywords: ["DJ Elky", "Home", "Mix", "Funk", "House"]
-audio_url: "https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3"
+audio_url: "2023-08-25-HouseFunkSummerMix.mp3"
 audio_length: 155693976
-audio_type: audio/mpeg
 duration: "01:04:52"
-guid: "https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3"
 ---
 
 <p>Recorded in Cergy, France.</p>

@@ -6,11 +6,9 @@ episode: 9
 subtitle: Summer mix
 author: David Pilato
 keywords: ["DJ Elky", "Summer", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/08_DJ_Dadoo_Summer_Mix.mp3"
+audio_url: "08_DJ_Dadoo_Summer_Mix.mp3"
 audio_length: 78899761
-audio_type: audio/mpeg
 duration: "0:54:47"
-guid: "https://storage.googleapis.com/djdadoo/08_DJ_Dadoo_Summer_Mix.mp3"
 ---
 
 <p>Summer mix</p>

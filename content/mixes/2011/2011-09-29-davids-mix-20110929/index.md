@@ -6,11 +6,9 @@ episode: 1
 subtitle: Funk mix
 author: David Pilato
 keywords: ["DJ Elky", "Funk", "Groove", "Club", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/01_DJ_Dadoo_Funk_Mix.mp3"
+audio_url: "01_DJ_Dadoo_Funk_Mix.mp3"
 audio_length: 41742220
-audio_type: audio/mpeg
 duration: "28:59"
-guid: "https://storage.googleapis.com/djdadoo/01_DJ_Dadoo_Funk_Mix.mp3"
 ---
 
 <p>My first recorded mix with my old Hercules DJ Console</p>

@@ -6,11 +6,9 @@ episode: 55
 subtitle: Live from Elastic Office Paris, FR
 author: David Pilato
 keywords: ["DJ Elky", "Mix", "Live"]
-audio_url: "https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3"
+audio_url: "2024-12-05-ElasticDecemberFest.mp3"
 audio_length: 196081703
-audio_type: audio/mpeg
 duration: "01:22:42"
-guid: "https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3"
 ---
 
 <p>Live from Elastic Office, Paris, France, for the DecemberFest private party.</p>

@@ -6,11 +6,9 @@ episode: 32
 subtitle: Meet Your Soulmate - Warmup, Paris
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3"
+audio_url: "2022-12-17-MeetYourSoulmate-Warmup.mp3"
 audio_length: 159303307
-audio_type: audio/mpeg
 duration: "01:06:23"
-guid: "https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3"
 ---
 
 <p>Live session recorded at Les Spectacles, Paris</p>

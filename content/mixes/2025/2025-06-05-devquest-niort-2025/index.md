@@ -6,11 +6,9 @@ episode: 58
 subtitle: Recorded live from Niort, FR
 author: David Pilato
 keywords: ["DJ Elky", "Mix", "Live"]
-audio_url: "https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3"
+audio_url: "2025-06-05-DevQuest.mp3"
 audio_length: 154976458 
-audio_type: audio/mpeg
 duration: "01:04:34"
-guid: "https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3"
 ---
 
 <p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>

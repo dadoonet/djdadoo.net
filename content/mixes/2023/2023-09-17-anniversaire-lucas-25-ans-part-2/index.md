@@ -6,11 +6,9 @@ episode: 45
 subtitle: Live session
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3"
+audio_url: "2023-09-16-AnniversaireLucas-Dance2.mp3"
 audio_length: 269534637
-audio_type: audio/mpeg
 duration: "01:52:18"
-guid: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance2.mp3"
 ---
 
 <p>Recorded live in Le Mans, France, for Lucas's birthday.</p>

@@ -6,11 +6,9 @@ episode: 29
 subtitle: Danse Part 1 - Anniversaire Gérard, Cergy
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3"
+audio_url: "2022-10-29-Anniversaire-Gerard-Part2.mp3"
 audio_length: 363647648
-audio_type: audio/mpeg
 duration: "02:31:22"
-guid: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3"
 ---
 
 <p>Live session recorded in Cergy</p>

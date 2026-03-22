@@ -6,11 +6,9 @@ episode: 36
 subtitle: Les Envahisseurs - Take 2
 author: David Pilato
 keywords: ["DJ Elky", "Studio", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3"
+audio_url: "2023-02-21-LesEnvahisseurs-Take2.mp3"
 audio_length: 162691470
-audio_type: audio/mpeg
 duration: "01:07:47"
-guid: "https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3"
 ---
 
 <p>Recorded from home studio, Cergy. Initially with 

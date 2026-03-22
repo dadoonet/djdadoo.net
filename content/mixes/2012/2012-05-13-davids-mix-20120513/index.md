@@ -6,11 +6,9 @@ episode: 6
 subtitle: May mix
 author: David Pilato
 keywords: ["DJ Elky", "Club", "House", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/06_DJ_Dadoo_May-Mix-DDJT1.mp3"
+audio_url: "06_DJ_Dadoo_May-Mix-DDJT1.mp3"
 audio_length: 80753610
-audio_type: audio/mpeg
 duration: "0:56:04"
-guid: "https://storage.googleapis.com/djdadoo/06_DJ_Dadoo_May-Mix-DDJT1.mp3"
 ---
 
 <p>5th recorded mix with my Pioneer DDJ-T1</p>

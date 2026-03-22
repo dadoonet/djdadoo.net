@@ -53,12 +53,13 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
       {{- end }}
     ]]></description>
     {{- if $cover }}
-    <itunes:image href="{{ $cover.Permalink }}" />
+    <itunes:image href="{{ $site.BaseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
     {{- end }}
     {{- with $p.Params.audio_url }}
-    <enclosure url="{{ . }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default "audio/mpeg" }}" />
+    {{- $audioURL := printf "%s%s" $site.Params.baseAudioURL . }}
+    <enclosure url="{{ $audioURL }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default $site.Params.audioType }}" />
     {{- end }}
-    <guid>{{ with $p.Params.guid }}{{ . }}{{ else }}{{ $p.Params.audio_url }}{{ end }}</guid>
+    <guid>{{ printf "%s%s" $site.Params.baseAudioURL ($p.Params.audio_url | default "") }}</guid>
     <pubDate>{{ $p.Date.Format "02 Jan 2006 15:04:05 -0700" }}</pubDate>
     {{- with $p.Params.duration }}
     <itunes:duration>{{ . }}</itunes:duration>

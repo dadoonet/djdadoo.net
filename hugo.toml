@@ -34,3 +34,5 @@ disableKinds = ["taxonomy", "term"]
   subtitle     = "Just playing with my DJ gears, from DDJ-T1 to CDJ3000"
   description  = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
   itunesLink   = "https://podcasts.apple.com/fr/podcast/dj-elky-mixes/id542004633"
+  audioType    = "audio/mpeg"
+  baseAudioURL = "https://storage.googleapis.com/djdadoo/"

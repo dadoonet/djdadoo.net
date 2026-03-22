@@ -6,11 +6,9 @@ episode: 5
 subtitle: April mix
 author: David Pilato
 keywords: ["DJ Elky", "Funk", "Groove", "Club", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/05_DJ_Dadoo_April-Mix-DDJT1.mp3"
+audio_url: "05_DJ_Dadoo_April-Mix-DDJT1.mp3"
 audio_length: 102217281
-audio_type: audio/mpeg
 duration: "1:10:58"
-guid: "https://storage.googleapis.com/djdadoo/05_DJ_Dadoo_April-Mix-DDJT1.mp3"
 ---
 
 <p>4th recorded mix with my Pioneer DDJ-T1</p>

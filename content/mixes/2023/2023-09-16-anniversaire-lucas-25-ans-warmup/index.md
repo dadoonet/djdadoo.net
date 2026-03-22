@@ -6,11 +6,9 @@ episode: 43
 subtitle: Live session
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3"
+audio_url: "2023-09-16-AnniversaireLucas-Warmup.mp3"
 audio_length: 68211173
-audio_type: audio/mpeg
 duration: "00:28:25"
-guid: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3"
 ---
 
 <p>Recorded live in Le Mans, France, for Lucas's birthday.</p>

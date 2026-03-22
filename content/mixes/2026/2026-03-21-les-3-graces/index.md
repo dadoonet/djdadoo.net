@@ -6,11 +6,9 @@ episode: 67
 subtitle: "First time on DJ Studio. 80's hits"
 author: David Pilato
 keywords: ["DJ Elky", "Mix", "Studio", "80's"]
-audio_url: "https://storage.googleapis.com/djdadoo/2026-03-21-Les_3_graces.mp3"
+audio_url: "2026-03-21-Les_3_graces.mp3"
 audio_length: 111978772
-audio_type: audio/mpeg
 duration: "00:46:39"
-guid: "https://storage.googleapis.com/djdadoo/2026-03-21-Les_3_graces.mp3"
 chapters:
   - time: "00:00:00"
     title: U2 - With Or Without You

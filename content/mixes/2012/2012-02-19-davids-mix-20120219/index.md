@@ -6,11 +6,9 @@ episode: 3
 subtitle: Club mix
 author: David Pilato
 keywords: ["DJ Elky", "Funk", "Groove", "Club", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/03_DJ_Dadoo_Club-Mix-DDJT1.mp3"
+audio_url: "03_DJ_Dadoo_Club-Mix-DDJT1.mp3"
 audio_length: 91088046
-audio_type: audio/mpeg
 duration: "1:03:15"
-guid: "https://storage.googleapis.com/djdadoo/03_DJ_Dadoo_Club-Mix-DDJT1.mp3"
 ---
 
 <p>2nd recorded mix with my Pioneer DDJ-T1</p>

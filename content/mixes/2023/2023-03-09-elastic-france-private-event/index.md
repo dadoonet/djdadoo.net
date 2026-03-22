@@ -6,11 +6,9 @@ episode: 37
 subtitle: Elastic France Private Event
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3"
+audio_url: "2023-03-09-ElasticPrivateEvent.mp3"
 audio_length: 162691470
-audio_type: audio/mpeg
 duration: "03:37:24"
-guid: "https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3"
 ---
 
 <p>Recorded from Elastic France office, Paris.</p>

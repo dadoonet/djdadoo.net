@@ -6,11 +6,9 @@ episode: 65
 subtitle: Live set, private event, recorded live from Osny, FR. First time on OmnisDuo.
 author: David Pilato
 keywords: ["DJ Elky", "Mix", "Live", "French Touch"]
-audio_url: "https://storage.googleapis.com/djdadoo/2025-09-20-50ansMika-part2.mp3"
+audio_url: "2025-09-20-50ansMika-part2.mp3"
 audio_length: 132750279
-audio_type: audio/mpeg
 duration: "00:55:17"
-guid: "https://storage.googleapis.com/djdadoo/2025-09-20-50ansMika-part2.mp3"
 ---
 
 <p>Live set from Osny, FR</p>

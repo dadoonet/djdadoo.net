@@ -6,11 +6,9 @@ episode: 47
 subtitle: Live session
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3"
+audio_url: "2024-01-20-AnniversaireGisele-Part2.mp3"
 audio_length: 254624165
-audio_type: audio/mpeg
 duration: "01:46:06"
-guid: "https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3"
 ---
 
 <p>Recorded live at Les Bons Amis, Paris 17, France, for Gisèle's birthday.</p>

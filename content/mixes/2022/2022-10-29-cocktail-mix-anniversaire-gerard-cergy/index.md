@@ -6,11 +6,9 @@ episode: 28
 subtitle: Cocktail Mix - Anniversaire Gérard, Cergy
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3"
+audio_url: "2022-10-29-Anniversaire-Gerard-Part1.mp3"
 audio_length: 239847196
-audio_type: audio/mpeg
 duration: "01:39:56"
-guid: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part1.mp3"
 ---
 
 <p>Live session recorded in Cergy</p>

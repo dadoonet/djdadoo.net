@@ -6,11 +6,9 @@ episode: 10
 subtitle: "Anne's Birthday December Live Mix"
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix", "Birthday", "Anne"]
-audio_url: "https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3"
+audio_url: "09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3"
 audio_length: 32128646
-audio_type: audio/mpeg
 duration: "0:22:18"
-guid: "https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3"
 ---
 
 <p>Recorded Live for Anne's Birthday</p>

@@ -6,11 +6,9 @@ episode: 59
 subtitle: Recorded live from Paris 15, FR
 author: David Pilato
 keywords: ["DJ Elky", "Mix", "Live", "Anniversary", "Lounge", "House", "Electro"]
-audio_url: "https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3"
+audio_url: "2025-06-21-AnniversaireArnaud.mp3"
 audio_length: 450915648 
-audio_type: audio/mpeg
 duration: "03:07:53"
-guid: "https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3"
 ---
 
 <p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>

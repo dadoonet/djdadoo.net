@@ -6,11 +6,9 @@ episode: 60
 subtitle: Recorded live from Palala Paris 6, FR, with dj4loops
 author: David Pilato
 keywords: ["DJ Elky", "Mix", "Live", "Palala", "House"]
-audio_url: "https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3"
+audio_url: "2025-07-12-Palala-part1.mp3"
 audio_length: 152643187
-audio_type: audio/mpeg
 duration: "01:03:36"
-guid: "https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3"
 ---
 
 <p>Live set at Palala, Paris</p>

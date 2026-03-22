@@ -6,11 +6,9 @@ episode: 19
 subtitle: Live - Fred Birthday
 author: David Pilato
 keywords: ["DJ Elky", "Mix", "Live"]
-audio_url: "https://storage.googleapis.com/djdadoo/2016-07-02-Fred-Birthday-Cergy.mp3"
+audio_url: "2016-07-02-Fred-Birthday-Cergy.mp3"
 audio_length: 61897842
-audio_type: audio/mpeg
 duration: "0:42:59"
-guid: "https://storage.googleapis.com/djdadoo/2016-07-02-Fred-Birthday-Cergy.mp3"
 ---
 
 <p>Live - Fred Birthday</p>

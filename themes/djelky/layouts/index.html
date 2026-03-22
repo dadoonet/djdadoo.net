@@ -28,7 +28,7 @@
   {{ if .Params.chapters }}{{ $chapters = .Params.chapters }}{{ end }}
   {{ $playlist = $playlist | append (dict
     "title"    .Title
-    "audioUrl" (.Params.audio_url | default "")
+    "audioUrl" (printf "%s%s" $.Site.Params.baseAudioURL (.Params.audio_url | default ""))
     "duration" (.Params.duration  | default "")
     "cover"    $cover
     "subtitle" (.Params.subtitle  | default "")

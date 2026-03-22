@@ -6,11 +6,9 @@ episode: 33
 subtitle: Meet Your Soulmate - Danse part 1, Paris
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3"
+audio_url: "2022-12-17-MeetYourSoulmate-Dance-Part1.mp3"
 audio_length: 79650741
-audio_type: audio/mpeg
 duration: "00:33:11"
-guid: "https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3"
 ---
 
 <p>Live session recorded at Les Spectacles, Paris</p>

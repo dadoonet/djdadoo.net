@@ -6,11 +6,9 @@ episode: 53
 subtitle: Studio session
 author: David Pilato
 keywords: ["DJ Elky", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3"
+audio_url: "2024-08-08-SummerHolidaysMix.mp3"
 audio_length: 291978390
-audio_type: audio/mpeg
 duration: "02:01:39"
-guid: "https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3"
 ---
 
 <p>Recorded in Cergy, France, for the summer holidays so I have some music to listen while driving.</p>

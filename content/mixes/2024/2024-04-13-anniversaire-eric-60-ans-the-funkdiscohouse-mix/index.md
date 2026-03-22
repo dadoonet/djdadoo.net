@@ -6,11 +6,9 @@ episode: 48
 subtitle: Live session
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix", "Funk", "Disco", "House"]
-audio_url: "https://storage.googleapis.com/djdadoo/2024-04-13-60ansEric.mp3"
+audio_url: "2024-04-13-60ansEric.mp3"
 audio_length: 265221390
-audio_type: audio/mpeg
 duration: "01:50:31"
-guid: "https://storage.googleapis.com/djdadoo/2024-04-13-60ansEric.mp3"
 ---
 
 <p>Recorded live in Saint-Georges-Du-Bois, France, for Eric's birthday.</p>

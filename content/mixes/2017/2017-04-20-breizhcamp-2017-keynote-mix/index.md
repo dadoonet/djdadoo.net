@@ -6,11 +6,9 @@ episode: 22
 subtitle: BreizhCamp 2017 Keynote Mix
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3"
+audio_url: "2017-04-20-breizhcamp-keynote.mp3"
 audio_length: 25240750
-audio_type: audio/mpeg
 duration: "00:17:32"
-guid: "https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3"
 ---
 
 <p>Live session recorded at BreizhCamp 2017 during the Keynote</p>

@@ -6,11 +6,9 @@ episode: 26
 subtitle: 1er An - Lolo et Mika
 author: David Pilato
 keywords: ["DJ Elky", "Live", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3"
+audio_url: "2020-01-01-LoloEtMika-1An-fullmix.mp3"
 audio_length: 341528811
-audio_type: audio/mpeg
 duration: "03:57:10"
-guid: "https://storage.googleapis.com/djdadoo/2020-01-01-LoloEtMika-1An-fullmix.mp3"
 ---
 
 <p>Live session recorded in Osny</p>

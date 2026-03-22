@@ -6,11 +6,9 @@ episode: 2
 subtitle: Funk groove mix
 author: David Pilato
 keywords: ["DJ Elky", "Funk", "Groove", "Club", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/02_DJ_Dadoo_First-Mix-DDJT1.mp3"
+audio_url: "02_DJ_Dadoo_First-Mix-DDJT1.mp3"
 audio_length: 97455772
-audio_type: audio/mpeg
 duration: "1:07:27"
-guid: "https://storage.googleapis.com/djdadoo/02_DJ_Dadoo_First-Mix-DDJT1.mp3"
 ---
 
 <p>First recorded mix with my new Pioneer DDJ-T1</p>

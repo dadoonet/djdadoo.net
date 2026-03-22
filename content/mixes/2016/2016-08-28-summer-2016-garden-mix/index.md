@@ -6,11 +6,9 @@ episode: 20
 subtitle: Summer 2016 Garden Mix
 author: David Pilato
 keywords: ["DJ Elky", "Home", "Mix"]
-audio_url: "https://storage.googleapis.com/djdadoo/2016-08-28-Summer-2016-Garden-Mix.mp3"
+audio_url: "2016-08-28-Summer-2016-Garden-Mix.mp3"
 audio_length: 98529268
-audio_type: audio/mpeg
 duration: "01:08:25"
-guid: "https://storage.googleapis.com/djdadoo/2016-08-28-Summer-2016-Garden-Mix.mp3"
 ---
 
 <p>Home session - Summer 2016 Garden Mix</p>
