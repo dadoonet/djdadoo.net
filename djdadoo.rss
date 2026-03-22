@@ -1270,7 +1270,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
       <title>David's Mix #2026/03/21 - Les 3 Grâces</title>
       <itunes:author>David Pilato</itunes:author>
       <itunes:subtitle>First time on DJ Studio. 80's hits</itunes:subtitle>
-      <description><![CDATA[<p>MAde with DJ Studio. 80's hits.</p>
+      <description><![CDATA[<p>Made with DJ Studio for les 3 Grâces, Katti, Anne-Marie and Jérôme. 80's hits.</p>
         <p>
           <ul>
             <li>00:00:00 - U2 - With Or Without You</li> 
@@ -1296,7 +1296,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
         ]]></description>
       <itunes:image href="https://djdadoo.pilato.fr/img/20260321-les3graces.jpg" />
       <enclosure url="https://storage.googleapis.com/djdadoo/2026-03-21-Les_3_graces.mp3" length="111978772" type="audio/mpeg" />
-      <guid>https://storage.googleapis.com/djdadoo/2026-03-21-Les_3_graces</guid>
+      <guid>https://storage.googleapis.com/djdadoo/2026-03-21-Les_3_graces.mp3</guid>
       <pubDate>21 March 2026 12:30:00 +0200</pubDate>
       <itunes:duration>00:46:39</itunes:duration>
       <itunes:keywords>DJ Elky, Mix, Studio, 80's</itunes:keywords>
