@@ -1,0 +1,100 @@
+{{ define "main" }}
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-title">
+      <img src="/djdadoo-new.jpg" alt="DJ Elky" class="header-logo" />
+      <div>
+        <h1>DJ Elky</h1>
+        <p class="header-sub">{{ .Site.Params.subtitle }}</p>
+      </div>
+    </div>
+    <a class="itunes-link" href="{{ .Site.Params.itunesLink }}" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 14.5v-9l7 4.5-7 4.5z"/></svg>
+      Apple Podcasts
+    </a>
+  </div>
+</header>
+
+{{/* Build playlist JSON for player */}}
+{{ $mixes := where .Site.RegularPages "Section" "mixes" }}
+{{ $mixes = $mixes.ByDate.Reverse }}
+
+<script type="application/json" id="playlist-data">
+[
+  {{ range $i, $p := $mixes }}{{ if $i }},{{ end }}
+  {
+    "title": {{ $p.Title | jsonify }},
+    "audioUrl": {{ $p.Params.audio_url | jsonify }},
+    "duration": {{ $p.Params.duration | jsonify }},
+    "cover": {{ if $p.Params.cover }}{{ (printf "/%s" $p.Params.cover) | jsonify }}{{ else }}"" {{ end }},
+    "subtitle": {{ $p.Params.subtitle | jsonify }},
+    "chapters": {{ if $p.Params.chapters }}{{ $p.Params.chapters | jsonify }}{{ else }}[]{{ end }}
+  }
+  {{ end }}
+]
+</script>
+
+<main class="mix-grid-wrapper">
+  <div class="mix-grid">
+    {{ range $i, $p := $mixes }}
+    <article class="mix-card" data-index="{{ $i }}" role="button" tabindex="0"
+             aria-label="Lire {{ $p.Title }}">
+      <div class="mix-card-artwork">
+        {{ if $p.Params.cover }}
+        <img src="/{{ $p.Params.cover }}" alt="{{ $p.Title }}" loading="lazy" />
+        {{ else }}
+        <img src="/djdadoo-new.jpg" alt="{{ $p.Title }}" loading="lazy" />
+        {{ end }}
+        <div class="mix-card-overlay">
+          <span class="play-icon">▶</span>
+        </div>
+        {{ if $p.Params.duration }}
+        <span class="mix-card-duration">{{ $p.Params.duration }}</span>
+        {{ end }}
+      </div>
+      <div class="mix-card-info">
+        <h2 class="mix-card-title">{{ $p.Title }}</h2>
+        <p class="mix-card-meta">
+          <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "02 Jan 2006" }}</time>
+          {{ if $p.Params.subtitle }}· <span>{{ $p.Params.subtitle }}</span>{{ end }}
+        </p>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</main>
+{{ end }}
+
+{{ define "player" }}
+<div id="player" class="player" aria-label="Lecteur audio" hidden>
+  <div class="player-artwork">
+    <img id="player-cover" src="" alt="" />
+  </div>
+  <div class="player-info">
+    <p id="player-title" class="player-title"></p>
+    <p id="player-subtitle" class="player-subtitle"></p>
+    <div id="player-chapters" class="player-chapters" hidden></div>
+  </div>
+  <div class="player-controls">
+    <button id="btn-prev" aria-label="Précédent">⏮</button>
+    <button id="btn-play" aria-label="Lecture / Pause">▶</button>
+    <button id="btn-next" aria-label="Suivant">⏭</button>
+  </div>
+  <div class="player-progress-wrap">
+    <span id="player-current">0:00</span>
+    <div class="player-progress-bar" id="progress-bar" role="slider" aria-label="Progression">
+      <div class="player-progress-fill" id="progress-fill"></div>
+    </div>
+    <span id="player-duration">0:00</span>
+  </div>
+  <div class="player-volume-wrap">
+    <span class="volume-icon">🔊</span>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1"
+           aria-label="Volume" />
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"
+        integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/player.js"></script>
+{{ end }}
