@@ -7,6 +7,7 @@ disableKinds = ["taxonomy", "term"]
 [mediaTypes]
   [mediaTypes."application/rss+xml"]
     suffixes = ["rss"]
+    charset = "utf-8"
 
 [outputFormats]
   [outputFormats.RSS]
