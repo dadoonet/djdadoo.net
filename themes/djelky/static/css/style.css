@@ -459,6 +459,160 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
 }
 
+/* ----- Info button on card ----- */
+.mix-card-info-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: rgba(0,0,0,0.55);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 2;
+  opacity: 0.75;
+  transition: opacity 0.15s, background 0.15s;
+}
+.mix-card-info-btn:hover {
+  opacity: 1;
+  background: var(--color-accent);
+}
+
+/* ----- Info modal ----- */
+.mix-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mix-modal[hidden] { display: none; }
+
+.mix-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(4px);
+}
+
+.mix-modal-card {
+  position: relative;
+  background: rgba(18,8,40,0.97);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  width: min(540px, 92vw);
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mix-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.15s;
+  z-index: 1;
+}
+.mix-modal-close:hover { color: var(--color-text); }
+
+.mix-modal-header {
+  display: flex;
+  gap: 16px;
+  padding: 20px 20px 16px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.mix-modal-cover {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.mix-modal-meta {
+  flex: 1;
+  min-width: 0;
+  padding-top: 2px;
+}
+
+.mix-modal-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.mix-modal-episode {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  margin-bottom: 3px;
+}
+
+.mix-modal-duration {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  font-family: monospace;
+  margin-bottom: 3px;
+}
+
+.mix-modal-subtitle {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+.mix-modal-keywords {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
+.mix-modal-sep {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+.mix-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px 20px;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-accent) transparent;
+}
+
+.mix-modal-body p { margin-bottom: 10px; }
+.mix-modal-body ol,
+.mix-modal-body ul {
+  padding-left: 1.4em;
+  margin-bottom: 10px;
+}
+.mix-modal-body li { margin-bottom: 3px; }
+
 /* ----- Responsive ----- */
 @media (max-width: 640px) {
   .mix-grid { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 12px; }

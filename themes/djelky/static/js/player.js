@@ -360,4 +360,43 @@
     }
   }
 
+
+  // ── Info modal ─────────────────────────────────────────────────────────────
+  var modalEl       = document.getElementById("mix-modal");
+  var modalClose    = modalEl.querySelector(".mix-modal-close");
+  var modalBackdrop = modalEl.querySelector(".mix-modal-backdrop");
+
+  function openModal(card) {
+    var d = card.querySelector(".mix-data");
+    if (!d) return;
+    modalEl.querySelector(".mix-modal-cover").src            = d.dataset.cover || "";
+    modalEl.querySelector(".mix-modal-cover").alt            = d.dataset.title || "";
+    modalEl.querySelector(".mix-modal-title").textContent    = d.dataset.title || "";
+    modalEl.querySelector(".mix-modal-episode").textContent  =
+      "Ép. " + (d.dataset.episode || "?") + " · " + (d.dataset.season || "");
+    modalEl.querySelector(".mix-modal-duration").textContent = d.dataset.duration || "";
+    modalEl.querySelector(".mix-modal-subtitle").textContent = d.dataset.subtitle || "";
+    modalEl.querySelector(".mix-modal-keywords").textContent = d.dataset.keywords || "";
+    modalEl.querySelector(".mix-modal-body").innerHTML       = d.innerHTML;
+    modalEl.removeAttribute("hidden");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    modalEl.setAttribute("hidden", "");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll(".mix-card-info-btn").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      openModal(btn.closest(".mix-card"));
+    });
+  });
+  modalClose.addEventListener("click", closeModal);
+  modalBackdrop.addEventListener("click", closeModal);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modalEl.hasAttribute("hidden")) closeModal();
+  });
+
 })();

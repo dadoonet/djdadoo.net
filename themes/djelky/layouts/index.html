@@ -71,6 +71,7 @@
         {{ if $p.Params.duration }}
         <span class="mix-card-duration">{{ $p.Params.duration }}</span>
         {{ end }}
+        <button class="mix-card-info-btn" aria-label="Informations sur ce mix">ⓘ</button>
       </div>
       <div class="mix-card-info">
         <h2 class="mix-card-title">{{ $p.Title }}</h2>
@@ -78,6 +79,17 @@
           <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "02 Jan 2006" }}</time>
           {{ if $p.Params.subtitle }}· <span>{{ $p.Params.subtitle }}</span>{{ end }}
         </p>
+      </div>
+      <div class="mix-data" hidden
+           data-title="{{ $p.Title }}"
+           data-date="{{ $p.Date.Format "02 Jan 2006" }}"
+           data-episode="{{ $p.Params.episode }}"
+           data-season="{{ $p.Params.season }}"
+           data-duration="{{ $p.Params.duration }}"
+           data-subtitle="{{ $p.Params.subtitle }}"
+           data-keywords="{{ delimit ($p.Params.keywords | default slice) ", " }}"
+           data-cover="{{ if $cover }}{{ $cover }}{{ else }}/djdadoo-new.jpg{{ end }}">
+        {{ $p.Content }}
       </div>
     </article>
     {{ $idx = add $idx 1 }}
@@ -114,6 +126,24 @@
     <span class="volume-icon">🔊</span>
     <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="1"
            aria-label="Volume" />
+  </div>
+</div>
+<div id="mix-modal" class="mix-modal" hidden role="dialog" aria-modal="true" aria-label="Informations sur le mix">
+  <div class="mix-modal-backdrop"></div>
+  <div class="mix-modal-card">
+    <button class="mix-modal-close" aria-label="Fermer">×</button>
+    <div class="mix-modal-header">
+      <img class="mix-modal-cover" src="" alt="" />
+      <div class="mix-modal-meta">
+        <h2 class="mix-modal-title"></h2>
+        <p class="mix-modal-episode"></p>
+        <p class="mix-modal-duration"></p>
+        <p class="mix-modal-subtitle"></p>
+        <p class="mix-modal-keywords"></p>
+      </div>
+    </div>
+    <hr class="mix-modal-sep" />
+    <div class="mix-modal-body"></div>
   </div>
 </div>
 <script src="/js/howler.min.js"></script>
