@@ -2,6 +2,7 @@ baseURL = "https://djdadoo.pilato.fr/"
 languageCode = "en"
 title = "DJ Elky mixes"
 theme = "djelky"
+disableKinds = ["taxonomy", "term"]
 
 [mediaTypes]
   [mediaTypes."application/rss+xml"]
@@ -16,7 +17,9 @@ theme = "djelky"
     noUgly = true
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home    = ["HTML", "RSS"]
+  section = ["HTML"]
+  page    = ["HTML"]
 
 [markup]
   [markup.goldmark]
