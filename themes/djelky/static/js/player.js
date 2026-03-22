@@ -28,10 +28,11 @@
   var cards         = document.querySelectorAll(".mix-card");
 
   // ── State ──────────────────────────────────────────────────────────────────
-  var currentIndex = -1;
-  var sound        = null;
-  var rafId        = null;
-  var isDragging   = false;
+  var currentIndex    = -1;
+  var currentChapIdx  = -1;   // index of the highlighted chapter
+  var sound           = null;
+  var rafId           = null;
+  var isDragging      = false;
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   function formatTime(secs) {
@@ -93,7 +94,8 @@
       rafId = null;
     }
 
-    currentIndex = index;
+    currentIndex   = index;
+    currentChapIdx = -1;
     var mix = PLAYLIST[index];
 
     // Show player bar
@@ -230,34 +232,18 @@
   });
   btnPrev.addEventListener("click", function () {
     var chapters = currentIndex >= 0 ? (PLAYLIST[currentIndex].chapters || []) : [];
-    if (chapters.length && sound) {
-      var seek = sound.seek() || 0;
-      var activeIdx = -1;
-      for (var i = chapters.length - 1; i >= 0; i--) {
-        if (timeToSeconds(chapters[i].time) <= seek) { activeIdx = i; break; }
-      }
-      if (activeIdx > 0) {
-        sound.seek(timeToSeconds(chapters[activeIdx - 1].time));
-        if (!sound.playing()) sound.play();
-        return;
-      }
+    if (chapters.length && sound && currentChapIdx > 0) {
+      seekToChapter(currentChapIdx - 1);
+      return;
     }
     skipTo(currentIndex - 1);
   });
 
   btnNext.addEventListener("click", function () {
     var chapters = currentIndex >= 0 ? (PLAYLIST[currentIndex].chapters || []) : [];
-    if (chapters.length && sound) {
-      var seek = sound.seek() || 0;
-      var activeIdx = -1;
-      for (var i = chapters.length - 1; i >= 0; i--) {
-        if (timeToSeconds(chapters[i].time) <= seek) { activeIdx = i; break; }
-      }
-      if (activeIdx < chapters.length - 1) {
-        sound.seek(timeToSeconds(chapters[activeIdx + 1].time));
-        if (!sound.playing()) sound.play();
-        return;
-      }
+    if (chapters.length && sound && currentChapIdx < chapters.length - 1) {
+      seekToChapter(currentChapIdx + 1);
+      return;
     }
     skipTo(currentIndex + 1);
   });
@@ -285,10 +271,7 @@
         '<span class="chapter-title">' + escapeHtml(ch.title) + "</span>";
       div.addEventListener("click", function (e) {
         e.stopPropagation();
-        if (sound) {
-          sound.seek(parseFloat(div.dataset.seconds));
-          if (!sound.playing()) sound.play();
-        }
+        if (sound) seekToChapter(i);
       });
       chaptersEl.appendChild(div);
     });
@@ -299,14 +282,34 @@
     var items  = chaptersEl.querySelectorAll(".chapter-item");
     var active = null;
     items.forEach(function (item) {
-      if (parseFloat(item.dataset.seconds) <= currentSec) active = item;
+      // +0.5s tolerance: handles MP3 frame-alignment drift after a seek
+      if (parseFloat(item.dataset.seconds) <= currentSec + 0.5) active = item;
     });
     items.forEach(function (item) { item.classList.remove("active"); });
     if (active) {
       active.classList.add("active");
-      var titleSpan = active.querySelector(".chapter-title");
-      if (titleSpan) chapterCurrentEl.textContent = titleSpan.textContent;
+      var idx = parseInt(active.dataset.index, 10);
+      if (idx !== currentChapIdx) {
+        currentChapIdx = idx;
+        var titleSpan = active.querySelector(".chapter-title");
+        if (titleSpan) chapterCurrentEl.textContent = titleSpan.textContent;
+      }
     }
+  }
+
+  function seekToChapter(chapIdx) {
+    var chapters = currentIndex >= 0 ? (PLAYLIST[currentIndex].chapters || []) : [];
+    if (!chapters[chapIdx]) return;
+    currentChapIdx = chapIdx;
+    var titleEl2 = chaptersEl.querySelectorAll(".chapter-item")[chapIdx];
+    if (titleEl2) {
+      chaptersEl.querySelectorAll(".chapter-item").forEach(function (el) { el.classList.remove("active"); });
+      titleEl2.classList.add("active");
+      var sp = titleEl2.querySelector(".chapter-title");
+      if (sp) chapterCurrentEl.textContent = sp.textContent;
+    }
+    sound.seek(timeToSeconds(chapters[chapIdx].time));
+    if (!sound.playing()) sound.play();
   }
 
   // Toggle chapter list on click, close on outside click
