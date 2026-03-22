@@ -15,7 +15,8 @@
   var coverEl       = document.getElementById("player-cover");
   var titleEl       = document.getElementById("player-title");
   var subtitleEl    = document.getElementById("player-subtitle");
-  var chaptersEl    = document.getElementById("player-chapters");
+  var chaptersEl        = document.getElementById("player-chapters");
+  var chapterCurrentEl  = document.getElementById("player-chapter-current");
   var btnPlay       = document.getElementById("btn-play");
   var btnPrev       = document.getElementById("btn-prev");
   var btnNext       = document.getElementById("btn-next");
@@ -110,6 +111,7 @@
 
     updateActiveCard(index, true);
     buildChapters(mix.chapters || []);
+    highlightChapter(0);
 
     // Create Howl
     sound = new Howl({
@@ -226,8 +228,39 @@
       togglePlayPause();
     }
   });
-  btnPrev.addEventListener("click", function () { skipTo(currentIndex - 1); });
-  btnNext.addEventListener("click", function () { skipTo(currentIndex + 1); });
+  btnPrev.addEventListener("click", function () {
+    var chapters = currentIndex >= 0 ? (PLAYLIST[currentIndex].chapters || []) : [];
+    if (chapters.length && sound) {
+      var seek = sound.seek() || 0;
+      var activeIdx = -1;
+      for (var i = chapters.length - 1; i >= 0; i--) {
+        if (timeToSeconds(chapters[i].time) <= seek) { activeIdx = i; break; }
+      }
+      if (activeIdx > 0) {
+        sound.seek(timeToSeconds(chapters[activeIdx - 1].time));
+        if (!sound.playing()) sound.play();
+        return;
+      }
+    }
+    skipTo(currentIndex - 1);
+  });
+
+  btnNext.addEventListener("click", function () {
+    var chapters = currentIndex >= 0 ? (PLAYLIST[currentIndex].chapters || []) : [];
+    if (chapters.length && sound) {
+      var seek = sound.seek() || 0;
+      var activeIdx = -1;
+      for (var i = chapters.length - 1; i >= 0; i--) {
+        if (timeToSeconds(chapters[i].time) <= seek) { activeIdx = i; break; }
+      }
+      if (activeIdx < chapters.length - 1) {
+        sound.seek(timeToSeconds(chapters[activeIdx + 1].time));
+        if (!sound.playing()) sound.play();
+        return;
+      }
+    }
+    skipTo(currentIndex + 1);
+  });
 
   // ── Volume ─────────────────────────────────────────────────────────────────
   volumeSlider.addEventListener("input", function () {
@@ -237,10 +270,11 @@
   // ── Chapters ───────────────────────────────────────────────────────────────
   function buildChapters(chapters) {
     chaptersEl.innerHTML = "";
-    if (!chapters.length) {
-      chaptersEl.setAttribute("hidden", "");
-      return;
-    }
+    chaptersEl.setAttribute("hidden", "");
+    chapterCurrentEl.setAttribute("hidden", "");
+    chapterCurrentEl.setAttribute("aria-expanded", "false");
+    if (!chapters.length) return;
+
     chapters.forEach(function (ch, i) {
       var div = document.createElement("div");
       div.className        = "chapter-item";
@@ -250,7 +284,7 @@
         '<span class="chapter-time">' + escapeHtml(ch.time) + "</span>" +
         '<span class="chapter-title">' + escapeHtml(ch.title) + "</span>";
       div.addEventListener("click", function (e) {
-        e.stopPropagation();  // prevent card click
+        e.stopPropagation();
         if (sound) {
           sound.seek(parseFloat(div.dataset.seconds));
           if (!sound.playing()) sound.play();
@@ -258,7 +292,7 @@
       });
       chaptersEl.appendChild(div);
     });
-    chaptersEl.removeAttribute("hidden");
+    chapterCurrentEl.removeAttribute("hidden");
   }
 
   function highlightChapter(currentSec) {
@@ -268,8 +302,34 @@
       if (parseFloat(item.dataset.seconds) <= currentSec) active = item;
     });
     items.forEach(function (item) { item.classList.remove("active"); });
-    if (active) active.classList.add("active");
+    if (active) {
+      active.classList.add("active");
+      var titleSpan = active.querySelector(".chapter-title");
+      if (titleSpan) chapterCurrentEl.textContent = titleSpan.textContent;
+    }
   }
+
+  // Toggle chapter list on click, close on outside click
+  chapterCurrentEl.addEventListener("click", function () {
+    if (chaptersEl.hasAttribute("hidden")) {
+      chaptersEl.removeAttribute("hidden");
+      chapterCurrentEl.setAttribute("aria-expanded", "true");
+      var activeItem = chaptersEl.querySelector(".chapter-item.active");
+      if (activeItem) activeItem.scrollIntoView({ block: "nearest" });
+    } else {
+      chaptersEl.setAttribute("hidden", "");
+      chapterCurrentEl.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!chaptersEl.hasAttribute("hidden") &&
+        !chaptersEl.contains(e.target) &&
+        e.target !== chapterCurrentEl) {
+      chaptersEl.setAttribute("hidden", "");
+      chapterCurrentEl.setAttribute("aria-expanded", "false");
+    }
+  });
 
   // ── Active card state ──────────────────────────────────────────────────────
   function updateActiveCard(index, playing) {
