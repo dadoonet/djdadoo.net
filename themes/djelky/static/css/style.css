@@ -464,26 +464,24 @@ a:hover { text-decoration: underline; }
   position: absolute;
   top: 6px;
   right: 6px;
-  background: rgba(0,0,0,0.55);
+  background: none;
   border: none;
-  color: #fff;
-  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1rem;
   line-height: 1;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   z-index: 2;
-  opacity: 0.75;
-  transition: opacity 0.15s, background 0.15s;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.8));
+  transition: color 0.15s;
 }
 .mix-card-info-btn:hover {
-  opacity: 1;
-  background: var(--color-accent);
+  color: var(--color-accent);
 }
 
 /* ----- Info modal ----- */
