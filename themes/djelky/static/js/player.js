@@ -279,12 +279,24 @@
   }
 
   function highlightChapter(currentSec) {
-    var items  = chaptersEl.querySelectorAll(".chapter-item");
-    var active = null;
+    var chapters = currentIndex >= 0 ? (PLAYLIST[currentIndex].chapters || []) : [];
+    var items    = chaptersEl.querySelectorAll(".chapter-item");
+    var active   = null;
     items.forEach(function (item) {
-      // +0.5s tolerance: handles MP3 frame-alignment drift after a seek
-      if (parseFloat(item.dataset.seconds) <= currentSec + 0.5) active = item;
+      if (parseFloat(item.dataset.seconds) <= currentSec) active = item;
     });
+
+    // Guard: if the computed chapter would go backward and the audio position
+    // is within 2s of the current chapter's start, it's MP3 seek drift — keep
+    // the chapter we already set (e.g. from seekToChapter).
+    if (active && currentChapIdx >= 0 && chapters[currentChapIdx]) {
+      var activeIdx = parseInt(active.dataset.index, 10);
+      var curStart  = timeToSeconds(chapters[currentChapIdx].time);
+      if (activeIdx < currentChapIdx && currentSec >= curStart - 2) {
+        return;
+      }
+    }
+
     items.forEach(function (item) { item.classList.remove("active"); });
     if (active) {
       active.classList.add("active");
