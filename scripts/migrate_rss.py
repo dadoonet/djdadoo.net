@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """
-Migrate djdadoo.rss → Hugo content files in content/mixes/
-Each RSS <item> becomes one .md file with YAML frontmatter.
-Timecodes found in description are extracted as chapters.
+Migrate djdadoo.rss → Hugo Page Bundle content files in content/mixes/
+Each RSS <item> becomes one directory SLUG/ with:
+  - index.md (YAML frontmatter + clean intro body)
+  - cover.jpg (copied from static/img/ if available)
+
+Chapters extracted from timecoded descriptions go into frontmatter.
+The RSS template generates the tracklist from frontmatter chapters.
 """
 
 import re
+import shutil
 import sys
 import unicodedata
 from datetime import datetime
@@ -21,16 +26,17 @@ NS = {
 }
 
 SITE_BASE = "https://djdadoo.pilato.fr/"
-OUTPUT_DIR = Path(__file__).parent.parent / "content" / "mixes"
+REPO_ROOT  = Path(__file__).parent.parent
+OUTPUT_DIR = REPO_ROOT / "content" / "mixes"
+STATIC_DIR = REPO_ROOT / "static"
 
-# Timecode patterns: 00:00:00 or 00:00 at start of text (inside <li>)
+# Timecode at start of <li> text: "HH:MM:SS - ..." or "MM:SS - ..."
 TIMECODE_RE = re.compile(
     r"^\s*(\d{1,2}:\d{2}(?::\d{2})?)\s*[-–]\s*(.+?)\s*$"
 )
 
 
 def slugify(text: str) -> str:
-    """Convert text to a URL-safe slug."""
     text = unicodedata.normalize("NFKD", text)
     text = text.encode("ascii", "ignore").decode("ascii")
     text = text.lower()
@@ -41,11 +47,8 @@ def slugify(text: str) -> str:
 
 
 def parse_date(pub_date_str: str) -> datetime:
-    """Parse the various (non-standard) pubDate formats used in the feed."""
     if not pub_date_str:
         return None
-    # Normalise month names to 3-letter abbreviations so parsedate_to_datetime
-    # can handle both "07 July 2012" and "07 Jul 2012"
     long_months = {
         "January": "Jan", "February": "Feb", "March": "Mar",
         "April": "Apr",   "May": "May",      "June": "Jun",
@@ -58,7 +61,6 @@ def parse_date(pub_date_str: str) -> datetime:
     try:
         return parsedate_to_datetime(s)
     except Exception:
-        # Last-resort: try dateutil if available
         try:
             from dateutil import parser as dp
             return dp.parse(pub_date_str)
@@ -66,8 +68,8 @@ def parse_date(pub_date_str: str) -> datetime:
             raise ValueError(f"Cannot parse date: {pub_date_str!r}")
 
 
-def cover_path(image_url: str) -> str:
-    """Extract the site-relative path from a full image URL."""
+def cover_img_path(image_url: str) -> str:
+    """Return site-relative path (e.g. 'img/foo.jpg') from full or relative URL."""
     if not image_url:
         return ""
     if image_url.startswith(SITE_BASE):
@@ -77,22 +79,19 @@ def cover_path(image_url: str) -> str:
 
 def extract_chapters(description_html: str):
     """
-    Detect timecoded track listings inside HTML description.
-    Returns (chapters_list, cleaned_html).
-    chapters_list is a list of {"time": "HH:MM:SS", "title": "Artist - Track"}.
-    cleaned_html has the timecoded list removed (if fully extracted).
+    Find timecoded <li> items and return (chapters_list, clean_body).
+    clean_body has the <ol>/<ul> block removed; chapters_list is structured data.
+    If no timecodes found, returns ([], original_html).
     """
     if not description_html:
         return [], description_html
 
-    # Find all <li> contents
     li_texts = re.findall(r"<li[^>]*>(.*?)</li>", description_html, re.DOTALL)
     if not li_texts:
         return [], description_html
 
     chapters = []
     for li in li_texts:
-        # Strip inner HTML tags
         plain = re.sub(r"<[^>]+>", "", li).strip()
         m = TIMECODE_RE.match(plain)
         if m:
@@ -101,12 +100,11 @@ def extract_chapters(description_html: str):
     if not chapters:
         return [], description_html
 
-    # Remove the list block (<ol> or <ul>) that contained the timecodes
-    cleaned = re.sub(r"<(?:ol|ul)[^>]*>.*?</(?:ol|ul)>", "", description_html,
-                     flags=re.DOTALL).strip()
-    # Collapse multiple blank lines / <p></p>
+    # Remove the <ol>/<ul> block from the description
+    cleaned = re.sub(
+        r"<(?:ol|ul)[^>]*>.*?</(?:ol|ul)>", "", description_html, flags=re.DOTALL
+    ).strip()
     cleaned = re.sub(r"(<p>\s*</p>)", "", cleaned).strip()
-
     return chapters, cleaned
 
 
@@ -117,10 +115,8 @@ def keywords_to_list(keywords_str: str):
 
 
 def yaml_str(value: str) -> str:
-    """Quote a string for YAML if it contains special characters."""
     if not value:
         return '""'
-    # Must quote if contains : # & * ? | > ' " % @ ` or starts with special chars
     needs_quote = any(c in value for c in ':#&*?|>\'"%@`{}[]') or value.startswith(' ')
     if needs_quote:
         escaped = value.replace('"', '\\"')
@@ -128,10 +124,9 @@ def yaml_str(value: str) -> str:
     return value
 
 
-def item_to_markdown(item: ET.Element) -> tuple[str, str]:
-    """
-    Convert an RSS <item> to (filename, markdown_content).
-    """
+def item_to_bundle(item: ET.Element) -> dict:
+    """Return a dict with: slug, markdown_content, source_image (Path|None)."""
+
     def text(tag, ns_key=None):
         if ns_key:
             el = item.find(f"{ns_key}:{tag}", NS)
@@ -139,30 +134,26 @@ def item_to_markdown(item: ET.Element) -> tuple[str, str]:
             el = item.find(tag)
         return (el.text or "").strip() if el is not None else ""
 
-    title       = text("title")
-    season      = text("season", "itunes")
-    episode     = text("episode", "itunes")
-    subtitle    = text("subtitle", "itunes")
-    author      = text("author", "itunes")
-    keywords    = text("keywords", "itunes")
-    duration    = text("duration", "itunes")
-    pub_date    = text("pubDate")
-    guid        = text("guid")
-    explicit    = text("explicit", "itunes") or "false"
+    title        = text("title")
+    season       = text("season", "itunes")
+    episode      = text("episode", "itunes")
+    subtitle     = text("subtitle", "itunes")
+    author       = text("author", "itunes")
+    keywords     = text("keywords", "itunes")
+    duration     = text("duration", "itunes")
+    pub_date     = text("pubDate")
+    guid         = text("guid")
 
-    image_el    = item.find("itunes:image", NS)
-    image_url   = (image_el.get("href") or "") if image_el is not None else ""
+    image_el     = item.find("itunes:image", NS)
+    image_url    = (image_el.get("href") or "") if image_el is not None else ""
 
-    enclosure   = item.find("enclosure")
-    audio_url    = enclosure.get("url", "") if enclosure is not None else ""
+    enclosure    = item.find("enclosure")
+    audio_url    = enclosure.get("url", "")    if enclosure is not None else ""
     audio_length = enclosure.get("length", "") if enclosure is not None else ""
     audio_type   = enclosure.get("type", "audio/mpeg") if enclosure is not None else "audio/mpeg"
 
-    # Description (CDATA)
     desc_el = item.find("description")
-    description_raw = ""
-    if desc_el is not None and desc_el.text:
-        description_raw = desc_el.text.strip()
+    description_raw = (desc_el.text or "").strip() if desc_el is not None else ""
 
     # Parse date
     dt = None
@@ -172,22 +163,26 @@ def item_to_markdown(item: ET.Element) -> tuple[str, str]:
         except ValueError as e:
             print(f"WARNING: {e}", file=sys.stderr)
 
-    date_str = dt.isoformat() if dt else ""
-    date_for_filename = dt.strftime("%Y-%m-%d") if dt else "0000-00-00"
+    date_str           = dt.isoformat() if dt else ""
+    date_for_filename  = dt.strftime("%Y-%m-%d") if dt else "0000-00-00"
 
-    # Chapters: extract into structured frontmatter but keep full description body for RSS clients
-    chapters, _clean_desc = extract_chapters(description_raw)
+    # Extract chapters; keep only the clean intro in the body
+    chapters, clean_body = extract_chapters(description_raw)
 
-    # Slug from date + title (strip the "David's Mix #YYYY/MM/DD - " prefix for slug)
+    # Slug
     slug_title = re.sub(r"^David's Mix #\d{4}/\d{2}/\d{2}\s*-?\s*", "", title)
     slug_title = slug_title or title
     slug = slugify(f"{date_for_filename}-{slug_title}")
-    filename = f"{slug}.md"
 
-    # Cover: site-relative path
-    cover = cover_path(image_url)
+    # Cover image source path (in static/)
+    cover_rel = cover_img_path(image_url)  # e.g. "img/20260321-les3graces.jpg"
+    source_image = None
+    if cover_rel:
+        candidate = STATIC_DIR / cover_rel
+        if candidate.exists():
+            source_image = candidate
 
-    # Build YAML frontmatter
+    # Build YAML frontmatter (no 'cover' field — image is a Page Resource)
     lines = ["---"]
     lines.append(f"title: {yaml_str(title)}")
     if date_str:
@@ -214,12 +209,8 @@ def item_to_markdown(item: ET.Element) -> tuple[str, str]:
         lines.append(f"audio_type: {yaml_str(audio_type)}")
     if duration:
         lines.append(f"duration: {yaml_str(duration)}")
-    if cover:
-        lines.append(f"cover: {yaml_str(cover)}")
     if guid:
         lines.append(f"guid: {yaml_str(guid)}")
-    if explicit and explicit.lower() != "false":
-        lines.append(f"explicit: true")
 
     if chapters:
         lines.append("chapters:")
@@ -229,21 +220,27 @@ def item_to_markdown(item: ET.Element) -> tuple[str, str]:
 
     lines.append("---")
 
-    # Always use the full original description as body (chapters are also in frontmatter)
-    body = description_raw
+    body = clean_body if chapters else description_raw
     content = "\n".join(lines) + "\n"
     if body:
         content += "\n" + body + "\n"
 
-    return filename, content
+    return {"slug": slug, "content": content, "source_image": source_image}
 
 
 def main():
-    rss_path = Path(__file__).parent.parent / "djdadoo.rss"
+    rss_path = REPO_ROOT / "djdadoo.rss"
     if not rss_path.exists():
         print(f"ERROR: {rss_path} not found", file=sys.stderr)
         sys.exit(1)
 
+    # Clean previous output
+    if OUTPUT_DIR.exists():
+        for child in OUTPUT_DIR.iterdir():
+            if child.is_dir():
+                shutil.rmtree(child)
+            elif child.name != "_index.md":
+                child.unlink()
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     tree = ET.parse(rss_path)
@@ -253,25 +250,36 @@ def main():
 
     print(f"Found {len(items)} items in RSS feed")
 
-    # Track slugs to handle duplicates
     seen_slugs: dict[str, int] = {}
 
     for i, item in enumerate(items, 1):
-        filename, content = item_to_markdown(item)
+        result = item_to_bundle(item)
+        slug   = result["slug"]
 
-        # Deduplicate filenames
-        base = filename[:-3]  # strip .md
-        if base in seen_slugs:
-            seen_slugs[base] += 1
-            filename = f"{base}-{seen_slugs[base]}.md"
+        # Deduplicate
+        if slug in seen_slugs:
+            seen_slugs[slug] += 1
+            slug = f"{slug}-{seen_slugs[slug]}"
         else:
-            seen_slugs[base] = 0
+            seen_slugs[slug] = 0
 
-        out_path = OUTPUT_DIR / filename
-        out_path.write_text(content, encoding="utf-8")
-        print(f"  [{i:02d}] {filename}")
+        # Create bundle directory
+        bundle_dir = OUTPUT_DIR / slug
+        bundle_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"\nDone. {len(items)} files written to {OUTPUT_DIR}")
+        # Write index.md
+        (bundle_dir / "index.md").write_text(result["content"], encoding="utf-8")
+
+        # Copy cover image
+        source_img = result["source_image"]
+        if source_img:
+            dest = bundle_dir / f"cover{source_img.suffix}"
+            shutil.copy2(source_img, dest)
+            print(f"  [{i:02d}] {slug}/ (cover: {source_img.name})")
+        else:
+            print(f"  [{i:02d}] {slug}/ (no cover)")
+
+    print(f"\nDone. {len(items)} bundles written to {OUTPUT_DIR}")
 
 
 if __name__ == "__main__":

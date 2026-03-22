@@ -1,0 +1,16 @@
+---
+title: "David's Mix #2013/10/05 - Diner Mix"
+date: 2013-10-14T23:25:00+01:00
+season: 2013
+episode: 12
+subtitle: October Peniche Mix - Diner
+author: David Pilato
+keywords: ["DJ Elky", "Live", "Mix", "Birthday", "Christine", "Diner", "Lounge"]
+audio_url: "https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Diner.mp3"
+audio_length: 115790723
+audio_type: audio/mpeg
+duration: "2:00:37"
+guid: "https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Diner.mp3"
+---
+
+<p>Recorded Live for Christine's Birthday</p>

@@ -29,6 +29,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <podcast:locked>no</podcast:locked>
   {{- range $pages }}
   {{- $p := . }}
+  {{- $cover := $p.Resources.GetMatch "cover.*" }}
   <item>
     {{- with $p.Params.season }}
     <itunes:season>{{ . }}</itunes:season>
@@ -41,13 +42,18 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     {{- with $p.Params.subtitle }}
     <itunes:subtitle>{{ . }}</itunes:subtitle>
     {{- end }}
-    {{- if $p.Content }}
-    <description><![CDATA[{{ $p.Content }}]]></description>
-    {{- else }}
-    <description><![CDATA[<p>{{ $p.Title }}</p>]]></description>
-    {{- end }}
-    {{- with $p.Params.cover }}
-    <itunes:image href="{{ $site.BaseURL }}{{ . }}" />
+    <description><![CDATA[
+      {{- $p.Content }}
+      {{- with $p.Params.chapters }}
+        <ul>
+          {{- range . }}
+          <li>{{ .time }} - {{ .title }}</li>
+          {{- end }}
+        </ul>
+      {{- end }}
+    ]]></description>
+    {{- if $cover }}
+    <itunes:image href="{{ $cover.Permalink }}" />
     {{- end }}
     {{- with $p.Params.audio_url }}
     <enclosure url="{{ . }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default "audio/mpeg" }}" />

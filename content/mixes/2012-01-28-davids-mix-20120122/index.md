@@ -1,0 +1,16 @@
+---
+title: "David's Mix #2012/01/22"
+date: 2012-01-28T22:50:00+01:00
+season: 2012
+episode: 2
+subtitle: Funk groove mix
+author: David Pilato
+keywords: ["DJ Elky", "Funk", "Groove", "Club", "Mix"]
+audio_url: "https://storage.googleapis.com/djdadoo/02_DJ_Dadoo_First-Mix-DDJT1.mp3"
+audio_length: 97455772
+audio_type: audio/mpeg
+duration: "1:07:27"
+guid: "https://storage.googleapis.com/djdadoo/02_DJ_Dadoo_First-Mix-DDJT1.mp3"
+---
+
+<p>First recorded mix with my new Pioneer DDJ-T1</p>

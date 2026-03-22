@@ -15,33 +15,53 @@
   </div>
 </header>
 
-{{/* Build playlist JSON for player */}}
+{{/* Flat sorted list (newest first) */}}
 {{ $mixes := where .Site.RegularPages "Section" "mixes" }}
 {{ $mixes = $mixes.ByDate.Reverse }}
 
-<script type="application/json" id="playlist-data">
-[
-  {{ range $i, $p := $mixes }}{{ if $i }},{{ end }}
-  {
-    "title": {{ $p.Title | jsonify }},
-    "audioUrl": {{ $p.Params.audio_url | jsonify }},
-    "duration": {{ $p.Params.duration | jsonify }},
-    "cover": {{ if $p.Params.cover }}{{ (printf "/%s" $p.Params.cover) | jsonify }}{{ else }}"" {{ end }},
-    "subtitle": {{ $p.Params.subtitle | jsonify }},
-    "chapters": {{ if $p.Params.chapters }}{{ $p.Params.chapters | jsonify }}{{ else }}[]{{ end }}
-  }
-  {{ end }}
-]
-</script>
+{{/* Build playlist as a Go slice-of-dicts → single jsonify call avoids double-encoding */}}
+{{ $playlist := slice }}
+{{ range $mixes }}
+  {{ $cover := "/djdadoo-new.jpg" }}
+  {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+  {{ $chapters := slice }}
+  {{ if .Params.chapters }}{{ $chapters = .Params.chapters }}{{ end }}
+  {{ $playlist = $playlist | append (dict
+    "title"    .Title
+    "audioUrl" (.Params.audio_url | default "")
+    "duration" (.Params.duration  | default "")
+    "cover"    $cover
+    "subtitle" (.Params.subtitle  | default "")
+    "chapters" $chapters
+  ) }}
+{{ end }}
+
+<script>var __djPlaylist = {{ $playlist | jsonify | safeJS }};</script>
 
 <main class="mix-grid-wrapper">
-  <div class="mix-grid">
-    {{ range $i, $p := $mixes }}
-    <article class="mix-card" data-index="{{ $i }}" role="button" tabindex="0"
+  {{/* Season grouping: iterate in order (newest first), open new section on season change */}}
+  {{ $idx        := 0 }}
+  {{ $lastSeason := 0 }}
+  {{ range $mixes }}
+    {{ $p      := . }}
+    {{ $season := .Params.season | int }}
+    {{ $cover  := "" }}
+    {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+
+    {{/* Open new season section when season changes */}}
+    {{ if ne $season $lastSeason }}
+      {{ if $lastSeason }}</div></section>{{ end }}
+      <section class="season-section">
+        <h2 class="season-heading">{{ $season }}</h2>
+        <div class="mix-grid">
+      {{ $lastSeason = $season }}
+    {{ end }}
+
+    <article class="mix-card" data-index="{{ $idx }}" role="button" tabindex="0"
              aria-label="Lire {{ $p.Title }}">
       <div class="mix-card-artwork">
-        {{ if $p.Params.cover }}
-        <img src="/{{ $p.Params.cover }}" alt="{{ $p.Title }}" loading="lazy" />
+        {{ if $cover }}
+        <img src="{{ $cover }}" alt="{{ $p.Title }}" loading="lazy" />
         {{ else }}
         <img src="/djdadoo-new.jpg" alt="{{ $p.Title }}" loading="lazy" />
         {{ end }}
@@ -60,8 +80,10 @@
         </p>
       </div>
     </article>
-    {{ end }}
-  </div>
+    {{ $idx = add $idx 1 }}
+
+  {{ end }}
+  {{ if $lastSeason }}</div></section>{{ end }}
 </main>
 {{ end }}
 
@@ -93,8 +115,6 @@
            aria-label="Volume" />
   </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"
-        integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/howler.min.js"></script>
 <script src="/js/player.js"></script>
 {{ end }}
