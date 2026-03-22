@@ -1,0 +1,27 @@
+{{ define "main" }}
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-title">
+      <a href="/">
+        <img src="/djdadoo-new.jpg" alt="DJ Elky" class="header-logo" />
+      </a>
+      <div>
+        <h1><a href="/" style="color:inherit;text-decoration:none;">DJ Elky</a></h1>
+      </div>
+    </div>
+    <a class="itunes-link" href="{{ .Site.Params.itunesLink }}" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 14.5v-9l7 4.5-7 4.5z"/></svg>
+      Apple Podcasts
+    </a>
+  </div>
+</header>
+<main style="max-width:700px;margin:40px auto;padding:0 20px;">
+  <a href="/" style="font-size:.85rem;color:var(--color-muted);display:inline-block;margin-bottom:20px;">← Retour</a>
+  <h2>{{ .Title }}</h2>
+  <p style="color:var(--color-muted);font-size:.85rem;margin-top:6px;">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+    {{ with .Params.duration }}· {{ . }}{{ end }}
+  </p>
+  {{ with .Content }}<div class="mix-description" style="margin-top:20px;">{{ . }}</div>{{ end }}
+</main>
+{{ end }}

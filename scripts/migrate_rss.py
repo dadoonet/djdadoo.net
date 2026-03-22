@@ -175,8 +175,8 @@ def item_to_markdown(item: ET.Element) -> tuple[str, str]:
     date_str = dt.isoformat() if dt else ""
     date_for_filename = dt.strftime("%Y-%m-%d") if dt else "0000-00-00"
 
-    # Chapters
-    chapters, clean_desc = extract_chapters(description_raw)
+    # Chapters: extract into structured frontmatter but keep full description body for RSS clients
+    chapters, _clean_desc = extract_chapters(description_raw)
 
     # Slug from date + title (strip the "David's Mix #YYYY/MM/DD - " prefix for slug)
     slug_title = re.sub(r"^David's Mix #\d{4}/\d{2}/\d{2}\s*-?\s*", "", title)
@@ -229,7 +229,8 @@ def item_to_markdown(item: ET.Element) -> tuple[str, str]:
 
     lines.append("---")
 
-    body = clean_desc if clean_desc else description_raw
+    # Always use the full original description as body (chapters are also in frontmatter)
+    body = description_raw
     content = "\n".join(lines) + "\n"
     if body:
         content += "\n" + body + "\n"

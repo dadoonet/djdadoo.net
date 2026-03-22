@@ -12,11 +12,16 @@ theme = "djelky"
     baseName = "djdadoo"
     mediaType = "application/rss+xml"
     isHTML = false
-    isPlainText = false
+    isPlainText = true
     noUgly = true
 
 [outputs]
   home = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
   author       = "David Pilato"
