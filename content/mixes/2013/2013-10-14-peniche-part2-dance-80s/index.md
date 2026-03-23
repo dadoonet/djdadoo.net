@@ -4,7 +4,7 @@ subtitle: "Dance Part 1 (80's)"
 date: 2013-10-14T23:25:00+01:00
 season: 2013
 episode: 13
-author: David Pilato
+author: DJ Elky
 event: "Christine's Birthday Party - Peniche"
 keywords: ["Live", "80"]
 audio_url: "https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-80.mp3"

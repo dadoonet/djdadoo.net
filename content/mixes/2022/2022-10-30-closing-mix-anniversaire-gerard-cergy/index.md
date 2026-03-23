@@ -4,7 +4,7 @@ subtitle: "Closing Mix - Anniversaire Gérard, Cergy"
 date: 2022-10-30T03:00:00+01:00
 season: 2022
 episode: 31
-author: David Pilato
+author: DJ Elky
 event: "Gérard's Birthday Celebration - Cergy"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3"

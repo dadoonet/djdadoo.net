@@ -4,7 +4,7 @@ subtitle: "BreizhCamp 2017 Keynote Mix"
 date: 2017-04-20T09:00:00+01:00
 season: 2017
 episode: 22
-author: David Pilato
+author: DJ Elky
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3"
 audio_length: 25240750

@@ -48,6 +48,8 @@
     {{ $season := .Params.season | int }}
     {{ $cover  := "" }}
     {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+    {{ $author := $p.Params.author | default .Site.Params.podcast.author | default "undefined" }}
+    {{ $authorSanitized := replace ($author | lower) " " "-" }}
 
     {{/* Open new season section when season changes */}}
     {{ if ne $season $lastSeason }}
@@ -92,7 +94,7 @@
            data-event="{{ $p.Params.event | default "" }}"
            data-cover="{{ if $cover }}{{ $cover }}{{ else }}{{ .Site.Params.podcast.cover }}{{ end }}"
            data-author="{{ $p.Params.author | default .Site.Params.podcast.author }}"
-           data-author-cover="{{ with $p.Resources.GetMatch "author_cover.*" }}{{ .RelPermalink }}{{ else }}{{ $p.Params.author_cover | default .Site.Params.podcast.cover }}{{ end }}">
+           data-author-cover="/img/authors/{{ $authorSanitized }}.png">
         {{ $p.Content }}
       </div>
     </article>

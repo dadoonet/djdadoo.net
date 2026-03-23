@@ -4,7 +4,7 @@ subtitle: "Recorded live from Niort, FR"
 date: 2025-06-05T18:30:00+02:00
 season: 2025
 episode: 58
-author: David Pilato
+author: DJ Elky
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3"
 audio_length: 154976458 

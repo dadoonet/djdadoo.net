@@ -4,7 +4,7 @@ subtitle: "Live set, private event, recorded live from Osny, FR. First time on O
 date: 2025-09-20T23:00:00+02:00
 season: 2025
 episode: 64
-author: David Pilato
+author: DJ Elky
 event: "Mika's 50th Birthday"
 keywords: ["Live", "French Touch"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-09-20-50ansMika-part1.mp3"

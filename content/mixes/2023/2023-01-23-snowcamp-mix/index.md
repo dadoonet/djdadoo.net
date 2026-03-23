@@ -4,7 +4,7 @@ subtitle: "Snowcamp Mix"
 date: 2023-01-23T22:30:00+01:00
 season: 2023
 episode: 35
-author: David Pilato
+author: DJ Elky
 keywords: ["Studio"]
 audio_url: "https://storage.googleapis.com/djdadoo/2023-01-23-Snowcamp.mp3"
 audio_length: 158362644

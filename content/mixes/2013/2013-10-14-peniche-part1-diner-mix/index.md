@@ -4,7 +4,7 @@ subtitle: "Dinner"
 date: 2013-10-14T23:25:00+01:00
 season: 2013
 episode: 12
-author: David Pilato
+author: DJ Elky
 event: "Christine's Birthday Party - Peniche"
 keywords: ["Live", "Diner", "Lounge"]
 audio_url: "https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Diner.mp3"

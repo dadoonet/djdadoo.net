@@ -4,7 +4,7 @@ subtitle: "Live session"
 date: 2024-05-04T17:00:00+02:00
 season: 2024
 episode: 49
-author: David Pilato
+author: DJ Elky
 event: "Delphine & Laurent's Wedding"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part1.mp3"

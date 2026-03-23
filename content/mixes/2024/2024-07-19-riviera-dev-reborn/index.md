@@ -4,7 +4,7 @@ subtitle: "Live session"
 date: 2024-07-19T15:30:00+02:00
 season: 2024
 episode: 52
-author: David Pilato
+author: DJ Elky
 keywords: []
 audio_url: "https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a"
 audio_length: 147699389

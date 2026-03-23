@@ -4,7 +4,7 @@ subtitle: "Studio session"
 date: 2024-08-08T17:30:00+02:00
 season: 2024
 episode: 53
-author: David Pilato
+author: DJ Elky
 keywords: []
 audio_url: "https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3"
 audio_length: 291978390

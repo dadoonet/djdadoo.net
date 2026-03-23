@@ -395,8 +395,12 @@
     modalEl.querySelector(".mix-modal-duration").textContent = d.dataset.duration || "";
     modalEl.querySelector(".mix-modal-subtitle").textContent = d.dataset.subtitle || "";
     modalEl.querySelector(".mix-modal-keywords").textContent = d.dataset.keywords || "";
-    modalEl.querySelector(".mix-modal-author-cover").src     = d.dataset.authorCover || "";
-    modalEl.querySelector(".mix-modal-author-cover").alt     = d.dataset.author || "";
+    var authorCoverEl = modalEl.querySelector(".mix-modal-author-cover");
+    authorCoverEl.src = d.dataset.authorCover || "/img/authors/undefined.png";
+    authorCoverEl.alt = d.dataset.author || "";
+    authorCoverEl.onerror = function() {
+      this.src = "/img/authors/undefined.png";
+    };
     modalEl.querySelector(".mix-modal-author-name").textContent = d.dataset.author || "";
     modalEl.querySelector(".mix-modal-body").innerHTML       = d.innerHTML;
 

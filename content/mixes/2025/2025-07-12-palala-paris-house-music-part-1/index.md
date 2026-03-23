@@ -4,7 +4,7 @@ subtitle: "Recorded live from Palala Paris 6, FR, with dj4loops"
 date: 2025-07-12T20:00:00+02:00
 season: 2025
 episode: 60
-author: David Pilato
+author: DJ Elky
 event: "Palala Paris"
 keywords: ["Live", "Palala", "House"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3"
