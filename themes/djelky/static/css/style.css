@@ -642,6 +642,22 @@ a:hover { text-decoration: underline; }
 .mix-modal-keywords {
   font-size: 0.7rem;
   color: var(--color-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.keyword-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 500;
+  background: rgba(187, 113, 243, 0.15);
+  color: var(--color-accent);
+  padding: 3px 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(187, 113, 243, 0.3);
+  white-space: nowrap;
 }
 
 .mix-modal-sep {

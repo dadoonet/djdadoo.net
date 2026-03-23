@@ -462,7 +462,16 @@
       subtitleEl.setAttribute("hidden", "");
     }
 
-    modalEl.querySelector(".mix-modal-keywords").textContent = d.dataset.keywords || "";
+    // Render keywords as badges
+    var keywordsEl = modalEl.querySelector(".mix-modal-keywords");
+    keywordsEl.innerHTML = "";
+    if (d.dataset.keywords) {
+      var keywords = d.dataset.keywords.split(",").map(function(k) { return k.trim(); }).filter(function(k) { return k; });
+      var keywordHTML = keywords.map(function(keyword) {
+        return '<span class="keyword-badge">' + escapeHtml(keyword) + '</span>';
+      }).join("");
+      keywordsEl.innerHTML = keywordHTML;
+    }
 
     // Handle multiple authors
     var authorsListEl = modalEl.querySelector(".mix-modal-authors-list");
