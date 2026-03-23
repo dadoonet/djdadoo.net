@@ -1,6 +1,5 @@
 ---
-title: "Pre elastic{ON}'16 Mix"
-subtitle: "Pre elastic{ON}'16 Mix"
+title: "Pre elastic{ON}"
 date: 2016-02-12T17:03:00+01:00
 season: 2016
 episode: 18

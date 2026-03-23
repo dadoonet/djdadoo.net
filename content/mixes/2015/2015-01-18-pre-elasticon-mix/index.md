@@ -1,5 +1,5 @@
 ---
-title: "Pre elastic{ON} Mix"
+title: "Pre elastic{ON}"
 date: 2015-01-18T23:25:00+01:00
 season: 2015
 episode: 15

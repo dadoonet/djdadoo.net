@@ -33,6 +33,7 @@
   var sound           = null;
   var rafId           = null;
   var isDragging      = false;
+  var modalEpisodeData = null;  // Store data of episode currently shown in modal
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   function formatTime(secs) {
@@ -157,6 +158,14 @@
   function setPlayBtn(playing) {
     btnPlay.textContent = playing ? "⏸" : "▶";
     btnPlay.setAttribute("aria-label", playing ? "Pause" : "Lecture");
+  }
+
+  function setModalPlayBtn(playing) {
+    var playBtn = modalEl.querySelector(".mix-modal-cover-play");
+    if (playBtn) {
+      playBtn.textContent = playing ? "⏸" : "▶";
+      playBtn.setAttribute("aria-label", playing ? "Pause" : "Lire cet épisode");
+    }
   }
 
   function togglePlayPause() {
@@ -358,6 +367,15 @@
       var icon = cards[index].querySelector(".play-icon");
       if (icon) icon.textContent = playing ? "⏸" : "▶";
     }
+
+    // Update modal play button if it's open and showing this episode
+    if (!modalEl.hasAttribute("hidden") && modalEpisodeData) {
+      var cd = cards[index] ? cards[index].querySelector(".mix-data") : null;
+      if (cd && cd.dataset.season === modalEpisodeData.season &&
+          cd.dataset.episode === modalEpisodeData.episode) {
+        setModalPlayBtn(playing);
+      }
+    }
   }
 
 
@@ -387,6 +405,13 @@
   function openModal(card) {
     var d = card.querySelector(".mix-data");
     if (!d) return;
+
+    // Store modal episode data for updateActiveCard
+    modalEpisodeData = {
+      season: d.dataset.season,
+      episode: d.dataset.episode
+    };
+
     modalEl.querySelector(".mix-modal-cover").src            = d.dataset.cover || "";
     modalEl.querySelector(".mix-modal-cover").alt            = d.dataset.title || "";
     modalEl.querySelector(".mix-modal-title").textContent    = d.dataset.title || "";
@@ -445,21 +470,29 @@
           var relatedTitle = relatedData.dataset.title || "";
           var relatedEpisode = relatedData.dataset.episode || "?";
           var relatedSeason = relatedData.dataset.season || "";
-          var isActive = relatedTitle === d.dataset.title;
+          var isActive = relatedData.dataset.season === d.dataset.season &&
+                         relatedData.dataset.episode === d.dataset.episode;
 
           var relatedLink = document.createElement("div");
           relatedLink.className = "mix-modal-related-item" + (isActive ? " active" : "");
           relatedLink.innerHTML = '<strong>' + escapeHtml(relatedTitle) + '</strong><br><small>Ép. ' + escapeHtml(relatedEpisode) + '</small>';
 
-          // Find corresponding card and add click handler
+          // Find corresponding card by season + episode
           var cardIndex = Array.from(cards).findIndex(function(c) {
             var cd = c.querySelector(".mix-data");
-            return cd && cd.dataset.title === relatedTitle;
+            return cd && cd.dataset.season === relatedData.dataset.season &&
+                         cd.dataset.episode === relatedData.dataset.episode;
           });
 
           if (cardIndex >= 0) {
             relatedLink.style.cursor = "pointer";
             relatedLink.addEventListener("click", function() {
+              // Remove playing state from old episode
+              if (currentIndex >= 0 && cards[currentIndex]) {
+                cards[currentIndex].classList.remove("active", "playing");
+                var icon = cards[currentIndex].querySelector(".play-icon");
+                if (icon) icon.textContent = "▶";
+              }
               closeModal();
               openModal(cards[cardIndex]);
             });
@@ -475,11 +508,33 @@
 
     modalEl.removeAttribute("hidden");
     document.body.style.overflow = "hidden";
+
+    // Update modal play button icon based on current playback state
+    var cardIndex = Array.from(cards).findIndex(function(c) {
+      var cd = c.querySelector(".mix-data");
+      return cd && cd.dataset.season === d.dataset.season &&
+                   cd.dataset.episode === d.dataset.episode;
+    });
+    var isPlaying = cardIndex === currentIndex && sound && sound.playing();
+    setModalPlayBtn(isPlaying);
+
+    // Add play button handler
+    var playBtn = modalEl.querySelector(".mix-modal-cover-play");
+    playBtn.onclick = function() {
+      if (cardIndex >= 0) {
+        if (cardIndex === currentIndex && sound && sound.playing()) {
+          sound.pause();
+        } else {
+          loadAndPlay(cardIndex);
+        }
+      }
+    };
   }
 
   function closeModal() {
     modalEl.setAttribute("hidden", "");
     document.body.style.overflow = "";
+    modalEpisodeData = null;
   }
 
   document.querySelectorAll(".mix-card-info-btn").forEach(function (btn) {
