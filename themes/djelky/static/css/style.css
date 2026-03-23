@@ -677,6 +677,13 @@ a:hover { text-decoration: underline; }
   border-color: rgba(187,113,243,0.4);
 }
 
+.mix-modal-related-item.active {
+  background: rgba(187,113,243,0.25);
+  border: 2px solid var(--color-accent);
+  padding: 7px 9px;
+  box-shadow: 0 0 8px rgba(187,113,243,0.3);
+}
+
 /* ----- Responsive ----- */
 @media (max-width: 640px) {
   .mix-grid { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 12px; }

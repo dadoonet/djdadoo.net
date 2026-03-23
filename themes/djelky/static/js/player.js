@@ -375,6 +375,12 @@
         related.push(el);
       }
     });
+    // Sort by date (ascending - oldest first)
+    related.sort(function(a, b) {
+      var dateA = new Date(a.dataset.date);
+      var dateB = new Date(b.dataset.date);
+      return dateA - dateB;
+    });
     return related;
   }
 
@@ -407,9 +413,10 @@
           var relatedTitle = relatedData.dataset.title || "";
           var relatedEpisode = relatedData.dataset.episode || "?";
           var relatedSeason = relatedData.dataset.season || "";
+          var isActive = relatedTitle === d.dataset.title;
 
           var relatedLink = document.createElement("div");
-          relatedLink.className = "mix-modal-related-item";
+          relatedLink.className = "mix-modal-related-item" + (isActive ? " active" : "");
           relatedLink.innerHTML = '<strong>' + escapeHtml(relatedTitle) + '</strong><br><small>Ép. ' + escapeHtml(relatedEpisode) + '</small>';
 
           // Find corresponding card and add click handler
