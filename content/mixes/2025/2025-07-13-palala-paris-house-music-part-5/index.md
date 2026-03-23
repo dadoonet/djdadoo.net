@@ -5,6 +5,7 @@ date: 2025-07-13T00:00:00+02:00
 season: 2025
 episode: 63
 author: David Pilato
+event: "Palala Paris"
 keywords: ["Live", "Palala", "House"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part5.mp3"
 audio_length: 138035356

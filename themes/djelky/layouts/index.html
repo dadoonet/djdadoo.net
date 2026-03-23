@@ -89,6 +89,7 @@
            data-duration="{{ $p.Params.duration }}"
            data-subtitle="{{ $p.Params.subtitle }}"
            data-keywords="{{ delimit ($p.Params.keywords | default slice) ", " }}"
+           data-event="{{ $p.Params.event | default "" }}"
            data-cover="{{ if $cover }}{{ $cover }}{{ else }}{{ .Site.Params.podcast.cover }}{{ end }}">
         {{ $p.Content }}
       </div>
@@ -133,18 +134,26 @@
   <div class="mix-modal-backdrop"></div>
   <div class="mix-modal-card">
     <button class="mix-modal-close" aria-label="Fermer">×</button>
-    <div class="mix-modal-header">
-      <img class="mix-modal-cover" src="" alt="" />
-      <div class="mix-modal-meta">
-        <h2 class="mix-modal-title"></h2>
-        <p class="mix-modal-episode"></p>
-        <p class="mix-modal-duration"></p>
-        <p class="mix-modal-subtitle"></p>
-        <p class="mix-modal-keywords"></p>
+    <div class="mix-modal-container">
+      <div class="mix-modal-main">
+        <div class="mix-modal-header">
+          <img class="mix-modal-cover" src="" alt="" />
+          <div class="mix-modal-meta">
+            <h2 class="mix-modal-title"></h2>
+            <p class="mix-modal-episode"></p>
+            <p class="mix-modal-duration"></p>
+            <p class="mix-modal-subtitle"></p>
+            <p class="mix-modal-keywords"></p>
+          </div>
+        </div>
+        <hr class="mix-modal-sep" />
+        <div class="mix-modal-body"></div>
+      </div>
+      <div class="mix-modal-sidebar" hidden>
+        <h3>Autres épisodes</h3>
+        <div class="mix-modal-related"></div>
       </div>
     </div>
-    <hr class="mix-modal-sep" />
-    <div class="mix-modal-body"></div>
   </div>
 </div>
 <script src="/js/howler.min.js"></script>

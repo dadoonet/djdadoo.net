@@ -366,6 +366,18 @@
   var modalClose    = modalEl.querySelector(".mix-modal-close");
   var modalBackdrop = modalEl.querySelector(".mix-modal-backdrop");
 
+  function getRelatedMixes(event) {
+    if (!event) return [];
+    var related = [];
+    var allDataElements = document.querySelectorAll(".mix-data[data-event]");
+    allDataElements.forEach(function(el) {
+      if (el.dataset.event === event) {
+        related.push(el);
+      }
+    });
+    return related;
+  }
+
   function openModal(card) {
     var d = card.querySelector(".mix-data");
     if (!d) return;
@@ -378,6 +390,50 @@
     modalEl.querySelector(".mix-modal-subtitle").textContent = d.dataset.subtitle || "";
     modalEl.querySelector(".mix-modal-keywords").textContent = d.dataset.keywords || "";
     modalEl.querySelector(".mix-modal-body").innerHTML       = d.innerHTML;
+
+    // Handle related mixes
+    var event = d.dataset.event;
+    var sidebarEl = modalEl.querySelector(".mix-modal-sidebar");
+    var relatedEl = modalEl.querySelector(".mix-modal-related");
+
+    if (event) {
+      var relatedMixes = getRelatedMixes(event);
+      if (relatedMixes.length > 1) {
+        // Show sidebar
+        sidebarEl.removeAttribute("hidden");
+        relatedEl.innerHTML = "";
+
+        relatedMixes.forEach(function(relatedData) {
+          var relatedTitle = relatedData.dataset.title || "";
+          var relatedEpisode = relatedData.dataset.episode || "?";
+          var relatedSeason = relatedData.dataset.season || "";
+
+          var relatedLink = document.createElement("div");
+          relatedLink.className = "mix-modal-related-item";
+          relatedLink.innerHTML = '<strong>' + escapeHtml(relatedTitle) + '</strong><br><small>Ép. ' + escapeHtml(relatedEpisode) + '</small>';
+
+          // Find corresponding card and add click handler
+          var cardIndex = Array.from(cards).findIndex(function(c) {
+            var cd = c.querySelector(".mix-data");
+            return cd && cd.dataset.title === relatedTitle;
+          });
+
+          if (cardIndex >= 0) {
+            relatedLink.style.cursor = "pointer";
+            relatedLink.addEventListener("click", function() {
+              closeModal();
+              openModal(cards[cardIndex]);
+            });
+          }
+          relatedEl.appendChild(relatedLink);
+        });
+      } else {
+        sidebarEl.setAttribute("hidden", "");
+      }
+    } else {
+      sidebarEl.setAttribute("hidden", "");
+    }
+
     modalEl.removeAttribute("hidden");
     document.body.style.overflow = "hidden";
   }
