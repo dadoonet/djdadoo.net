@@ -20,6 +20,8 @@
   var btnPlay       = document.getElementById("btn-play");
   var btnPrev       = document.getElementById("btn-prev");
   var btnNext       = document.getElementById("btn-next");
+  var btnSkipBack   = document.getElementById("btn-skip-back");
+  var btnSkipForward= document.getElementById("btn-skip-forward");
   var progressBar   = document.getElementById("progress-bar");
   var progressFill  = document.getElementById("progress-fill");
   var currentTimeEl = document.getElementById("player-current");
@@ -156,14 +158,23 @@
   }
 
   function setPlayBtn(playing) {
-    btnPlay.textContent = playing ? "⏸" : "▶";
+    var icon = btnPlay.querySelector("i");
+    if (icon) {
+      icon.className = playing ? "fa-solid fa-pause" : "fa-solid fa-play";
+    }
     btnPlay.setAttribute("aria-label", playing ? "Pause" : "Lecture");
   }
 
   function setModalPlayBtn(playing) {
     var playBtn = modalEl.querySelector(".mix-modal-cover-play");
     if (playBtn) {
-      playBtn.textContent = playing ? "⏸" : "▶";
+      var icon = playBtn.querySelector("i");
+      if (!icon) {
+        icon = document.createElement("i");
+        playBtn.innerHTML = "";
+        playBtn.appendChild(icon);
+      }
+      icon.className = playing ? "fa-solid fa-pause" : "fa-solid fa-play";
       playBtn.setAttribute("aria-label", playing ? "Pause" : "Lire cet épisode");
     }
   }
@@ -213,6 +224,16 @@
     }
   }
 
+  function skipSeconds(seconds) {
+    if (!sound) return;
+    var current = sound.seek() || 0;
+    var dur = sound.duration() || 0;
+    var newPos = Math.max(0, Math.min(current + seconds, dur));
+    sound.seek(newPos);
+    progressFill.style.width = (dur > 0 ? (newPos / dur * 100) : 0).toFixed(2) + "%";
+    currentTimeEl.textContent = formatTime(newPos);
+  }
+
   progressBar.addEventListener("mousedown", function (e) {
     isDragging = true;
     seekFromPointer(e.clientX);
@@ -255,6 +276,14 @@
       return;
     }
     skipTo(currentIndex + 1);
+  });
+
+  btnSkipBack.addEventListener("click", function () {
+    skipSeconds(-15);
+  });
+
+  btnSkipForward.addEventListener("click", function () {
+    skipSeconds(15);
   });
 
   // ── Volume ─────────────────────────────────────────────────────────────────
@@ -365,7 +394,12 @@
       if (playing) cards[index].classList.add("playing");
       // Update play icon
       var icon = cards[index].querySelector(".play-icon");
-      if (icon) icon.textContent = playing ? "⏸" : "▶";
+      if (icon) {
+        var i = icon.querySelector("i");
+        if (i) {
+          i.className = playing ? "fa-solid fa-pause" : "fa-solid fa-play";
+        }
+      }
     }
 
     // Update modal play button if it's open and showing this episode

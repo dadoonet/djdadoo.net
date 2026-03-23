@@ -88,7 +88,7 @@
         <img src="{{ .Site.Params.podcast.cover }}" alt="{{ $p.Title }}" loading="lazy" />
         {{ end }}
         <div class="mix-card-overlay">
-          <span class="play-icon">▶</span>
+          <span class="play-icon"><i class="fa-solid fa-play"></i></span>
         </div>
         {{ if $p.Params.duration }}
         <span class="mix-card-duration">{{ $p.Params.duration }}</span>
@@ -135,9 +135,11 @@
     <div id="player-chapters" class="player-chapters" hidden></div>
   </div>
   <div class="player-controls">
-    <button id="btn-prev" aria-label="Précédent">⏮</button>
-    <button id="btn-play" aria-label="Lecture / Pause">▶</button>
-    <button id="btn-next" aria-label="Suivant">⏭</button>
+    <button id="btn-skip-back" class="player-skip-btn" aria-label="Reculer de 15s"><i class="fa-solid fa-rotate-left"></i></button>
+    <button id="btn-prev" aria-label="Précédent"><i class="fa-solid fa-backward-fast"></i></button>
+    <button id="btn-play" aria-label="Lecture / Pause"><i class="fa-solid fa-play"></i></button>
+    <button id="btn-next" aria-label="Suivant"><i class="fa-solid fa-forward-fast"></i></button>
+    <button id="btn-skip-forward" class="player-skip-btn" aria-label="Avancer de 15s"><i class="fa-solid fa-rotate-right"></i></button>
   </div>
   <div class="player-progress-wrap">
     <span id="player-current">0:00</span>
@@ -161,7 +163,7 @@
         <div class="mix-modal-header">
           <div class="mix-modal-cover-wrapper">
             <img class="mix-modal-cover" src="" alt="" />
-            <button class="mix-modal-cover-play" aria-label="Lire cet épisode">▶</button>
+            <button class="mix-modal-cover-play" aria-label="Lire cet épisode"><i class="fa-solid fa-play"></i></button>
           </div>
           <div class="mix-modal-meta">
             <h2 class="mix-modal-title"></h2>
