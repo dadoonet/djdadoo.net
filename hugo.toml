@@ -38,7 +38,12 @@ disableKinds = ["taxonomy", "term"]
   # For the website only, it adds a link to the podcast
   podcastLink   = "https://podcasts.apple.com/fr/podcast/dj-elky-mixes/id542004633"
   # For each episode
+  # If the page does not define an audio_url field, the mp3 file is automatically guessed
+  # from the website path with baseAudioURL as a prefix
   baseAudioURL = "https://storage.googleapis.com/djdadoo/"
+  # This is a prefix for every episode in the RSS generated file
   trackTitle   = "David's Mix"
+  # Optional keywords which are appended automatically to any other keyword defined for the episode
   keywords     = ["DJ Elky", "Mix"]
+  # Default audio type when audio_type is not set for the episode
   audioType    = "audio/mpeg"
