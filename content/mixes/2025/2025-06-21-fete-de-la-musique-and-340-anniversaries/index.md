@@ -6,7 +6,7 @@ season: 2025
 episode: 59
 author: David Pilato
 keywords: ["Live", "Anniversary", "Lounge", "House", "Electro"]
-audio_url: "2025-06-21-AnniversaireArnaud.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3"
 audio_length: 450915648 
 duration: "03:07:53"
 ---

@@ -6,7 +6,7 @@ season: 2025
 episode: 58
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2025-06-05-DevQuest.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2025-06-05-DevQuest.mp3"
 audio_length: 154976458 
 duration: "01:04:34"
 ---

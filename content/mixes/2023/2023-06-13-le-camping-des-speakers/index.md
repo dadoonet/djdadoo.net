@@ -6,7 +6,7 @@ season: 2023
 episode: 39
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2023-06-14-camping-des-speakers.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3"
 audio_length: 440484341
 duration: "03:03:32"
 ---

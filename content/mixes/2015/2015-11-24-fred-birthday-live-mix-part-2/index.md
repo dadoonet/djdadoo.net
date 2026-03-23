@@ -6,7 +6,7 @@ season: 2015
 episode: 17
 author: David Pilato
 keywords: ["Live", "Birthday"]
-audio_url: "2015-11-21-Fred-Birthday-Live-Mix-Part2.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2015-11-21-Fred-Birthday-Live-Mix-Part2.mp3"
 audio_length: 32517426
 duration: "0:33:52"
 ---

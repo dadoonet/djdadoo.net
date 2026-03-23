@@ -6,7 +6,7 @@ season: 2022
 episode: 32
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2022-12-17-MeetYourSoulmate-Warmup.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3"
 audio_length: 159303307
 duration: "01:06:23"
 ---

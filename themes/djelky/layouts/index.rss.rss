@@ -31,6 +31,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
   {{- range $pages }}
   {{- $p := . }}
   {{- $cover := $p.Resources.GetMatch "cover.*" }}
+  {{- $audioURL := $p.Params.audio_url | default (printf "%s%s.mp3" $site.Params.podcast.baseAudioURL (path.Dir $p.File.Path)) }}
   <item>
     {{- with $p.Params.season }}
     <itunes:season>{{ . }}</itunes:season>
@@ -64,11 +65,8 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     {{- if $cover }}
     <itunes:image href="{{ $baseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
     {{- end }}
-    {{- with $p.Params.audio_url }}
-    {{- $audioURL := printf "%s%s" $site.Params.podcast.baseAudioURL . }}
     <enclosure url="{{ $audioURL }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default $site.Params.podcast.audioType }}" />
-    {{- end }}
-    <guid>{{ printf "%s%s" $site.Params.podcast.baseAudioURL ($p.Params.audio_url | default "") }}</guid>
+    <guid>{{ $audioURL }}</guid>
     <pubDate>{{ $p.Date.Format "02 Jan 2006 15:04:05 -0700" }}</pubDate>
     {{- with $p.Params.duration }}
     <itunes:duration>{{ . }}</itunes:duration>

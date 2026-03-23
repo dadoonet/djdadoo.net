@@ -6,7 +6,7 @@ season: 2013
 episode: 13
 author: David Pilato
 keywords: ["Live", "Birthday", "Christine", "Diner", "80"]
-audio_url: "2013-10-05-Peniche-80.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-80.mp3"
 audio_length: 37207331
 duration: "0:38:45"
 ---

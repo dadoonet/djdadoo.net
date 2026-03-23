@@ -6,7 +6,7 @@ season: 2022
 episode: 27
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3"
 audio_length: 321574815
 duration: "02:13:59"
 ---

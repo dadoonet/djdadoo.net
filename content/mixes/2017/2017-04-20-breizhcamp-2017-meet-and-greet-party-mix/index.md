@@ -6,7 +6,7 @@ season: 2017
 episode: 23
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2017-04-20-breizhcamp-meet-and-greet.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-meet-and-greet.mp3"
 audio_length: 173147532
 duration: "02:00:14"
 ---

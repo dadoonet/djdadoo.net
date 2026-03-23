@@ -6,7 +6,7 @@ season: 2018
 episode: 24
 author: David Pilato / Julien Ponge
 keywords: ["Live"]
-audio_url: "2018-03-29-breizhcamp-meet-and-greet.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2018-03-29-breizhcamp-meet-and-greet.mp3"
 audio_length: 173147532
 duration: "01:56:01"
 ---

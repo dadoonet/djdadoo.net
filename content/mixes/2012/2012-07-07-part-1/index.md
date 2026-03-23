@@ -6,7 +6,7 @@ season: 2012
 episode: 7
 author: David Pilato
 keywords: ["Live", "Wedding"]
-audio_url: "07_DJ_Dadoo_July-Mix-DDJT1-Part1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/07_DJ_Dadoo_July-Mix-DDJT1-Part1.mp3"
 audio_length: 99296618
 duration: "1:08:57"
 ---

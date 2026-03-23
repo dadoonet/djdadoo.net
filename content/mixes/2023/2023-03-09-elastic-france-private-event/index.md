@@ -6,7 +6,7 @@ season: 2023
 episode: 37
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2023-03-09-ElasticPrivateEvent.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3"
 audio_length: 162691470
 duration: "03:37:24"
 ---

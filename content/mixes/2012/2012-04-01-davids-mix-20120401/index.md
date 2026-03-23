@@ -5,7 +5,7 @@ season: 2012
 episode: 5
 author: David Pilato
 keywords: ["Funk", "Groove", "Club"]
-audio_url: "05_DJ_Dadoo_April-Mix-DDJT1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/05_DJ_Dadoo_April-Mix-DDJT1.mp3"
 audio_length: 102217281
 duration: "1:10:58"
 ---

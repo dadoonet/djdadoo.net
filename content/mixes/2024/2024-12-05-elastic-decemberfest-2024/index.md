@@ -6,7 +6,7 @@ season: 2024
 episode: 55
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2024-12-05-ElasticDecemberFest.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2024-12-05-ElasticDecemberFest.mp3"
 audio_length: 196081703
 duration: "01:22:42"
 ---

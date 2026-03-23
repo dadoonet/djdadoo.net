@@ -6,7 +6,7 @@ season: 2024
 episode: 50
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2024-05-04-MariageDelphineEtLaurent-Part2.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2024-05-04-MariageDelphineEtLaurent-Part2.mp3"
 audio_length: 117273438
 duration: "00:48:52"
 ---

@@ -6,7 +6,7 @@ season: 2024
 episode: 47
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2024-01-20-AnniversaireGisele-Part2.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3"
 audio_length: 254624165
 duration: "01:46:06"
 ---

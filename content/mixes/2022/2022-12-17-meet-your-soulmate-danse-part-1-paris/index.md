@@ -6,7 +6,7 @@ season: 2022
 episode: 33
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2022-12-17-MeetYourSoulmate-Dance-Part1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3"
 audio_length: 79650741
 duration: "00:33:11"
 ---

@@ -6,7 +6,7 @@ season: 2017
 episode: 22
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2017-04-20-breizhcamp-keynote.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2017-04-20-breizhcamp-keynote.mp3"
 audio_length: 25240750
 duration: "00:17:32"
 ---

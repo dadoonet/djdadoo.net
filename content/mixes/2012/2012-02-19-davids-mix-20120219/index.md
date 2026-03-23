@@ -5,7 +5,7 @@ season: 2012
 episode: 3
 author: David Pilato
 keywords: ["Funk", "Groove", "Club"]
-audio_url: "03_DJ_Dadoo_Club-Mix-DDJT1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/03_DJ_Dadoo_Club-Mix-DDJT1.mp3"
 audio_length: 91088046
 duration: "1:03:15"
 ---

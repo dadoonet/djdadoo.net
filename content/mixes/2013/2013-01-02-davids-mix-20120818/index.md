@@ -5,7 +5,7 @@ season: 2012
 episode: 9
 author: David Pilato
 keywords: ["Summer"]
-audio_url: "08_DJ_Dadoo_Summer_Mix.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/08_DJ_Dadoo_Summer_Mix.mp3"
 audio_length: 78899761
 duration: "0:54:47"
 ---

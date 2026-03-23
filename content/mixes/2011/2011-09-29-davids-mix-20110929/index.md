@@ -6,7 +6,7 @@ season: 2011
 episode: 1
 author: David Pilato
 keywords: ["Funk", "Groove", "Club"]
-audio_url: "01_DJ_Dadoo_Funk_Mix.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/01_DJ_Dadoo_Funk_Mix.mp3"
 audio_length: 41742220
 duration: "28:59"
 ---

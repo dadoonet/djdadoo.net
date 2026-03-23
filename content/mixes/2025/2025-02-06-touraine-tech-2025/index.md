@@ -6,7 +6,7 @@ season: 2025
 episode: 56
 author: David Pilato and Julien Briault
 keywords: ["Live"]
-audio_url: "2025-02-06-TouraineTech.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3"
 audio_length: 264659489
 duration: "01:50:16"
 ---

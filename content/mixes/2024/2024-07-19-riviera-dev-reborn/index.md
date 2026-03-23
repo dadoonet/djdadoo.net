@@ -6,7 +6,7 @@ season: 2024
 episode: 52
 author: David Pilato
 keywords: []
-audio_url: "2024-07-19-RivieraDev-Reborn.m4a"
+audio_url: "https://storage.googleapis.com/djdadoo/2024-07-19-RivieraDev-Reborn.m4a"
 audio_length: 147699389
 duration: "01:03:06"
 ---

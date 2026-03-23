@@ -26,9 +26,10 @@
   {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
   {{ $chapters := slice }}
   {{ if .Params.chapters }}{{ $chapters = .Params.chapters }}{{ end }}
+  {{ $audioURL := .Params.audio_url | default (printf "%s%s.mp3" $.Site.Params.podcast.baseAudioURL (path.Dir .File.Path)) }}
   {{ $playlist = $playlist | append (dict
     "title"    .Title
-    "audioUrl" (printf "%s%s" $.Site.Params.podcast.baseAudioURL (.Params.audio_url | default ""))
+    "audioUrl" $audioURL
     "duration" (.Params.duration  | default "")
     "cover"    $cover
     "subtitle" (.Params.subtitle  | default "")

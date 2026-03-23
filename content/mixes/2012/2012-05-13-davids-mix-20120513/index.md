@@ -5,7 +5,7 @@ season: 2012
 episode: 6
 author: David Pilato
 keywords: ["Club", "House"]
-audio_url: "06_DJ_Dadoo_May-Mix-DDJT1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/06_DJ_Dadoo_May-Mix-DDJT1.mp3"
 audio_length: 80753610
 duration: "0:56:04"
 ---

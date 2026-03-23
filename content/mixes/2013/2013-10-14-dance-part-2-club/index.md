@@ -6,7 +6,7 @@ season: 2013
 episode: 14
 author: David Pilato
 keywords: ["Live", "Birthday", "Christine", "Diner", "Lounge"]
-audio_url: "2013-10-05-Peniche-Dance.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Dance.mp3"
 audio_length: 94369483
 duration: "1:38:18"
 ---

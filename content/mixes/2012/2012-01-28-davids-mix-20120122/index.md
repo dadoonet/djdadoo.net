@@ -5,7 +5,7 @@ season: 2012
 episode: 2
 author: David Pilato
 keywords: ["Funk", "Groove", "Club"]
-audio_url: "02_DJ_Dadoo_First-Mix-DDJT1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/02_DJ_Dadoo_First-Mix-DDJT1.mp3"
 audio_length: 97455772
 duration: "1:07:27"
 ---

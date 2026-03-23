@@ -6,7 +6,7 @@ season: 2016
 episode: 20
 author: David Pilato
 keywords: ["Home"]
-audio_url: "2016-08-28-Summer-2016-Garden-Mix.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2016-08-28-Summer-2016-Garden-Mix.mp3"
 audio_length: 98529268
 duration: "01:08:25"
 ---

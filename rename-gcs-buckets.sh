@@ -3,7 +3,7 @@
 #
 # Renames audio files in the GCS bucket to match the episode directory structure:
 #   OLD: gs://djdadoo/2025-02-06-TouraineTech.mp3
-#   NEW: gs://djdadoo/2025/2025-02-06-touraine-tech-2025.mp3
+#   NEW: gs://djdadoo/mixes/2025/2025-02-06-touraine-tech-2025.mp3
 #
 # On success, removes audio_url from the episode's index.md frontmatter
 # (the URL becomes implicit from the directory structure).
@@ -56,7 +56,8 @@ while IFS= read -r index_md; do
   slug=$(basename "$dir")
   year=$(basename "$(dirname "$dir")")
 
-  old_url=$(grep '^audio_url:' "$index_md" | sed 's/^audio_url: *"\(.*\)"/\1/')
+  old_full=$(grep '^audio_url:' "$index_md" | sed 's/^audio_url: *"\(.*\)"/\1/')
+  old_url="${old_full#https://storage.googleapis.com/djdadoo/}"
 
   if [[ -z "$old_url" ]]; then
     echo "  SKIP    (audio_url already removed)  $(basename "$dir")"
@@ -64,7 +65,7 @@ while IFS= read -r index_md; do
     continue
   fi
 
-  new_url="${year}/${slug}.mp3"
+  new_url="mixes/${year}/${slug}.mp3"
 
   if [[ "$old_url" == "$new_url" ]]; then
     echo "  CLEAN   ${old_url}  (already correct in GCS, removing audio_url)"

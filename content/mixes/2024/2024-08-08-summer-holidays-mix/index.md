@@ -6,7 +6,7 @@ season: 2024
 episode: 53
 author: David Pilato
 keywords: []
-audio_url: "2024-08-08-SummerHolidaysMix.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2024-08-08-SummerHolidaysMix.mp3"
 audio_length: 291978390
 duration: "02:01:39"
 ---

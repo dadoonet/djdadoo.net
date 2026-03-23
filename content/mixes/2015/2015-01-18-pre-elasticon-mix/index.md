@@ -6,7 +6,7 @@ season: 2015
 episode: 15
 author: David Pilato
 keywords: ["Home"]
-audio_url: "2015-01-18-pre-elasticon.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2015-01-18-pre-elasticon.mp3"
 audio_length: 56415855
 duration: "0:58:46"
 ---

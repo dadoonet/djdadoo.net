@@ -6,7 +6,7 @@ season: 2025
 episode: 62
 author: DJ4Loops
 keywords: ["DJ4Loops", "Live", "Palala", "House"]
-audio_url: "2025-07-12-Palala-part4.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part4.mp3"
 audio_length: 114660973
 duration: "00:47:43"
 ---

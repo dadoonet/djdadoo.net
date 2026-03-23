@@ -6,7 +6,7 @@ season: 2023
 episode: 36
 author: David Pilato
 keywords: ["Studio"]
-audio_url: "2023-02-21-LesEnvahisseurs-Take2.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2023-02-21-LesEnvahisseurs-Take2.mp3"
 audio_length: 162691470
 duration: "01:07:47"
 ---

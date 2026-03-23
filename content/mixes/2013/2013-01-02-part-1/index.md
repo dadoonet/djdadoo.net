@@ -6,7 +6,7 @@ season: 2012
 episode: 10
 author: David Pilato
 keywords: ["Live", "Birthday", "Anne"]
-audio_url: "09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3"
 audio_length: 32128646
 duration: "0:22:18"
 ---

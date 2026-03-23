@@ -6,7 +6,7 @@ season: 2023
 episode: 41
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2023-09-02-AnnivCaroNicoPart1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2023-09-02-AnnivCaroNicoPart1.mp3"
 audio_length: 216909566
 duration: "01:30:23"
 ---

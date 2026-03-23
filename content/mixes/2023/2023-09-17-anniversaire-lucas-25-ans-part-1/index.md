@@ -6,7 +6,7 @@ season: 2023
 episode: 44
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2023-09-16-AnniversaireLucas-Dance1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3"
 audio_length: 86436290
 duration: "00:36:01"
 ---

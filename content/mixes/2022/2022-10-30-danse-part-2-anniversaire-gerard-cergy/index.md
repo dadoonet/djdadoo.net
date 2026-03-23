@@ -6,7 +6,7 @@ season: 2022
 episode: 30
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2022-10-29-Anniversaire-Gerard-Part3.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3"
 audio_length: 85174775
 duration: "00:35:27"
 ---

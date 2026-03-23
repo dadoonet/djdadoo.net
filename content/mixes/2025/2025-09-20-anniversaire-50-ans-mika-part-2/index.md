@@ -6,7 +6,7 @@ season: 2025
 episode: 65
 author: David Pilato
 keywords: ["Live", "French Touch"]
-audio_url: "2025-09-20-50ansMika-part2.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2025-09-20-50ansMika-part2.mp3"
 audio_length: 132750279
 duration: "00:55:17"
 ---

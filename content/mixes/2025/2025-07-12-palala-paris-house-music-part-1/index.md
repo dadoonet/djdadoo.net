@@ -6,7 +6,7 @@ season: 2025
 episode: 60
 author: David Pilato
 keywords: ["Live", "Palala", "House"]
-audio_url: "2025-07-12-Palala-part1.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3"
 audio_length: 152643187
 duration: "01:03:36"
 ---

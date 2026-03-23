@@ -6,7 +6,7 @@ season: 2013
 episode: 12
 author: David Pilato
 keywords: ["Live", "Birthday", "Christine", "Diner", "Lounge"]
-audio_url: "2013-10-05-Peniche-Diner.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-Diner.mp3"
 audio_length: 115790723
 duration: "2:00:37"
 ---

@@ -6,7 +6,7 @@ season: 2024
 episode: 48
 author: David Pilato
 keywords: ["Live", "Funk", "Disco", "House"]
-audio_url: "2024-04-13-60ansEric.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2024-04-13-60ansEric.mp3"
 audio_length: 265221390
 duration: "01:50:31"
 ---

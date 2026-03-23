@@ -6,7 +6,7 @@ season: 2023
 episode: 40
 author: David Pilato
 keywords: ["Home", "Funk", "House"]
-audio_url: "2023-08-25-HouseFunkSummerMix.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2023-08-25-HouseFunkSummerMix.mp3"
 audio_length: 155693976
 duration: "01:04:52"
 ---

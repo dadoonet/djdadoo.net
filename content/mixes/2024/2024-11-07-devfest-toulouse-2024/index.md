@@ -6,7 +6,7 @@ season: 2024
 episode: 54
 author: David Pilato and Julien Briault
 keywords: ["Live", "4 hands"]
-audio_url: "2024-11-07-DevFestToulouse.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3"
 audio_length: 258208378
 duration: "01:47:35"
 ---

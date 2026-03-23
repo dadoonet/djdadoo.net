@@ -6,7 +6,7 @@ season: 2024
 episode: 51
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2024-05-26-LisaForever.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3"
 audio_length: 70793165
 duration: "00:29:30"
 ---

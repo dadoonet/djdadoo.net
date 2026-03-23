@@ -6,7 +6,7 @@ season: 2023
 episode: 43
 author: David Pilato
 keywords: ["Live"]
-audio_url: "2023-09-16-AnniversaireLucas-Warmup.mp3"
+audio_url: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3"
 audio_length: 68211173
 duration: "00:28:25"
 ---
