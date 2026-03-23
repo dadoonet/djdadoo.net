@@ -74,15 +74,14 @@ hugo.toml                 # site configuration
 
    ```yaml
    ---
-   title: "David's Mix #2026/06/21 - Summer Solstice"
+   title: "Summer Solstice"
    date: 2026-06-21T18:00:00+02:00
    season: 2026
    episode: 68
-   audio_url: "https://storage.googleapis.com/djdadoo/2026-06-21-Summer_Solstice.mp3"
    audio_length: 98765432
    duration: "01:08:30"
-   subtitle: "Deep house sunset session"
-   keywords: ["DJ Elky", "Mix", "House", "Deep House"]
+   subtitle: "David's Mix #2026/06/21"
+   keywords: ["House", "Deep House"]
    chapters:
      - time: "00:00:00"
        title: "Artist - Track Name"
@@ -94,6 +93,9 @@ hugo.toml                 # site configuration
    and in the podcast episode description.
    ```
 
+   The audio URL is **auto-derived** from the page bundle path: `{baseAudioURL}mixes/2026/2026-06-21-summer-solstice.mp3`.
+   Set `audio_url` explicitly only if the GCS file has not yet been renamed to match the bundle structure.
+
 4. **Preview** with `hugo server` and verify the episode appears in the grid and the RSS feed (`/djdadoo.rss`).
 
 ---
@@ -102,35 +104,46 @@ hugo.toml                 # site configuration
 
 | Field          | Type            | Required | Default                    | Description |
 |----------------|-----------------|----------|----------------------------|-------------|
-| `title`            | string          | **yes**  | —                          | Episode title shown on the card. Not used for the RSS `<title>` (see `itunes_title` below) |
+| `title`            | string          | **yes**  | —                          | Event name shown on the card (e.g. `"Touraine Tech 2025"`). Used as the suffix in the auto-generated RSS `<title>` |
 | `date`             | datetime        | **yes**  | —                          | Publication date (ISO 8601). Controls sort order, RSS `<pubDate>`, and the `#YYYY/MM/DD` part of the RSS title |
 | `season`           | integer         | **yes**  | —                          | Season number (typically the year). Used for grid grouping and `<itunes:season>` |
 | `episode`          | integer         | **yes**  | —                          | Episode number. Shown in the info popup and `<itunes:episode>` |
-| `audio_url`        | string          | **yes**  | —                                   | Filename of the MP3 relative to `params.podcast.baseAudioURL`. Used by the player and as the RSS `<guid>` |
-| `audio_length`     | integer (bytes) | **yes**  | —                                   | File size in bytes for the RSS `<enclosure>` tag |
-| `duration`         | string          | **yes**  | —                                   | Playback duration in `HH:MM:SS` format. Displayed on the card and in `<itunes:duration>` |
-| `subtitle`         | string          | no       | —                                   | Event name shown below the title on the card. Used as fallback for `<itunes:subtitle>` and appended to the RSS title if `itunes_subtitle` is absent |
-| `itunes_subtitle`  | string          | no       | —                                   | Location or context string sent to `<itunes:subtitle>`. Takes priority over `subtitle` for the RSS title suffix |
-| `itunes_title`     | string          | no       | —                                   | When set, overrides the auto-generated RSS `<title>` entirely. Useful for one-off episode titles that don't follow the standard pattern |
-| `author`           | string          | no       | `params.podcast.author` (site)      | Episode author. Falls back to the site-level author |
-| `keywords`         | string[]        | no       | —                                   | Tags shown in the info popup and in `<itunes:keywords>` |
-| `audio_type`       | string (MIME)   | no       | `params.podcast.audioType` (site)   | MIME type of the audio file. Site default is `audio/mpeg` |
+| `audio_length`     | integer (bytes) | **yes**  | —                          | File size in bytes for the RSS `<enclosure>` tag |
+| `duration`         | string          | **yes**  | —                          | Playback duration in `HH:MM:SS` format. Displayed on the card and in `<itunes:duration>` |
+| `subtitle`         | string          | no       | —                          | Mix reference shown below the title on the card (e.g. `"David's Mix #2025/02/06"`). Sent to `<itunes:subtitle>` |
+| `audio_url`        | string (URL)    | no       | auto-derived from bundle path | Full GCS URL of the MP3. Set only when the GCS file does not follow the standard path `mixes/YYYY/slug.mp3`. Used by the player and as the RSS `<guid>` |
+| `itunes_title`     | string          | no       | —                          | When set, overrides the auto-generated RSS `<title>` entirely. Useful for one-off episode titles that don't follow the standard pattern |
+| `itunes_subtitle`  | string          | no       | —                          | Overrides `subtitle` for `<itunes:subtitle>` and the RSS title suffix. Rarely needed |
+| `author`           | string          | no       | `params.podcast.author`    | Episode author. Falls back to the site-level author |
+| `keywords`         | string[]        | no       | —                          | Extra tags merged with the site-level keywords (`["DJ Elky", "Mix"]`) for `<itunes:keywords>`. No need to repeat the global ones |
+| `audio_type`       | string (MIME)   | no       | `params.podcast.audioType` | MIME type of the audio file. Site default is `audio/mpeg` |
 | `chapters`         | list            | no       | —                          | Tracklist. Each entry has `time` (`HH:MM:SS`) and `title`. Enables chapter navigation in the player |
 | `explicit`         | boolean         | no       | `false`                    | Marks the episode as explicit in the RSS feed |
 
 ### RSS title generation
 
-The RSS `<title>` is built automatically from the episode date and subtitle fields:
+The RSS `<title>` is built automatically from the episode date and title fields:
 
 ```
-{params.podcast.trackTitle} #{YYYY/MM/DD}[ - {itunes_subtitle ?? subtitle}]
+{params.podcast.trackTitle} #{YYYY/MM/DD}[ - {itunes_subtitle ?? title}]
 ```
 
 Examples:
-- date `2025-02-06`, subtitle `Touraine Tech 2025` → `David's Mix #2025/02/06 - Touraine Tech 2025`
-- date `2012-01-22`, no subtitle → `David's Mix #2012/01/22`
+- date `2025-02-06`, title `Touraine Tech 2025` → `David's Mix #2025/02/06 - Touraine Tech 2025`
+- date `2012-01-22`, no title → `David's Mix #2012/01/22`
 
 Set `itunes_title` in the frontmatter to bypass this logic and use a fully custom title.
+
+### Audio URL derivation
+
+The audio URL is auto-derived from the page bundle path:
+
+```
+{params.podcast.baseAudioURL} + path.Dir(File.Path) + ".mp3"
+# → https://storage.googleapis.com/djdadoo/mixes/2026/2026-06-21-summer-solstice.mp3
+```
+
+Set `audio_url` explicitly (full URL) only for episodes whose GCS file hasn't been renamed to the standard `mixes/YYYY/slug.mp3` structure yet. Run `rename-gcs-buckets.sh` to migrate and auto-remove `audio_url` from frontmatter.
 
 ### Cover image
 
