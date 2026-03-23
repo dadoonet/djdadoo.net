@@ -1,5 +1,5 @@
 ---
-title: "Fred Birthday"
+title: "Fred's Birthday"
 subtitle: "Live - Fred Birthday"
 date: 2016-07-02T23:25:00+01:00
 season: 2016
@@ -12,3 +12,4 @@ duration: "0:42:59"
 ---
 
 Live - Fred Birthday
+Recorded in Cergy

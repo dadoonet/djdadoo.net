@@ -1,6 +1,5 @@
 ---
-title: "Winter 2017 Pre elastic{ON}'17 Mix"
-subtitle: "Winter 2017 Pre elastic{ON}'17 Mix"
+title: "Pre elastic{ON}'17 Winter Mix"
 date: 2017-03-05T11:30:00+01:00
 season: 2017
 episode: 21
