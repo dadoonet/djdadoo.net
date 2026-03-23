@@ -541,6 +541,23 @@ a:hover { text-decoration: underline; }
 }
 .mix-modal-close:hover { color: var(--color-text); }
 
+/* ----- Modal container with sidebar ----- */
+.mix-modal-container {
+  display: flex;
+  height: 100%;
+  gap: 16px;
+  flex: 1;
+  min-height: 0;
+}
+
+.mix-modal-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .mix-modal-header {
   display: flex;
   gap: 16px;
@@ -620,21 +637,6 @@ a:hover { text-decoration: underline; }
   margin-bottom: 10px;
 }
 .mix-modal-body li { margin-bottom: 3px; }
-
-/* ----- Modal container with sidebar ----- */
-.mix-modal-container {
-  display: flex;
-  height: 100%;
-  gap: 16px;
-}
-
-.mix-modal-main {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
 
 .mix-modal-sidebar {
   width: 160px;
