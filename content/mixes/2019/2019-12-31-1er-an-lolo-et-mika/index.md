@@ -1,14 +1,14 @@
 ---
-title: "David's Mix #2019/12/31 - 1er An - Lolo et Mika"
+title: "1er An - Lolo et Mika"
+subtitle: "1er An - Lolo et Mika"
 date: 2019-12-31T23:59:00+02:00
 season: 2019
 episode: 26
-subtitle: 1er An - Lolo et Mika
 author: David Pilato
-keywords: ["DJ Elky", "Live", "Mix"]
+keywords: ["Live"]
 audio_url: "2020-01-01-LoloEtMika-1An-fullmix.mp3"
 audio_length: 341528811
 duration: "03:57:10"
 ---
 
-<p>Live session recorded in Osny</p>
+Live session recorded in Osny

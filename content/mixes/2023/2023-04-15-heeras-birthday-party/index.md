@@ -1,15 +1,16 @@
 ---
-title: "David's Mix #2023/04/15 - Heera's Birthday party"
+title: "Heera's Birthday party"
+subtitle: "Live session recorded at Golf de Saint-Ouen l'Aumône"
 date: 2023-04-15T23:30:00+01:00
 season: 2023
 episode: 38
-subtitle: "Live session recorded at Golf de Saint-Ouen l'Aumône"
 author: David Pilato
-keywords: ["DJ Elky", "Live", "Mix"]
+keywords: ["Live"]
 audio_url: "2023-04-15-AnniversaireHeera.mp3"
 audio_length: 114173178
 duration: "00:47:34"
 ---
 
-<p>Recorded at Golf de Saint-Ouen l'Aumône.</p>
-      <p>Second time for a live event on my DJM-V10-LF. For Heera's birthday.</p>
+Recorded at Golf de Saint-Ouen l'Aumône.
+
+Second time for a live event on my DJM-V10-LF. For Heera's birthday.

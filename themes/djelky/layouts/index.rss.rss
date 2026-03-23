@@ -12,20 +12,20 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <link>{{ $site.BaseURL }}</link>
   <atom:link href="{{ $site.BaseURL }}djdadoo.rss" rel="self" type="application/rss+xml" />
   <language>{{ $site.LanguageCode }}</language>
-  <copyright>{{ $site.Params.author }}</copyright>
-  <itunes:subtitle>{{ $site.Params.subtitle }}</itunes:subtitle>
-  <itunes:author>{{ $site.Params.author }}</itunes:author>
-  <itunes:summary><![CDATA[<p>{{ $site.Params.description }}</p>]]></itunes:summary>
-  <description><![CDATA[<p>{{ $site.Params.description }}</p>]]></description>
+  <copyright>{{ $site.Params.rss.author }}</copyright>
+  <itunes:subtitle>{{ $site.Params.rss.subtitle }}</itunes:subtitle>
+  <itunes:author>{{ $site.Params.rss.author }}</itunes:author>
+  <itunes:summary><![CDATA[<p>{{ $site.Params.rss.description }}</p>]]></itunes:summary>
+  <description><![CDATA[<p>{{ $site.Params.rss.description }}</p>]]></description>
   <itunes:owner>
-    <itunes:name>{{ $site.Params.author }}</itunes:name>
-    <itunes:email>{{ $site.Params.email }}</itunes:email>
+    <itunes:name>{{ $site.Params.rss.author }}</itunes:name>
+    <itunes:email>{{ $site.Params.rss.email }}</itunes:email>
   </itunes:owner>
-  <itunes:image href="{{ $site.BaseURL }}{{ $site.Params.podcastImage }}" />
+  <itunes:image href="{{ $site.BaseURL }}{{ $site.Params.rss.podcastImage }}" />
   <itunes:category text="Music" />
   <itunes:explicit>false</itunes:explicit>
   <!-- Unique id: do not change. It's computed from dj.pilato.fr using https://www.uuidtools.com/v5 -->
-  <podcast:guid>{{ $site.Params.podcastGUID }}</podcast:guid>
+  <podcast:guid>{{ $site.Params.rss.podcastGUID }}</podcast:guid>
   <podcast:locked>no</podcast:locked>
   {{- range $pages }}
   {{- $p := . }}
@@ -37,9 +37,17 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     {{- with $p.Params.episode }}
     <itunes:episode>{{ . }}</itunes:episode>
     {{- end }}
-    <title>{{ $p.Title }}</title>
-    <itunes:author>{{ with $p.Params.author }}{{ . }}{{ else }}{{ $site.Params.author }}{{ end }}</itunes:author>
-    {{- with $p.Params.subtitle }}
+    {{- if $p.Params.itunes_title }}
+    <title>{{ $p.Params.itunes_title }}</title>
+    {{- else }}
+    {{- $rssTitle := printf "%s #%s" $site.Params.rss.trackTitle ($p.Date.Format "2006/01/02") }}
+    {{- with ($p.Params.itunes_subtitle | default $p.Params.subtitle) }}
+      {{- $rssTitle = printf "%s - %s" $rssTitle . }}
+    {{- end }}
+    <title>{{ $rssTitle }}</title>
+    {{- end }}
+    <itunes:author>{{ with $p.Params.author }}{{ . }}{{ else }}{{ $site.Params.rss.author }}{{ end }}</itunes:author>
+    {{- with ($p.Params.itunes_subtitle | default $p.Params.subtitle) }}
     <itunes:subtitle>{{ . }}</itunes:subtitle>
     {{- end }}
     <description><![CDATA[
@@ -56,15 +64,16 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:image href="{{ $site.BaseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
     {{- end }}
     {{- with $p.Params.audio_url }}
-    {{- $audioURL := printf "%s%s" $site.Params.baseAudioURL . }}
-    <enclosure url="{{ $audioURL }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default $site.Params.audioType }}" />
+    {{- $audioURL := printf "%s%s" $site.Params.rss.baseAudioURL . }}
+    <enclosure url="{{ $audioURL }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default $site.Params.rss.audioType }}" />
     {{- end }}
-    <guid>{{ printf "%s%s" $site.Params.baseAudioURL ($p.Params.audio_url | default "") }}</guid>
+    <guid>{{ printf "%s%s" $site.Params.rss.baseAudioURL ($p.Params.audio_url | default "") }}</guid>
     <pubDate>{{ $p.Date.Format "02 Jan 2006 15:04:05 -0700" }}</pubDate>
     {{- with $p.Params.duration }}
     <itunes:duration>{{ . }}</itunes:duration>
     {{- end }}
-    {{- with $p.Params.keywords }}
+    {{- $keywords := union $site.Params.rss.keywords ($p.Params.keywords | default slice) }}
+    {{- with $keywords }}
     <itunes:keywords>{{ delimit . ", " }}</itunes:keywords>
     {{- end }}
     <itunes:explicit>{{ if $p.Params.explicit }}true{{ else }}false{{ end }}</itunes:explicit>

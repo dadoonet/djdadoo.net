@@ -26,7 +26,7 @@ disableKinds = ["taxonomy", "term"]
     [markup.goldmark.renderer]
       unsafe = true
 
-[params]
+[params.rss]
   author       = "David Pilato"
   email        = "david@pilato.fr"
   podcastGUID  = "5e560267-5f32-55d3-b370-8f66f80ddb8f"
@@ -36,3 +36,5 @@ disableKinds = ["taxonomy", "term"]
   itunesLink   = "https://podcasts.apple.com/fr/podcast/dj-elky-mixes/id542004633"
   audioType    = "audio/mpeg"
   baseAudioURL = "https://storage.googleapis.com/djdadoo/"
+  trackTitle   = "David's Mix"
+  keywords     = ["DJ Elky", "Mix"]

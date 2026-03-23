@@ -1,15 +1,16 @@
 ---
-title: "David's Mix #2025/10/02 - Volcamp 2025 - full set raw"
+title: "Volcamp 2025 - full set raw"
+subtitle: "Live set, private event, recorded live from Clermont-Ferrand, FR."
 date: 2025-10-02T18:30:00+02:00
 season: 2025
 episode: 66
-subtitle: Live set, private event, recorded live from Clermont-Ferrand, FR.
 author: David Pilato and Julien Ponge
-keywords: ["DJ Elky", "Mix", "Live", "House", "French Touch"]
+keywords: ["Live", "House", "French Touch"]
 audio_url: "2025-10-02-volcamp.mp3"
 audio_length: 626656991
 duration: "04:21:06"
 ---
 
-<p>Live set from L'oval at Clermont-Ferrand, FR, with Julien Ponge</p>
-        <p>Playlist under construction...</p>
+Live set from L'oval at Clermont-Ferrand, FR, with Julien Ponge
+
+Playlist under construction...

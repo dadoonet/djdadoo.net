@@ -1,14 +1,14 @@
 ---
-title: "David's Mix #2022/10/29 - Cocktail Mix - Anniversaire Gérard, Cergy"
+title: "Cocktail Mix - Anniversaire Gérard, Cergy"
+subtitle: "Cocktail Mix - Anniversaire Gérard, Cergy"
 date: 2022-10-29T20:00:00+02:00
 season: 2022
 episode: 28
-subtitle: Cocktail Mix - Anniversaire Gérard, Cergy
 author: David Pilato
-keywords: ["DJ Elky", "Live", "Mix"]
+keywords: ["Live"]
 audio_url: "2022-10-29-Anniversaire-Gerard-Part1.mp3"
 audio_length: 239847196
 duration: "01:39:56"
 ---
 
-<p>Live session recorded in Cergy</p>
+Live session recorded in Cergy

@@ -1,77 +1,77 @@
 ---
-title: "David's Mix #2025/06/21 - Fête de la musique (and 3*40 anniversaries)"
+title: "Fête de la musique (and 3*40 anniversaries)"
+subtitle: "Recorded live from Paris 15, FR"
 date: 2025-06-21T21:00:00+02:00
 season: 2025
 episode: 59
-subtitle: Recorded live from Paris 15, FR
 author: David Pilato
-keywords: ["DJ Elky", "Mix", "Live", "Anniversary", "Lounge", "House", "Electro"]
+keywords: ["Live", "Anniversary", "Lounge", "House", "Electro"]
 audio_url: "2025-06-21-AnniversaireArnaud.mp3"
 audio_length: 450915648 
 duration: "03:07:53"
 ---
+Using 2 CDJ3000 and 1 DJM-V10-LF.
 
-<p>Using 2 CDJ3000 and 1 DJM-V10-LF.</p>
-      <p>Around 60 guests on a terrace of private appartment for the 40 years anniversary
-      of Arnaud and his 2 friends.</p>
-      <p>Here is the playlist of the first part:</p>
-      <ol>
-        <li>Too Sunny – Gorillaz & Marvin Gaye</li>
-        <li>Every Kinda People (Dave Lee fka Joey Negro Multicultural Multitrack Mix) – Robert Palmer</li>
-        <li>Just the Two of Us – Sunset Chasers</li>
-        <li>Aganjú (Latin Project mix) – Bebel Gilberto</li>
-        <li>Kiss Me – Coral Reef</li>
-        <li>Renegades – Deepend</li>
-        <li>Sexual Healing – Emily Dawn</li>
-        <li>Words You Said – Five Corners</li>
-        <li>Cruel Summer ( Remix ) – Cobra Kai</li>
-        <li>Pure Shores – SKYE</li>
-        <li>Deepluxe (Beach House Mix) – Schwarz & Funk</li>
-        <li>Viens je t'emmène – France Gall</li>
-        <li>Forever Young – Coral Reef</li>
-        <li>Billie Jean (Lutzu Istrate Remix) – Daniela Andrade</li>
-        <li>Hélène – Yann Muller</li>
-        <li>Paradise (Autograph's Disco Rework) – Sade</li>
-        <li>Mon bain (Elle & Lui vision) – Elle & Lui</li>
-        <li>Every Breath You Take (Deep Chills Remix) – The Police</li>
-        <li>Back To Black (Extended Mix) – Steven Stone & Jessy Howe</li>
-        <li>Isn't She Lovely – Strike</li>
-        <li>The Long Goodbye - Saison's Model 1 Remix – Crispin J Glover</li>
-        <li>World Hold On (THEMBA Remix) – Bob Sinclar</li>
-        <li>Diamond Life (feat. Julie McKnight) - Dance Ritual Mix – Louie Vega</li>
-        <li>Careless Whisper (Cand'IC Remix) – George Michael</li>
-        <li>Una Mattina – Ash</li>
-        <li>Carmenita Lounging (Opera House Mix) – Claude Challe</li>
-        <li>Inass Inass – VAN</li>
-        <li>Baby love (mikeandtess quick edit) – Regina</li>
-        <li>Rock With You (Dario Caminita Revibe) – Michael Jackson</li>
-        <li>Hold On (Tighter To Love) Steve 'silk' Hurley 12'' Mix – Clubland</li>
-        <li>Eye of the Tiger - Jamie Lewis Sex on the Beach Mix – Diva Avari</li>
-        <li>Crazy - AFRO HOUSE – Noir Glacé</li>
-        <li>Lady (Nu Disco Mix) – Moguai</li>
-        <li>Reach Out (mikeandtess quick edit) – George Duke</li>
-        <li>Toute Premiere Fois (feat. Les Bisous) – Yann Muller</li>
-        <li>September - Eric Kupper Extended Vocal Mix – Earth, Wind & Fire/Eric Kupper</li>
-        <li>Stand by Me – Victor Martelli & Elias Goca</li>
-        <li>Voyage Voyage – Roberto Tropea</li>
-        <li>Cold Heart (PNAU Extended Remix) – Elton John & Dua Lipa</li>
-        <li>Cosmic Girl (Dimitri from Paris Remix) – Jamiroquai</li>
-        <li>Teardrops ( Hlynur Sölvi Re-Mix ) – Womack & Womack</li>
-        <li>F.R.E.A.K – Nytron</li>
-        <li>We Are Family - Extended Disco Club Mix – Aristofreeks</li>
-        <li>Holiday (Remix) – Madonna</li>
-        <li>Fresh - Original 12'' Remix – Kool & The Gang</li>
-        <li>Around The World – Daft Punk</li>
-        <li>All Stars (Les Bisous Remix) – Martin Solveig</li>
-        <li>Feel My Needs (Purple Disco Machine Remix) – Weiss</li>
-        <li>Hold Me Closer (Purple Disco Machine Extended Mix) – Elton John</li>
-        <li>Magnolias for Ever (Fred Falke Club Remix) – Claude François</li>
-        <li>Balance ton quoi (Club Mix) – Angèle</li>
-        <li>Besoin d'amour (Upsilone Remix) – France Gall</li>
-        <li>Les cactus - Remix par Cut Killer – Jacques Dutronc</li>
-        <li>Ella Elle l'a (MrCØ Rework) – France Gall</li>
-        <li>Désenchantée Remix (feat. Feder) - Radio Edit – Mylène Farmer</li>
-        <li>Don't Leave Me This Way – Jimmy Sommerville</li>
-        <li>It's Raining Men (Utope Remix) – The Weather Girls</li>
-        <li>La goffa Lolita – La petite culotte</li>
-      </ol>
+Around 60 guests on a terrace of private appartment for the 40 years anniversary
+of Arnaud and his 2 friends.
+
+Here is the playlist of the first part:
+
+1. Too Sunny – Gorillaz & Marvin Gaye
+2. Every Kinda People (Dave Lee fka Joey Negro Multicultural Multitrack Mix) – Robert Palmer
+3. Just the Two of Us – Sunset Chasers
+4. Aganjú (Latin Project mix) – Bebel Gilberto
+5. Kiss Me – Coral Reef
+6. Renegades – Deepend
+7. Sexual Healing – Emily Dawn
+8. Words You Said – Five Corners
+9. Cruel Summer ( Remix ) – Cobra Kai
+10. Pure Shores – SKYE
+11. Deepluxe (Beach House Mix) – Schwarz & Funk
+12. Viens je t'emmène – France Gall
+13. Forever Young – Coral Reef
+14. Billie Jean (Lutzu Istrate Remix) – Daniela Andrade
+15. Hélène – Yann Muller
+16. Paradise (Autograph's Disco Rework) – Sade
+17. Mon bain (Elle & Lui vision) – Elle & Lui
+18. Every Breath You Take (Deep Chills Remix) – The Police
+19. Back To Black (Extended Mix) – Steven Stone & Jessy Howe
+20. Isn't She Lovely – Strike
+21. The Long Goodbye - Saison's Model 1 Remix – Crispin J Glover
+22. World Hold On (THEMBA Remix) – Bob Sinclar
+23. Diamond Life (feat. Julie McKnight) - Dance Ritual Mix – Louie Vega
+24. Careless Whisper (Cand'IC Remix) – George Michael
+25. Una Mattina – Ash
+26. Carmenita Lounging (Opera House Mix) – Claude Challe
+27. Inass Inass – VAN
+28. Baby love (mikeandtess quick edit) – Regina
+29. Rock With You (Dario Caminita Revibe) – Michael Jackson
+30. Hold On (Tighter To Love) Steve 'silk' Hurley 12'' Mix – Clubland
+31. Eye of the Tiger - Jamie Lewis Sex on the Beach Mix – Diva Avari
+32. Crazy - AFRO HOUSE – Noir Glacé
+33. Lady (Nu Disco Mix) – Moguai
+34. Reach Out (mikeandtess quick edit) – George Duke
+35. Toute Premiere Fois (feat. Les Bisous) – Yann Muller
+36. September - Eric Kupper Extended Vocal Mix – Earth, Wind & Fire/Eric Kupper
+37. Stand by Me – Victor Martelli & Elias Goca
+38. Voyage Voyage – Roberto Tropea
+39. Cold Heart (PNAU Extended Remix) – Elton John & Dua Lipa
+40. Cosmic Girl (Dimitri from Paris Remix) – Jamiroquai
+41. Teardrops ( Hlynur Sölvi Re-Mix ) – Womack & Womack
+42. F.R.E.A.K – Nytron
+43. We Are Family - Extended Disco Club Mix – Aristofreeks
+44. Holiday (Remix) – Madonna
+45. Fresh - Original 12'' Remix – Kool & The Gang
+46. Around The World – Daft Punk
+47. All Stars (Les Bisous Remix) – Martin Solveig
+48. Feel My Needs (Purple Disco Machine Remix) – Weiss
+49. Hold Me Closer (Purple Disco Machine Extended Mix) – Elton John
+50. Magnolias for Ever (Fred Falke Club Remix) – Claude François
+51. Balance ton quoi (Club Mix) – Angèle
+52. Besoin d'amour (Upsilone Remix) – France Gall
+53. Les cactus - Remix par Cut Killer – Jacques Dutronc
+54. Ella Elle l'a (MrCØ Rework) – France Gall
+55. Désenchantée Remix (feat. Feder) - Radio Edit – Mylène Farmer
+56. Don't Leave Me This Way – Jimmy Sommerville
+57. It's Raining Men (Utope Remix) – The Weather Girls
+58. La goffa Lolita – La petite culotte

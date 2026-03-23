@@ -228,6 +228,16 @@ a:hover { text-decoration: underline; }
   margin-bottom: 4px;
 }
 
+.mix-card-subtitle {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 4px;
+}
+
 .mix-card-meta {
   font-size: 0.7rem;
   color: var(--color-muted);

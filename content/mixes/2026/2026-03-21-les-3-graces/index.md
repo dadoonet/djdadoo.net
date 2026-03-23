@@ -1,11 +1,11 @@
 ---
-title: "David's Mix #2026/03/21 - Les 3 Grâces"
+title: "Les 3 Grâces"
+subtitle: "First time on DJ Studio. 80's hits"
 date: 2026-03-21T12:30:00+02:00
 season: 2026
 episode: 67
-subtitle: "First time on DJ Studio. 80's hits"
 author: David Pilato
-keywords: ["DJ Elky", "Mix", "Studio", "80's"]
+keywords: ["Studio", "80's"]
 audio_url: "2026-03-21-Les_3_graces.mp3"
 audio_length: 111978772
 duration: "00:46:39"
@@ -48,4 +48,4 @@ chapters:
     title: Oliver Cheatham - Get Down Saturday Night
 ---
 
-<p>Made with DJ Studio for les 3 Grâces, Katti, Anne-Marie and Jérôme. 80's hits.</p>
+Made with DJ Studio for les 3 Grâces, Katti, Anne-Marie and Jérôme. 80's hits.
