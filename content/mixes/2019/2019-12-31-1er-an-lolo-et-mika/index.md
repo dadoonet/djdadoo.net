@@ -1,6 +1,6 @@
 ---
-title: "1er An - Lolo et Mika"
-subtitle: "1er An - Lolo et Mika"
+title: "Lolo & Mika"
+subtitle: "1er An"
 date: 2019-12-31T23:59:00+02:00
 season: 2019
 episode: 26
