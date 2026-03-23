@@ -9,7 +9,7 @@ xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <!-- To test the RSS, please use https://podba.se/?url={{ $baseURL }}djdadoo.rss -->
 <channel>
-  <title>{{ $site.Title }}</title>
+  <title>{{ $site.Params.podcast.title | default $site.Title }}</title>
   <link>{{ $baseURL }}</link>
   <atom:link href="{{ $baseURL }}djdadoo.rss" rel="self" type="application/rss+xml" />
   <language>{{ $site.LanguageCode }}</language>

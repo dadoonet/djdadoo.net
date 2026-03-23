@@ -56,6 +56,33 @@ hugo.toml                 # site configuration
 
 ---
 
+## Configuration
+
+Essential site-level config in `hugo.toml`:
+
+```toml
+title = "DJ Elky Mixes"                    # Site title (fallback for RSS feed <title>)
+baseURL = "https://djdadoo.pilato.fr/"
+languageCode = "en-us"
+
+[params.podcast]
+name = "DJ Elky"                           # Podcast/author name (displayed in header)
+title = "DJ Elky Mixes"                    # Optional: RSS feed channel <title> (defaults to Site.title)
+subtitle = "Deep House & Techno"           # Short description
+description = "..."                        # Long description for RSS
+author = "DJ Elky"                         # Episode author fallback
+email = "contact@example.com"              # iTunes owner email
+cover = "/djdadoo-new.jpg"                 # Default podcast cover (episode fallback)
+keywords = ["DJ Elky", "Mix"]              # Global keywords merged with episode keywords
+trackTitle = "David's Mix"                 # Prefix for auto-generated RSS titles
+baseAudioURL = "https://storage.googleapis.com/djdadoo/"
+audioType = "audio/mpeg"
+podcastLink = "https://podcasts.apple.com/..."
+podcastGUID = "..."                        # Unique podcast ID
+```
+
+---
+
 ## Adding a new episode
 
 1. **Create the page bundle** under `content/mixes/YYYY/`:
@@ -124,11 +151,12 @@ hugo.toml                 # site configuration
 
 The RSS `<title>` is built automatically from the episode date and title fields:
 
-```
+```txt
 {params.podcast.trackTitle} #{YYYY/MM/DD}[ - {itunes_subtitle ?? title}]
 ```
 
 Examples:
+
 - date `2025-02-06`, title `Touraine Tech 2025` → `David's Mix #2025/02/06 - Touraine Tech 2025`
 - date `2012-01-22`, no title → `David's Mix #2012/01/22`
 
@@ -138,7 +166,7 @@ Set `itunes_title` in the frontmatter to bypass this logic and use a fully custo
 
 The audio URL is auto-derived from the page bundle path:
 
-```
+```txt
 {params.podcast.baseAudioURL} + path.Dir(File.Path) + ".mp3"
 # → https://storage.googleapis.com/djdadoo/mixes/2026/2026-06-21-summer-solstice.mp3
 ```

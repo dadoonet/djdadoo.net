@@ -27,6 +27,10 @@ disableKinds = ["taxonomy", "term"]
       unsafe = true
 
 [params.podcast]
+  # Podcast Name, which is normally the DJ Name
+  name         = "DJ Elky"
+  # Podcast Title (if not set, this is the Site title)
+  # title        = "DJ Elky mixes"
   # Podcast Author
   author       = "David Pilato"
   email        = "david@pilato.fr"
