@@ -36,6 +36,7 @@ disableKinds = ["taxonomy", "term"]
   email        = "david@pilato.fr"
   cover        = "djdadoo-new.jpg"
   # Podcast ID and description
+  # Unique id: It's computed from dj.pilato.fr using https://www.uuidtools.com/v5
   podcastGUID  = "5e560267-5f32-55d3-b370-8f66f80ddb8f"
   subtitle     = "Just playing with my DJ gears, from DDJ-T1 to CDJ3000"
   description  = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
