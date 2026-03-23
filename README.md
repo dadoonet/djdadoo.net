@@ -106,15 +106,15 @@ hugo.toml                 # site configuration
 | `date`             | datetime        | **yes**  | —                          | Publication date (ISO 8601). Controls sort order, RSS `<pubDate>`, and the `#YYYY/MM/DD` part of the RSS title |
 | `season`           | integer         | **yes**  | —                          | Season number (typically the year). Used for grid grouping and `<itunes:season>` |
 | `episode`          | integer         | **yes**  | —                          | Episode number. Shown in the info popup and `<itunes:episode>` |
-| `audio_url`        | string          | **yes**  | —                          | Filename of the MP3 relative to `params.baseAudioURL`. Used by the player and as the RSS `<guid>` |
-| `audio_length`     | integer (bytes) | **yes**  | —                          | File size in bytes for the RSS `<enclosure>` tag |
-| `duration`         | string          | **yes**  | —                          | Playback duration in `HH:MM:SS` format. Displayed on the card and in `<itunes:duration>` |
-| `subtitle`         | string          | no       | —                          | Event name shown below the title on the card. Used as fallback for `<itunes:subtitle>` and appended to the RSS title if `itunes_subtitle` is absent |
-| `itunes_subtitle`  | string          | no       | —                          | Location or context string sent to `<itunes:subtitle>`. Takes priority over `subtitle` for the RSS title suffix |
-| `itunes_title`     | string          | no       | —                          | When set, overrides the auto-generated RSS `<title>` entirely. Useful for one-off episode titles that don't follow the standard pattern |
-| `author`           | string          | no       | `params.author` (site)     | Episode author. Falls back to the site-level author |
-| `keywords`         | string[]        | no       | —                          | Tags shown in the info popup and in `<itunes:keywords>` |
-| `audio_type`       | string (MIME)   | no       | `params.audioType` (site)  | MIME type of the audio file. Site default is `audio/mpeg` |
+| `audio_url`        | string          | **yes**  | —                                   | Filename of the MP3 relative to `params.podcast.baseAudioURL`. Used by the player and as the RSS `<guid>` |
+| `audio_length`     | integer (bytes) | **yes**  | —                                   | File size in bytes for the RSS `<enclosure>` tag |
+| `duration`         | string          | **yes**  | —                                   | Playback duration in `HH:MM:SS` format. Displayed on the card and in `<itunes:duration>` |
+| `subtitle`         | string          | no       | —                                   | Event name shown below the title on the card. Used as fallback for `<itunes:subtitle>` and appended to the RSS title if `itunes_subtitle` is absent |
+| `itunes_subtitle`  | string          | no       | —                                   | Location or context string sent to `<itunes:subtitle>`. Takes priority over `subtitle` for the RSS title suffix |
+| `itunes_title`     | string          | no       | —                                   | When set, overrides the auto-generated RSS `<title>` entirely. Useful for one-off episode titles that don't follow the standard pattern |
+| `author`           | string          | no       | `params.podcast.author` (site)      | Episode author. Falls back to the site-level author |
+| `keywords`         | string[]        | no       | —                                   | Tags shown in the info popup and in `<itunes:keywords>` |
+| `audio_type`       | string (MIME)   | no       | `params.podcast.audioType` (site)   | MIME type of the audio file. Site default is `audio/mpeg` |
 | `chapters`         | list            | no       | —                          | Tracklist. Each entry has `time` (`HH:MM:SS`) and `title`. Enables chapter navigation in the player |
 | `explicit`         | boolean         | no       | `false`                    | Marks the episode as explicit in the RSS feed |
 
@@ -123,7 +123,7 @@ hugo.toml                 # site configuration
 The RSS `<title>` is built automatically from the episode date and subtitle fields:
 
 ```
-{params.rss.trackTitle} #{YYYY/MM/DD}[ - {itunes_subtitle ?? subtitle}]
+{params.podcast.trackTitle} #{YYYY/MM/DD}[ - {itunes_subtitle ?? subtitle}]
 ```
 
 Examples:

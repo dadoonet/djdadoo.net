@@ -5,10 +5,10 @@
       <img src="/djdadoo-new.jpg" alt="DJ Elky" class="header-logo" />
       <div>
         <h1>DJ Elky</h1>
-        <p class="header-sub">{{ .Site.Params.rss.subtitle }}</p>
+        <p class="header-sub">{{ .Site.Params.podcast.subtitle }}</p>
       </div>
     </div>
-    <a class="itunes-link" href="{{ .Site.Params.rss.itunesLink }}" target="_blank" rel="noopener">
+    <a class="itunes-link" href="{{ .Site.Params.podcast.podcastLink }}" target="_blank" rel="noopener">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 14.5v-9l7 4.5-7 4.5z"/></svg>
       Apple Podcasts
     </a>
@@ -28,7 +28,7 @@
   {{ if .Params.chapters }}{{ $chapters = .Params.chapters }}{{ end }}
   {{ $playlist = $playlist | append (dict
     "title"    .Title
-    "audioUrl" (printf "%s%s" $.Site.Params.rss.baseAudioURL (.Params.audio_url | default ""))
+    "audioUrl" (printf "%s%s" $.Site.Params.podcast.baseAudioURL (.Params.audio_url | default ""))
     "duration" (.Params.duration  | default "")
     "cover"    $cover
     "subtitle" (.Params.subtitle  | default "")

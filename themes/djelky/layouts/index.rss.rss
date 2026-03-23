@@ -1,7 +1,7 @@
 {{- $pages := where .Site.RegularPages "Section" "mixes" -}}
 {{- $pages = $pages.ByDate -}}
 {{- $site := .Site -}}
-{{- $baseURL := $site.Params.rss.siteURL -}}
+{{- $baseURL := $site.BaseURL -}}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
 xmlns:podcast="https://podcastindex.org/namespace/1.0"
@@ -13,20 +13,20 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <link>{{ $baseURL }}</link>
   <atom:link href="{{ $baseURL }}djdadoo.rss" rel="self" type="application/rss+xml" />
   <language>{{ $site.LanguageCode }}</language>
-  <copyright>{{ $site.Params.rss.author }}</copyright>
-  <itunes:subtitle>{{ $site.Params.rss.subtitle }}</itunes:subtitle>
-  <itunes:author>{{ $site.Params.rss.author }}</itunes:author>
-  <itunes:summary><![CDATA[<p>{{ $site.Params.rss.description }}</p>]]></itunes:summary>
-  <description><![CDATA[<p>{{ $site.Params.rss.description }}</p>]]></description>
+  <copyright>{{ $site.Params.podcast.author }}</copyright>
+  <itunes:subtitle>{{ $site.Params.podcast.subtitle }}</itunes:subtitle>
+  <itunes:author>{{ $site.Params.podcast.author }}</itunes:author>
+  <itunes:summary><![CDATA[<p>{{ $site.Params.podcast.description }}</p>]]></itunes:summary>
+  <description><![CDATA[<p>{{ $site.Params.podcast.description }}</p>]]></description>
   <itunes:owner>
-    <itunes:name>{{ $site.Params.rss.author }}</itunes:name>
-    <itunes:email>{{ $site.Params.rss.email }}</itunes:email>
+    <itunes:name>{{ $site.Params.podcast.author }}</itunes:name>
+    <itunes:email>{{ $site.Params.podcast.email }}</itunes:email>
   </itunes:owner>
-  <itunes:image href="{{ $baseURL }}{{ $site.Params.rss.podcastImage }}" />
+  <itunes:image href="{{ $baseURL }}{{ $site.Params.podcast.cover }}" />
   <itunes:category text="Music" />
   <itunes:explicit>false</itunes:explicit>
   <!-- Unique id: do not change. It's computed from dj.pilato.fr using https://www.uuidtools.com/v5 -->
-  <podcast:guid>{{ $site.Params.rss.podcastGUID }}</podcast:guid>
+  <podcast:guid>{{ $site.Params.podcast.podcastGUID }}</podcast:guid>
   <podcast:locked>no</podcast:locked>
   {{- range $pages }}
   {{- $p := . }}
@@ -41,13 +41,13 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     {{- if $p.Params.itunes_title }}
     <title>{{ $p.Params.itunes_title }}</title>
     {{- else }}
-    {{- $rssTitle := printf "%s #%s" $site.Params.rss.trackTitle ($p.Date.Format "2006/01/02") }}
+    {{- $rssTitle := printf "%s #%s" $site.Params.podcast.trackTitle ($p.Date.Format "2006/01/02") }}
     {{- with ($p.Params.itunes_subtitle | default $p.Params.title) }}
       {{- $rssTitle = printf "%s - %s" $rssTitle . }}
     {{- end }}
     <title>{{ $rssTitle }}</title>
     {{- end }}
-    <itunes:author>{{ with $p.Params.author }}{{ . }}{{ else }}{{ $site.Params.rss.author }}{{ end }}</itunes:author>
+    <itunes:author>{{ with $p.Params.author }}{{ . }}{{ else }}{{ $site.Params.podcast.author }}{{ end }}</itunes:author>
     {{- with ($p.Params.itunes_subtitle | default $p.Params.subtitle) }}
     <itunes:subtitle>{{ . }}</itunes:subtitle>
     {{- end }}
@@ -65,15 +65,15 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:image href="{{ $baseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
     {{- end }}
     {{- with $p.Params.audio_url }}
-    {{- $audioURL := printf "%s%s" $site.Params.rss.baseAudioURL . }}
-    <enclosure url="{{ $audioURL }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default $site.Params.rss.audioType }}" />
+    {{- $audioURL := printf "%s%s" $site.Params.podcast.baseAudioURL . }}
+    <enclosure url="{{ $audioURL }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default $site.Params.podcast.audioType }}" />
     {{- end }}
-    <guid>{{ printf "%s%s" $site.Params.rss.baseAudioURL ($p.Params.audio_url | default "") }}</guid>
+    <guid>{{ printf "%s%s" $site.Params.podcast.baseAudioURL ($p.Params.audio_url | default "") }}</guid>
     <pubDate>{{ $p.Date.Format "02 Jan 2006 15:04:05 -0700" }}</pubDate>
     {{- with $p.Params.duration }}
     <itunes:duration>{{ . }}</itunes:duration>
     {{- end }}
-    {{- $keywords := union $site.Params.rss.keywords ($p.Params.keywords | default slice) }}
+    {{- $keywords := union $site.Params.podcast.keywords ($p.Params.keywords | default slice) }}
     {{- with $keywords }}
     <itunes:keywords>{{ delimit . ", " }}</itunes:keywords>
     {{- end }}
