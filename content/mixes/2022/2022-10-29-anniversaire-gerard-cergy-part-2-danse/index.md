@@ -1,10 +1,10 @@
 ---
-title: "Danse Part 1 - Anniversaire Gérard, Cergy"
-subtitle: "Danse Part 1 - Anniversaire Gérard, Cergy"
+title: "Anniversaire Gérard"
+subtitle: "Danse Mix - Part 1"
 date: 2022-10-29T23:00:00+02:00
 season: 2022
 episode: 29
-event: "Gérard's Birthday Celebration - Cergy"
+event: "Anniversaire Gérard"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part2.mp3"
 audio_length: 363647648
