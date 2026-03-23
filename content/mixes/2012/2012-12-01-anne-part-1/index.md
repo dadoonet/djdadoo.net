@@ -1,12 +1,12 @@
 ---
-title: "Anne's Birthday December Live Mix - Part 1"
-subtitle: "David's Mix #2012/12/02"
-date: 2013-01-02T23:24:00+01:00
+title: "Anne's Birthday"
+subtitle: "Part 1"
+date: 2012-12-01T22:25:00+01:00
 season: 2012
 episode: 10
 author: David Pilato
 event: "Anne's Birthday Celebration"
-keywords: ["Live", "Birthday", "Anne"]
+keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part1.mp3"
 audio_length: 32128646
 duration: "0:22:18"
