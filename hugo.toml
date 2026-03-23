@@ -27,14 +27,18 @@ disableKinds = ["taxonomy", "term"]
       unsafe = true
 
 [params.podcast]
+  # Podcast Author
   author       = "David Pilato"
   email        = "david@pilato.fr"
+  cover        = "djdadoo-new.jpg"
+  # Podcast ID and description
   podcastGUID  = "5e560267-5f32-55d3-b370-8f66f80ddb8f"
-  podcastImage = "djdadoo-new.jpg"
   subtitle     = "Just playing with my DJ gears, from DDJ-T1 to CDJ3000"
   description  = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
-  itunesLink   = "https://podcasts.apple.com/fr/podcast/dj-elky-mixes/id542004633"
-  audioType    = "audio/mpeg"
+  # For the website only, it adds a link to the podcast
+  podcastLink   = "https://podcasts.apple.com/fr/podcast/dj-elky-mixes/id542004633"
+  # For each episode
   baseAudioURL = "https://storage.googleapis.com/djdadoo/"
   trackTitle   = "David's Mix"
   keywords     = ["DJ Elky", "Mix"]
+  audioType    = "audio/mpeg"
