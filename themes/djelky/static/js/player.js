@@ -366,6 +366,9 @@
   var modalClose    = modalEl.querySelector(".mix-modal-close");
   var modalBackdrop = modalEl.querySelector(".mix-modal-backdrop");
 
+  console.log("DJ Elky player initialized. Found mix-modal:", !!modalEl);
+  console.log("Total mix cards found:", cards.length);
+
   function getRelatedMixes(event) {
     if (!event) return [];
     var related = [];
@@ -454,6 +457,7 @@
       openModal(btn.closest(".mix-card"));
     });
   });
+  console.log("Total info buttons attached:", document.querySelectorAll(".mix-card-info-btn").length);
   modalClose.addEventListener("click", closeModal);
   modalBackdrop.addEventListener("click", closeModal);
   document.addEventListener("keydown", function (e) {
