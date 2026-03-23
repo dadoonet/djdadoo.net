@@ -1,6 +1,6 @@
 ---
 title: "Les 3 Grâces"
-subtitle: "First time on DJ Studio. 80's hits"
+subtitle: "80's hits"
 date: 2026-03-21T12:30:00+02:00
 season: 2026
 episode: 67
@@ -48,3 +48,7 @@ chapters:
 ---
 
 Made with DJ Studio for les 3 Grâces, Katti, Anne-Marie and Jérôme. 80's hits.
+
+First time I used DJ Studio to make a mix, and I really enjoyed it. I hope you will enjoy it too. But please be kind, it's a first try and I know there are some rough transitions. I will improve that in the future.
+
+Happy listening!

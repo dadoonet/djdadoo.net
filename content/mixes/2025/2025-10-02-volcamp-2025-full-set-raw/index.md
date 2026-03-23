@@ -1,9 +1,14 @@
 ---
-title: "Volcamp 2025 - full set raw"
-subtitle: "Live set, private event, recorded live from Clermont-Ferrand, FR."
+title: "Volcamp 2025"
+subtitle: "Full Set (Raw)"
 date: 2025-10-02T18:30:00+02:00
 season: 2025
 episode: 66
+location:
+  address: The Oval - Brasserie ASM, 107 Av. de la République, 63100 Clermont-Ferrand
+  geo:
+    lat: 45.788437
+    lon: 3.1045091
 authors: 
   - name: DJ Elky
   - name: Julien Ponge
