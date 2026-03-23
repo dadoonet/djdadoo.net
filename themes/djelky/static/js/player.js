@@ -3,13 +3,8 @@
  * Requires Howler.js (loaded before this script).
  * Playlist data injected by Hugo into #playlist-data (JSON).
  */
-
-console.log("player.js file loaded!");
-
 (function () {
   "use strict";
-
-  console.log("player.js IIFE executing!");
 
   // ── Load playlist ─────────────────────────────────────────────────────────
   var PLAYLIST = window.__djPlaylist;
@@ -371,9 +366,6 @@ console.log("player.js file loaded!");
   var modalClose    = modalEl.querySelector(".mix-modal-close");
   var modalBackdrop = modalEl.querySelector(".mix-modal-backdrop");
 
-  console.log("DJ Elky player initialized. Found mix-modal:", !!modalEl);
-  console.log("Total mix cards found:", cards.length);
-
   function getRelatedMixes(event) {
     if (!event) return [];
     var related = [];
@@ -404,11 +396,8 @@ console.log("player.js file loaded!");
     var sidebarEl = modalEl.querySelector(".mix-modal-sidebar");
     var relatedEl = modalEl.querySelector(".mix-modal-related");
 
-    console.log("Opening modal for:", d.dataset.title, "event:", event);
-
     if (event) {
       var relatedMixes = getRelatedMixes(event);
-      console.log("Found related mixes:", relatedMixes.length);
       if (relatedMixes.length > 1) {
         // Show sidebar
         sidebarEl.removeAttribute("hidden");
@@ -455,14 +444,11 @@ console.log("player.js file loaded!");
   }
 
   document.querySelectorAll(".mix-card-info-btn").forEach(function (btn) {
-    console.log("Attaching info button listener to:", btn);
     btn.addEventListener("click", function (e) {
       e.stopPropagation();
-      console.log("Info button clicked!");
       openModal(btn.closest(".mix-card"));
     });
   });
-  console.log("Total info buttons attached:", document.querySelectorAll(".mix-card-info-btn").length);
   modalClose.addEventListener("click", closeModal);
   modalBackdrop.addEventListener("click", closeModal);
   document.addEventListener("keydown", function (e) {
