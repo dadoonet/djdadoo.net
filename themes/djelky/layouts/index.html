@@ -48,8 +48,27 @@
     {{ $season := .Params.season | int }}
     {{ $cover  := "" }}
     {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
-    {{ $author := $p.Params.author | default .Site.Params.podcast.author | default "undefined" }}
-    {{ $authorSanitized := replace ($author | lower) " " "-" }}
+
+    {{/* Support both old 'author' string and new 'authors' array formats */}}
+    {{ $authors := slice }}
+    {{ if $p.Params.authors }}
+      {{ $authors = $p.Params.authors }}
+    {{ else }}
+      {{ $author := $p.Params.author | default .Site.Params.podcast.author | default "undefined" }}
+      {{ $authors = slice (dict "name" $author) }}
+    {{ end }}
+
+    {{/* Build authors JSON with sanitized cover URLs */}}
+    {{ $authorsJSON := slice }}
+    {{ range $authors }}
+      {{ $authorName := .name | default .Name }}
+      {{ $authorCover := .cover | default .Cover }}
+      {{ if not $authorCover }}
+        {{ $authorSanitized := replace ($authorName | lower) " " "-" }}
+        {{ $authorCover = printf "/img/authors/%s.png" $authorSanitized }}
+      {{ end }}
+      {{ $authorsJSON = $authorsJSON | append (dict "name" $authorName "cover" $authorCover) }}
+    {{ end }}
 
     {{/* Open new season section when season changes */}}
     {{ if ne $season $lastSeason }}
@@ -93,8 +112,7 @@
            data-keywords="{{ delimit ($p.Params.keywords | default slice) ", " }}"
            data-event="{{ $p.Params.event | default "" }}"
            data-cover="{{ if $cover }}{{ $cover }}{{ else }}{{ .Site.Params.podcast.cover }}{{ end }}"
-           data-author="{{ $p.Params.author | default .Site.Params.podcast.author }}"
-           data-author-cover="/img/authors/{{ $authorSanitized }}.png">
+           data-authors="{{ $authorsJSON | jsonify }}">
         {{ $p.Content }}
       </div>
     </article>
@@ -150,12 +168,9 @@
             <p class="mix-modal-keywords"></p>
           </div>
         </div>
-        <div class="mix-modal-author">
-          <img class="mix-modal-author-cover" src="" alt="" />
-          <div class="mix-modal-author-info">
-            <span class="mix-modal-author-label">Par</span>
-            <p class="mix-modal-author-name"></p>
-          </div>
+        <div class="mix-modal-authors">
+          <span class="mix-modal-authors-label">Par</span>
+          <div class="mix-modal-authors-list"></div>
         </div>
         <hr class="mix-modal-sep" />
         <div class="mix-modal-body"></div>

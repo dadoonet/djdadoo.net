@@ -4,7 +4,9 @@ subtitle: "Live from Hotel Gouin in Tours, FR"
 date: 2025-02-06T19:30:00+01:00
 season: 2025
 episode: 56
-author: DJ Elky and Julien Briault
+authors: 
+  - name: "DJ Elky"
+  - name: "Julien Briault"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3"
 audio_length: 264659489

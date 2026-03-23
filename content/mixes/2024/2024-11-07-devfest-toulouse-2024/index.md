@@ -4,7 +4,9 @@ subtitle: "Live from Labege Diagora, FR"
 date: 2024-11-07T22:00:00+01:00
 season: 2024
 episode: 54
-author: DJ Elky and Julien Briault
+authors: 
+  - name: "DJ Elky"
+  - name: "Julien Briault"
 keywords: ["Live", "4 hands"]
 audio_url: "https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3"
 audio_length: 258208378

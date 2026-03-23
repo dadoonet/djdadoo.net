@@ -638,11 +638,30 @@ a:hover { text-decoration: underline; }
 }
 .mix-modal-body li { margin-bottom: 3px; }
 
+.mix-modal-authors {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.mix-modal-authors-label {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.mix-modal-authors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .mix-modal-author {
   display: flex;
-  gap: 12px;
-  padding: 12px 20px;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   flex-shrink: 0;
 }
 
@@ -653,6 +672,7 @@ a:hover { text-decoration: underline; }
   border-radius: 50%;
   flex-shrink: 0;
   border: 2px solid var(--color-accent);
+  margin-bottom: 6px;
 }
 
 .mix-modal-author-info {

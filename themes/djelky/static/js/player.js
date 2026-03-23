@@ -395,13 +395,38 @@
     modalEl.querySelector(".mix-modal-duration").textContent = d.dataset.duration || "";
     modalEl.querySelector(".mix-modal-subtitle").textContent = d.dataset.subtitle || "";
     modalEl.querySelector(".mix-modal-keywords").textContent = d.dataset.keywords || "";
-    var authorCoverEl = modalEl.querySelector(".mix-modal-author-cover");
-    authorCoverEl.src = d.dataset.authorCover || "/img/authors/undefined.png";
-    authorCoverEl.alt = d.dataset.author || "";
-    authorCoverEl.onerror = function() {
-      this.src = "/img/authors/undefined.png";
-    };
-    modalEl.querySelector(".mix-modal-author-name").textContent = d.dataset.author || "";
+
+    // Handle multiple authors
+    var authorsListEl = modalEl.querySelector(".mix-modal-authors-list");
+    authorsListEl.innerHTML = "";
+    var authorsJSON = [];
+    try {
+      authorsJSON = JSON.parse(d.dataset.authors || "[]");
+    } catch (e) {
+      console.error("Failed to parse authors JSON", e);
+    }
+
+    authorsJSON.forEach(function(author) {
+      var authorEl = document.createElement("div");
+      authorEl.className = "mix-modal-author";
+
+      var imgEl = document.createElement("img");
+      imgEl.className = "mix-modal-author-cover";
+      imgEl.src = author.cover || "/img/authors/undefined.png";
+      imgEl.alt = author.name || "";
+      imgEl.onerror = function() {
+        this.src = "/img/authors/undefined.png";
+      };
+
+      var nameEl = document.createElement("p");
+      nameEl.className = "mix-modal-author-name";
+      nameEl.textContent = author.name || "";
+
+      authorEl.appendChild(imgEl);
+      authorEl.appendChild(nameEl);
+      authorsListEl.appendChild(authorEl);
+    });
+
     modalEl.querySelector(".mix-modal-body").innerHTML       = d.innerHTML;
 
     // Handle related mixes

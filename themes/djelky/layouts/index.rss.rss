@@ -49,6 +49,11 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <title>{{ $rssTitle | htmlEscape }}</title>
     {{- end }}
     <itunes:author>{{ with $p.Params.author }}{{ . }}{{ else }}{{ $site.Params.podcast.author }}{{ end }}</itunes:author>
+    {{- if $p.Params.authors }}
+      {{- range $p.Params.authors }}
+    <itunes:author>{{ .name | htmlEscape }}</itunes:author>
+      {{- end }}
+    {{- end }}
     {{- with ($p.Params.itunes_subtitle | default $p.Params.subtitle) }}
     <itunes:subtitle>{{ . | htmlEscape }}</itunes:subtitle>
     {{- end }}
