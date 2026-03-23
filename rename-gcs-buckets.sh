@@ -5,11 +5,12 @@
 #   OLD: gs://djdadoo/2025-02-06-TouraineTech.mp3
 #   NEW: gs://djdadoo/2025/2025-02-06-touraine-tech-2025.mp3
 #
-# Also updates audio_url in each episode's index.md frontmatter.
+# On success, removes audio_url from the episode's index.md frontmatter
+# (the URL becomes implicit from the directory structure).
 #
 # Usage:
 #   ./rename-gcs-buckets.sh           # dry-run (shows what would happen)
-#   ./rename-gcs-buckets.sh --apply   # actually rename files and update frontmatter
+#   ./rename-gcs-buckets.sh --apply   # actually rename files and remove audio_url
 
 set -euo pipefail
 
@@ -42,7 +43,7 @@ fi
 if [[ "$DRY_RUN" == "true" ]]; then
   echo "==> Dry-run mode — no files will be renamed. Pass --apply to execute."
 else
-  echo "==> Apply mode — files will be renamed in GCS and frontmatters updated."
+  echo "==> Apply mode — files will be renamed in GCS and audio_url removed from frontmatter."
 fi
 echo ""
 
@@ -58,7 +59,7 @@ while IFS= read -r index_md; do
   old_url=$(grep '^audio_url:' "$index_md" | sed 's/^audio_url: *"\(.*\)"/\1/')
 
   if [[ -z "$old_url" ]]; then
-    echo "  SKIP    (no audio_url)  $index_md"
+    echo "  SKIP    (audio_url already removed)  $(basename "$dir")"
     (( skipped++ )) || true
     continue
   fi
@@ -66,8 +67,13 @@ while IFS= read -r index_md; do
   new_url="${year}/${slug}.mp3"
 
   if [[ "$old_url" == "$new_url" ]]; then
-    echo "  OK      ${old_url}"
-    (( skipped++ )) || true
+    echo "  CLEAN   ${old_url}  (already correct in GCS, removing audio_url)"
+    if [[ "$DRY_RUN" == "false" ]]; then
+      grep -v '^audio_url:' "$index_md" > "$index_md.tmp" && mv "$index_md.tmp" "$index_md"
+      (( renamed++ )) || true
+    else
+      (( renamed++ )) || true
+    fi
     continue
   fi
 
@@ -75,8 +81,7 @@ while IFS= read -r index_md; do
 
   if [[ "$DRY_RUN" == "false" ]]; then
     if gsutil mv "${BUCKET}/${old_url}" "${BUCKET}/${new_url}" 2>/dev/null; then
-      # Update audio_url in frontmatter (macOS-compatible sed)
-      sed -i '' "s|audio_url: \"${old_url}\"|audio_url: \"${new_url}\"|" "$index_md"
+      grep -v '^audio_url:' "$index_md" > "$index_md.tmp" && mv "$index_md.tmp" "$index_md"
       (( renamed++ )) || true
     else
       echo "  ERROR   gsutil mv failed for ${old_url}" >&2
@@ -89,7 +94,7 @@ while IFS= read -r index_md; do
 done < <(find "$CONTENT_DIR" -name "index.md" | sort)
 
 echo ""
-echo "==> Summary: ${renamed} to rename, ${skipped} already correct, ${errors} errors."
+echo "==> Summary: ${renamed} to process, ${skipped} already done, ${errors} errors."
 if [[ "$DRY_RUN" == "true" ]]; then
   echo "    Run with --apply to execute."
 fi
