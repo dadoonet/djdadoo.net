@@ -2,7 +2,7 @@ name = "Djelky"
 license = "MIT"
 description = "Custom theme for DJ Elky mixes site"
 homepage = "https://djdadoo.pilato.fr"
-min_version = "0.120.0"
+min_version = "0.157.0"
 
 [author]
   name = "David Pilato"
