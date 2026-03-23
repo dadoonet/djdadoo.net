@@ -3,8 +3,13 @@
  * Requires Howler.js (loaded before this script).
  * Playlist data injected by Hugo into #playlist-data (JSON).
  */
+
+console.log("player.js file loaded!");
+
 (function () {
   "use strict";
+
+  console.log("player.js IIFE executing!");
 
   // ── Load playlist ─────────────────────────────────────────────────────────
   var PLAYLIST = window.__djPlaylist;
