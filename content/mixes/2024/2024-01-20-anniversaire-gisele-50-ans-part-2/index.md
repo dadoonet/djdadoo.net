@@ -1,10 +1,10 @@
 ---
-title: "Anniversaire Gisèle 50 ans - Part 2"
-subtitle: "Live session"
+title: "Anniversaire Gisèle 50 ans"
+subtitle: "Part 2"
 date: 2024-01-20T23:30:00+01:00
 season: 2024
 episode: 47
-event: "Gisèle's 50th Birthday"
+event: "Anniversaire Gisèle"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2024-01-20-AnniversaireGisele-Part2.mp3"
 audio_length: 254624165

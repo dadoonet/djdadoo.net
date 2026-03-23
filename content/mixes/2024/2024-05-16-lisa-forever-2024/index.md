@@ -1,6 +1,5 @@
 ---
 title: "Lisa Forever 2024"
-subtitle: "Live session"
 date: 2024-05-16T17:15:00+02:00
 season: 2024
 episode: 51
@@ -10,4 +9,4 @@ audio_length: 70793165
 duration: "00:29:30"
 ---
 
-Recorded live at Taverny, France, for Lisa Forever 2024 event.
+Recorded live at Taverny, France, for [Lisa Forever](https://www.lisaforever.org/) 2024 event.

@@ -1,6 +1,6 @@
 ---
-title: "Anniversaire Eric 60 ans - The Funk/Disco/House mix"
-subtitle: "Live session"
+title: "Anniversaire Eric 60 ans"
+subtitle: "The Funk/Disco/House mix"
 date: 2024-04-13T16:00:00+02:00
 season: 2024
 episode: 48

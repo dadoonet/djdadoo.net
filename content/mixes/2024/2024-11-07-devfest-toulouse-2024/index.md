@@ -1,6 +1,5 @@
 ---
 title: "DevFest Toulouse 2024"
-subtitle: "Live from Labege Diagora, FR"
 date: 2024-11-07T22:00:00+01:00
 season: 2024
 episode: 54

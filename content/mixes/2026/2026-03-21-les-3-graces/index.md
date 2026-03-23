@@ -1,6 +1,6 @@
 ---
 title: "Les 3 Grâces"
-subtitle: "80's hits"
+subtitle: "Années 80"
 date: 2026-03-21T12:30:00+02:00
 season: 2026
 episode: 67

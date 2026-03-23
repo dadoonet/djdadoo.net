@@ -1,11 +1,11 @@
 ---
-title: "Palala Paris, House Music, Part 5"
-subtitle: "Recorded live from Palala Paris 6, FR, with dj4loops"
+title: "Palala Paris"
+subtitle: "House Music, Part 5"
 date: 2025-07-13T00:00:00+02:00
 season: 2025
 episode: 63
 event: "Palala Paris"
-keywords: ["Live", "Palala", "House"]
+keywords: ["Live", "House"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part5.mp3"
 audio_length: 138035356
 duration: "00:57:27"

@@ -1,10 +1,10 @@
 ---
-title: "Anniversaire 50 ans Mika, Part 2"
-subtitle: "Live set, private event, recorded live from Osny, FR. First time on OmnisDuo."
+title: "Anniversaire 50 ans Mika,"
+subtitle: "Part 2"
 date: 2025-09-20T23:50:00+02:00
 season: 2025
 episode: 65
-event: "Mika's 50th Birthday"
+event: "Anniversaire 50 ans Mika"
 keywords: ["Live", "French Touch"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-09-20-50ansMika-part2.mp3"
 audio_length: 132750279

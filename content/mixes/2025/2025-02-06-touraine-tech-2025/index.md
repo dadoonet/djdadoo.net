@@ -1,6 +1,5 @@
 ---
 title: "Touraine Tech 2025"
-subtitle: "Live from Hotel Gouin in Tours, FR"
 date: 2025-02-06T19:30:00+01:00
 season: 2025
 episode: 56

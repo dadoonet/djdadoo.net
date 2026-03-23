@@ -1,15 +1,16 @@
 ---
-title: "Fête de la musique (and 3*40 anniversaries)"
-subtitle: "Recorded live from Paris 15, FR"
+title: "Anniversaires 3*40"
+subtitle: "Fête de la musique"
 date: 2025-06-21T21:00:00+02:00
 season: 2025
 episode: 59
-keywords: ["Live", "Anniversary", "Lounge", "House", "Electro"]
+keywords: ["Live", "Lounge", "House", "Electro"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3"
 audio_length: 450915648 
 duration: "03:07:53"
 ---
 Using 2 CDJ3000 and 1 DJM-V10-LF.
+Recorded live from Paris 15, FR.
 
 Around 60 guests on a terrace of private appartment for the 40 years anniversary
 of Arnaud and his 2 friends.

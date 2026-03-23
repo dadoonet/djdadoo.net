@@ -1,6 +1,5 @@
 ---
 title: "Le Camping des Speakers"
-subtitle: "Live session recorded for le Camping des Speakers"
 date: 2023-06-13T19:30:00+02:00
 season: 2023
 episode: 39

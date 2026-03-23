@@ -1,9 +1,10 @@
 ---
-title: "Elastic France Private Event"
-subtitle: "Elastic France Private Event"
+title: "Elastic France"
+subtitle: "Private Event"
 date: 2023-03-09T19:00:00+01:00
 season: 2023
 episode: 37
+event: "Elastic"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2023-03-09-ElasticPrivateEvent.mp3"
 audio_length: 162691470
