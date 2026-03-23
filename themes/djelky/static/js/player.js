@@ -375,11 +375,11 @@
         related.push(el);
       }
     });
-    // Sort by date (ascending - oldest first)
+    // Sort by episode number (ascending - oldest first)
     related.sort(function(a, b) {
-      var dateA = new Date(a.dataset.date);
-      var dateB = new Date(b.dataset.date);
-      return dateA - dateB;
+      var episodeA = parseInt(a.dataset.episode, 10) || 0;
+      var episodeB = parseInt(b.dataset.episode, 10) || 0;
+      return episodeA - episodeB;
     });
     return related;
   }
