@@ -452,7 +452,16 @@
     modalEl.querySelector(".mix-modal-episode").textContent  =
       "Ép. " + (d.dataset.episode || "?") + " · " + (d.dataset.season || "");
     modalEl.querySelector(".mix-modal-duration").textContent = d.dataset.duration || "";
-    modalEl.querySelector(".mix-modal-subtitle").textContent = d.dataset.subtitle || "";
+
+    // Set subtitle and show/hide based on content
+    var subtitleEl = modalEl.querySelector(".mix-modal-subtitle");
+    if (d.dataset.subtitle) {
+      subtitleEl.textContent = d.dataset.subtitle;
+      subtitleEl.removeAttribute("hidden");
+    } else {
+      subtitleEl.setAttribute("hidden", "");
+    }
+
     modalEl.querySelector(".mix-modal-keywords").textContent = d.dataset.keywords || "";
 
     // Handle multiple authors
@@ -502,6 +511,7 @@
 
         relatedMixes.forEach(function(relatedData) {
           var relatedTitle = relatedData.dataset.title || "";
+          var relatedSubtitle = relatedData.dataset.subtitle || "";
           var relatedEpisode = relatedData.dataset.episode || "?";
           var relatedSeason = relatedData.dataset.season || "";
           var isActive = relatedData.dataset.season === d.dataset.season &&
@@ -509,7 +519,12 @@
 
           var relatedLink = document.createElement("div");
           relatedLink.className = "mix-modal-related-item" + (isActive ? " active" : "");
-          relatedLink.innerHTML = '<strong>' + escapeHtml(relatedTitle) + '</strong><br><small>Ép. ' + escapeHtml(relatedEpisode) + '</small>';
+          var html = '<strong>' + escapeHtml(relatedTitle) + '</strong>';
+          if (relatedSubtitle) {
+            html += '<br><small>' + escapeHtml(relatedSubtitle) + '</small>';
+          }
+          html += '<br><small>Ép. ' + escapeHtml(relatedEpisode) + '</small>';
+          relatedLink.innerHTML = html;
 
           // Find corresponding card by season + episode
           var cardIndex = Array.from(cards).findIndex(function(c) {
