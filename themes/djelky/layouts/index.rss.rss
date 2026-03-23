@@ -1,16 +1,17 @@
 {{- $pages := where .Site.RegularPages "Section" "mixes" -}}
 {{- $pages = $pages.ByDate -}}
 {{- $site := .Site -}}
+{{- $baseURL := $site.Params.rss.siteURL -}}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
 xmlns:podcast="https://podcastindex.org/namespace/1.0"
 xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:content="http://purl.org/rss/1.0/modules/content/">
-<!-- To test the RSS, please use https://podba.se/?url={{ $site.BaseURL }}djdadoo.rss -->
+<!-- To test the RSS, please use https://podba.se/?url={{ $baseURL }}djdadoo.rss -->
 <channel>
   <title>{{ $site.Title }}</title>
-  <link>{{ $site.BaseURL }}</link>
-  <atom:link href="{{ $site.BaseURL }}djdadoo.rss" rel="self" type="application/rss+xml" />
+  <link>{{ $baseURL }}</link>
+  <atom:link href="{{ $baseURL }}djdadoo.rss" rel="self" type="application/rss+xml" />
   <language>{{ $site.LanguageCode }}</language>
   <copyright>{{ $site.Params.rss.author }}</copyright>
   <itunes:subtitle>{{ $site.Params.rss.subtitle }}</itunes:subtitle>
@@ -21,7 +22,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:name>{{ $site.Params.rss.author }}</itunes:name>
     <itunes:email>{{ $site.Params.rss.email }}</itunes:email>
   </itunes:owner>
-  <itunes:image href="{{ $site.BaseURL }}{{ $site.Params.rss.podcastImage }}" />
+  <itunes:image href="{{ $baseURL }}{{ $site.Params.rss.podcastImage }}" />
   <itunes:category text="Music" />
   <itunes:explicit>false</itunes:explicit>
   <!-- Unique id: do not change. It's computed from dj.pilato.fr using https://www.uuidtools.com/v5 -->
@@ -41,7 +42,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <title>{{ $p.Params.itunes_title }}</title>
     {{- else }}
     {{- $rssTitle := printf "%s #%s" $site.Params.rss.trackTitle ($p.Date.Format "2006/01/02") }}
-    {{- with ($p.Params.itunes_subtitle | default $p.Params.subtitle) }}
+    {{- with ($p.Params.itunes_subtitle | default $p.Params.title) }}
       {{- $rssTitle = printf "%s - %s" $rssTitle . }}
     {{- end }}
     <title>{{ $rssTitle }}</title>
@@ -61,7 +62,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
       {{- end }}
     ]]></description>
     {{- if $cover }}
-    <itunes:image href="{{ $site.BaseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
+    <itunes:image href="{{ $baseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
     {{- end }}
     {{- with $p.Params.audio_url }}
     {{- $audioURL := printf "%s%s" $site.Params.rss.baseAudioURL . }}
@@ -77,7 +78,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <itunes:keywords>{{ delimit . ", " }}</itunes:keywords>
     {{- end }}
     <itunes:explicit>{{ if $p.Params.explicit }}true{{ else }}false{{ end }}</itunes:explicit>
-    <link>{{ $site.BaseURL }}</link>
+    <link>{{ $baseURL }}</link>
   </item>
   {{- end }}
 </channel>

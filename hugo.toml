@@ -27,6 +27,7 @@ disableKinds = ["taxonomy", "term"]
       unsafe = true
 
 [params.rss]
+  siteURL      = "https://djdadoo.pilato.fr/"
   author       = "David Pilato"
   email        = "david@pilato.fr"
   podcastGUID  = "5e560267-5f32-55d3-b370-8f66f80ddb8f"
