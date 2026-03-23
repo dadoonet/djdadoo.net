@@ -68,6 +68,7 @@ languageCode = "en-us"
 [params.podcast]
 name = "DJ Elky"                           # Podcast/author name (displayed in header)
 title = "DJ Elky Mixes"                    # Optional: RSS feed channel <title> (defaults to Site.title)
+filename = "djdadoo.rss"                   # RSS feed filename
 subtitle = "Deep House & Techno"           # Short description
 description = "..."                        # Long description for RSS
 author = "DJ Elky"                         # Episode author fallback
