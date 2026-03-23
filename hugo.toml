@@ -34,7 +34,7 @@ disableKinds = ["taxonomy", "term"]
   # Podcast Author
   author       = "David Pilato"
   email        = "david@pilato.fr"
-  cover        = "djdadoo-new.jpg"
+  cover        = "img/authors/dj-elky.png"
   # Podcast ID and description
   # Unique id: It's computed from dj.pilato.fr using https://www.uuidtools.com/v5
   podcastGUID  = "5e560267-5f32-55d3-b370-8f66f80ddb8f"
