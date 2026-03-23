@@ -396,8 +396,11 @@
     var sidebarEl = modalEl.querySelector(".mix-modal-sidebar");
     var relatedEl = modalEl.querySelector(".mix-modal-related");
 
+    console.log("Opening modal for:", d.dataset.title, "event:", event);
+
     if (event) {
       var relatedMixes = getRelatedMixes(event);
+      console.log("Found related mixes:", relatedMixes.length);
       if (relatedMixes.length > 1) {
         // Show sidebar
         sidebarEl.removeAttribute("hidden");
