@@ -32,7 +32,8 @@ disableKinds = ["taxonomy", "term"]
   # Podcast Title (if not set, this is the Site title)
   # title        = "DJ Elky mixes"
   # Podcast Author
-  author       = "David Pilato"
+  real_name    = "David Pilato"
+  author       = "DJ Elky"
   email        = "david@pilato.fr"
   cover        = "img/authors/dj-elky.png"
   # Podcast ID and description
