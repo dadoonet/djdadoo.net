@@ -1,0 +1,16 @@
+# Social media and external links
+# Icons from Ionicons: https://ionic.io/ionicons
+- href: https://github.com/djdadoo
+  target: _blank
+  icon: logo-github
+  title: GitHub
+
+- href: https://x.com/dj_elky
+  target: _blank
+  icon: logo-x
+  title: X
+
+- href: https://www.instagram.com/dj_elky
+  target: _blank
+  icon: logo-instagram
+  title: Instagram
