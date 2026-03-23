@@ -2,9 +2,9 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="header-title">
-      <img src="/djdadoo-new.jpg" alt="DJ Elky" class="header-logo" />
+      <img src="{{ .Site.Params.podcast.cover }}" alt="{{ .Site.Params.podcast.author }}" class="header-logo" />
       <div>
-        <h1>DJ Elky</h1>
+        <h1>{{ .Site.Params.podcast.author }}</h1>
         <p class="header-sub">{{ .Site.Params.podcast.subtitle }}</p>
       </div>
     </div>
@@ -22,7 +22,7 @@
 {{/* Build playlist as a Go slice-of-dicts → single jsonify call avoids double-encoding */}}
 {{ $playlist := slice }}
 {{ range $mixes }}
-  {{ $cover := "/djdadoo-new.jpg" }}
+  {{ $cover := .Site.Params.podcast.cover }}
   {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
   {{ $chapters := slice }}
   {{ if .Params.chapters }}{{ $chapters = .Params.chapters }}{{ end }}
@@ -64,7 +64,7 @@
         {{ if $cover }}
         <img src="{{ $cover }}" alt="{{ $p.Title }}" loading="lazy" />
         {{ else }}
-        <img src="/djdadoo-new.jpg" alt="{{ $p.Title }}" loading="lazy" />
+        <img src="{{ .Site.Params.podcast.cover }}" alt="{{ $p.Title }}" loading="lazy" />
         {{ end }}
         <div class="mix-card-overlay">
           <span class="play-icon">▶</span>
@@ -89,7 +89,7 @@
            data-duration="{{ $p.Params.duration }}"
            data-subtitle="{{ $p.Params.subtitle }}"
            data-keywords="{{ delimit ($p.Params.keywords | default slice) ", " }}"
-           data-cover="{{ if $cover }}{{ $cover }}{{ else }}/djdadoo-new.jpg{{ end }}">
+           data-cover="{{ if $cover }}{{ $cover }}{{ else }}{{ .Site.Params.podcast.cover }}{{ end }}">
         {{ $p.Content }}
       </div>
     </article>
