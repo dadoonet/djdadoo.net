@@ -447,8 +447,10 @@
   }
 
   document.querySelectorAll(".mix-card-info-btn").forEach(function (btn) {
+    console.log("Attaching info button listener to:", btn);
     btn.addEventListener("click", function (e) {
       e.stopPropagation();
+      console.log("Info button clicked!");
       openModal(btn.closest(".mix-card"));
     });
   });
