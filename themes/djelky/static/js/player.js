@@ -395,6 +395,9 @@
     modalEl.querySelector(".mix-modal-duration").textContent = d.dataset.duration || "";
     modalEl.querySelector(".mix-modal-subtitle").textContent = d.dataset.subtitle || "";
     modalEl.querySelector(".mix-modal-keywords").textContent = d.dataset.keywords || "";
+    modalEl.querySelector(".mix-modal-author-cover").src     = d.dataset.authorCover || "";
+    modalEl.querySelector(".mix-modal-author-cover").alt     = d.dataset.author || "";
+    modalEl.querySelector(".mix-modal-author-name").textContent = d.dataset.author || "";
     modalEl.querySelector(".mix-modal-body").innerHTML       = d.innerHTML;
 
     // Handle related mixes

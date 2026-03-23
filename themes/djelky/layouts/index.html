@@ -90,7 +90,9 @@
            data-subtitle="{{ $p.Params.subtitle }}"
            data-keywords="{{ delimit ($p.Params.keywords | default slice) ", " }}"
            data-event="{{ $p.Params.event | default "" }}"
-           data-cover="{{ if $cover }}{{ $cover }}{{ else }}{{ .Site.Params.podcast.cover }}{{ end }}">
+           data-cover="{{ if $cover }}{{ $cover }}{{ else }}{{ .Site.Params.podcast.cover }}{{ end }}"
+           data-author="{{ $p.Params.author | default .Site.Params.podcast.author }}"
+           data-author-cover="{{ with $p.Resources.GetMatch "author_cover.*" }}{{ .RelPermalink }}{{ else }}{{ $p.Params.author_cover | default .Site.Params.podcast.cover }}{{ end }}">
         {{ $p.Content }}
       </div>
     </article>
@@ -144,6 +146,13 @@
             <p class="mix-modal-duration"></p>
             <p class="mix-modal-subtitle"></p>
             <p class="mix-modal-keywords"></p>
+          </div>
+        </div>
+        <div class="mix-modal-author">
+          <img class="mix-modal-author-cover" src="" alt="" />
+          <div class="mix-modal-author-info">
+            <span class="mix-modal-author-label">Par</span>
+            <p class="mix-modal-author-name"></p>
           </div>
         </div>
         <hr class="mix-modal-sep" />

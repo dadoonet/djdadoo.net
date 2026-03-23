@@ -638,6 +638,41 @@ a:hover { text-decoration: underline; }
 }
 .mix-modal-body li { margin-bottom: 3px; }
 
+.mix-modal-author {
+  display: flex;
+  gap: 12px;
+  padding: 12px 20px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.mix-modal-author-cover {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid var(--color-accent);
+}
+
+.mix-modal-author-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.mix-modal-author-label {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+.mix-modal-author-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 2px;
+  color: var(--color-text);
+}
+
 .mix-modal-sidebar {
   width: 160px;
   flex-shrink: 0;
