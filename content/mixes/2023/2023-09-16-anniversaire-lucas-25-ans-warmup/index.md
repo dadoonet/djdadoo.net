@@ -4,7 +4,6 @@ subtitle: "Live session"
 date: 2023-09-16T23:30:00+02:00
 season: 2023
 episode: 43
-author: DJ Elky
 event: "Lucas's 25th Birthday"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3"

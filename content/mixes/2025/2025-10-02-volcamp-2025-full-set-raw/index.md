@@ -7,7 +7,6 @@ episode: 66
 authors: 
   - name: DJ Elky
   - name: Julien Ponge
-    cover: "https://storage.googleapis.com/djdadoo/2025-10-02-volcamp.jpg"
 keywords: ["Live", "House", "French Touch"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-10-02-volcamp.mp3"
 audio_length: 626656991

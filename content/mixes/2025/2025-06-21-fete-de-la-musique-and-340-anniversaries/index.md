@@ -4,7 +4,6 @@ subtitle: "Recorded live from Paris 15, FR"
 date: 2025-06-21T21:00:00+02:00
 season: 2025
 episode: 59
-author: DJ Elky
 keywords: ["Live", "Anniversary", "Lounge", "House", "Electro"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-06-21-AnniversaireArnaud.mp3"
 audio_length: 450915648 

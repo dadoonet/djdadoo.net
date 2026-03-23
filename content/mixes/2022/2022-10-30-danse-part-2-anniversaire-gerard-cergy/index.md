@@ -4,7 +4,6 @@ subtitle: "Danse Part 2 - Anniversaire Gérard, Cergy"
 date: 2022-10-30T01:00:00+02:00
 season: 2022
 episode: 30
-author: DJ Elky
 event: "Gérard's Birthday Celebration - Cergy"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part3.mp3"

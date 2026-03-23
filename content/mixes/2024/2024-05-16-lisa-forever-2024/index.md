@@ -4,7 +4,6 @@ subtitle: "Live session"
 date: 2024-05-16T17:15:00+02:00
 season: 2024
 episode: 51
-author: DJ Elky
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3"
 audio_length: 70793165
