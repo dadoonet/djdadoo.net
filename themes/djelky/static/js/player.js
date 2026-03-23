@@ -369,9 +369,9 @@
   function getRelatedMixes(event) {
     if (!event) return [];
     var related = [];
-    var allDataElements = document.querySelectorAll(".mix-data[data-event]");
+    var allDataElements = document.querySelectorAll(".mix-data");
     allDataElements.forEach(function(el) {
-      if (el.dataset.event === event) {
+      if (el.dataset.event && el.dataset.event === event) {
         related.push(el);
       }
     });
