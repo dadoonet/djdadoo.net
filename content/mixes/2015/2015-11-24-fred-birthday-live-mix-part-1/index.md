@@ -5,6 +5,7 @@ date: 2015-11-24T21:30:00+01:00
 season: 2015
 episode: 16
 author: David Pilato
+event: "Fred's Birthday Party - Le Crystal"
 keywords: ["Live", "Birthday"]
 audio_url: "https://storage.googleapis.com/djdadoo/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3"
 audio_length: 21004740

@@ -5,6 +5,7 @@ date: 2017-03-05T11:30:00+01:00
 season: 2017
 episode: 21
 author: David Pilato
+event: "Pre elastic{ON}"
 keywords: ["Home"]
 audio_url: "https://storage.googleapis.com/djdadoo/2017-03-05-Winter-2017-Pre-ElasticON-Mix.mp3"
 audio_length: 99180044

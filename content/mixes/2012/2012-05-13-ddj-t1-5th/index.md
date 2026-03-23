@@ -1,5 +1,5 @@
 ---
-title: "David's Mix #2012/05/13"
+title: "Fifth Pioneer DDJ-T1 Mix"
 date: 2012-05-13T22:39:00+01:00
 season: 2012
 episode: 6

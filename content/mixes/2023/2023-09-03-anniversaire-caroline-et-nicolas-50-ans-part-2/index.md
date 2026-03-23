@@ -5,6 +5,7 @@ date: 2023-09-03T02:00:00+02:00
 season: 2023
 episode: 42
 author: David Pilato
+event: "Caroline & Nicolas's 50th Birthday"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2023-09-03-AnnivCaroNicoPart2.mp3"
 audio_length: 220092325

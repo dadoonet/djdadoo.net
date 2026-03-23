@@ -5,6 +5,7 @@ date: 2013-10-14T23:25:00+01:00
 season: 2013
 episode: 13
 author: David Pilato
+event: "Christine's Birthday Party - Peniche"
 keywords: ["Live", "Birthday", "Christine", "Diner", "80"]
 audio_url: "https://storage.googleapis.com/djdadoo/2013-10-05-Peniche-80.mp3"
 audio_length: 37207331

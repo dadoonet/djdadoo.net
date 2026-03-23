@@ -5,6 +5,7 @@ date: 2023-09-17T00:25:00+02:00
 season: 2023
 episode: 44
 author: David Pilato
+event: "Lucas's 25th Birthday"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Dance1.mp3"
 audio_length: 86436290

@@ -5,6 +5,7 @@ date: 2022-10-30T03:00:00+01:00
 season: 2022
 episode: 31
 author: David Pilato
+event: "Gérard's Birthday Celebration - Cergy"
 keywords: ["Live"]
 audio_url: "https://storage.googleapis.com/djdadoo/2022-10-29-Anniversaire-Gerard-Part4.mp3"
 audio_length: 55884546
