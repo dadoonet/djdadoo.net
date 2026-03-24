@@ -1,0 +1,26 @@
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+{{ with .Site.Params.social.twitter }}
+  <meta name="twitter:creator" content="{{ . }}" />
+{{ end }}
+<meta property="twitter:domain" content="{{ .Site.BaseURL | replaceRE "https?://|/$" "" }}" />
+<meta property="twitter:url" content="{{ if .IsHome }}{{ .Site.BaseURL }}{{ else }}{{ .Permalink }}{{ end }}" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+{{ if .IsHome }}
+  <meta name="twitter:description" content="{{ .Site.Params.podcast.description }}" />
+{{ else }}
+  {{ if .Params.subtitle }}
+    <meta name="twitter:description" content="{{ .Params.subtitle }}" />
+  {{ else if .Params.description }}
+    <meta name="twitter:description" content="{{ .Params.description }}" />
+  {{ else if .Site.Params.social.description }}
+    <meta name="twitter:description" content="{{ .Site.Params.social.description }}" />
+  {{ else }}
+    <meta name="twitter:description" content="{{ .Summary }}" />
+  {{ end }}
+{{ end }}
+{{ if .Params.cover }}
+  <meta name="twitter:image" content="{{ printf "%s%s" $.Site.BaseURL .Params.cover }}" />
+{{ else if .Site.Params.social.image }}
+  <meta name="twitter:image" content="{{ printf "%s%s" $.Site.BaseURL .Site.Params.social.image }}" />
+{{ end }}

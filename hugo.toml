@@ -26,6 +26,14 @@ disableKinds = ["taxonomy", "term"]
     [markup.goldmark.renderer]
       unsafe = true
 
+[params.social]
+  # Image for social media sharing (OpenGraph / Twitter Cards)
+  # Dimensions should be 1200x630px for best results
+  image       = "img/dj-elky.png"
+  # Default description for social sharing (used if no description in front-matter)
+  description = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
+  twitter     = "@dadoonet"
+
 [params.podcast]
   # Podcast Name, which is normally the DJ Name
   name         = "DJ Elky"

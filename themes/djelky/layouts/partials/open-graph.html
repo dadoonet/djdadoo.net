@@ -1,0 +1,30 @@
+<!-- Social Sharing / OpenGraph -->
+{{ if .IsHome }}
+  <!-- Homepage OG -->
+  <meta property="og:title" content="{{ .Site.Title }}" />
+  <meta property="og:description" content="{{ .Site.Params.podcast.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Site.BaseURL }}" />
+  {{ with .Site.Params.social.image }}
+    <meta property="og:image" content="{{ printf "%s%s" $.Site.BaseURL . }}" />
+  {{ end }}
+{{ else }}
+  <!-- Page/Post OG -->
+  <meta property="og:title" content="{{ .Title }}" />
+  {{ if .Params.subtitle }}
+    <meta property="og:description" content="{{ .Params.subtitle }}" />
+  {{ else if .Params.description }}
+    <meta property="og:description" content="{{ .Params.description }}" />
+  {{ else if .Site.Params.social.description }}
+    <meta property="og:description" content="{{ .Site.Params.social.description }}" />
+  {{ else }}
+    <meta property="og:description" content="{{ .Summary }}" />
+  {{ end }}
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{ if .Params.cover }}
+    <meta property="og:image" content="{{ printf "%s%s" $.Site.BaseURL .Params.cover }}" />
+  {{ else if .Site.Params.social.image }}
+    <meta property="og:image" content="{{ printf "%s%s" $.Site.BaseURL .Site.Params.social.image }}" />
+  {{ end }}
+{{ end }}
