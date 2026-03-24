@@ -1,7 +1,7 @@
 baseURL = "https://djdadoo.pilato.fr/"
 languageCode = "en"
 title = "DJ Elky | Feel the Groove with Best Funk &amp; House Music Mixes 🎧"
-theme = "djelky"
+theme = "podcast4deejays"
 disableKinds = ["taxonomy", "term"]
 # Allows emojis in markdown
 enableEmoji = true
@@ -32,8 +32,8 @@ enableGitInfo = true
 
 [params]
   # Footer configuration
-  siteStartYear = 2010
-  themeName = "djelky"
+  siteStartYear = 2011
+  themeName = "podcast4deejays"
   themeLink = "https://github.com/lyquocphong/hugo-theme-djelky"
   # Image for social media sharing (OpenGraph / Twitter Cards)
   # Dimensions should be 1200x630px for best results

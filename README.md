@@ -1,6 +1,6 @@
 # DJ Elky Mixes
 
-Personal podcast site for DJ Elky mixes, built with [Hugo](https://gohugo.io/) and the custom `djelky` theme.
+Personal podcast site for DJ Elky mixes, built with [Hugo](https://gohugo.io/) and the custom `podcast4deejays` theme.
 
 Live at: <https://djdadoo.pilato.fr/>
 
@@ -42,7 +42,7 @@ content/
 static/
   djdadoo-new.jpg         # default podcast cover
   img/                    # favicons, site manifest
-themes/djelky/
+themes/podcast4deejays/
   layouts/
     index.html            # home page (grid + player)
     index.rss.rss         # iTunes/podcast RSS feed
