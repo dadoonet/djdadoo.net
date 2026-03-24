@@ -21,9 +21,11 @@ function initPlayer() {
   var playerCoverEl    = document.getElementById("episode-player-cover");
   var playerTitleEl    = document.getElementById("episode-player-title");
   var playerSubtitleEl = document.getElementById("episode-player-subtitle");
-  var chaptersEl       = document.getElementById("episode-player-chapters");
-  var chapterCurrentEl = document.getElementById("episode-player-chapter-current");
-  var btnPlay          = document.getElementById("episode-player-btn-play");
+  var chaptersEl          = document.getElementById("episode-player-chapters");
+  var chapterCurrentEl    = document.getElementById("episode-player-chapter-current");
+  var btnChapterPrev      = document.getElementById("episode-player-btn-chapter-prev");
+  var btnChapterNext      = document.getElementById("episode-player-btn-chapter-next");
+  var btnPlay             = document.getElementById("episode-player-btn-play");
   var btnSkipBack      = document.getElementById("episode-player-btn-skip-back");
   var btnSkipForward   = document.getElementById("episode-player-btn-skip-forward");
   var progressBar      = document.getElementById("episode-player-progress-bar");
@@ -279,6 +281,20 @@ function initPlayer() {
       chaptersEl.appendChild(div);
     });
     chapterCurrentEl.removeAttribute("hidden");
+    updateChapterNavButtons();
+  }
+
+  function updateChapterNavButtons() {
+    if (!btnChapterPrev || !btnChapterNext) return;
+    if (!CHAPTERS.length) {
+      btnChapterPrev.setAttribute("hidden", "");
+      btnChapterNext.setAttribute("hidden", "");
+      return;
+    }
+    btnChapterPrev.removeAttribute("hidden");
+    btnChapterNext.removeAttribute("hidden");
+    btnChapterPrev.disabled = currentChapIdx <= 0;
+    btnChapterNext.disabled = currentChapIdx >= CHAPTERS.length - 1;
   }
 
   function highlightChapter(currentSec) {
@@ -303,6 +319,7 @@ function initPlayer() {
         currentChapIdx = idx;
         var titleSpan = active.querySelector(".chapter-title");
         if (titleSpan) chapterCurrentEl.textContent = titleSpan.textContent;
+        updateChapterNavButtons();
       }
     }
   }
@@ -320,6 +337,19 @@ function initPlayer() {
     }
     sound.seek(timeToSeconds(CHAPTERS[chapIdx].time));
     if (!sound.playing()) sound.play();
+    updateChapterNavButtons();
+  }
+
+  // Chapter prev/next buttons
+  if (btnChapterPrev) {
+    btnChapterPrev.addEventListener("click", function() {
+      if (currentChapIdx > 0) seekToChapter(currentChapIdx - 1);
+    });
+  }
+  if (btnChapterNext) {
+    btnChapterNext.addEventListener("click", function() {
+      if (currentChapIdx < CHAPTERS.length - 1) seekToChapter(currentChapIdx + 1);
+    });
   }
 
   // Toggle chapter list on click

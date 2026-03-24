@@ -162,7 +162,9 @@
 {{ end }}
 
 <!-- Audio Player -->
-{{ partial "soundbar.html" (dict "idPrefix" "episode-player" "showChapters" true "prevEpisode" $prevEpisode "nextEpisode" $nextEpisode) }}
+{{ $hasChapters := false }}
+{{ if .Params.chapters }}{{ $hasChapters = true }}{{ end }}
+{{ partial "soundbar.html" (dict "idPrefix" "episode-player" "showChapters" $hasChapters "prevEpisode" $prevEpisode "nextEpisode" $nextEpisode) }}
 
 <script>
 {{ $chapters := slice }}
