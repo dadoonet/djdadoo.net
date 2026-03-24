@@ -125,8 +125,24 @@
   </div>
 </main>
 
+<!-- Find prev/next episodes -->
+{{ $allEpisodes := where .Site.RegularPages "Section" "mixes" }}
+{{ $allEpisodes = $allEpisodes.ByDate }}
+{{ $prevEpisode := "" }}
+{{ $nextEpisode := "" }}
+{{ range $i, $ep := $allEpisodes }}
+  {{ if eq $ep.Permalink $.Permalink }}
+    {{ if gt $i 0 }}
+      {{ $prevEpisode = index $allEpisodes (sub $i 1) }}
+    {{ end }}
+    {{ if lt $i (sub (len $allEpisodes) 1) }}
+      {{ $nextEpisode = index $allEpisodes (add $i 1) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
 <!-- Audio Player -->
-{{ partial "soundbar.html" (dict "idPrefix" "episode-player" "showPrevNext" false "showChapters" false) }}
+{{ partial "soundbar.html" (dict "idPrefix" "episode-player" "showChapters" false "prevEpisode" $prevEpisode "nextEpisode" $nextEpisode) }}
 
 <script src="/js/howler.min.js"></script>
 <script src="/js/episode-player.js"></script>
@@ -502,7 +518,22 @@
   transition: color 0.2s;
 }
 
-.player-controls button:hover {
+.player-controls a {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.player-controls button:hover,
+.player-controls a:hover {
   color: var(--color-accent);
 }
 

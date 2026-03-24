@@ -141,7 +141,7 @@
 {{ end }}
 
 {{ define "player" }}
-{{ partial "soundbar.html" (dict "idPrefix" "player" "showPrevNext" true "showChapters" true) }}
+{{ partial "soundbar.html" (dict "idPrefix" "player" "isPlaylist" true "showChapters" true) }}
 <div id="mix-modal" class="mix-modal" hidden role="dialog" aria-modal="true" aria-label="Episode details">
   <div class="mix-modal-backdrop"></div>
   <div class="mix-modal-card">
