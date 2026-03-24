@@ -67,7 +67,10 @@
     <!-- Content section -->
     <div class="episode-content">
       <div class="episode-header">
-        <h1 class="episode-title">{{ .Title }}</h1>
+        <div class="episode-title-wrapper">
+          <h1 class="episode-title">{{ .Title }}</h1>
+          <a class="episode-download-btn" href="{{ $audioURL }}" download aria-label="Download this episode"><i class="fa-solid fa-download"></i></a>
+        </div>
         {{ if .Params.episode }}<p class="episode-number">Episode {{ .Params.episode }}{{ if .Params.season }} • Season {{ .Params.season }}{{ end }}</p>{{ end }}
         {{ if .Params.duration }}<p class="episode-duration">{{ .Params.duration }}</p>{{ end }}
         {{ if .Params.subtitle }}<p class="episode-subtitle">{{ .Params.subtitle }}</p>{{ end }}
@@ -195,6 +198,7 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.2s;
+  z-index: 10;
 }
 
 .episode-cover-wrapper:hover .episode-cover-play {
@@ -211,11 +215,39 @@
   margin-bottom: 24px;
 }
 
+.episode-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+
 .episode-title {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 8px;
   color: var(--color-text);
+}
+
+.episode-download-btn {
+  background: var(--color-accent);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.episode-download-btn:hover {
+  opacity: 0.8;
 }
 
 .episode-number {
