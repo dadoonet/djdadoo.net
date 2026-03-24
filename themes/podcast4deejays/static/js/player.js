@@ -10,23 +10,26 @@
   var PLAYLIST = window.__djPlaylist;
   if (!PLAYLIST || !PLAYLIST.length) return;
 
+  // ── ID Prefix (use "player" for main page, or override if needed) ─────────
+  var PREFIX = "player";
+
   // ── DOM refs ───────────────────────────────────────────────────────────────
-  var playerEl      = document.getElementById("player");
-  var coverEl       = document.getElementById("player-cover");
-  var titleEl       = document.getElementById("player-title");
-  var subtitleEl    = document.getElementById("player-subtitle");
-  var chaptersEl        = document.getElementById("player-chapters");
-  var chapterCurrentEl  = document.getElementById("player-chapter-current");
-  var btnPlay       = document.getElementById("btn-play");
-  var btnPrev       = document.getElementById("btn-prev");
-  var btnNext       = document.getElementById("btn-next");
-  var btnSkipBack   = document.getElementById("btn-skip-back");
-  var btnSkipForward= document.getElementById("btn-skip-forward");
-  var progressBar   = document.getElementById("progress-bar");
-  var progressFill  = document.getElementById("progress-fill");
-  var currentTimeEl = document.getElementById("player-current");
-  var durationEl    = document.getElementById("player-duration");
-  var volumeSlider  = document.getElementById("volume-slider");
+  var playerEl      = document.getElementById(PREFIX);
+  var coverEl       = document.getElementById(PREFIX + "-cover");
+  var titleEl       = document.getElementById(PREFIX + "-title");
+  var subtitleEl    = document.getElementById(PREFIX + "-subtitle");
+  var chaptersEl    = document.getElementById(PREFIX + "-chapters");
+  var chapterCurrentEl = document.getElementById(PREFIX + "-chapter-current");
+  var btnPlay       = document.getElementById(PREFIX + "-btn-play");
+  var btnPrev       = document.getElementById(PREFIX + "-btn-prev");
+  var btnNext       = document.getElementById(PREFIX + "-btn-next");
+  var btnSkipBack   = document.getElementById(PREFIX + "-btn-skip-back");
+  var btnSkipForward= document.getElementById(PREFIX + "-btn-skip-forward");
+  var progressBar   = document.getElementById(PREFIX + "-progress-bar");
+  var progressFill  = document.getElementById(PREFIX + "-progress-fill");
+  var currentTimeEl = document.getElementById(PREFIX + "-current");
+  var durationEl    = document.getElementById(PREFIX + "-duration");
+  var volumeSlider  = document.getElementById(PREFIX + "-volume-slider");
   var cards         = document.querySelectorAll(".mix-card");
 
   // ── State ──────────────────────────────────────────────────────────────────

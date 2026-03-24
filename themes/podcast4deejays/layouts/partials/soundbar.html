@@ -1,0 +1,52 @@
+{{/*
+  Soundbar Partial
+  Parameters:
+    - idPrefix: prefix for element IDs (e.g., "player" or "episode-player")
+    - showPrevNext: boolean to show prev/next buttons (default: false)
+    - showChapters: boolean to show chapters (default: false)
+
+  Usage:
+    {{ partial "soundbar.html" (dict "idPrefix" "player" "showPrevNext" true "showChapters" true) }}
+    {{ partial "soundbar.html" (dict "idPrefix" "episode-player" "showPrevNext" false "showChapters" false) }}
+*/}}
+
+{{ $prefix := .idPrefix | default "player" }}
+{{ $showPrevNext := .showPrevNext | default false }}
+{{ $showChapters := .showChapters | default false }}
+
+<div id="{{ $prefix }}" class="player" hidden aria-label="Lecteur audio">
+  <div class="player-artwork">
+    <img id="{{ $prefix }}-cover" src="" alt="" />
+  </div>
+  <div class="player-info">
+    <p id="{{ $prefix }}-title" class="player-title"></p>
+    <p id="{{ $prefix }}-subtitle" class="player-subtitle"></p>
+    {{ if $showChapters }}
+    <button id="{{ $prefix }}-chapter-current" class="player-chapter-current" hidden aria-expanded="false"></button>
+    <div id="{{ $prefix }}-chapters" class="player-chapters" hidden></div>
+    {{ end }}
+  </div>
+  <div class="player-controls">
+    <button id="{{ $prefix }}-btn-skip-back" class="player-skip-btn" aria-label="Reculer de 15s"><i class="fa-solid fa-rotate-left"></i></button>
+    {{ if $showPrevNext }}
+    <button id="{{ $prefix }}-btn-prev" aria-label="Précédent"><i class="fa-solid fa-backward-fast"></i></button>
+    {{ end }}
+    <button id="{{ $prefix }}-btn-play" aria-label="Lecture / Pause"><i class="fa-solid fa-play"></i></button>
+    {{ if $showPrevNext }}
+    <button id="{{ $prefix }}-btn-next" aria-label="Suivant"><i class="fa-solid fa-forward-fast"></i></button>
+    {{ end }}
+    <button id="{{ $prefix }}-btn-skip-forward" class="player-skip-btn" aria-label="Avancer de 15s"><i class="fa-solid fa-rotate-right"></i></button>
+  </div>
+  <div class="player-progress-wrap">
+    <span id="{{ $prefix }}-current">0:00</span>
+    <div class="player-progress-bar" id="{{ $prefix }}-progress-bar" role="slider" aria-label="Progression">
+      <div class="player-progress-fill" id="{{ $prefix }}-progress-fill"></div>
+    </div>
+    <span id="{{ $prefix }}-duration">0:00</span>
+  </div>
+  <div class="player-volume-wrap">
+    <span class="volume-icon">🔊</span>
+    <input type="range" id="{{ $prefix }}-volume-slider" min="0" max="1" step="0.05" value="1"
+           aria-label="Volume" />
+  </div>
+</div>
