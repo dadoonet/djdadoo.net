@@ -724,62 +724,13 @@ window.__djEpisodeChapters = {{ $chapters | jsonify | safeJS }};
   border: none;
 }
 
-@media (max-width: 1024px) {
-  .player {
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .player-info {
-    flex-basis: 100%;
-    order: 1;
-  }
-
-  .player-artwork {
-    order: 0;
-  }
-
-  .player-controls {
-    order: 2;
-  }
-
-  .player-progress-wrap {
-    flex-basis: 100%;
-    order: 3;
-  }
-
-  .player-volume-wrap {
-    order: 4;
-  }
-}
-
 @media (max-width: 768px) {
-  .player {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-  }
-
-  .player-artwork {
-    width: 100%;
-    height: 120px;
-  }
-
-  .player-info {
-    flex-basis: auto;
-  }
-
-  .player-controls {
-    justify-content: center;
-  }
-
   .player-progress-wrap {
-    min-width: auto;
+    display: none;
   }
 
   .player-volume-wrap {
-    justify-content: center;
-    min-width: auto;
+    display: none;
   }
 }
 </style>
