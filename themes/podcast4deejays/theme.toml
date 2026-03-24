@@ -1,6 +1,6 @@
-name = "Djelky"
-license = "MIT"
-description = "Custom theme for DJ Elky mixes site"
+name = "podcast4deejays"
+license = "Apache2"
+description = "Theme for Deejays who are willing to share their mixes as podcasts"
 homepage = "https://djdadoo.pilato.fr"
 min_version = "0.157.0"
 

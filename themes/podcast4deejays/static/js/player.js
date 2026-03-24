@@ -1,5 +1,5 @@
 /**
- * DJ Elky — player.js
+ * Podcast4Deejays — player.js
  * Requires Howler.js (loaded before this script).
  * Playlist data injected by Hugo into #playlist-data (JSON).
  */
@@ -149,7 +149,7 @@
         if (dur) durationEl.textContent = formatTime(dur);
       },
       onloaderror: function (id, err) {
-        console.error("DJ Elky: load error", err);
+        console.error("Podcast4Deejays: load error", err);
         setPlayBtn(false);
       },
     });
