@@ -1,8 +1,12 @@
 baseURL = "https://djdadoo.pilato.fr/"
 languageCode = "en"
-title = "DJ Elky mixes"
+title = "DJ Elky | Feel the Groove with Best Funk &amp; House Music Mixes 🎧"
 theme = "djelky"
 disableKinds = ["taxonomy", "term"]
+# Allows emojis in markdown
+enableEmoji = true
+# Allows git info to be extracted
+enableGitInfo = true
 
 [mediaTypes]
   [mediaTypes."text/xml"]
@@ -29,16 +33,18 @@ disableKinds = ["taxonomy", "term"]
 [params.social]
   # Image for social media sharing (OpenGraph / Twitter Cards)
   # Dimensions should be 1200x630px for best results
-  image       = "img/dj-elky.png"
+  image       = "img/dj-elky-small.jpg"
   # Default description for social sharing (used if no description in front-matter)
   description = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
+  # Optional: title for social media sharing (if not set, Site.title is used)
+  # title       = "Custom title for social media"
   twitter     = "@dadoonet"
 
 [params.podcast]
   # Podcast Name, which is normally the DJ Name
   name         = "DJ Elky"
   # Podcast Title (if not set, this is the Site title)
-  # title        = "DJ Elky mixes"
+  # title        = "DJ Elky | Feel the Groove with Best Funk &amp; House Music Mixes 🎧"
   # Podcast Author
   real_name    = "David Pilato"
   author       = "DJ Elky"
@@ -48,7 +54,7 @@ disableKinds = ["taxonomy", "term"]
   # Unique id: It's computed from dj.pilato.fr using https://www.uuidtools.com/v5
   podcastGUID  = "5e560267-5f32-55d3-b370-8f66f80ddb8f"
   subtitle     = "Just playing with my DJ gears, from DDJ-T1 to CDJ3000"
-  description  = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
+  description  = "Love funk, house, and DJ groove sounds? Dive into DJ Elky's exclusive mixes! High-energy vibes curated for your listening pleasure. Enjoy the beat! 🔥"
   filename     = "djdadoo.rss"
   # For the website only, it adds a link to the podcast
   podcastLink   = "https://podcasts.apple.com/fr/podcast/dj-elky-mixes/id959495351"

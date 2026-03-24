@@ -19,7 +19,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <itunes:summary><![CDATA[<p>{{ $site.Params.podcast.description }}</p>]]></itunes:summary>
   <description><![CDATA[<p>{{ $site.Params.podcast.description }}</p>]]></description>
   <itunes:owner>
-    <itunes:name>{{ $site.Params.podcast.author }}</itunes:name>
+    <itunes:name>{{ if $site.Params.podcast.real_name }}{{ $site.Params.podcast.real_name }}{{ else }}{{ $site.Params.podcast.author }}{{ end }}</itunes:name>
     <itunes:email>{{ $site.Params.podcast.email }}</itunes:email>
   </itunes:owner>
   <itunes:image href="{{ $baseURL }}{{ $site.Params.podcast.cover }}" />

@@ -5,9 +5,9 @@
 {{ end }}
 <meta property="twitter:domain" content="{{ .Site.BaseURL | replaceRE "https?://|/$" "" }}" />
 <meta property="twitter:url" content="{{ if .IsHome }}{{ .Site.BaseURL }}{{ else }}{{ .Permalink }}{{ end }}" />
-<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ if .Site.Params.social.title }}{{ .Site.Params.social.title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }}{{ end }}" />
 {{ if .IsHome }}
-  <meta name="twitter:description" content="{{ .Site.Params.podcast.description }}" />
+  <meta name="twitter:description" content="{{ if .Site.Params.social.description }}{{ .Site.Params.social.description }}{{ else }}{{ .Site.Params.podcast.description }}{{ end }}" />
 {{ else }}
   {{ if .Params.subtitle }}
     <meta name="twitter:description" content="{{ .Params.subtitle }}" />

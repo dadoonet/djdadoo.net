@@ -1,8 +1,8 @@
 <!-- Social Sharing / OpenGraph -->
 {{ if .IsHome }}
   <!-- Homepage OG -->
-  <meta property="og:title" content="{{ .Site.Title }}" />
-  <meta property="og:description" content="{{ .Site.Params.podcast.description }}" />
+  <meta property="og:title" content="{{ if .Site.Params.social.title }}{{ .Site.Params.social.title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+  <meta property="og:description" content="{{ if .Site.Params.social.description }}{{ .Site.Params.social.description }}{{ else }}{{ .Site.Params.podcast.description }}{{ end }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
   {{ with .Site.Params.social.image }}
@@ -28,3 +28,4 @@
     <meta property="og:image" content="{{ printf "%s%s" $.Site.BaseURL .Site.Params.social.image }}" />
   {{ end }}
 {{ end }}
+
