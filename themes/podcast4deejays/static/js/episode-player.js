@@ -21,6 +21,8 @@ function initPlayer() {
   var playerCoverEl    = document.getElementById("episode-player-cover");
   var playerTitleEl    = document.getElementById("episode-player-title");
   var playerSubtitleEl = document.getElementById("episode-player-subtitle");
+  var chaptersEl       = document.getElementById("episode-player-chapters");
+  var chapterCurrentEl = document.getElementById("episode-player-chapter-current");
   var btnPlay          = document.getElementById("episode-player-btn-play");
   var btnSkipBack      = document.getElementById("episode-player-btn-skip-back");
   var btnSkipForward   = document.getElementById("episode-player-btn-skip-forward");
@@ -34,6 +36,10 @@ function initPlayer() {
 
   var audioURL = coverPlayBtn.getAttribute("data-audio-url");
   if (!audioURL) return;
+
+  // ── Chapters data ──────────────────────────────────────────────────────────
+  var CHAPTERS = window.__djEpisodeChapters || [];
+  var currentChapIdx = -1;
 
   // ── State ──────────────────────────────────────────────────────────────────
   var sound = null;
@@ -50,6 +56,22 @@ function initPlayer() {
     return m + ":" + pad(s);
   }
   function pad(n) { return n < 10 ? "0" + n : String(n); }
+
+  function timeToSeconds(str) {
+    if (!str) return 0;
+    var parts = str.split(":").map(Number);
+    if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+    if (parts.length === 2) return parts[0] * 60 + parts[1];
+    return 0;
+  }
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
 
   // ── Load ───────────────────────────────────────────────────────────────────
   function loadAndPlay() {
@@ -79,6 +101,9 @@ function initPlayer() {
     currentTimeEl.textContent = "0:00";
     durationEl.textContent = "…";
     setPlayBtn(true);
+
+    buildChapters(CHAPTERS);
+    highlightChapter(0);
 
     // Create Howl
     sound = new Howl({
@@ -156,6 +181,7 @@ function initPlayer() {
     if (dur > 0 && !isDragging) {
       progressFill.style.width = ((seek / dur) * 100).toFixed(2) + "%";
     }
+    highlightChapter(seek);
     rafId = requestAnimationFrame(progressTick);
   }
 
@@ -229,14 +255,109 @@ function initPlayer() {
     if (sound) sound.volume(parseFloat(this.value));
   });
 
-  // Attach chapter list listeners (if chapters exist on this episode)
+  // ── Chapter functions ──────────────────────────────────────────────────────
+  function buildChapters(chapters) {
+    if (!chaptersEl || !chapterCurrentEl) return;
+    chaptersEl.innerHTML = "";
+    chaptersEl.setAttribute("hidden", "");
+    chapterCurrentEl.setAttribute("hidden", "");
+    chapterCurrentEl.setAttribute("aria-expanded", "false");
+    if (!chapters.length) return;
+
+    chapters.forEach(function(ch, i) {
+      var div = document.createElement("div");
+      div.className = "chapter-item";
+      div.dataset.index = i;
+      div.dataset.seconds = timeToSeconds(ch.time);
+      div.innerHTML =
+        '<span class="chapter-time">' + escapeHtml(ch.time) + "</span>" +
+        '<span class="chapter-title">' + escapeHtml(ch.title) + "</span>";
+      div.addEventListener("click", function(e) {
+        e.stopPropagation();
+        if (sound) seekToChapter(i);
+      });
+      chaptersEl.appendChild(div);
+    });
+    chapterCurrentEl.removeAttribute("hidden");
+  }
+
+  function highlightChapter(currentSec) {
+    if (!chaptersEl || !chapterCurrentEl) return;
+    var items = chaptersEl.querySelectorAll(".chapter-item");
+    var active = null;
+    items.forEach(function(item) {
+      if (parseFloat(item.dataset.seconds) <= currentSec) active = item;
+    });
+
+    if (active && currentChapIdx >= 0 && CHAPTERS[currentChapIdx]) {
+      var activeIdx = parseInt(active.dataset.index, 10);
+      var curStart = timeToSeconds(CHAPTERS[currentChapIdx].time);
+      if (activeIdx < currentChapIdx && currentSec >= curStart - 2) return;
+    }
+
+    items.forEach(function(item) { item.classList.remove("active"); });
+    if (active) {
+      active.classList.add("active");
+      var idx = parseInt(active.dataset.index, 10);
+      if (idx !== currentChapIdx) {
+        currentChapIdx = idx;
+        var titleSpan = active.querySelector(".chapter-title");
+        if (titleSpan) chapterCurrentEl.textContent = titleSpan.textContent;
+      }
+    }
+  }
+
+  function seekToChapter(chapIdx) {
+    if (!CHAPTERS[chapIdx]) return;
+    currentChapIdx = chapIdx;
+    var items = chaptersEl.querySelectorAll(".chapter-item");
+    items.forEach(function(el) { el.classList.remove("active"); });
+    var item = items[chapIdx];
+    if (item) {
+      item.classList.add("active");
+      var sp = item.querySelector(".chapter-title");
+      if (sp) chapterCurrentEl.textContent = sp.textContent;
+    }
+    sound.seek(timeToSeconds(CHAPTERS[chapIdx].time));
+    if (!sound.playing()) sound.play();
+  }
+
+  // Toggle chapter list on click
+  if (chapterCurrentEl) {
+    chapterCurrentEl.addEventListener("click", function() {
+      if (chaptersEl.hasAttribute("hidden")) {
+        chaptersEl.removeAttribute("hidden");
+        chapterCurrentEl.setAttribute("aria-expanded", "true");
+        var activeItem = chaptersEl.querySelector(".chapter-item.active");
+        if (activeItem) activeItem.scrollIntoView({ block: "nearest" });
+      } else {
+        chaptersEl.setAttribute("hidden", "");
+        chapterCurrentEl.setAttribute("aria-expanded", "false");
+      }
+    });
+
+    document.addEventListener("click", function(e) {
+      if (chaptersEl && !chaptersEl.hasAttribute("hidden") &&
+          !chaptersEl.contains(e.target) &&
+          e.target !== chapterCurrentEl) {
+        chaptersEl.setAttribute("hidden", "");
+        chapterCurrentEl.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  // Attach chapter list listeners (static episode chapters in content)
   var chapterItems = document.querySelectorAll('.episode-chapters-list li');
   if (chapterItems.length > 0) {
     chapterItems.forEach(function(item) {
       item.addEventListener('click', function() {
         var index = parseInt(item.dataset.chapterIndex, 10);
-        if (index >= 0 && typeof window.seekToChapterWhenReady !== 'undefined') {
-          window.seekToChapterWhenReady(index);
+        if (index >= 0 && CHAPTERS[index]) {
+          if (!sound) {
+            loadAndPlay();
+          } else {
+            seekToChapter(index);
+          }
         }
       });
     });
