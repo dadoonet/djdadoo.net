@@ -1,6 +1,6 @@
 baseURL = "https://djdadoo.pilato.fr/"
 languageCode = "en"
-title = "DJ Elky | Feel the Groove with Best Funk &amp; House Music Mixes 🎧"
+title = "DJ Elky | Feel the Groove with Funk &amp; House mixes 🎧"
 theme = "podcast4deejays"
 disableKinds = ["taxonomy", "term"]
 # Allows emojis in markdown
@@ -39,7 +39,7 @@ enableGitInfo = true
   # Dimensions should be 1200x630px for best results
   image       = "img/dj-elky-small.jpg"
   # Default description for social sharing (used if no description in front-matter)
-  description = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
+  # description = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
   # Optional: title for social media sharing (if not set, Site.title is used)
   # title       = "Custom title for social media"
   twitter     = "@dadoonet"
