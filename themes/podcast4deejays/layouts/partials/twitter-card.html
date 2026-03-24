@@ -5,14 +5,16 @@
 {{ end }}
 <meta property="twitter:domain" content="{{ .Site.BaseURL | replaceRE "https?://|/$" "" }}" />
 <meta property="twitter:url" content="{{ if .IsHome }}{{ .Site.BaseURL }}{{ else }}{{ .Permalink }}{{ end }}" />
-<meta name="twitter:title" content="{{ if .IsHome }}{{ if .Site.Params.social.title }}{{ .Site.Params.social.title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }}{{ end }}" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ if .Site.Params.social.title }}{{ .Site.Params.social.title }}{{ else }}{{ .Site.Title }}{{ end }}{{ else }}{{ .Title }} • {{ .Site.Params.podcast.name }}{{ end }}" />
 {{ if .IsHome }}
   <meta name="twitter:description" content="{{ if .Site.Params.social.description }}{{ .Site.Params.social.description }}{{ else }}{{ .Site.Params.podcast.description }}{{ end }}" />
 {{ else }}
-  {{ if .Params.subtitle }}
-    <meta name="twitter:description" content="{{ .Params.subtitle }}" />
-  {{ else if .Params.description }}
+  {{ if .Params.description }}
     <meta name="twitter:description" content="{{ .Params.description }}" />
+  {{ else if .Content }}
+    <meta name="twitter:description" content="{{ .Content | truncate 160 }}" />
+  {{ else if .Params.subtitle }}
+    <meta name="twitter:description" content="{{ .Params.subtitle }}" />
   {{ else if .Site.Params.social.description }}
     <meta name="twitter:description" content="{{ .Site.Params.social.description }}" />
   {{ else }}
