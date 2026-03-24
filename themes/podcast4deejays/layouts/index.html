@@ -89,7 +89,7 @@
     {{ end }}
 
     <article class="mix-card" data-index="{{ $idx }}" role="button" tabindex="0"
-             aria-label="Lire {{ $p.Title }}">
+             aria-label="Play {{ $p.Title }}">
       <div class="mix-card-artwork">
         {{ if $cover }}
         <img src="{{ $cover }}" alt="{{ $p.Title }}" loading="lazy" />
@@ -102,8 +102,8 @@
         {{ if $p.Params.duration }}
         <span class="mix-card-duration">{{ $p.Params.duration }}</span>
         {{ end }}
-        <button class="mix-card-info-btn" aria-label="Informations sur ce mix"><i class="fa-solid fa-circle-info"></i></button>
-        <a href="{{ $p.Permalink }}" class="mix-card-link-btn" target="_blank" rel="noopener" aria-label="Ouvrir cette page"><i class="fa-solid fa-share"></i></a>
+        <button class="mix-card-info-btn" aria-label="Episode details"><i class="fa-solid fa-circle-info"></i></button>
+        <a href="{{ $p.Permalink }}" class="mix-card-link-btn" target="_blank" rel="noopener" aria-label="Open this page"><i class="fa-solid fa-share"></i></a>
       </div>
       <div class="mix-card-info">
         <h2 class="mix-card-title">{{ $p.Title }}</h2>
@@ -171,16 +171,16 @@
            aria-label="Volume" />
   </div>
 </div>
-<div id="mix-modal" class="mix-modal" hidden role="dialog" aria-modal="true" aria-label="Informations sur le mix">
+<div id="mix-modal" class="mix-modal" hidden role="dialog" aria-modal="true" aria-label="Episode details">
   <div class="mix-modal-backdrop"></div>
   <div class="mix-modal-card">
-    <button class="mix-modal-close" aria-label="Fermer">×</button>
+    <button class="mix-modal-close" aria-label="Close">×</button>
     <div class="mix-modal-container">
       <div class="mix-modal-main">
         <div class="mix-modal-header">
           <div class="mix-modal-cover-wrapper">
             <img class="mix-modal-cover" src="" alt="" />
-            <button class="mix-modal-cover-play" aria-label="Lire cet épisode"><i class="fa-solid fa-play"></i></button>
+            <button class="mix-modal-cover-play" aria-label="Play this episode"><i class="fa-solid fa-play"></i></button>
           </div>
           <div class="mix-modal-meta">
             <h2 class="mix-modal-title"></h2>
