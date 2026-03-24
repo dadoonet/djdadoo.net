@@ -43,7 +43,7 @@ disableKinds = ["taxonomy", "term"]
   description  = "If you love funk, house and DJ groove sound, you will like those mixes. Enjoy!"
   filename     = "djdadoo.rss"
   # For the website only, it adds a link to the podcast
-  podcastLink   = "https://podcasts.apple.com/fr/podcast/dj-elky-mixes/id542004633"
+  podcastLink   = "https://podcasts.apple.com/fr/podcast/dj-elky-mixes/id959495351"
   # For each episode
   # If the page does not define an audio_url field, the mp3 file is automatically guessed
   # from the website path with baseAudioURL as a prefix
