@@ -1,0 +1,40 @@
+{{ define "main" }}
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-title">
+      <a href="/">
+        <img src="/djdadoo-new.jpg" alt="DJ Elky" class="header-logo" />
+      </a>
+      <div>
+        <h1><a href="/" style="color:inherit;text-decoration:none;">DJ Elky</a></h1>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div class="header-socials">
+        {{ range .Site.Data.socials }}
+        <a href="{{ .href }}" target="{{ .target }}" title="{{ .title }}" class="social-link">
+          <ion-icon name="{{ .icon }}"></ion-icon>
+        </a>
+        {{ end }}
+      </div>
+      <a class="itunes-link" href="{{ .Site.Params.podcast.podcastLink }}" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 14.5v-9l7 4.5-7 4.5z"/></svg>
+        Apple Podcasts
+      </a>
+    </div>
+  </div>
+</header>
+<main style="max-width:700px;margin:40px auto;padding:0 20px;text-align:center;">
+  <div style="font-size:4rem;margin:40px 0 20px;">😕</div>
+  <h1 style="font-size:2.5rem;margin:20px 0;">404 - Page Not Found</h1>
+  <p style="color:var(--color-muted);font-size:1.1rem;margin:20px 0 40px;">
+    Sorry, the page you're looking for doesn't exist or has been moved.
+  </p>
+  <a href="/" style="display:inline-block;padding:12px 24px;background:var(--color-accent);color:white;text-decoration:none;border-radius:6px;font-weight:500;transition:opacity 0.2s;">
+    ← Back to Home
+  </a>
+  <p style="color:var(--color-muted);font-size:0.85rem;margin-top:60px;">
+    But hey, why not explore our latest mixes instead? 🎧
+  </p>
+</main>
+{{ end }}
