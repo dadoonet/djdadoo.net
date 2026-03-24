@@ -1,5 +1,5 @@
 ---
-title: "Anniversaire 50 ans Mika,"
+title: "Anniversaire 50 ans Mika"
 subtitle: "Part 2"
 date: 2025-09-20T23:50:00+02:00
 season: 2025
