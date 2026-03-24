@@ -24,13 +24,314 @@
     </div>
   </div>
 </header>
-<main style="max-width:700px;margin:40px auto;padding:0 20px;">
-  <a href="/" style="font-size:.85rem;color:var(--color-muted);display:inline-block;margin-bottom:20px;">← Retour</a>
-  <h2>{{ .Title }}</h2>
-  <p style="color:var(--color-muted);font-size:.85rem;margin-top:6px;">
-    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
-    {{ with .Params.duration }}· {{ . }}{{ end }}
-  </p>
-  {{ with .Content }}<div class="mix-description" style="margin-top:20px;">{{ . }}</div>{{ end }}
+
+<main class="episode-detail">
+  <div class="episode-container">
+    <!-- Artwork section -->
+    <div class="episode-cover-wrapper">
+      {{ $cover := .Site.Params.podcast.cover }}
+      {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+      <img class="episode-cover" src="{{ $cover }}" alt="{{ .Title }}" />
+      <button class="episode-cover-play" aria-label="Play this episode"><i class="fa-solid fa-play"></i></button>
+    </div>
+
+    <!-- Content section -->
+    <div class="episode-content">
+      <div class="episode-header">
+        <h1 class="episode-title">{{ .Title }}</h1>
+        {{ if .Params.episode }}<p class="episode-number">Episode {{ .Params.episode }}{{ if .Params.season }} • Season {{ .Params.season }}{{ end }}</p>{{ end }}
+        {{ if .Params.duration }}<p class="episode-duration">{{ .Params.duration }}</p>{{ end }}
+        {{ if .Params.subtitle }}<p class="episode-subtitle">{{ .Params.subtitle }}</p>{{ end }}
+        {{ if .Params.keywords }}
+        <div class="episode-keywords">
+          {{ range .Params.keywords }}
+          <span class="keyword-badge">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      <hr class="episode-sep" />
+
+      <!-- Description -->
+      <div class="episode-body">
+        {{ with .Content }}{{ . }}{{ end }}
+      </div>
+
+      <!-- Back button -->
+      <div class="episode-footer">
+        <a href="/" class="episode-back">← Back to mixes</a>
+      </div>
+    </div>
+
+    <!-- Sidebar: Related episodes from same event -->
+    {{ if .Params.event }}
+      {{ $currentEvent := .Params.event }}
+      {{ $currentPermalink := .Permalink }}
+      {{ $relatedPages := where .Site.RegularPages "Section" "mixes" }}
+      {{ $relatedPages := where $relatedPages "Params.event" $currentEvent }}
+      {{ $relatedPages = $relatedPages.ByDate }}
+
+      {{ if $relatedPages }}
+      <aside class="episode-sidebar">
+        <h3>From this event</h3>
+        <div class="episode-related">
+          {{ range $relatedPages }}
+            {{ if eq .Permalink $currentPermalink }}
+            <div class="episode-related-item episode-related-active">
+              <div class="episode-related-title">{{ .Title }}</div>
+              {{ if .Params.subtitle }}<div class="episode-related-subtitle">{{ .Params.subtitle }}</div>{{ end }}
+            </div>
+            {{ else }}
+            <a href="{{ .Permalink }}" class="episode-related-item">
+              <div class="episode-related-title">{{ .Title }}</div>
+              {{ if .Params.subtitle }}<div class="episode-related-subtitle">{{ .Params.subtitle }}</div>{{ end }}
+            </a>
+            {{ end }}
+          {{ end }}
+        </div>
+      </aside>
+      {{ end }}
+    {{ end }}
+  </div>
 </main>
+
+<style>
+.episode-detail {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.episode-container {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.episode-cover-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.episode-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.episode-cover-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.episode-cover-wrapper:hover .episode-cover-play {
+  opacity: 1;
+}
+
+.episode-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.episode-header {
+  margin-bottom: 24px;
+}
+
+.episode-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.episode-number {
+  color: var(--color-accent);
+  font-size: 0.95rem;
+  margin: 4px 0;
+}
+
+.episode-duration {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+.episode-subtitle {
+  color: var(--color-muted);
+  font-size: 1rem;
+  margin: 8px 0 0 0;
+  font-style: italic;
+}
+
+.episode-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.episode-sep {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 24px 0;
+}
+
+.episode-body {
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.episode-body p {
+  margin-bottom: 12px;
+}
+
+.episode-footer {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.episode-back {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.episode-back:hover {
+  opacity: 0.7;
+}
+
+/* Sidebar */
+.episode-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.episode-sidebar h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-text);
+}
+
+.episode-related {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.episode-related-item {
+  display: block;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all 0.2s;
+}
+
+.episode-related-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-accent);
+}
+
+.episode-related-active {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-accent);
+  cursor: default;
+}
+
+.episode-related-active::before {
+  content: "✓ ";
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.episode-related-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.episode-related-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .episode-container {
+    flex-wrap: wrap;
+  }
+
+  .episode-sidebar {
+    width: 100%;
+    order: 4;
+  }
+
+  .episode-related {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 12px;
+  }
+
+  .episode-related-item {
+    flex: 0 0 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .episode-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .episode-cover-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .episode-title {
+    font-size: 1.5rem;
+  }
+
+  .episode-sidebar {
+    width: 100%;
+  }
+
+  .episode-related {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .episode-related-item {
+    flex: 0 0 160px;
+  }
+}
+</style>
 {{ end }}
