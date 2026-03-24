@@ -1,0 +1,70 @@
+<footer class="site-footer">
+  <!-- Copyright line -->
+  <div class="footer-copyright">
+    {{ if .Site.Params.siteStartYear }}
+      © {{ if eq now.Year .Site.Params.siteStartYear }}{{ now.Year }}{{ else }}{{ .Site.Params.siteStartYear }} - {{ now.Year }}{{ end }} {{ .Site.Params.podcast.real_name | default .Site.Title }}
+    {{ else }}
+      © {{ now.Year }} {{ .Site.Params.podcast.real_name | default .Site.Title }}
+    {{ end }}
+  </div>
+
+  <!-- Last updated (if available) -->
+  {{ if and (not .IsHome) .GitInfo }}
+    <div class="footer-updated">
+      ⏱️ Last updated on {{ .GitInfo.AuthorDate.Format "Jan 2, 2006" }}
+    </div>
+  {{ end }}
+
+  <!-- Built with -->
+  <div class="footer-built">
+    ⚙️ Generated from 🇫🇷 with ❤️ on {{ now.Format "Mon Jan 2, 2006 at 15:04:05 MST" }}
+  </div>
+
+  <div class="footer-tech">
+    🌱 Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme djelky
+  </div>
+</footer>
+
+<style>
+.site-footer {
+  margin-top: 4rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: opacity 0.2s;
+}
+
+.site-footer a:hover {
+  opacity: 0.7;
+}
+
+.footer-copyright {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.footer-updated {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer-built {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer-tech {
+  font-size: 0.8rem;
+}
+</style>
+
+

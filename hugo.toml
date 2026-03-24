@@ -30,7 +30,11 @@ enableGitInfo = true
     [markup.goldmark.renderer]
       unsafe = true
 
-[params.social]
+[params]
+  # Footer configuration
+  siteStartYear = 2010
+  themeName = "djelky"
+  themeLink = "https://github.com/lyquocphong/hugo-theme-djelky"
   # Image for social media sharing (OpenGraph / Twitter Cards)
   # Dimensions should be 1200x630px for best results
   image       = "img/dj-elky-small.jpg"
