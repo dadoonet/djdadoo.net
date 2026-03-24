@@ -27,6 +27,34 @@
 
 <main class="episode-detail">
   <div class="episode-container">
+    <!-- Authors -->
+    {{ $authors := slice }}
+    {{ if .Params.authors }}
+      {{ $authors = .Params.authors }}
+    {{ else }}
+      {{ $author := .Params.author | default .Site.Params.podcast.author | default "undefined" }}
+      {{ $authors = slice (dict "name" $author) }}
+    {{ end }}
+
+    {{ if $authors }}
+    <div class="episode-authors">
+      <div class="episode-authors-list">
+        {{ range $authors }}
+          {{ $authorName := .name | default .Name }}
+          {{ $authorCover := .cover | default .Cover }}
+          {{ if not $authorCover }}
+            {{ $authorSanitized := replace ($authorName | lower) " " "-" }}
+            {{ $authorCover = printf "/img/authors/%s.png" $authorSanitized }}
+          {{ end }}
+          <div class="episode-author-item">
+            <img src="{{ $authorCover }}" alt="{{ $authorName }}" class="episode-author-avatar" />
+            <div class="episode-author-name">{{ $authorName }}</div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
     <!-- Artwork section -->
     <div class="episode-cover-wrapper">
       {{ $cover := .Site.Params.podcast.cover }}
@@ -104,16 +132,18 @@
 }
 
 .episode-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr 280px;
   gap: 32px;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .episode-cover-wrapper {
+  grid-column: 1;
+  grid-row: 1;
   position: relative;
   width: 200px;
   height: 200px;
-  flex-shrink: 0;
 }
 
 .episode-cover {
@@ -149,7 +179,8 @@
 }
 
 .episode-content {
-  flex: 1;
+  grid-column: 2;
+  grid-row: 1 / 3;
   min-width: 0;
 }
 
@@ -196,6 +227,51 @@
   margin: 24px 0;
 }
 
+.episode-authors {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 12px;
+}
+
+.episode-authors-label {
+  display: none;
+}
+
+.episode-authors-list {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.episode-author-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.episode-author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-accent);
+  transition: border-color 0.2s;
+}
+
+.episode-author-item:hover .episode-author-avatar {
+  border-color: var(--color-accent);
+}
+
+.episode-author-name {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  text-align: center;
+  max-width: 80px;
+  word-break: break-word;
+}
+
 .episode-body {
   color: var(--color-text);
   line-height: 1.6;
@@ -225,8 +301,8 @@
 
 /* Sidebar */
 .episode-sidebar {
-  width: 280px;
-  flex-shrink: 0;
+  grid-column: 3;
+  grid-row: 1 / 3;
 }
 
 .episode-sidebar h3 {
@@ -286,12 +362,12 @@
 
 @media (max-width: 1024px) {
   .episode-container {
-    flex-wrap: wrap;
+    grid-template-columns: auto 1fr;
   }
 
   .episode-sidebar {
-    width: 100%;
-    order: 4;
+    grid-column: 1 / 3;
+    grid-row: 3;
   }
 
   .episode-related {
@@ -307,7 +383,7 @@
 
 @media (max-width: 768px) {
   .episode-container {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 
@@ -320,8 +396,19 @@
     font-size: 1.5rem;
   }
 
+  .episode-content {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .episode-authors {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
   .episode-sidebar {
-    width: 100%;
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .episode-related {
