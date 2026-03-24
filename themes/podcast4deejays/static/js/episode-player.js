@@ -47,6 +47,7 @@ function initPlayer() {
   var sound = null;
   var isDragging = false;
   var rafId = null;
+  var pendingChapterIdx = -1;
 
   // ── Helpers ────────────────────────────────────────────────────────────────
   function formatTime(secs) {
@@ -115,6 +116,11 @@ function initPlayer() {
 
       onplay: function() {
         setPlayBtn(true);
+        if (pendingChapterIdx >= 0) {
+          var idx = pendingChapterIdx;
+          pendingChapterIdx = -1;
+          seekToChapter(idx);
+        }
         scheduleProgress();
       },
       onpause: function() {
@@ -276,7 +282,12 @@ function initPlayer() {
         '<span class="chapter-title">' + escapeHtml(ch.title) + "</span>";
       div.addEventListener("click", function(e) {
         e.stopPropagation();
-        if (sound) seekToChapter(i);
+        if (!sound) {
+          pendingChapterIdx = i;
+          loadAndPlay();
+        } else {
+          seekToChapter(i);
+        }
       });
       chaptersEl.appendChild(div);
     });
@@ -384,6 +395,7 @@ function initPlayer() {
         var index = parseInt(item.dataset.chapterIndex, 10);
         if (index >= 0 && CHAPTERS[index]) {
           if (!sound) {
+            pendingChapterIdx = index;
             loadAndPlay();
           } else {
             seekToChapter(index);
