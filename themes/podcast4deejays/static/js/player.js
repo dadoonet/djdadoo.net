@@ -601,6 +601,12 @@
       openModal(btn.closest(".mix-card"));
     });
   });
+
+  document.querySelectorAll(".mix-card-link-btn").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
   modalClose.addEventListener("click", closeModal);
   modalBackdrop.addEventListener("click", closeModal);
   document.addEventListener("keydown", function (e) {

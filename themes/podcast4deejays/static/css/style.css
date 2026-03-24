@@ -537,6 +537,32 @@ a:hover { text-decoration: underline; }
   color: var(--color-accent);
 }
 
+/* ----- Open link on card ----- */
+.mix-card-link-btn {
+  position: absolute;
+  top: 6px;
+  right: 34px;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1rem;
+  line-height: 1;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 2;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.8));
+  transition: color 0.15s;
+  text-decoration: none;
+}
+.mix-card-link-btn:hover {
+  color: var(--color-accent);
+}
+
 /* ----- Info modal ----- */
 .mix-modal {
   position: fixed;
