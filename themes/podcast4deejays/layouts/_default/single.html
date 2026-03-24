@@ -91,6 +91,21 @@
         {{ with .Content }}{{ . }}{{ end }}
       </div>
 
+      <!-- Chapters list -->
+      {{ if .Params.chapters }}
+      <div class="episode-chapters">
+        <h2>Chapitres</h2>
+        <ul class="episode-chapters-list">
+          {{ range $index, $chapter := .Params.chapters }}
+          <li data-chapter-index="{{ $index }}">
+            <span class="chapter-timestamp">{{ $chapter.time }}</span>
+            <span class="chapter-title">{{ $chapter.title }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
       <!-- Back button -->
       <div class="episode-footer">
         <a href="/" class="episode-back">← Back to mixes</a>
@@ -353,6 +368,59 @@
 
 .episode-back:hover {
   opacity: 0.7;
+}
+
+.episode-chapters {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.episode-chapters h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--color-text);
+}
+
+.episode-chapters-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.episode-chapters-list li {
+  display: flex;
+  gap: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  align-items: center;
+}
+
+.episode-chapters-list li:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-accent);
+}
+
+.episode-chapters-list .chapter-timestamp {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  flex-shrink: 0;
+  min-width: 60px;
+}
+
+.episode-chapters-list .chapter-title {
+  color: var(--color-text);
+  font-size: 0.95rem;
+  flex: 1;
+  min-width: 0;
 }
 
 /* Sidebar */

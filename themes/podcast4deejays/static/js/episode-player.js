@@ -3,6 +3,15 @@
  * Single episode player for detail pages.
  * Requires Howler.js (loaded before this script).
  */
+
+// Wait for DOM to be ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPlayer);
+} else {
+  initPlayer();
+}
+
+function initPlayer() {
 (function() {
   "use strict";
 
@@ -219,4 +228,19 @@
   volumeSlider.addEventListener("input", function() {
     if (sound) sound.volume(parseFloat(this.value));
   });
+
+  // Attach chapter list listeners (if chapters exist on this episode)
+  var chapterItems = document.querySelectorAll('.episode-chapters-list li');
+  if (chapterItems.length > 0) {
+    chapterItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        var index = parseInt(item.dataset.chapterIndex, 10);
+        if (index >= 0 && typeof window.seekToChapterWhenReady !== 'undefined') {
+          window.seekToChapterWhenReady(index);
+        }
+      });
+    });
+  }
+
 })();
+} // Close initPlayer function
