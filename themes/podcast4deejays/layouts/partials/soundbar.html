@@ -32,7 +32,7 @@
   </div>
   <div class="player-controls">
     <button id="{{ $prefix }}-btn-skip-back" class="player-skip-btn" aria-label="Reculer de 15s"><i class="fa-solid fa-rotate-left"></i></button>
-    {{ if $showChapters }}
+    {{ if and $showChapters (not $isPlaylist) }}
     <button id="{{ $prefix }}-btn-chapter-prev" class="player-skip-btn" aria-label="Chapitre précédent" hidden><i class="fa-solid fa-backward-step"></i></button>
     {{ else if or $isPlaylist (and (ne $prevEpisode "") (ne $prevEpisode nil)) }}
       {{ if and (ne $prevEpisode "") (ne $prevEpisode nil) }}
@@ -42,7 +42,7 @@
       {{ end }}
     {{ end }}
     <button id="{{ $prefix }}-btn-play" aria-label="Lecture / Pause"><i class="fa-solid fa-play"></i></button>
-    {{ if $showChapters }}
+    {{ if and $showChapters (not $isPlaylist) }}
     <button id="{{ $prefix }}-btn-chapter-next" class="player-skip-btn" aria-label="Chapitre suivant" hidden><i class="fa-solid fa-forward-step"></i></button>
     {{ else if or $isPlaylist (and (ne $nextEpisode "") (ne $nextEpisode nil)) }}
       {{ if and (ne $nextEpisode "") (ne $nextEpisode nil) }}
