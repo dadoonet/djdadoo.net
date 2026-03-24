@@ -22,8 +22,13 @@
   {{ end }}
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ .Permalink }}" />
-  {{ if .Params.cover }}
-    <meta property="og:image" content="{{ printf "%s%s" $.Site.BaseURL .Params.cover }}" />
+  {{ $image := "" }}
+  {{ with .Resources.GetMatch "cover.*" }}{{ $image = .RelPermalink }}{{ end }}
+  {{ if not $image }}{{ $image = .Site.Params.podcast.cover }}{{ end }}
+  {{ if $image }}
+    {{ $fullURL := $image }}
+    {{ if not (hasPrefix $image "http") }}{{ $fullURL = printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" $image) }}{{ end }}
+    <meta property="og:image" content="{{ $fullURL }}" />
   {{ else if .Site.Params.social.image }}
     <meta property="og:image" content="{{ printf "%s%s" $.Site.BaseURL .Site.Params.social.image }}" />
   {{ end }}

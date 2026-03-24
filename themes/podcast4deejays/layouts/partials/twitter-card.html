@@ -19,8 +19,13 @@
     <meta name="twitter:description" content="{{ .Summary }}" />
   {{ end }}
 {{ end }}
-{{ if .Params.cover }}
-  <meta name="twitter:image" content="{{ printf "%s%s" $.Site.BaseURL .Params.cover }}" />
+{{ $image := "" }}
+{{ with .Resources.GetMatch "cover.*" }}{{ $image = .RelPermalink }}{{ end }}
+{{ if not $image }}{{ $image = .Site.Params.podcast.cover }}{{ end }}
+{{ if $image }}
+  {{ $fullURL := $image }}
+  {{ if not (hasPrefix $image "http") }}{{ $fullURL = printf "%s%s" $.Site.BaseURL (strings.TrimPrefix "/" $image) }}{{ end }}
+  <meta name="twitter:image" content="{{ $fullURL }}" />
 {{ else if .Site.Params.social.image }}
   <meta name="twitter:image" content="{{ printf "%s%s" $.Site.BaseURL .Site.Params.social.image }}" />
 {{ end }}
