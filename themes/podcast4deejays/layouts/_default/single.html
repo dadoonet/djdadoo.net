@@ -37,32 +37,33 @@
       {{ $authors = slice (dict "name" $author) }}
     {{ end }}
 
-    {{ if $authors }}
-    <div class="episode-authors">
-      <div class="episode-authors-list">
-        {{ range $authors }}
-          {{ $authorName := .name | default .Name }}
-          {{ $authorCover := .cover | default .Cover }}
-          {{ if not $authorCover }}
-            {{ $authorSanitized := replace ($authorName | lower) " " "-" }}
-            {{ $authorCover = printf "/img/authors/%s.png" $authorSanitized }}
-          {{ end }}
-          <div class="episode-author-item">
-            <img src="{{ $authorCover }}" alt="{{ $authorName }}" class="episode-author-avatar" />
-            <div class="episode-author-name">{{ $authorName }}</div>
-          </div>
-        {{ end }}
+    <!-- Left column: artwork + authors -->
+    <div class="episode-left-col">
+      <div class="episode-cover-wrapper">
+        {{ $cover := .Site.Params.podcast.cover }}
+        {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+        <img class="episode-cover" src="{{ $cover }}" alt="{{ .Title }}" />
+        {{ $audioURL := .Params.audio_url | default (printf "%s%s.mp3" .Site.Params.podcast.baseAudioURL (path.Dir .File.Path)) }}
+        <button class="episode-cover-play" data-audio-url="{{ $audioURL }}" aria-label="Play this episode"><i class="fa-solid fa-play"></i></button>
       </div>
-    </div>
-    {{ end }}
-
-    <!-- Artwork section -->
-    <div class="episode-cover-wrapper">
-      {{ $cover := .Site.Params.podcast.cover }}
-      {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
-      <img class="episode-cover" src="{{ $cover }}" alt="{{ .Title }}" />
-      {{ $audioURL := .Params.audio_url | default (printf "%s%s.mp3" .Site.Params.podcast.baseAudioURL (path.Dir .File.Path)) }}
-      <button class="episode-cover-play" data-audio-url="{{ $audioURL }}" aria-label="Play this episode"><i class="fa-solid fa-play"></i></button>
+      {{ if $authors }}
+      <div class="episode-authors">
+        <div class="episode-authors-list">
+          {{ range $authors }}
+            {{ $authorName := .name | default .Name }}
+            {{ $authorCover := .cover | default .Cover }}
+            {{ if not $authorCover }}
+              {{ $authorSanitized := replace ($authorName | lower) " " "-" }}
+              {{ $authorCover = printf "/img/authors/%s.png" $authorSanitized }}
+            {{ end }}
+            <div class="episode-author-item">
+              <img src="{{ $authorCover }}" alt="{{ $authorName }}" class="episode-author-avatar" />
+              <div class="episode-author-name">{{ $authorName }}</div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
     </div>
 
     <!-- Content section -->
@@ -185,9 +186,16 @@ window.__djEpisodeChapters = {{ $chapters | jsonify | safeJS }};
   align-items: start;
 }
 
-.episode-cover-wrapper {
+.episode-left-col {
   grid-column: 1;
   grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.episode-cover-wrapper {
   position: relative;
   width: 200px;
   height: 200px;
@@ -228,7 +236,7 @@ window.__djEpisodeChapters = {{ $chapters | jsonify | safeJS }};
 
 .episode-content {
   grid-column: 2;
-  grid-row: 1 / 3;
+  grid-row: 1;
   min-width: 0;
 }
 
@@ -304,9 +312,6 @@ window.__djEpisodeChapters = {{ $chapters | jsonify | safeJS }};
 }
 
 .episode-authors {
-  grid-column: 1;
-  grid-row: 2;
-  margin-top: 12px;
 }
 
 .episode-authors-label {
@@ -525,12 +530,12 @@ window.__djEpisodeChapters = {{ $chapters | jsonify | safeJS }};
     font-size: 1.5rem;
   }
 
-  .episode-content {
+  .episode-left-col {
     grid-column: 1;
     grid-row: auto;
   }
 
-  .episode-authors {
+  .episode-content {
     grid-column: 1;
     grid-row: auto;
   }
