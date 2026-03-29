@@ -1,0 +1,66 @@
+---
+title: "Les Envahisseurs at Home"
+subtitle: "House Set from home studio on XDJ-AZ and CDJ3000"
+date: 2026-03-29T11:30:00+01:00
+season: 2026
+episode: 68
+keywords: ["Studio", "House", "4 hands"]
+authors: 
+  - name: "Les Envahisseurs"
+  - name: "DJ Elky"
+  - name: "DJ Xylème"
+audio_length: 162691470
+duration: "01:07:47"
+chapters:
+  - time: "00:00:00"
+    title: "Freemasons - Love On My Mind"
+  - time: "00:03:59"
+    title: "Michael Gray, Kelli Sae - You're Gonna Make Me Love Somebody Else (Michael Gray Extended Remix)"
+  - time: "00:09:06"
+    title: "My People ft. Louise Marshall - Dirty Supercar (Extended Mix)"
+  - time: "00:12:38"
+    title: "Girls of the Internet - The Middle"
+  - time: "00:17:46"
+    title: "Bob Sinclar - Gym Tonic"
+  - time: "00:21:32"
+    title: "Sound De-Zign - Happiness (Block & Crown Spolverato Mix)"
+  - time: "00:26:58"
+    title: "Beyoncé & Freemasons - Green light (Freemasons remix)"
+  - time: "00:31:28"
+    title: "Sgt Slick, Karina Chavez, Michael Gray - I Thank You (Michael Gray Extended Mix)"
+  - time: "00:34:58"
+    title: "Booty Luv - Boogie 2Nite (Seamus Haji Big Love Club Mix)"
+  - time: "00:39:19"
+    title: "Rockefeller/Redondo - Liberated Woman"
+  - time: "00:41:43"
+    title: "Booty Luv - Dont Mess With My Man"
+  - time: "00:43:32"
+    title: "Rush Avenue - Feel Good (ft. Charlotte Cardin) [Extended]"
+  - time: "00:46:47"
+    title: "Inna - Amazing"
+  - time: "00:50:10"
+    title: "Marlo Cozart - Caught Up"
+  - time: "00:53:16"
+    title: "Freemasons - Desperados"
+  - time: "00:56:31"
+    title: "Alan Pride - In heaven"
+  - time: "00:58:03"
+    title: "Mijangos - Aqui Se Baila (Afro Latin Mix)"
+  - time: "01:01:05"
+    title: "Jose De Rico - Rayos Del Sol"
+  - time: "01:06:38"
+    title: "Volen Sentir/Makebo - Alchemist"
+  - time: "01:12:13"
+    title: "Laurent Pautrat - Mister Dicky Pinky"
+  - time: "01:15:27"
+    title: "Stéphane Pompougnac - Hello Mademoiselle (Balazko remix)"
+  - time: "01:21:38"
+    title: "David Guetta - Sexy bitch"
+  - time: "01:24:30"
+    title: "Two Cuzzos - Volare (Extended Mix)"
+  - time: "01:27:36"
+    title: "Master KG - Jerusalema"
+---
+
+Recorded from home studio, Cergy. On Alphateta XDJ-AZ and 2 CDJ3000.
+4 hands.
