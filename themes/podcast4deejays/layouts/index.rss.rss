@@ -80,7 +80,8 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
           {{- end }}
         </ul>
       {{- end }}
-      <p>{{ $creditSentence | htmlEscape }}</p>
+      <br/>
+      <p><i>{{ $creditSentence | htmlEscape }}</i></p>
     ]]></description>
     {{- if $cover }}
     <itunes:image href="{{ $baseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
