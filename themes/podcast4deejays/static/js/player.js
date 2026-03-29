@@ -152,7 +152,9 @@
         if (dur) durationEl.textContent = formatTime(dur);
       },
       onloaderror: function (id, err) {
-        console.error("Podcast4Deejays: load error", err);
+        console.error(
+          "Podcast4Deejays: load error code=" + err + " id=" + id + " url=" + (mix.audioUrl || "(missing)")
+        );
         setPlayBtn(false);
       },
     });
