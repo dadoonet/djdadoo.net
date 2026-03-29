@@ -61,7 +61,7 @@ enableGitInfo = true
   # Podcast ID and description
   # Unique id: It's computed from dj.pilato.fr using https://www.uuidtools.com/v5
   podcastGUID  = "5e560267-5f32-55d3-b370-8f66f80ddb8f"
-  subtitle     = "Just playing with my DJ gears, from DDJ-T1 to CDJ3000"
+  subtitle     = "Just playing with my DJ gears, from Hercules DJ Console, DDJ-T1 to DJM-V10-LF and CDJ-3000"
   description  = "Love funk, house, and DJ groove sounds? Dive into DJ Elky's exclusive mixes! High-energy vibes curated for your listening pleasure. Enjoy the beat! 🔥"
   filename     = "djdadoo.rss"
   # For the website only, it adds a link to the podcast
