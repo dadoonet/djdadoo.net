@@ -45,6 +45,11 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -55,6 +60,9 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Build Pagefind index
+        run: npx --yes pagefind --site public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

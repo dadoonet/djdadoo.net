@@ -22,11 +22,20 @@ brew install hugo        # macOS
 # Local development server (live reload)
 hugo server
 
-# Production build
+# Local development server with auto-rebuilt search index
+./scripts/dev-site.sh
+
+# One-command local production build (Hugo + Pagefind)
+./scripts/build-site.sh
+
+# Equivalent manual steps
 hugo --gc --minify
+npx --yes pagefind --site public
 ```
 
 The output lands in `public/`. The site is deployed to GitHub Pages via GitHub Actions on every push to `main`.
+
+`./scripts/dev-site.sh` performs an initial full build, starts `hugo server`, and rebuilds the Pagefind index whenever content, data, static assets, theme files, or `hugo.toml` change. It uses port `1313` by default and automatically falls back to the next free port if needed.
 
 ---
 

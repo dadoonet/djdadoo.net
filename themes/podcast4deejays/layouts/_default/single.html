@@ -1,5 +1,5 @@
 {{ define "main" }}
-<header class="site-header">
+<header class="site-header" data-pagefind-ignore="all">
   <div class="header-inner">
     <div class="header-title">
       <a href="/">
@@ -11,6 +11,18 @@
       </div>
     </div>
     <div class="header-actions">
+      <div class="header-search" role="search" aria-label="Recherche sur le site">
+        <label for="site-search-input" class="visually-hidden">Rechercher un mix</label>
+        <input
+          id="site-search-input"
+          class="header-search-input"
+          type="search"
+          placeholder="Rechercher un mix..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <div id="site-search-results" class="header-search-results" hidden></div>
+      </div>
       <div class="header-socials">
         {{ range .Site.Data.socials }}
         <a href="{{ .href }}" target="{{ .target }}" title="{{ .title }}" class="social-link">
@@ -26,7 +38,7 @@
   </div>
 </header>
 
-<main class="episode-detail">
+<section class="episode-detail">
   <div class="episode-container">
     <!-- Authors -->
     {{ $authors := slice }}
@@ -42,7 +54,7 @@
       <div class="episode-cover-wrapper">
         {{ $cover := .Site.Params.podcast.cover }}
         {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
-        <img class="episode-cover" src="{{ $cover }}" alt="{{ .Title }}" />
+        <img class="episode-cover" src="{{ $cover }}" alt="{{ .Title }}" data-pagefind-meta="image[src]" />
         {{ $audioURL := .Params.audio_url | default (printf "%s%s.mp3" .Site.Params.podcast.baseAudioURL (path.Dir .File.Path)) }}
         {{ $youtubeRaw := .Params.youtube | default "" }}
         {{ $youtubeID := "" }}
@@ -75,12 +87,12 @@
     <div class="episode-content">
       <div class="episode-header">
         <div class="episode-title-wrapper">
-          <h1 class="episode-title">{{ .Title }}</h1>
+          <h1 class="episode-title" data-pagefind-meta="title">{{ .Title }}</h1>
           <a class="episode-download-btn" href="{{ $audioURL }}" download aria-label="Download this episode"><i class="fa-solid fa-download"></i></a>
         </div>
         {{ if .Params.episode }}<p class="episode-number">Episode {{ .Params.episode }}{{ if .Params.season }} • Season {{ .Params.season }}{{ end }}</p>{{ end }}
         {{ if .Params.duration }}<p class="episode-duration">{{ .Params.duration }}</p>{{ end }}
-        {{ if .Params.subtitle }}<p class="episode-subtitle">{{ .Params.subtitle }}</p>{{ end }}
+        {{ if .Params.subtitle }}<p class="episode-subtitle" data-pagefind-meta="subtitle">{{ .Params.subtitle }}</p>{{ end }}
         {{ if .Params.keywords }}
         <div class="episode-keywords">
           {{ range $keyword := .Params.keywords }}
@@ -163,7 +175,7 @@
       {{ end }}
     {{ end }}
   </div>
-</main>
+</section>
 
 <!-- Find prev/next episodes -->
 {{ $allEpisodes := where .Site.RegularPages "Section" "mixes" }}

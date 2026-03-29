@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header" data-pagefind-ignore="all">
   <div class="header-inner">
     <div class="header-title">
       <a href="{{ "/" | relURL }}"><img src="{{ .Site.Params.podcast.cover | absURL }}" alt="{{ .Site.Params.podcast.name }}" class="header-logo" /></a>
@@ -8,6 +8,18 @@
       </div>
     </div>
     <div class="header-actions">
+      <div class="header-search" role="search" aria-label="Recherche sur le site">
+        <label for="site-search-input" class="visually-hidden">Rechercher un mix</label>
+        <input
+          id="site-search-input"
+          class="header-search-input"
+          type="search"
+          placeholder="Rechercher un mix..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <div id="site-search-results" class="header-search-results" hidden></div>
+      </div>
       <div class="header-socials">
         {{ range .Site.Data.socials }}
         <a href="{{ .href }}" target="{{ .target }}" title="{{ .title }}" class="social-link">

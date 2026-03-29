@@ -1,9 +1,11 @@
 {{ define "main" }}
+<div data-pagefind-ignore="all">
 {{ partial "site-header.html" . }}
 
 {{ $mixes := where .Pages "Section" "mixes" }}
 {{ $mixes = $mixes.ByDate.Reverse }}
 {{ partial "mixes-playlist-grid.html" (dict "ctx" . "mixes" $mixes "activeKeyword" .Title "showKeywordSidebar" true) }}
+</div>
 {{ end }}
 
 {{ define "player" }}
