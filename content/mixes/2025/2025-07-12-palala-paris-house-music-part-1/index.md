@@ -5,7 +5,7 @@ date: 2025-07-12T20:00:00+02:00
 season: 2025
 episode: 60
 event: "Palala Paris"
-keywords: ["Live", "House"]
+keywords: ["Live", "House", "Elastic", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-07-12-Palala-part1.mp3"
 audio_length: 152643187
 duration: "01:03:36"

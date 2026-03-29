@@ -3,7 +3,7 @@ title: "Lisa Forever 2024"
 date: 2024-05-16T17:15:00+02:00
 season: 2024
 episode: 51
-keywords: ["Live"]
+keywords: ["Live", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2024-05-26-LisaForever.mp3"
 audio_length: 70793165
 duration: "00:29:30"

@@ -6,7 +6,7 @@ episode: 56
 authors: 
   - name: "DJ Elky"
   - name: "Julien Briault"
-keywords: ["Live"]
+keywords: ["Live", "Elastic", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-02-06-TouraineTech.mp3"
 audio_length: 264659489
 duration: "01:50:16"

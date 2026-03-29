@@ -11,7 +11,7 @@ location:
   geo:
     lat: 48.8438
     lon: 2.3731
-keywords: ["Live"]
+keywords: ["Live", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Warmup.mp3"
 audio_length: 159303307
 duration: "01:06:23"

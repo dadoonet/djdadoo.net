@@ -12,7 +12,7 @@ location:
 authors: 
   - name: DJ Elky
   - name: Julien Ponge
-keywords: ["Live", "House", "French Touch"]
+keywords: ["Live", "House", "French Touch", "Elastic", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2025-10-02-volcamp.mp3"
 audio_length: 626656991
 duration: "04:21:06"

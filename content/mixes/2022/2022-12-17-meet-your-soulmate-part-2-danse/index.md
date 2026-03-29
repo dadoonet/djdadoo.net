@@ -11,7 +11,7 @@ location:
   geo:
     lat: 48.8438
     lon: 2.3731
-keywords: ["Live"]
+keywords: ["Live", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2022-12-17-MeetYourSoulmate-Dance-Part1.mp3"
 audio_length: 79650741
 duration: "00:33:11"

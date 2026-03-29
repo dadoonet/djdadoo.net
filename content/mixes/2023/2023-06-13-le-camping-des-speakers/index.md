@@ -3,7 +3,7 @@ title: "Le Camping des Speakers"
 date: 2023-06-13T19:30:00+02:00
 season: 2023
 episode: 39
-keywords: ["Live"]
+keywords: ["Live", "Elastic", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2023-06-14-camping-des-speakers.mp3"
 audio_length: 440484341
 duration: "03:03:32"

@@ -347,9 +347,10 @@ a:hover { text-decoration: underline; }
 .mix-card-keywords {
   display: flex;
   flex-wrap: wrap;
-  gap: 3px;
-  margin: 4px 0;
-  max-height: 28px;
+  align-content: flex-start;
+  gap: 4px;
+  margin: 6px 0 4px;
+  max-height: 44px;
   overflow: hidden;
 }
 
@@ -812,6 +813,7 @@ a:hover { text-decoration: underline; }
 .keyword-badge {
   display: inline-block;
   font-size: 0.65rem;
+  line-height: 1.25;
   font-weight: 500;
   background: rgba(187, 113, 243, 0.15);
   color: var(--color-accent);
@@ -843,6 +845,9 @@ a:hover { text-decoration: underline; }
   font-size: 0.6rem;
   padding: 2px 6px;
   border-radius: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .taxonomy-header {

@@ -6,7 +6,7 @@ episode: 54
 authors: 
   - name: "DJ Elky"
   - name: "Julien Briault"
-keywords: ["Live", "4 hands"]
+keywords: ["Live", "4 hands", "Elastic", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2024-11-07-DevFestToulouse.mp3"
 audio_length: 258208378
 duration: "01:47:35"

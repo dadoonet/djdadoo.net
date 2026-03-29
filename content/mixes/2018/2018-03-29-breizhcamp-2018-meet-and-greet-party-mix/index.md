@@ -8,7 +8,7 @@ authors:
   - name: DJ Elky
   - name: Julien Ponge
 event: "BreizhCamp"
-keywords: ["Live"]
+keywords: ["Live", "Elastic", "Public"]
 audio_url: "https://storage.googleapis.com/djdadoo/2018-03-29-breizhcamp-meet-and-greet.mp3"
 audio_length: 173147532
 duration: "01:56:01"
