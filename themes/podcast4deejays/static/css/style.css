@@ -757,10 +757,76 @@ a:hover { text-decoration: underline; }
   white-space: nowrap;
 }
 
+.keyword-badge-link {
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.keyword-badge-link:hover {
+  transform: translateY(-1px);
+  background: rgba(187, 113, 243, 0.24);
+  border-color: rgba(187, 113, 243, 0.55);
+}
+
+.keyword-badge-active {
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-2) 100%);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset;
+}
+
 .mix-card-keywords .keyword-badge {
   font-size: 0.6rem;
   padding: 2px 6px;
   border-radius: 10px;
+}
+
+.taxonomy-header {
+  margin-bottom: 24px;
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.03);
+}
+
+.taxonomy-header-list {
+  margin-top: 12px;
+}
+
+.taxonomy-subtitle {
+  margin: 0 0 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.taxonomy-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.taxonomy-meta {
+  margin: 8px 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.taxonomy-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.taxonomy-cloud-item {
+  font-size: 0.75rem;
+  padding: 7px 10px;
+}
+
+.taxonomy-cloud-count {
+  margin-left: 6px;
+  opacity: 0.8;
+  font-size: 0.75em;
 }
 
 .mix-modal-sep {

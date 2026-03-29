@@ -83,8 +83,9 @@
         {{ if .Params.subtitle }}<p class="episode-subtitle">{{ .Params.subtitle }}</p>{{ end }}
         {{ if .Params.keywords }}
         <div class="episode-keywords">
-          {{ range .Params.keywords }}
-          <span class="keyword-badge">{{ . }}</span>
+          {{ range $keyword := .Params.keywords }}
+          {{ $keywordSlug := $keyword | urlize }}
+          <a href="{{ printf "/keywords/%s/" $keywordSlug | relURL }}" class="keyword-badge keyword-badge-link episode-keyword-badge" data-keyword-slug="{{ $keywordSlug }}">{{ $keyword }}</a>
           {{ end }}
         </div>
         {{ end }}

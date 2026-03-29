@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-title">
+      <img src="{{ .Site.Params.podcast.cover }}" alt="{{ .Site.Params.podcast.name }}" class="header-logo" />
+      <div>
+        <h1>{{ .Site.Params.podcast.name }}</h1>
+        <p class="header-sub">{{ .Site.Params.podcast.subtitle }}</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div class="header-socials">
+        {{ range .Site.Data.socials }}
+        <a href="{{ .href }}" target="{{ .target }}" title="{{ .title }}" class="social-link">
+          <ion-icon name="{{ .icon }}"></ion-icon>
+        </a>
+        {{ end }}
+      </div>
+      <a class="itunes-link" href="{{ .Site.Params.podcast.podcastLink }}" target="_blank" rel="noopener">
+        <ion-icon name="logo-apple"></ion-icon>
+        Apple Podcasts
+      </a>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,36 @@
+{{ partial "soundbar.html" (dict "idPrefix" "player" "isPlaylist" true "showChapters" true) }}
+<div id="mix-modal" class="mix-modal" hidden role="dialog" aria-modal="true" aria-label="Episode details">
+  <div class="mix-modal-backdrop"></div>
+  <div class="mix-modal-card">
+    <button class="mix-modal-close" aria-label="Close">×</button>
+    <div class="mix-modal-container">
+      <div class="mix-modal-main">
+        <div class="mix-modal-header">
+          <div class="mix-modal-cover-wrapper">
+            <img class="mix-modal-cover" src="" alt="" />
+            <button class="mix-modal-cover-play" aria-label="Play this episode"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <div class="mix-modal-meta">
+            <h2 class="mix-modal-title"></h2>
+            <p class="mix-modal-episode"></p>
+            <p class="mix-modal-duration"></p>
+            <p class="mix-modal-subtitle"></p>
+            <p class="mix-modal-keywords"></p>
+          </div>
+        </div>
+        <div class="mix-modal-authors">
+          <span class="mix-modal-authors-label">Par</span>
+          <div class="mix-modal-authors-list"></div>
+        </div>
+        <hr class="mix-modal-sep" />
+        <div class="mix-modal-body"></div>
+      </div>
+      <div class="mix-modal-sidebar" hidden>
+        <h3>Autres épisodes</h3>
+        <div class="mix-modal-related"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/howler.min.js"></script>
+<script src="/js/player.js"></script>

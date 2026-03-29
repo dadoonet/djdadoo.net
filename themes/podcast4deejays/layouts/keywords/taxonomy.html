@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ partial "site-header.html" . }}
+
+<main class="mix-grid-wrapper">
+  <section class="taxonomy-header taxonomy-header-list">
+    <p class="taxonomy-subtitle">Taxonomy</p>
+    <h2 class="taxonomy-title">Keywords</h2>
+    <p class="taxonomy-meta">{{ len .Data.Terms }} keyword{{ if ne (len .Data.Terms) 1 }}s{{ end }}</p>
+  </section>
+
+  <section class="taxonomy-cloud">
+    {{ range .Data.Terms.Alphabetical }}
+      {{ $termName := .Page.Title }}
+      <a href="{{ .Page.RelPermalink }}" class="keyword-badge keyword-badge-link taxonomy-cloud-item">
+        {{ $termName }}
+        <span class="taxonomy-cloud-count">{{ .Count }}</span>
+      </a>
+    {{ end }}
+  </section>
+</main>
+{{ end }}

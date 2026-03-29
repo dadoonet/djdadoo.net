@@ -34,6 +34,34 @@ function initPlayer() {
   var durationEl       = document.getElementById("episode-player-duration");
   var volumeSlider     = document.getElementById("episode-player-volume-slider");
 
+  function slugifyKeyword(value) {
+    if (!value) return "";
+    return String(value)
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .trim()
+      .replace(/\s+/g, "-");
+  }
+
+  function highlightActiveKeywordFromURL() {
+    var params = new URLSearchParams(window.location.search);
+    var rawKeyword = params.get("keyword");
+    if (!rawKeyword) return;
+
+    var activeSlug = slugifyKeyword(rawKeyword);
+    if (!activeSlug) return;
+
+    document.querySelectorAll(".episode-keyword-badge").forEach(function(el) {
+      if (el.dataset.keywordSlug === activeSlug) {
+        el.classList.add("keyword-badge-active");
+      }
+    });
+  }
+
+  highlightActiveKeywordFromURL();
+
   if (!coverPlayBtn) return;
 
   var audioURL = coverPlayBtn.getAttribute("data-audio-url");

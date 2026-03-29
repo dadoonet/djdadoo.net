@@ -1,0 +1,135 @@
+{{ $ctx := .ctx }}
+{{ $mixes := .mixes }}
+{{ $activeKeyword := .activeKeyword | default "" }}
+{{ $activeKeywordSlug := $activeKeyword | urlize }}
+
+{{/* Build playlist as a Go slice-of-dicts → single jsonify call avoids double-encoding */}}
+{{ $playlist := slice }}
+{{ range $mixes }}
+  {{ $cover := .Site.Params.podcast.cover }}
+  {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+  {{ $chapters := slice }}
+  {{ if .Params.chapters }}{{ $chapters = .Params.chapters }}{{ end }}
+  {{ $audioURL := .Params.audio_url | default (printf "%s%s.mp3" $ctx.Site.Params.podcast.baseAudioURL (path.Dir .File.Path)) }}
+  {{ $playlist = $playlist | append (dict
+    "title"    .Title
+    "audioUrl" $audioURL
+    "duration" (.Params.duration  | default "")
+    "cover"    $cover
+    "subtitle" (.Params.subtitle  | default "")
+    "chapters" $chapters
+  ) }}
+{{ end }}
+
+<script>var __djPlaylist = {{ $playlist | jsonify | safeJS }};</script>
+
+<main class="mix-grid-wrapper">
+  {{ if $activeKeyword }}
+  <section class="taxonomy-header">
+    <p class="taxonomy-subtitle">Keyword</p>
+    <h2 class="taxonomy-title">{{ $activeKeyword }}</h2>
+    <p class="taxonomy-meta">{{ len $mixes }} épisode{{ if ne (len $mixes) 1 }}s{{ end }}</p>
+  </section>
+  {{ end }}
+
+  {{/* Season grouping: iterate in order (newest first), open new section on season change */}}
+  {{ $idx := 0 }}
+  {{ $lastSeason := 0 }}
+  {{ range $mixes }}
+    {{ $p := . }}
+    {{ $season := .Params.season | int }}
+    {{ $cover := "" }}
+    {{ $youtubeRaw := $p.Params.youtube | default "" }}
+    {{ $youtubeID := "" }}
+    {{ $episodePermalink := $p.Permalink }}
+    {{ if $activeKeyword }}
+      {{ $episodePermalink = printf "%s?keyword=%s" $p.Permalink ($activeKeyword | urlquery) }}
+    {{ end }}
+    {{ if $youtubeRaw }}
+      {{ $youtubeID = replaceRE `^https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtube\.com/embed/|youtu\.be/)([^&?/]+).*$` "$1" $youtubeRaw }}
+    {{ end }}
+    {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+
+    {{/* Support both old 'author' string and new 'authors' array formats */}}
+    {{ $authors := slice }}
+    {{ if $p.Params.authors }}
+      {{ $authors = $p.Params.authors }}
+    {{ else }}
+      {{ $author := $p.Params.author | default .Site.Params.podcast.author | default "undefined" }}
+      {{ $authors = slice (dict "name" $author) }}
+    {{ end }}
+
+    {{/* Build authors JSON with sanitized cover URLs */}}
+    {{ $authorsJSON := slice }}
+    {{ range $authors }}
+      {{ $authorName := .name | default .Name }}
+      {{ $authorCover := .cover | default .Cover }}
+      {{ if not $authorCover }}
+        {{ $authorSanitized := replace ($authorName | lower) " " "-" }}
+        {{ $authorCover = printf "/img/authors/%s.png" $authorSanitized }}
+      {{ end }}
+      {{ $authorsJSON = $authorsJSON | append (dict "name" $authorName "cover" $authorCover) }}
+    {{ end }}
+
+    {{/* Open new season section when season changes */}}
+    {{ if ne $season $lastSeason }}
+      {{ if $lastSeason }}</div></section>{{ end }}
+      <section class="season-section">
+        <h2 class="season-heading">{{ $season }}</h2>
+        <div class="mix-grid">
+      {{ $lastSeason = $season }}
+    {{ end }}
+
+    <article class="mix-card" data-index="{{ $idx }}" role="button" tabindex="0" aria-label="Play {{ $p.Title }}">
+      <div class="mix-card-artwork">
+        {{ if $cover }}
+        <img src="{{ $cover }}" alt="{{ $p.Title }}" loading="lazy" />
+        {{ else }}
+        <img src="{{ .Site.Params.podcast.cover }}" alt="{{ $p.Title }}" loading="lazy" />
+        {{ end }}
+        <div class="mix-card-overlay">
+          <span class="play-icon"><i class="fa-solid fa-play"></i></span>
+        </div>
+        {{ if $p.Params.duration }}
+        <span class="mix-card-duration">{{ $p.Params.duration }}</span>
+        {{ end }}
+        {{ if $youtubeID }}
+        <a href="https://www.youtube.com/watch?v={{ $youtubeID }}" class="mix-card-youtube-btn" target="_blank" rel="noopener" aria-label="Watch this mix on YouTube"><i class="fa-brands fa-youtube"></i></a>
+        {{ end }}
+        <button class="mix-card-info-btn" aria-label="Episode details"><i class="fa-solid fa-circle-info"></i></button>
+        <a href="{{ $episodePermalink }}" class="mix-card-link-btn" target="_blank" rel="noopener" aria-label="Open this page"><i class="fa-solid fa-share"></i></a>
+      </div>
+      <div class="mix-card-info">
+        <h2 class="mix-card-title">{{ $p.Title }}</h2>
+        {{ if $p.Params.subtitle }}<p class="mix-card-subtitle">{{ $p.Params.subtitle }}</p>{{ end }}
+        {{ if $p.Params.keywords }}
+        <div class="mix-card-keywords">
+          {{ range $keyword := $p.Params.keywords }}
+          {{ $keywordSlug := $keyword | urlize }}
+          <a href="{{ printf "/keywords/%s/" $keywordSlug | relURL }}" class="keyword-badge keyword-badge-link{{ if and $activeKeywordSlug (eq $keywordSlug $activeKeywordSlug) }} keyword-badge-active{{ end }}">{{ $keyword }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+        <p class="mix-card-meta">
+          <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "02 Jan 2006" }}</time>
+        </p>
+      </div>
+      <div class="mix-data" hidden
+           data-title="{{ $p.Title }}"
+           data-date="{{ $p.Date.Format "02 Jan 2006" }}"
+           data-episode="{{ $p.Params.episode }}"
+           data-season="{{ $p.Params.season }}"
+           data-duration="{{ $p.Params.duration }}"
+           data-subtitle="{{ $p.Params.subtitle }}"
+           data-keywords="{{ delimit ($p.Params.keywords | default slice) ", " }}"
+           data-event="{{ $p.Params.event | default "" }}"
+           data-cover="{{ if $cover }}{{ $cover }}{{ else }}{{ .Site.Params.podcast.cover }}{{ end }}"
+           data-authors="{{ $authorsJSON | jsonify }}">
+        {{ $p.Content }}
+      </div>
+    </article>
+    {{ $idx = add $idx 1 }}
+
+  {{ end }}
+  {{ if $lastSeason }}</div></section>{{ end }}
+</main>

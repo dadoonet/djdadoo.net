@@ -2,7 +2,6 @@ baseURL = "https://djdadoo.pilato.fr/"
 languageCode = "en"
 title = "DJ Elky | Feel the Groove with Funk &amp; House mixes 🎧"
 theme = "podcast4deejays"
-disableKinds = ["taxonomy", "term"]
 # Allows emojis in markdown
 enableEmoji = true
 # Allows git info to be extracted
@@ -21,9 +20,14 @@ enableGitInfo = true
     noUgly = true
 
 [outputs]
-  home    = ["HTML", "RSS"]
-  section = ["HTML"]
-  page    = ["HTML"]
+  home     = ["HTML", "RSS"]
+  section  = ["HTML"]
+  page     = ["HTML"]
+  taxonomy = ["HTML"]
+  term     = ["HTML"]
+
+[taxonomies]
+  keyword = "keywords"
 
 [markup]
   [markup.goldmark]
