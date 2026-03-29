@@ -9,8 +9,8 @@ authors:
   - name: "Les Envahisseurs"
   - name: "DJ Elky"
   - name: "DJ Xylème"
-audio_length: 162691470
-duration: "01:07:47"
+audio_length: 224127332
+duration: "01:33:20"
 chapters:
   - time: "00:00:00"
     title: "Freemasons - Love On My Mind"
