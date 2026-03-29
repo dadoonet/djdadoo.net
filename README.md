@@ -109,6 +109,7 @@ podcastGUID = "..."                        # Unique podcast ID
    audio_length: 98765432
    duration: "01:08:30"
    subtitle: "David's Mix #2026/06/21"
+   youtube: "uHfwLjwCIGw"
    keywords: ["House", "Deep House"]
    chapters:
      - time: "00:00:00"
@@ -139,6 +140,7 @@ podcastGUID = "..."                        # Unique podcast ID
 | `audio_length`     | integer (bytes) | **yes**  | —                          | File size in bytes for the RSS `<enclosure>` tag |
 | `duration`         | string          | **yes**  | —                          | Playback duration in `HH:MM:SS` format. Displayed on the card and in `<itunes:duration>` |
 | `subtitle`         | string          | no       | —                          | Mix reference shown below the title on the card (e.g. `"David's Mix #2025/02/06"`). Sent to `<itunes:subtitle>` |
+| `youtube`          | string          | no       | —                          | YouTube video ID or URL (`youtu.be/...`, `youtube.com/watch?v=...`). Shows a YouTube icon on the episode card and embeds a video player on the episode page |
 | `audio_url`        | string (URL)    | no       | auto-derived from bundle path | Full GCS URL of the MP3. Set only when the GCS file does not follow the standard path `mixes/YYYY/slug.mp3`. Used by the player and as the RSS `<guid>` |
 | `itunes_title`     | string          | no       | —                          | When set, overrides the auto-generated RSS `<title>` entirely. Useful for one-off episode titles that don't follow the standard pattern |
 | `itunes_subtitle`  | string          | no       | —                          | Overrides `subtitle` for `<itunes:subtitle>` and the RSS title suffix. Rarely needed |
@@ -189,6 +191,14 @@ chapters:
 ```
 
 Times must be in `HH:MM:SS` format. The player highlights the current chapter in real time and allows seeking directly to any chapter.
+
+### YouTube format
+
+The `youtube` field accepts either:
+
+- a raw video ID, e.g. `uHfwLjwCIGw`
+- a full URL, e.g. `https://www.youtube.com/watch?v=uHfwLjwCIGw`
+- a short URL, e.g. `https://youtu.be/uHfwLjwCIGw`
 
 ---
 

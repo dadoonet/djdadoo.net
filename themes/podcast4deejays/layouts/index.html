@@ -56,6 +56,11 @@
     {{ $p      := . }}
     {{ $season := .Params.season | int }}
     {{ $cover  := "" }}
+    {{ $youtubeRaw := $p.Params.youtube | default "" }}
+    {{ $youtubeID := "" }}
+    {{ if $youtubeRaw }}
+      {{ $youtubeID = replaceRE `^https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtube\.com/embed/|youtu\.be/)([^&?/]+).*$` "$1" $youtubeRaw }}
+    {{ end }}
     {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
 
     {{/* Support both old 'author' string and new 'authors' array formats */}}
@@ -101,6 +106,9 @@
         </div>
         {{ if $p.Params.duration }}
         <span class="mix-card-duration">{{ $p.Params.duration }}</span>
+        {{ end }}
+        {{ if $youtubeID }}
+        <a href="https://www.youtube.com/watch?v={{ $youtubeID }}" class="mix-card-youtube-btn" target="_blank" rel="noopener" aria-label="Watch this mix on YouTube"><i class="fa-brands fa-youtube"></i></a>
         {{ end }}
         <button class="mix-card-info-btn" aria-label="Episode details"><i class="fa-solid fa-circle-info"></i></button>
         <a href="{{ $p.Permalink }}" class="mix-card-link-btn" target="_blank" rel="noopener" aria-label="Open this page"><i class="fa-solid fa-share"></i></a>

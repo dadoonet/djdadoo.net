@@ -44,6 +44,11 @@
         {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
         <img class="episode-cover" src="{{ $cover }}" alt="{{ .Title }}" />
         {{ $audioURL := .Params.audio_url | default (printf "%s%s.mp3" .Site.Params.podcast.baseAudioURL (path.Dir .File.Path)) }}
+        {{ $youtubeRaw := .Params.youtube | default "" }}
+        {{ $youtubeID := "" }}
+        {{ if $youtubeRaw }}
+          {{ $youtubeID = replaceRE `^https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtube\.com/embed/|youtu\.be/)([^&?/]+).*$` "$1" $youtubeRaw }}
+        {{ end }}
         <button class="episode-cover-play" data-audio-url="{{ $audioURL }}" aria-label="Play this episode"><i class="fa-solid fa-play"></i></button>
       </div>
       {{ if $authors }}
@@ -91,6 +96,20 @@
       <div class="episode-body">
         {{ with .Content }}{{ . }}{{ end }}
       </div>
+
+      {{ if $youtubeID }}
+      <div class="episode-video">
+        <div class="episode-video-frame">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/{{ $youtubeID }}"
+            title="YouTube video player for {{ .Title }}"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      {{ end }}
 
       <!-- Chapters list -->
       {{ if .Params.chapters }}
@@ -359,6 +378,26 @@ window.__djEpisodeChapters = {{ $chapters | jsonify | safeJS }};
   color: var(--color-text);
   line-height: 1.6;
   margin-bottom: 32px;
+}
+
+.episode-video {
+  margin: 8px 0 24px;
+}
+
+.episode-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.episode-video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .episode-body p {

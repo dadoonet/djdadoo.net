@@ -612,6 +612,12 @@
       e.stopPropagation();
     });
   });
+
+  document.querySelectorAll(".mix-card-youtube-btn").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
   modalClose.addEventListener("click", closeModal);
   modalBackdrop.addEventListener("click", closeModal);
   document.addEventListener("keydown", function (e) {
