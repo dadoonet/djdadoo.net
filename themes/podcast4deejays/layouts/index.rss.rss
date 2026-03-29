@@ -60,6 +60,17 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
     {{- with ($p.Params.itunes_subtitle | default $p.Params.subtitle) }}
     <itunes:subtitle>{{ . | htmlEscape }}</itunes:subtitle>
     {{- end }}
+    {{- $creditAuthors := slice }}
+    {{- if $p.Params.authors }}
+      {{- range $p.Params.authors }}
+        {{- $creditAuthors = $creditAuthors | append .name }}
+      {{- end }}
+    {{- else if $p.Params.author }}
+      {{- $creditAuthors = $creditAuthors | append $p.Params.author }}
+    {{- else }}
+      {{- $creditAuthors = $creditAuthors | append $site.Params.podcast.author }}
+    {{- end }}
+    {{- $creditSentence := printf "Made from 🇫🇷 with ❤️ by %s" (delimit $creditAuthors ", " " and ") }}
     <description><![CDATA[
       {{- $p.Content }}
       {{- with $p.Params.chapters }}
@@ -69,6 +80,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
           {{- end }}
         </ul>
       {{- end }}
+      <p>{{ $creditSentence | htmlEscape }}</p>
     ]]></description>
     {{- if $cover }}
     <itunes:image href="{{ $baseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
