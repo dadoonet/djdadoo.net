@@ -435,3 +435,84 @@ function initPlayer() {
 
 })();
 } // Close initPlayer function
+
+// ─── Author Image Popup ───────────────────────────────────────────────────────
+(function() {
+  "use strict";
+
+  function initAuthorImagePopup() {
+    var authorImages = document.querySelectorAll('.author-image-trigger');
+    
+    if (authorImages.length === 0) return;
+
+    // Create overlay and modal elements
+    var overlay = document.createElement('div');
+    overlay.className = 'author-image-popup-overlay';
+    overlay.innerHTML = `
+      <div class="author-image-popup-modal">
+        <button class="author-image-popup-close" aria-label="Fermer la popup">&times;</button>
+        <img class="author-image-popup-image" src="" alt="" />
+        <div class="author-image-popup-author-name"></div>
+      </div>
+    `;
+    document.body.appendChild(overlay);
+
+    var modal = overlay.querySelector('.author-image-popup-modal');
+    var image = overlay.querySelector('.author-image-popup-image');
+    var authorName = overlay.querySelector('.author-image-popup-author-name');
+    var closeBtn = overlay.querySelector('.author-image-popup-close');
+
+    function openPopup(src, name) {
+      image.src = src;
+      image.alt = name;
+      authorName.textContent = name;
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePopup() {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Add click event to all author images
+    authorImages.forEach(function(img) {
+      img.addEventListener('click', function() {
+        openPopup(img.src, img.dataset.authorName);
+      });
+      // Make images keyboard accessible
+      img.setAttribute('role', 'button');
+      img.setAttribute('tabindex', '0');
+      img.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openPopup(img.src, img.dataset.authorName);
+        }
+      });
+    });
+
+    // Close button
+    closeBtn.addEventListener('click', closePopup);
+
+    // Close on overlay click (outside the modal)
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) {
+        closePopup();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        closePopup();
+      }
+    });
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAuthorImagePopup);
+  } else {
+    initAuthorImagePopup();
+  }
+})();

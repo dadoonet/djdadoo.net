@@ -74,7 +74,7 @@
               {{ $authorCover = printf "/img/authors/%s.png" $authorSanitized }}
             {{ end }}
             <div class="episode-author-item">
-              <img src="{{ $authorCover }}" alt="{{ $authorName }}" class="episode-author-avatar" />
+              <img src="{{ $authorCover }}" alt="{{ $authorName }}" class="episode-author-avatar author-image-trigger" data-author-name="{{ $authorName }}" />
               <div class="episode-author-name">{{ $authorName }}</div>
             </div>
           {{ end }}
