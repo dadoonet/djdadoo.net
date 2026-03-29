@@ -2,6 +2,7 @@
 {{ $mixes := .mixes }}
 {{ $activeKeyword := .activeKeyword | default "" }}
 {{ $activeKeywordSlug := $activeKeyword | urlize }}
+{{ $showKeywordSidebar := .showKeywordSidebar | default false }}
 
 {{/* Build playlist as a Go slice-of-dicts → single jsonify call avoids double-encoding */}}
 {{ $playlist := slice }}
@@ -23,14 +24,15 @@
 
 <script>var __djPlaylist = {{ $playlist | jsonify | safeJS }};</script>
 
-<main class="mix-grid-wrapper">
-  {{ if $activeKeyword }}
-  <section class="taxonomy-header">
-    <p class="taxonomy-subtitle">Keyword</p>
-    <h2 class="taxonomy-title">{{ $activeKeyword }}</h2>
-    <p class="taxonomy-meta">{{ len $mixes }} épisode{{ if ne (len $mixes) 1 }}s{{ end }}</p>
-  </section>
-  {{ end }}
+<main class="mix-grid-wrapper{{ if $showKeywordSidebar }} mix-grid-wrapper-with-sidebar{{ end }}">
+  <div class="mix-grid-main">
+    {{ if $activeKeyword }}
+    <section class="taxonomy-header">
+      <p class="taxonomy-subtitle">Keyword</p>
+      <h2 class="taxonomy-title">{{ $activeKeyword }}</h2>
+      <p class="taxonomy-meta">{{ len $mixes }} épisode{{ if ne (len $mixes) 1 }}s{{ end }}</p>
+    </section>
+    {{ end }}
 
   {{/* Season grouping: iterate in order (newest first), open new section on season change */}}
   {{ $idx := 0 }}
@@ -131,5 +133,31 @@
     {{ $idx = add $idx 1 }}
 
   {{ end }}
-  {{ if $lastSeason }}</div></section>{{ end }}
+    {{ if $lastSeason }}</div></section>{{ end }}
+  </div>
+
+  {{ if $showKeywordSidebar }}
+    {{ $keywordTerms := slice }}
+    {{ with $ctx.Site.Taxonomies.keywords }}
+      {{ $keywordTerms = .ByCount }}
+    {{ end }}
+    {{ if gt (len $keywordTerms) 0 }}
+    {{ $topKeywordTerms := first 10 $keywordTerms }}
+    {{ $displayedCount := len $topKeywordTerms }}
+    <aside class="home-keywords-sidebar" aria-label="Keywords disponibles">
+      <h2 class="home-keywords-title">Top {{ $displayedCount }} keyword{{ if ne $displayedCount 1 }}s{{ end }}</h2>
+      <p class="home-keywords-meta">{{ len $keywordTerms }} au total</p>
+      <div class="home-keywords-list">
+        {{ range $topKeywordTerms }}
+        {{ $sidebarKeywordSlug := .Page.Title | urlize }}
+        <a href="{{ .Page.RelPermalink }}" class="keyword-badge keyword-badge-link home-keywords-item{{ if and $activeKeywordSlug (eq $sidebarKeywordSlug $activeKeywordSlug) }} keyword-badge-active{{ end }}">
+          <span>{{ .Page.Title }}</span>
+          <span class="home-keywords-count">{{ .Count }}</span>
+        </a>
+        {{ end }}
+      </div>
+      <a href="{{ "/keywords/" | relURL }}" class="home-keywords-all-link">Voir tous les keywords</a>
+    </aside>
+    {{ end }}
+  {{ end }}
 </main>

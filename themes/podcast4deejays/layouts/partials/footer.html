@@ -25,6 +25,20 @@
   </div>
 </footer>
 
+  <script>
+    (function () {
+      function updateStickyOffset() {
+        var header = document.querySelector('.site-header');
+        if (!header) return;
+        document.documentElement.style.setProperty('--site-header-height', header.offsetHeight + 'px');
+      }
+
+      updateStickyOffset();
+      window.addEventListener('resize', updateStickyOffset);
+      window.addEventListener('orientationchange', updateStickyOffset);
+    })();
+  </script>
+
 <style>
 .site-footer {
   margin-top: 4rem;
