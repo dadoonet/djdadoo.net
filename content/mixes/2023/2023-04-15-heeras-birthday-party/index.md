@@ -3,7 +3,7 @@ title: "Anniversaire Heera"
 date: 2023-04-15T23:30:00+01:00
 season: 2023
 episode: 38
-keywords: ["Live"]
+keywords: ["Live", "Birthday"]
 location:
   name: "Golf de Saint-Ouen l'Aumône"
   address: "Rue de la Croix Saint-Jacques, 95310 Saint-Ouen-l'Aumône, France"

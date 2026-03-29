@@ -5,7 +5,7 @@ date: 2012-12-01T23:25:00+01:00
 season: 2012
 episode: 11
 event: "Anniversaire Anne"
-keywords: ["Live"]
+keywords: ["Live", "Birthday"]
 audio_url: "https://storage.googleapis.com/djdadoo/09_DJ_Dadoo_Anne_Birthday-December-Part2.mp3"
 audio_length: 51223321
 duration: "0:35:34"

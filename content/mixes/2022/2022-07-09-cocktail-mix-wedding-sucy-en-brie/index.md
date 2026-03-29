@@ -10,7 +10,7 @@ location:
   geo:
     lat: 48.7601663
     lon: 2.5503588
-keywords: ["Live"]
+keywords: ["Live", "Wedding"]
 audio_url: "https://storage.googleapis.com/djdadoo/2022-07-09-Wedding-Cocktail-Sucy-En-Brie.mp3"
 audio_length: 321574815
 duration: "02:13:59"

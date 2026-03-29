@@ -11,7 +11,7 @@ location:
   geo:
     lat: 48.9833
     lon: 2.1833
-keywords: ["Live"]
+keywords: ["Live", "Birthday"]
 audio_url: "https://storage.googleapis.com/djdadoo/2015-11-21-Fred-Birthday-Live-Mix-Part1.mp3"
 audio_length: 21004740
 duration: "0:21:53"

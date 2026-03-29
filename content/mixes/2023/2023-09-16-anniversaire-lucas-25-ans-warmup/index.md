@@ -5,7 +5,7 @@ date: 2023-09-16T23:30:00+02:00
 season: 2023
 episode: 43
 event: "Anniversaire Lucas"
-keywords: ["Live"]
+keywords: ["Live", "Birthday"]
 audio_url: "https://storage.googleapis.com/djdadoo/2023-09-16-AnniversaireLucas-Warmup.mp3"
 audio_length: 68211173
 duration: "00:28:25"
