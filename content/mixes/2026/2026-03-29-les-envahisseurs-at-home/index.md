@@ -5,7 +5,6 @@ date: 2026-03-29T11:30:00+01:00
 season: 2026
 episode: 69
 keywords: ["Studio", "House", "4 hands"]
-cover: "/img/authors/les-envahisseurs.png"
 authors: 
   - name: "Les Envahisseurs"
   - name: "DJ Elky"

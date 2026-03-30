@@ -11,7 +11,6 @@ authors:
   - name: "DJ Xylème"
 audio_length: 337552107
 duration: "02:20:34"
-cover: "/img/authors/les-envahisseurs.png"
 ---
 
 Recorded from home studio, Cergy. On Alphateta [XDJ-AZ](https://alphatheta.com/fr/product/all-in-one-dj-system/xdj-az/black/) and 2 [CDJ-3000](https://www.pioneerdj.com/fr/product/dj-players-turntables/cdj-3000/).
