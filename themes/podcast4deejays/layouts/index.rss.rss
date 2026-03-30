@@ -30,7 +30,10 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <podcast:locked>no</podcast:locked>
   {{- range $pages }}
   {{- $p := . }}
-  {{- $cover := $p.Resources.GetMatch "cover.*" }}
+  {{- $cover := $p.Params.cover | default $p.Params.Cover | default "" }}
+  {{- if not $cover }}
+    {{- with $p.Resources.GetMatch "cover.*" }}{{- $cover = .RelPermalink }}{{- end }}
+  {{- end }}
   {{- $audioURL := $p.Params.audio_url | default (printf "%s%s.mp3" $site.Params.podcast.baseAudioURL (path.Dir $p.File.Path)) }}
   <item>
     {{- with $p.Params.season }}
@@ -84,7 +87,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
       <p><i>{{ $creditSentence | htmlEscape }}</i></p>
     ]]></description>
     {{- if $cover }}
-    <itunes:image href="{{ $baseURL }}{{ $cover.RelPermalink | strings.TrimPrefix "/" }}" />
+    <itunes:image href="{{ $baseURL }}{{ $cover | strings.TrimPrefix "/" }}" />
     {{- end }}
     <enclosure url="{{ $audioURL }}" length="{{ $p.Params.audio_length | default 0 }}" type="{{ $p.Params.audio_type | default $site.Params.podcast.audioType }}" />
     <guid>{{ $audioURL }}</guid>

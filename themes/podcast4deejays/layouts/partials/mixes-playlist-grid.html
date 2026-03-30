@@ -7,8 +7,9 @@
 {{/* Build playlist as a Go slice-of-dicts → single jsonify call avoids double-encoding */}}
 {{ $playlist := slice }}
 {{ range $mixes }}
-  {{ $cover := .Site.Params.podcast.cover }}
-  {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+  {{ $cover := .Params.cover | default .Params.Cover | default "" }}
+  {{ if not $cover }}{{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}{{ end }}
+  {{ if not $cover }}{{ $cover = .Site.Params.podcast.cover }}{{ end }}
   {{ $chapters := slice }}
   {{ if .Params.chapters }}{{ $chapters = .Params.chapters }}{{ end }}
   {{ $audioURL := .Params.audio_url | default (printf "%s%s.mp3" $ctx.Site.Params.podcast.baseAudioURL (path.Dir .File.Path)) }}
@@ -40,7 +41,7 @@
   {{ range $mixes }}
     {{ $p := . }}
     {{ $season := .Params.season | int }}
-    {{ $cover := "" }}
+    {{ $cover := .Params.cover | default .Params.Cover | default "" }}
     {{ $youtubeRaw := $p.Params.youtube | default "" }}
     {{ $youtubeID := "" }}
     {{ $episodePermalink := $p.Permalink }}
@@ -50,7 +51,8 @@
     {{ if $youtubeRaw }}
       {{ $youtubeID = replaceRE `^https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtube\.com/embed/|youtu\.be/)([^&?/]+).*$` "$1" $youtubeRaw }}
     {{ end }}
-    {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+    {{ if not $cover }}{{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}{{ end }}
+    {{ if not $cover }}{{ $cover = .Site.Params.podcast.cover }}{{ end }}
 
     {{/* Support both old 'author' string and new 'authors' array formats */}}
     {{ $authors := slice }}
@@ -84,11 +86,7 @@
 
     <article class="mix-card" data-index="{{ $idx }}" role="button" tabindex="0" aria-label="Play {{ $p.Title }}">
       <div class="mix-card-artwork">
-        {{ if $cover }}
         <img src="{{ $cover }}" alt="{{ $p.Title }}" loading="lazy" />
-        {{ else }}
-        <img src="{{ .Site.Params.podcast.cover }}" alt="{{ $p.Title }}" loading="lazy" />
-        {{ end }}
         <div class="mix-card-overlay">
           <span class="play-icon"><i class="fa-solid fa-play"></i></span>
         </div>
@@ -125,7 +123,7 @@
            data-subtitle="{{ $p.Params.subtitle }}"
            data-keywords="{{ delimit ($p.Params.keywords | default slice) ", " }}"
            data-event="{{ $p.Params.event | default "" }}"
-           data-cover="{{ if $cover }}{{ $cover }}{{ else }}{{ .Site.Params.podcast.cover }}{{ end }}"
+           data-cover="{{ $cover }}"
            data-authors="{{ $authorsJSON | jsonify }}">
         {{ $p.Content }}
       </div>

@@ -21,8 +21,8 @@
     <meta name="twitter:description" content="{{ .Summary }}" />
   {{ end }}
 {{ end }}
-{{ $image := "" }}
-{{ with .Resources.GetMatch "cover.*" }}{{ $image = .RelPermalink }}{{ end }}
+  {{ $image := .Params.cover | default .Params.Cover | default "" }}
+  {{ if not $image }}{{ with .Resources.GetMatch "cover.*" }}{{ $image = .RelPermalink }}{{ end }}{{ end }}
 {{ if not $image }}{{ $image = .Site.Params.podcast.cover }}{{ end }}
 {{ if $image }}
   {{ $fullURL := $image }}

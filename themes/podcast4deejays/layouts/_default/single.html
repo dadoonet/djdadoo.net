@@ -52,8 +52,9 @@
     <!-- Left column: artwork + authors -->
     <div class="episode-left-col">
       <div class="episode-cover-wrapper">
-        {{ $cover := .Site.Params.podcast.cover }}
-        {{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}
+        {{ $cover := .Params.cover | default .Params.Cover | default "" }}
+        {{ if not $cover }}{{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}{{ end }}
+        {{ if not $cover }}{{ $cover = .Site.Params.podcast.cover }}{{ end }}
         <img class="episode-cover" src="{{ $cover }}" alt="{{ .Title }}" data-pagefind-meta="image[src]" />
         {{ $audioURL := .Params.audio_url | default (printf "%s%s.mp3" .Site.Params.podcast.baseAudioURL (path.Dir .File.Path)) }}
         {{ $youtubeRaw := .Params.youtube | default "" }}
