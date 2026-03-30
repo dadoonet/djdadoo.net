@@ -127,13 +127,25 @@
 
       <!-- Chapters list -->
       {{ if .Params.chapters }}
+      {{ $chapterCoverMap := dict }}
+      {{ range .Resources.Match "covers/*" }}
+        {{ $coverKey := replaceRE `\.[^.]+$` "" (path.Base .Name) | lower | replaceRE `[àáâãäå]` "a" | replaceRE `[ç]` "c" | replaceRE `[èéêêë]` "e" | replaceRE `[ìíîï]` "i" | replaceRE `[ñ]` "n" | replaceRE `[òóôõö]` "o" | replaceRE `[ùúûü]` "u" | replaceRE `[ýÿ]` "y" | replaceRE `æ` "ae" | replaceRE `œ` "oe" | replaceRE `[^a-z0-9]` "" }}
+        {{ $chapterCoverMap = merge $chapterCoverMap (dict $coverKey .RelPermalink) }}
+      {{ end }}
       <div class="episode-chapters">
         <h2>Chapitres</h2>
         <ul class="episode-chapters-list">
           {{ range $index, $chapter := .Params.chapters }}
-          <li data-chapter-index="{{ $index }}">
-            <span class="chapter-timestamp">{{ $chapter.time }}</span>
-            <span class="chapter-title">{{ $chapter.title }}</span>
+          {{ $chapterKey := $chapter.title | lower | replaceRE `[àáâãäå]` "a" | replaceRE `[ç]` "c" | replaceRE `[èéêêë]` "e" | replaceRE `[ìíîï]` "i" | replaceRE `[ñ]` "n" | replaceRE `[òóôõö]` "o" | replaceRE `[ùúûü]` "u" | replaceRE `[ýÿ]` "y" | replaceRE `æ` "ae" | replaceRE `œ` "oe" | replaceRE `[^a-z0-9]` "" }}
+          {{ $chapterCover := index $chapterCoverMap $chapterKey }}
+          <li data-chapter-index="{{ $index }}"{{ if $chapterCover }} class="has-cover"{{ end }}>
+            {{ if $chapterCover }}
+            <img class="chapter-cover" src="{{ $chapterCover }}" alt="Pochette du morceau {{ $chapter.title }}" loading="lazy" />
+            {{ end }}
+            <div class="chapter-texts">
+              <span class="chapter-timestamp">{{ $chapter.time }}</span>
+              <span class="chapter-title">{{ $chapter.title }}</span>
+            </div>
           </li>
           {{ end }}
         </ul>
@@ -467,9 +479,31 @@ window.__djEpisodeChapters = {{ $chapters | jsonify | safeJS }};
   align-items: center;
 }
 
+.episode-chapters-list li.has-cover {
+  align-items: flex-start;
+}
+
 .episode-chapters-list li:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: var(--color-accent);
+}
+
+.episode-chapters-list .chapter-cover {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.episode-chapters-list .chapter-texts {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
 }
 
 .episode-chapters-list .chapter-timestamp {
@@ -486,6 +520,18 @@ window.__djEpisodeChapters = {{ $chapters | jsonify | safeJS }};
   font-size: 0.95rem;
   flex: 1;
   min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .episode-chapters-list li {
+    align-items: flex-start;
+  }
+
+  .episode-chapters-list .chapter-texts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
 }
 
 /* Sidebar */
