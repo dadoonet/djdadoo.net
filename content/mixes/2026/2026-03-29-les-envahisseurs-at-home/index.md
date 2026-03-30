@@ -3,8 +3,9 @@ title: "Les Envahisseurs at Home"
 subtitle: "House Set from home studio on XDJ-AZ and CDJ3000"
 date: 2026-03-29T11:30:00+01:00
 season: 2026
-episode: 68
+episode: 69
 keywords: ["Studio", "House", "4 hands"]
+cover: "/img/authors/les-envahisseurs.png"
 authors: 
   - name: "Les Envahisseurs"
   - name: "DJ Elky"
@@ -64,3 +65,5 @@ chapters:
 
 Recorded from home studio, Cergy. On Alphateta [XDJ-AZ](https://alphatheta.com/fr/product/all-in-one-dj-system/xdj-az/black/) and 2 [CDJ-3000](https://www.pioneerdj.com/fr/product/dj-players-turntables/cdj-3000/).
 4 hands.
+
+![DJ Xylème & DJ Elky at work](in-da-mix.jpg)
