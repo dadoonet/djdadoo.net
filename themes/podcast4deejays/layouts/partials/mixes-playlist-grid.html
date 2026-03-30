@@ -7,7 +7,15 @@
 {{/* Build playlist as a Go slice-of-dicts → single jsonify call avoids double-encoding */}}
 {{ $playlist := slice }}
 {{ range $mixes }}
-  {{ $cover := .Params.cover | default .Params.Cover | default "" }}
+  {{ $coverParam := .Params.cover | default .Params.Cover | default "" }}
+  {{ $cover := "" }}
+  {{ if $coverParam }}
+    {{ if or (hasPrefix $coverParam "/") (hasPrefix $coverParam "http://") (hasPrefix $coverParam "https://") }}
+      {{ $cover = $coverParam }}
+    {{ else }}
+      {{ with .Resources.GetMatch $coverParam }}{{ $cover = .RelPermalink }}{{ else }}{{ $cover = $coverParam }}{{ end }}
+    {{ end }}
+  {{ end }}
   {{ if not $cover }}{{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}{{ end }}
   {{ if not $cover }}{{ $cover = .Site.Params.podcast.cover }}{{ end }}
   {{ $chapters := slice }}
@@ -41,7 +49,8 @@
   {{ range $mixes }}
     {{ $p := . }}
     {{ $season := .Params.season | int }}
-    {{ $cover := .Params.cover | default .Params.Cover | default "" }}
+    {{ $coverParam := .Params.cover | default .Params.Cover | default "" }}
+    {{ $cover := "" }}
     {{ $youtubeRaw := $p.Params.youtube | default "" }}
     {{ $youtubeID := "" }}
     {{ $episodePermalink := $p.Permalink }}
@@ -50,6 +59,13 @@
     {{ end }}
     {{ if $youtubeRaw }}
       {{ $youtubeID = replaceRE `^https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtube\.com/embed/|youtu\.be/)([^&?/]+).*$` "$1" $youtubeRaw }}
+    {{ end }}
+    {{ if $coverParam }}
+      {{ if or (hasPrefix $coverParam "/") (hasPrefix $coverParam "http://") (hasPrefix $coverParam "https://") }}
+        {{ $cover = $coverParam }}
+      {{ else }}
+        {{ with .Resources.GetMatch $coverParam }}{{ $cover = .RelPermalink }}{{ else }}{{ $cover = $coverParam }}{{ end }}
+      {{ end }}
     {{ end }}
     {{ if not $cover }}{{ with .Resources.GetMatch "cover.*" }}{{ $cover = .RelPermalink }}{{ end }}{{ end }}
     {{ if not $cover }}{{ $cover = .Site.Params.podcast.cover }}{{ end }}
@@ -116,6 +132,7 @@
       </div>
       <div class="mix-data" hidden
            data-title="{{ $p.Title }}"
+         data-page-url="{{ $p.Permalink }}"
            data-date="{{ $p.Date.Format "02 Jan 2006" }}"
            data-episode="{{ $p.Params.episode }}"
            data-season="{{ $p.Params.season }}"

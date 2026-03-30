@@ -511,6 +511,33 @@
 
     modalEl.querySelector(".mix-modal-body").innerHTML       = d.innerHTML;
 
+    // Resolve relative URLs from episode markdown content against the episode page URL.
+    var modalBody = modalEl.querySelector(".mix-modal-body");
+    var pageUrl = d.dataset.pageUrl || "";
+    if (modalBody && pageUrl) {
+      modalBody.querySelectorAll("img[src], a[href]").forEach(function(el) {
+        var attr = el.tagName === "IMG" ? "src" : "href";
+        var raw = el.getAttribute(attr);
+        if (!raw) return;
+
+        var isRelative =
+          !/^([a-z]+:)?\/\//i.test(raw) &&
+          !raw.startsWith("/") &&
+          !raw.startsWith("#") &&
+          !raw.startsWith("data:") &&
+          !raw.startsWith("mailto:") &&
+          !raw.startsWith("tel:");
+
+        if (!isRelative) return;
+
+        try {
+          el.setAttribute(attr, new URL(raw, pageUrl).toString());
+        } catch (e) {
+          // Keep original value if URL construction fails.
+        }
+      });
+    }
+
     // Handle related mixes
     var event = d.dataset.event;
     var sidebarEl = modalEl.querySelector(".mix-modal-sidebar");
