@@ -11,6 +11,7 @@ authors:
   - name: "DJ Xylème"
 audio_length: 224127332
 duration: "01:33:20"
+youtube: "5QT250hSKjw"
 chapters:
   - time: "00:00:00"
     title: "Freemasons - Love On My Mind"
